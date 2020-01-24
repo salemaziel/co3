@@ -12,6 +12,7 @@ import Chemtrailsmp3 from '../audio/1-Chemtrails.mp3'
 import Logowhite from '../images/logo-white.png'
 
 import Visualizer from './visualizer'
+import Playlist from './mediaplayer/playlist'
 
 class Container01a extends React.Component {
     render() {
@@ -27,7 +28,8 @@ class Container01a extends React.Component {
                   display: 'flex',
               }}>
               <container>
-              <Visualizer />
+              {/*<Visualizer />*/}
+              <Playlist />
             {/*</div>*/}
             
               

@@ -9,7 +9,7 @@ import './css/Rmusicjinkeindex.css'
 import './css/Rmusic.css'
 
 import Containerheader from './components/containerHeader'
-import Container01 from './components/container01'
+import Container01a from './components/container01a'
 import Container02 from './components/container02'
 import Container03 from './components/container03'
 import Container04 from './components/container04'
@@ -41,7 +41,7 @@ export default class App extends Component {
           <div className="inner">
         <section id="home-section">
         <Containerheader />
-        <Container01 />
+        <Container01a />
         
         
         {/*<div className="react-media-vis-body">
