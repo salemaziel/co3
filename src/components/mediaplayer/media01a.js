@@ -5,6 +5,7 @@ import Chemtrails from '../../images/song-art/Chemtrails.jpg'
 //import Chemtrailsmp3 from 'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593741/chaoticorder-feedthepeople/1-Chemtrails_vvfljp.mp3'
 import Logowhite from '../../images/logo-white.png'
 
+import '../../css/media01.css'
 
 import Feed from '../../images/song-art/album-cover-2500x1364-FEEDTHEPEOPLE.jpg'
 //import Feedmp3 from '../../audio/2-FeedThePeople.mp3'
@@ -146,8 +147,8 @@ class Mediaplayer01a extends React.Component {
 	  }
     render() {
       return (
-        <div>
-            <row style={{
+        <div className="songart">
+			<row style={{
                     display: 'flex',
                 }}>
             <ReactWebMediaPlayer
@@ -158,67 +159,91 @@ class Mediaplayer01a extends React.Component {
 				width={200}
 				height={200}
             />
-            {/*<ReactWebMediaPlayer
-	            width={200} height={200}
-	            title={this.state.title}
-	            thumbnail={this.state.thumbnail}
-	            audio={this.state.audio} />
+            <ReactWebMediaPlayer
+	            title="Feed The People"
+	            thumbnail="https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593761/chaoticorder-feedthepeople/album-cover-2500x1364-FEEDTHEPEOPLE_lnpgkv.jpg"
+				audio="https://res.cloudinary.com/dexdumfqy/video/upload/v1579593751/chaoticorder-feedthepeople/2-FeedThePeople_r5wbxp.mp3"
+				vinyl={{ img: 'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593761/chaoticorder-feedthepeople/album-cover-2500x1364-FEEDTHEPEOPLE_lnpgkv.jpg', rpm: 20}}
+				width={200}
+				height={200}
+            />
 	            
             <ReactWebMediaPlayer
-	            width={200} height={200}
-	            title="Burn"
-	            thumbnail={Burn}
-	            audio={Burnmp3} />
+				title="Burn"
+				thumbnail="https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593779/chaoticorder-feedthepeople/The-Tower-BURN_e3erzi.jpg"
+				audio="https://res.cloudinary.com/dexdumfqy/video/upload/v1579593780/chaoticorder-feedthepeople/3-BURNIT_wq3s6h.mp3"
+				vinyl={{ img: 'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593779/chaoticorder-feedthepeople/The-Tower-BURN_e3erzi.jpg', rpm: 20}}
+				width={200}
+				height={200}
+		/>
+		
 	            
             <ReactWebMediaPlayer
-	            width={200} height={200}
 	            title="Another Thing"
-	            thumbnail={Another}
-	            audio={Anothermp3} />
+	            thumbnail="https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593736/chaoticorder-feedthepeople/The-Wait-ANOTHERTHING_uqplhn.jpg"
+				audio="https://res.cloudinary.com/dexdumfqy/video/upload/v1579593742/chaoticorder-feedthepeople/4-AnotherThing_qrfsn3.mp3"
+				vinyl={{ img: 'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593736/chaoticorder-feedthepeople/The-Wait-ANOTHERTHING_uqplhn.jpg', rpm: 20}}
+				width={200}
+				height={200}
+            />
 	            
             <ReactWebMediaPlayer
-	            width={200} height={200}
 	            title="Hate"
-	            thumbnail={Hate}
-	            audio={Hatemp3}
-				/>
+	            thumbnail="https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593775/chaoticorder-feedthepeople/the-oracle-HATE_jcwpqs.jpg"
+				audio="https://res.cloudinary.com/dexdumfqy/video/upload/v1579593746/chaoticorder-feedthepeople/5-HATEREPULSION_s8owm1.mp3"
+				vinyl={{ img: 'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593775/chaoticorder-feedthepeople/the-oracle-HATE_jcwpqs.jpg', rpm: 20}}
+				width={200}
+				height={200}
+            />
+				
             </row>
 
-            <row style={{
+			<row style={{
                     display: 'flex',
                 }}>
                     <ReactWebMediaPlayer
-	            width={200} height={200}
-	            title="Sorry"
-	            thumbnail={Sorry}
-	            audio={Sorrymp3}
-	            
-            />
+						title="Sorry"
+						thumbnail="https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593768/chaoticorder-feedthepeople/closeyoureyestosee-SORRY_yf4soq.jpg"
+						audio="https://res.cloudinary.com/dexdumfqy/video/upload/v1579593760/chaoticorder-feedthepeople/6-Sorry_s9hoyu.mp3"
+						vinyl={{ img: 'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593768/chaoticorder-feedthepeople/closeyoureyestosee-SORRY_yf4soq.jpg', rpm: 20}}
+						width={200}
+						height={200}
+					/>
             <ReactWebMediaPlayer
-	            width={200} height={200}
 	            title="Chains"
-	            thumbnail={Chains}
-	            audio={Chainsmp3} />
+	            thumbnail="https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593769/chaoticorder-feedthepeople/medicineman-CHAINS_aee5zv.jpg"
+				audio="https://res.cloudinary.com/dexdumfqy/video/upload/v1579593763/chaoticorder-feedthepeople/7-CHAINS_yiqxlf.mp3"
+				vinyl={{ img: 'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593769/chaoticorder-feedthepeople/medicineman-CHAINS_aee5zv.jpg', rpm: 20}}
+				width={200}
+				height={200}
+            />
 	            
             <ReactWebMediaPlayer
-	            width={200} height={200}
-	            title="Angel"
-	            thumbnail={Angel}
-	            audio={Angelmp3} />
-	            
-            <ReactWebMediaPlayer
-	            width={200} height={200}
-	            title="Never End"
-	            thumbnail={Never}
-	            audio={Nevermp3} />
-	            
-            <ReactWebMediaPlayer
-	            width={200} height={200}
 	            title="Earth"
-	            thumbnail={Earth}
-	            audio={Earthmp3}
+	            thumbnail="https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593780/chaoticorder-feedthepeople/shaman-ANGEL_hypvjz.jpg"
+				audio="https://res.cloudinary.com/dexdumfqy/video/upload/v1579593759/chaoticorder-feedthepeople/8-ChaoticOrder_q0zas1.mp3"
+				vinyl={{ img: 'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593780/chaoticorder-feedthepeople/shaman-ANGEL_hypvjz.jpg', rpm: 20}}
+				width={200}
+				height={200}
+            />
 	            
-			/>*/}
+            <ReactWebMediaPlayer
+	            title="Never End"
+	            thumbnail="https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593773/chaoticorder-feedthepeople/The-Magician-NEVEREND_vimjgw.jpg"
+				audio="https://res.cloudinary.com/dexdumfqy/video/upload/v1579593764/chaoticorder-feedthepeople/9-NeverEnd_vlxoad.mp3"
+				vinyl={{ img: 'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593773/chaoticorder-feedthepeople/The-Magician-NEVEREND_vimjgw.jpg', rpm: 20}}
+				width={200}
+				height={200}
+            />
+	            
+            <ReactWebMediaPlayer
+	            title="Colors"
+	            thumbnail="https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593779/chaoticorder-feedthepeople/HighPriestess-EARTH_cr9rox.jpg"
+				audio="https://res.cloudinary.com/dexdumfqy/video/upload/v1579593781/chaoticorder-feedthepeople/10-Colors_db6xqj.mp3"
+				vinyl={{ img: 'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593779/chaoticorder-feedthepeople/HighPriestess-EARTH_cr9rox.jpg', rpm: 20}}
+				width={200}
+				height={200}
+            />
 
 
                 </row>

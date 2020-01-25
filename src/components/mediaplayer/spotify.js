@@ -1,3 +1,4 @@
+import React from 'react'
 import SpotifyPlayer from 'react-spotify-player';
  
 // size may also be a plain string using the presets 'large' or 'compact'
@@ -12,7 +13,7 @@ const theme = 'black'; // or 'white'
 
 <SpotifyPlayer
   uri="spotify:album:6NwNaCmHzQNvTSi0hRpALe"
-  size={{width: '100%', height: 500}}
+  size={{width: "100%", height: 500}}
   view="list"
   theme="black"
 />
