@@ -13,9 +13,9 @@ class Container02 extends React.Component {
         <div id="container02" data-scroll-id="two" data-scroll-behavior="center" className="container columns full screen">
         <div className={container02Styles.inner}>
           <div className={container02Styles.afterSpacer}>
-            <h2 id="text05" className={container02Styles.style1}>Magna Feugiat</h2>
+            <h2 id="text05" className={container02Styles.style1}></h2>
            {/*} <hr id="divider02" />*/}
-            <p id="text06" className={container02Styles.style2}>Morbi semper nisl et dictum cursus. In hac habitasse platea dictumst. Aliquam blandit etiam vel massa eget mollis. Donec at quam orci. Proin et semper metus consequat etiam.</p>
+            <p id="text06" className={container02Styles.style2}></p>
             {/**<TContentCards />**/}
             {/**<ul id="buttons04" className="style1 buttons">
               <li>

@@ -14,9 +14,9 @@ class Container03 extends React.Component {
         <div className={container03Styles.inner}>
           <span />
           <div className={container03Styles.afterSpacer}>
-            <h2 id="text07" className={container03Styles.style1}>Lorem Ipsum</h2>
+            <h2 id="text07" className={container03Styles.style1}></h2>
            {/** <hr id="divider01" />**/}
-            <p id="text10" className={container03Styles.style2}>Morbi semper nisl et dictum cursus. In hac habitasse platea dictumst. Aliquam blandit etiam vel massa eget mollis. Donec at quam orci. Proin et semper metus consequat etiam.</p>
+            <p id="text10" className={container03Styles.style2}></p>
             {/**<ul id="buttons05" className="style1 buttons">
               <li>
                 <a href="#signup" className="button n01">
