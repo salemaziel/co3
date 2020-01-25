@@ -1,8 +1,8 @@
 #containerHeader > .inner {
     text-align: left;
-    padding: 6rem 6rem;
+    /*padding: 6rem 6rem;*/
     width: 100%;
-    max-width: 65rem;
+    /*max-width: 65rem;*/
 }
 
 #containerHeader {
@@ -288,7 +288,7 @@
             line-height: 1.25;
         }
     
-        h1.style4, h2.style4, h3.style4, /*p.style4*/ {
+        h1.style4, h2.style4, h3.style4 /*p.style4*/ {
             letter-spacing: 0.021875rem;
             width: calc(100% + 0.021875rem);
             font-size: 1.25em;
