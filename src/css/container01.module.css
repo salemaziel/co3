@@ -6,7 +6,7 @@
 #container01 > .inner {
     padding: 2rem 2rem;
     width: 100%;
-    /*max-width: 65rem;*/
+    max-width: 65rem;
 }
 
 #container01 {
@@ -44,7 +44,7 @@
 #container01.default > .inner > *:last-child {
     margin-bottom: 0 !important;
 }
-/*
+
 #container01.columns > .inner {
     -moz-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
@@ -86,7 +86,7 @@
 #container01.columns > .inner > *:first-child {
     margin-left: 0rem;
 }
-*/
+
 #container01.default > .inner > .full {
     margin-left: calc(-6rem);
     width: calc(100% + 12rem + 0.4725px);
@@ -104,7 +104,7 @@
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
 }
-/*
+
 #container01.columns > .inner > div > .full {
     margin-left: calc(-0rem);
     width: calc(100% + 0rem + 0.4725px);
@@ -174,7 +174,7 @@
 #container01 > .inner > :nth-child(2) {
     width: 50%;
 }
-*/
+
 #container01 > .inner {
     padding: 1.5rem 0.5rem;
     max-width: 100%;
@@ -188,7 +188,7 @@
     margin-top: 1.75rem;
     margin-bottom: 1.75rem;
 }
-/*
+
 #container01.columns > .inner {
     -moz-flex-direction: column !important;
     -webkit-flex-direction: column !important;
@@ -231,7 +231,7 @@
 #container01.columns > .inner > div.before-spacer {
     padding-bottom: 0 !important;
 }
-*/
+
 #container01.default > .inner > .full {
     margin-left: calc(-2rem);
     width: calc(100% + 4rem + 0.4725px);
@@ -244,7 +244,7 @@
 #container01.default > .inner > .full:last-child {
     margin-bottom: -3.5rem !important;
 }
-/*
+
 #container01.columns > .inner > div > .full {
     margin-left: calc(-2rem);
     width: calc(100% + 4rem + 0.4725px);
@@ -311,7 +311,7 @@
 #container01.columns > .inner > .full > .full:first-child:last-child a, #container01.columns > .inner > .full > .full:first-child:last-child span, #container01.columns > .inner > .full > .full:first-child:last-child img {
     height: auto;
 }
-*/
+
 #container01 > .inner > :nth-child(1) {
     width: 100% !important;
     min-height: 100% !important;
@@ -498,7 +498,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     right: auto;
     margin-left: -50vw;
 }
-/*
+
 #main > .inner > * > .full {
     margin-left: calc(-2rem);
     width: calc(100% + 4rem + 0.4725px);
@@ -535,7 +535,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     width: calc(100% + 3rem + 0.4725px);
     max-width: calc(100% + 3rem + 0.4725px);
 }
-*/
+
 #divider03 {
     height: 0.5rem;
     line-height: 0.5rem;
@@ -638,7 +638,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
             margin-top: 0rem;
             margin-bottom: 0rem;
         }
-        /* #container01.default > .inner > * {
+        #container01.default > .inner > * {
             margin-top: 1.53125rem;
             margin-bottom: 1.53125rem;
         }
@@ -646,7 +646,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         #container01.columns > .inner > * > * {
             margin-top: 1.53125rem;
             margin-bottom: 1.53125rem;
-        }*/
+        }
         .wmp-container {
             width: 300px;
             height: auto;
@@ -688,7 +688,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
             margin-left: -50vw;
         }
     
-       /*  #main > .inner > * > .full {
+        #main > .inner > * > .full {
             margin-left: calc(-1.5rem);
             width: calc(100% + 3rem + 0.4725px);
             max-width: calc(100% + 3rem + 0.4725px);
@@ -704,7 +704,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     
         #main > .inner > .active > .full:last-child {
             margin-bottom: -0rem !important;
-        }*/
+        }
     
         h1.style1, h2.style1, h3.style1, p.style1 {
             font-size: 2em;
@@ -735,7 +735,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
             max-width: calc(100% - 1.3125rem);
             margin: 0.65625rem;
         }
-        /*#container01 > .inner {
+        #container01 > .inner {
             padding: 2.625rem 1.5rem;
         }
     
@@ -799,7 +799,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     
         #container01.columns > .inner > .full {
             min-height: 20rem;
-        }*/
+        }
     }
     #icons02 {
         width: calc(100% + 0.9375rem);

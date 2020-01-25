@@ -63,14 +63,14 @@ class Container01 extends React.Component {
               <Col xs="6">
               <SpotifyPlayer
                 uri="spotify:album:6NwNaCmHzQNvTSi0hRpALe"
-                
-                theme='black'
-              />
-                <SpotifyPlayer
-                uri="spotify:track:7sxyTA1EIoeEENTkMHQPmd"
                 size={{width: 376, height: 400}}
                 theme='black'
               />
+              {/*<SpotifyPlayer
+                uri="spotify:track:7sxyTA1EIoeEENTkMHQPmd"
+                size={{width: 376, height: 400}}
+                theme='black'
+              />*/}
               </Col>
               
             </Row>
