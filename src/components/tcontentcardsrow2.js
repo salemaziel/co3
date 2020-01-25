@@ -59,7 +59,7 @@ class TContentCards02 extends React.Component {
                     />   
                     </Col>
                     <Col xs="2" lg="2" md="6">
-                        <gedContentCard
+                        <TaggedContentCard
                         style={{width: '20px', minWidth: '200px'}}
                         href= '#'
                         thumbnail={Chains}
