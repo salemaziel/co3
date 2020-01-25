@@ -29,7 +29,7 @@ class Container01 extends React.Component {
       <div 
       id="container01" className="full screen" data-scroll-id="one" data-scroll-behavior="center"  >
         <Row>
-          <Col style={{textAlign: "center"}}>
+          <Col style={{textAlign: "center", marginTop: '1rem'}}>
             <Spotify
               uri="spotify:album:6NwNaCmHzQNvTSi0hRpALe"
               size={{width: 650, height: 500}}
