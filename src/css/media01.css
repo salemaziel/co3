@@ -1,0 +1,9 @@
+.songart {
+    margin: 0
+}
+
+@media (max-width: 480px) {
+    .songart {
+        display: none;
+    }
+}

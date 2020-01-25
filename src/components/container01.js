@@ -47,10 +47,7 @@ class Container01 extends React.Component {
 	                }}
                 />*/}
               <Mediaplayer01a />
-            {/**</div>**/}
-            {/*<Visualizer />*/}
-            {/*<TContentCards01 />
-            <TContentCards02 />*/}
+           
             <Container style={{
                       paddingBottom: '10em',
                       justifyContent: 'center',

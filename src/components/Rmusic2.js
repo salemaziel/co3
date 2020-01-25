@@ -106,7 +106,7 @@ const audioList1 = [
     singer: 'Chaotic Order',
     cover: 'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593761/chaoticorder-feedthepeople/Chemtrails_fw7xav.jpg',
     musicSrc: 'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593741/chaoticorder-feedthepeople/1-Chemtrails_vvfljp.mp3',
-    lyric
+    
   },
   {
     name: 'Feed The People',

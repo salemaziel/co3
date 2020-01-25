@@ -199,8 +199,8 @@
     padding-right: 0;
     display: block;
     box-shadow: 3px 3px 10px black;
-    width: 350px;
-    height: 350px;
+    /*width: 350px;
+    height: 350px;*/
 }
 
 .albumlogo {
@@ -257,6 +257,7 @@
     
         #main > .inner > * > .full.screen {
             margin-left: -50vw;
+            display: grid;
         }
     
         #main > .inner > .active > .full:first-child {

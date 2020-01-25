@@ -11,14 +11,14 @@ class Containerheader extends React.Component {
         <div id="containerHeader" className="full screen" data-scroll-id="one" data-scroll-behavior="center"  /*className={container01Styles.columns} className={container01Styles.full} className={container01Styles.full.screen}*/>
           
            
-          <img className='albumpromo' src={Albumcover} alt='' mode='fit' />
+          <img className='albumpromo' src={Albumcover} alt='' /*mode='fit'*/ />
           <div className={containerHeaderStyles.inner}> 
             
 
         
         
         
-             <img className='albumlogo' src={Logo} alt='' mode='fit'  />
+             <img className='albumlogo' src={Logo} alt='' /*mode='fit' */ />
                <p 
                id="text04" 
                className="style4" 
