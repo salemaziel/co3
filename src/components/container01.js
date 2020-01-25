@@ -13,7 +13,7 @@ import Chemtrails from '../images/song-art/Chemtrails.jpg'
 import Logowhite from '../images/logo-white.png'
 
 import Visualizer from './visualizer'
-import SpotifyPlayer from 'react-spotify-player';
+import Spotify from 'react-spotify-player';
 //import SongLink from './mediaplayer/songlink'
 
 
@@ -30,7 +30,11 @@ class Container01 extends React.Component {
       id="container01" className="full screen" data-scroll-id="one" data-scroll-behavior="center"  >
         <Row>
           <Col style={{textAlign: "center"}}>
-            <SpotifyPlayer />
+            <Spotify
+              uri="spotify:album:6NwNaCmHzQNvTSi0hRpALe"
+              size={{width: 650, height: 500}}
+              view="list"
+              theme="black" />
           </Col>
           <Col>
             <TContentCards01/>
