@@ -13,6 +13,10 @@ import Container04 from './components/container04'
 
 import Embed from 'react-song-embed'
 
+import Helmet from 'react-helmet'
+import Albumcover from './images/album-cover2.jpg'
+
+
 export default class App extends Component {
 //  constructor(props) {
 //    super(props)
@@ -30,6 +34,17 @@ export default class App extends Component {
   render() {
     return (
       <React.Fragment>
+        <Helmet htmlAttributes={{ lang: 'en' }}>
+            <title>Chaotic Order Music: Feed The People - Available Now!</title>
+            <meta name="description" content="Official Website for Chaotic Order, metal band from San Diego, CA" />
+            <meta property="og:site_name" content="Chaotic Order Music" />
+            <meta property="og:title" content="Chaotic Order Music" />
+            <meta property="og:type" content="website" />
+            <meta property="og:image" content={Albumcover} />
+            <meta property="og:description" content="Official Website for Metal Band Chaotic Order" />
+            <meta property="og:url" content="https://chaoticordermusic.com" />
+            <meta property="twitter:card" content="summary_large_image" />
+          </Helmet>
         <div className="main">
             <div id="wrapper">
               <Embed 

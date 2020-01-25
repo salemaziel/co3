@@ -18,7 +18,7 @@ class Container04 extends React.Component {
            {/** <hr id="divider05" />**/}
             <p id="text13" className={container04Styles.style2}>Morbi semper nisl et dictum cursus. In hac habitasse platea dictumst. Aliquam blandit etiam vel massa eget mollis. Donec at quam orci. Proin et semper metus consequat etiam.</p>
           </div>
-          <div>
+          <div style={{textAlign: "center", marginTop: '1rem', marginBottom: '1rem'}}>>
             <form id="form02" method="post">
               <div className={container04Styles.inner}>
                 <div className={formStyles.field}>
