@@ -17,9 +17,12 @@
     "react-media-visualizer": "^1.1.1",
     "react-player": "^1.14.2",
     "react-scripts": "^1.1.4",
+    "react-song-embed": "^1.0.0",
+    "react-spotify-player": "^1.0.4",
     "react-ui-cards": "^2.0.0",
     "react-web-media-player": "^1.1.5",
     "reactstrap": "^8.4.0",
+    "songlink-api": "^1.0.0",
     "sweetalert": "^2.1.2"
   },
   "scripts": {

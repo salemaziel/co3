@@ -1,36 +1,37 @@
 import React, { Component } from 'react';
 import ReactWebMediaPlayer from 'react-web-media-player';
 import Chemtrails from '../../images/song-art/Chemtrails.jpg'
-import Chemtrailsmp3 from '../../audio/1-Chemtrails.mp3'
+//import Chemtrailsmp3 from '../../audio/1-Chemtrails.mp3'
+//import Chemtrailsmp3 from 'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593741/chaoticorder-feedthepeople/1-Chemtrails_vvfljp.mp3'
 import Logowhite from '../../images/logo-white.png'
 
 
 import Feed from '../../images/song-art/album-cover-2500x1364-FEEDTHEPEOPLE.jpg'
-import Feedmp3 from '../../audio/2-FeedThePeople.mp3'
+//import Feedmp3 from '../../audio/2-FeedThePeople.mp3'
 
 import Burn from '../../images/song-art/The-Tower-BURN.jpg'
-import Burnmp3 from '../../audio/3-BURNIT.mp3'
+//import Burnmp3 from '../../audio/3-BURNIT.mp3'
 
 import Another from '../../images/song-art/The-Wait-ANOTHERTHING.jpg'
-import Anothermp3 from '../../audio/4-AnotherThing.mp3'
+//import Anothermp3 from '../../audio/4-AnotherThing.mp3'
 
 import Hate from '../../images/song-art/the-oracle-HATE.jpg'
-import Hatemp3 from '../../audio/5-HATEREPULSION.mp3'
+//import Hatemp3 from '../../audio/5-HATEREPULSION.mp3'
 
 import Sorry from '../../images/song-art/closeyoureyestosee-SORRY.jpg'
-import Sorrymp3 from '../../audio/6-Sorry.mp3'
+//import Sorrymp3 from '../../audio/6-Sorry.mp3'
 
 import Chains from '../../images/song-art/medicineman-CHAINS.jpg'
-import Chainsmp3 from '../../audio/7-CHAINS.mp3'
+//import Chainsmp3 from '../../audio/7-CHAINS.mp3'
 
 import Angel from '../../images/song-art/shaman-ANGEL.jpg'
-import Angelmp3 from '../../audio/8-ChaoticOrder.mp3'
+//import Angelmp3 from '../../audio/8-ChaoticOrder.mp3'
 
 import Never from '../../images/song-art/The-Magician-NEVEREND.jpg'
-import Nevermp3 from '../../audio/9-NeverEnd.mp3'
+//import Nevermp3 from '../../audio/9-NeverEnd.mp3'
 
 import Earth from '../../images/song-art/HighPriestess-EARTH.jpg'
-import Earthmp3 from '../../audio/10-Colors.mp3'
+//import Earthmp3 from '../../audio/10-Colors.mp3'
 
 class Mediaplayer01 extends React.Component {
     render() {
@@ -43,13 +44,13 @@ class Mediaplayer01 extends React.Component {
 	            width={200} height={200}
 	            title="Chemtrails"
 	            thumbnail={Chemtrails}
-	            audio={Chemtrailsmp3}
+	            audio="https://res.cloudinary.com/dexdumfqy/video/upload/v1579593741/chaoticorder-feedthepeople/1-Chemtrails_vvfljp.mp3"
 	            logo={{
 		            img: "../../images/logo-white.png",
 		            href: "#"
 	                }}
             />
-            <ReactWebMediaPlayer
+            {/*<ReactWebMediaPlayer
 	            width={200} height={200}
 	            title="Feed The People"
 	            thumbnail={Feed}
@@ -88,13 +89,13 @@ class Mediaplayer01 extends React.Component {
 		            img: "url(../../images/logo-white.png)",
 		            href: "#"
 	                }}
-            />
+				/>*/}
             </row>
 
             <row style={{
                     display: 'flex',
                 }}>
-                    <ReactWebMediaPlayer
+                    {/*<ReactWebMediaPlayer
 	            width={200} height={200}
 	            title="Sorry"
 	            thumbnail={Sorry}
@@ -143,7 +144,7 @@ class Mediaplayer01 extends React.Component {
 		            img: "url(../../images/logo-white.png)",
 		            href: "#"
 	                }}
-            />
+				/>*/}
 
 
                 </row>

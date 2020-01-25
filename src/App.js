@@ -4,19 +4,21 @@ import ReactMediaVisualizer from 'react-media-visualizer'
 import Player from './components/Player'
 import Navbar from './components/Navbar'
 
-//import './css/main.css'
+import './css/main.css'
 import './css/Rmusicjinkeindex.css'
 import './css/Rmusic.css'
 
 import Containerheader from './components/containerHeader'
-import Container01a from './components/container01a'
+
+import Container01 from './components/container01'
+//import Container01a from './components/container01a'
 import Container02 from './components/container02'
 import Container03 from './components/container03'
 import Container04 from './components/container04'
 
 import Logo from './images/logo-white-huge.png'
 import Albumcover from './images/album-cover.jpg'
-
+import Embed from 'react-song-embed'
 
 export default class App extends Component {
   constructor(props) {
@@ -36,12 +38,18 @@ export default class App extends Component {
     return (
       <React.Fragment>
         <div className="main">
+         
       <div id="wrapper">
+      <Embed url="https://album.link/VdPNv59kZRQM8" height={50} dark style={{
+            display: 'fixed', 
+            position: 'relative',
+       }} />
         <div id="main">
           <div className="inner">
-        <section id="home-section">
+        {/*<section id="home-section">*/}
         <Containerheader />
-        <Container01a />
+        {/**<Container01a />**/}
+        <Container01 />
         
         
         {/*<div className="react-media-vis-body">
@@ -67,7 +75,7 @@ export default class App extends Component {
 
         <Container02 />
         <Container03 />
-        </section>
+        {/*</section>*/}
         
         <Container04 />
         </div>

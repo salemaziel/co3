@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import ReactMediaVisualizer from 'react-media-visualizer'
-import Main from '../main'
 
 
 class Visualizer extends Component {
