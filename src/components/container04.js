@@ -4,6 +4,7 @@ import container04Styles from '../css/container04.module.css'
 import Albumcover from '../images/album-cover.jpg'
 //import TContentCards from './tcontentcardsrow1'
 import ResponsivePlayer from './responsiveplayer01'
+import formStyles from '../css/forms.module.css'
 
 
 
@@ -20,18 +21,18 @@ class Container04 extends React.Component {
           <div>
             <form id="form02" method="post">
               <div className={container04Styles.inner}>
-                <div className={container04Styles.field}>
+                <div className={formStyles.field}>
                   <label htmlFor="form02-fname">Name</label>
                   <input type="text" name="fname" id="form02-fname" placeholder maxLength={128} required />
                 </div>
-                <div className={container04Styles.field}>
+                <div className={formStyles.field}>
                   <label htmlFor="form02-email">Email</label>
                   <input type="email" name="email" id="form02-email" placeholder maxLength={128} required />
                 </div>
-                <div className={container04Styles.field}>
+                <div className={formStyles.field}>
                   <input type="text" name="sms" id="form02-sms" placeholder="Sms" maxLength={128} />
                 </div>
-                <div className={container04Styles.actions}>
+                <div className={formStyles.actions}>
                   <button type="submit">Submit</button>
                 </div>
               </div>

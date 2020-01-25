@@ -51,8 +51,8 @@ class TContentCards01 extends React.Component {
                         title='Chem Trails'
                         description=''description
                         tags={[
-                            'song',
-                            'tag'
+                            '',
+                            ''
                         ]}
                         onClick={ () => { this.setState({ modalIsOpen: true, content: 'Chem Trails Lyrics'})} }
                     />                
@@ -65,8 +65,8 @@ class TContentCards01 extends React.Component {
                         title='Feed the people'
                         description=''description
                         tags={[
-                            'song',
-                            'tag'
+                            '',
+                            ''
                         ]}
                         onClick={ () => { this.setState({ modalIsOpen: true, content: 'Feed the people lyrics'})} }
                         
@@ -80,8 +80,8 @@ class TContentCards01 extends React.Component {
                         title='Burn'
                         description=''description
                         tags={[
-                            'song',
-                            'tag'
+                            '',
+                            ''
                         ]}
                         onClick={ () => { this.setState({ modalIsOpen: true, content: 'Burn Lyrics'})} }
                         
@@ -94,8 +94,8 @@ class TContentCards01 extends React.Component {
                         title='Another'
                         description=''description
                         tags={[
-                            'song',
-                            'new',
+                            '',
+                            '',
                         ]}
                         onClick={ () => { this.setState({ modalIsOpen: true, content: 'Another Lyrics'})} }
                         
@@ -109,8 +109,8 @@ class TContentCards01 extends React.Component {
                         title='Hate'
                         description=''description
                         tags={[
-                            'song',
-                            'new',
+                            '',
+                            '',
                         ]}
                         onClick={ () => { this.setState({ modalIsOpen: true, content: 'Hate Lyrics'})} }
                         

@@ -548,7 +548,8 @@ h1.style5, h2.style5, h3.style5, p.style5 {
 }
 
 .SpotifyPlayer {
-    padding-left: -50vw;
+    width: 600px;
+    height: 420px;
 }
 
 .wmp-container {
@@ -569,11 +570,19 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     #container01 {
         background-attachment: scroll;
     }
+    .SpotifyPlayer {
+        width: 600px;
+        height: 420px;
+    }
 }
 
 @media (max-width: 980px) {
     html {
         font-size: 11pt;
+    }
+    .SpotifyPlayer {
+        width: 550px;
+        height: 420px;
     }
 }
 
@@ -623,6 +632,13 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         width: 350px;
         height: auto;
     }
+    .nomobile {
+        display: none !important;
+    }
+    .SpotifyPlayer {
+        width: 450px;
+        height: 420px;
+    }
 }    
 
     @media (max-width: 480px) {
@@ -650,6 +666,10 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         .wmp-container {
             width: 300px;
             height: auto;
+        }
+        .SpotifyPlayer {
+            width: 350px;
+            height: 420px;
         }
     }
     @media (max-width: 360px) {
@@ -799,6 +819,10 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     
         #container01.columns > .inner > .full {
             min-height: 20rem;
+        }
+        .SpotifyPlayer {
+            width: 300px;
+            height: 420px;
         }
     }
     #icons02 {

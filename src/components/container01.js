@@ -29,17 +29,18 @@ class Container01 extends React.Component {
       <div 
       id="container01" className="full screen" data-scroll-id="one" data-scroll-behavior="center"  >
         <Row>
-          <Col style={{textAlign: "center", marginTop: '1rem'}}>
+          <Col style={{textAlign: "center", marginTop: '1rem', marginBottom: '1rem'}}>
             <Spotify
               uri="spotify:album:6NwNaCmHzQNvTSi0hRpALe"
-              size={{width: 650, height: 500}}
+              /*size={{width: 650, height: 420}}*/
               view="list"
-              theme="black" />
+              theme="black"
+              className="SpotifyPlayer" />
           </Col>
-          <Col>
+          <Col className="nomobile">
             <TContentCards01/>
           </Col>
-          <Col>
+          <Col className="nomobile">
             <TContentCards02/>
           </Col>
         </Row>

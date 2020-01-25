@@ -52,22 +52,22 @@ class TContentCards02 extends React.Component {
                         title='Sorry'
                         description=''description
                         tags={[
-                            'song',
-                            'tag'
+                            '',
+                            ''
                         ]}
                         onClick={ () => { this.setState({ modalIsOpen: true, content: 'Sorry Lyrics'})} }
                     />   
                     </Col>
                     <Col xs="2" lg="2" md="6">
-                        <TaggedContentCard
+                        <gedContentCard
                         style={{width: '20px', minWidth: '200px'}}
                         href= '#'
                         thumbnail={Chains}
                         title='Chains'
                         description=''description
                         tags={[
-                            'song',
-                            'tag'
+                            '',
+                            ''
                         ]}
                         onClick={ () => { this.setState({ modalIsOpen: true, content: 'Chains Lyrics'})} }
                     />   
@@ -80,8 +80,8 @@ class TContentCards02 extends React.Component {
                         title='Angel'
                         description=''description
                         tags={[
-                            'song',
-                            'tag'
+                            '',
+                            ''
                         ]}
                         onClick={ () => { this.setState({ modalIsOpen: true, content: 'Angel Lyrics'})} }                    
                     />   
@@ -94,8 +94,8 @@ class TContentCards02 extends React.Component {
                         title='Never'
                         description=''description
                         tags={[
-                            'song',
-                            'tag'
+                            '',
+                            ''
                         ]}
                         onClick={ () => { this.setState({ modalIsOpen: true, content: 'Never Lyrics'})} }
                         
@@ -109,8 +109,8 @@ class TContentCards02 extends React.Component {
                         title='Earth'
                         description=''description
                         tags={[
-                            'song',
-                            'tag'
+                            '',
+                            ''
                         ]}
                         onClick={ () => { this.setState({ modalIsOpen: true, content: 'Earth Lyrics'})} }
                     />   
