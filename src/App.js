@@ -3,13 +3,14 @@ import React, { Component } from 'react'
 import './css/main2.css'
 import './css/Rmusicjinkeindex.css'
 import './css/Rmusic.css'
-
+import './App.css'
 import Containerheader from './components/containerHeader'
 import Container01 from './components/container01'
 //import Container01a from './components/container01a'
 import Container02 from './components/container02'
 import Container03 from './components/container03'
 import Container04 from './components/container04'
+import ContainerFooter from './components/containerFooter'
 
 import Embed from 'react-song-embed'
 
@@ -66,9 +67,14 @@ export default class App extends Component {
                       <Container02 />
 
                       <Container03 />
-                    </section>
                       <Container04 />
+
+                    
+                    <ContainerFooter/>
+                    </section>
+
                     </div>
+                    
                   </div>
               </div>
         </div>
@@ -102,3 +108,4 @@ export default class App extends Component {
 //    this.setState(payload)
 //  }
 }
+
