@@ -195,6 +195,7 @@ h1.style1, h2.style1, h3.style1, p.style1 {
     font-weight: 900;
 }
 
+
 h1.style2, h2.style2, h3.style2, p.style2 br + br {
     margin-top: 1.2rem;
 }
@@ -251,6 +252,14 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     line-height: 2;
     font-weight: 300;
 }
+
+div.afterSpacer {
+    background: rgba(49, 52, 68, 0.7);
+    margin: 7rem;
+    padding: 5rem;
+    color: white;
+}
+
 
 @media (max-width: 1680px) {
     html {
@@ -488,6 +497,13 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         margin-top: 1.53125rem;
         margin-bottom: 1.53125rem;
     }
+
+    div.afterSpacer {
+        background: rgba(49, 52, 68, 0.7);
+        margin: 2rem 1rem;
+        padding: 2rem;
+        color: white;
+    }
 }
 
 @media (max-width: 360px) {
@@ -544,12 +560,27 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         margin-bottom: -0rem !important;
     }
 
-    h1.style1, h2.style1, h3.style1, p.style1 {
+    h1.style1, /*h2.style1,*/ h3.style1, p.style1 {
         font-size: 2em;
     }
+    h2.style1 {
+        margin-bottom: 1rem;
+        color: #7c795d;
+        font-size: 45px;
+        font-weight: normal;
+        line-height: 48px;
+        margin: 0;
+    }
 
-    h1.style2, h2.style2, h3.style2, p.style2 {
+    h1.style2, h2.style2, h3.style2 /*p.style2*/ {
         font-size: 1em;
+    }
+
+    p.style2 {
+        color: white;
+        font-size: 18px;
+        line-height: 32px;
+        margin: 0 0 24px;
     }
 
     h1.style3, h2.style3, h3.style3, p.style3 {

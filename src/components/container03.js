@@ -11,19 +11,14 @@ class Container03 extends React.Component {
     render() {
       return (
         <div id="container03" data-scroll-id="three" data-scroll-behavior="center" className="container columns full screen">
-        <div className={container03Styles.inner}>
+        <div id="inner" >
           <span />
-          <div className={container03Styles.afterSpacer} style={{
-            background: "#313444",
-             margin: "7rem",
-             padding: "5rem",
-             color: 'white',
-             }}>
-            <h2 id="text07" className={container03Styles.style1} style={{
+          <div className="afterSpacer" >
+            <h2 id="text07" className="style1" /*style={{
               marginBottom: "1rem",
-              color: "#7c795d",  fontSize: '45px', fontWeight: 'normal', lineHeight: '48px', margin: 0}}>Artist Bio </h2>
-            <p id="text10" className={container03Styles.style2}  align= "justify"
-            style={{color: 'white', fontSize: '18px', lineHeight: '32px', margin: "0 0 24px"}}
+              color: "#7c795d",  fontSize: '45px', fontWeight: 'normal', lineHeight: '48px', margin: 0}}*/ >Artist Bio </h2>
+            <p id="text10" className="style2" /*className={container03Styles.style2}  align= "justify"
+            style={{color: 'white', fontSize: '18px', lineHeight: '32px', margin: "0 0 24px"}}*/
             >
             <br/>
             <strong>What is Lorem Ipsum?</strong><br/>
