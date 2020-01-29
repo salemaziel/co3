@@ -8,7 +8,7 @@ import Navbar from './Navbar'
 
 import Container01 from './container01'
 import Container02 from './container02'
-import Container03 from './container03'
+import containerBio from './containerBio'
 import Container04 from './container04'
 
 import Logo from '../images/logo-white-huge.png'

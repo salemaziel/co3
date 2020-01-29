@@ -327,7 +327,7 @@ class TContentCards02 extends React.Component {
                         description=''description
                         tags={[
                             '',
-                            ''
+                            
                         ]}
                         onClick={ () => { this.setState({ modalIsOpen: true, index: 0})} }
                     />   
@@ -341,38 +341,9 @@ class TContentCards02 extends React.Component {
                         description=''description
                         tags={[
                             '',
-                            ''
+                            
                         ]}
                         onClick={ () => { this.setState({ modalIsOpen: true, index: 1})} }
-                    />   
-                    </Col>
-                    <Col xs="2" lg="2" md="6">
-                        <TaggedContentCard
-                        style={{width: '20px', minWidth: '200px'}}
-                        href= '#'
-                        thumbnail={Angel}
-                        title='Angel'
-                        description=''description
-                        tags={[
-                            '',
-                            ''
-                        ]}
-                        onClick={ () => { this.setState({ modalIsOpen: true, index: 2})} }                    
-                    />   
-                    </Col>
-                    <Col xs="2" lg="2" md="6">
-                        <TaggedContentCard
-                        style={{width: '20px', minWidth: '200px'}}
-                        href= '#'
-                        thumbnail={Never}
-                        title='Never'
-                        description=''description
-                        tags={[
-                            '',
-                            ''
-                        ]}
-                        onClick={ () => { this.setState({ modalIsOpen: true, index: 3})} }
-                        
                     />   
                     </Col>
                     <Col xs="2" lg="2" md="6">
@@ -384,9 +355,40 @@ class TContentCards02 extends React.Component {
                         description=''description
                         tags={[
                             '',
-                            ''
+                            
                         ]}
-                        onClick={ () => { this.setState({ modalIsOpen: true,index: 4})} }
+                        onClick={ () => { this.setState({ modalIsOpen: true,index: 2})} }
+                    />   
+                    </Col>
+                    
+                    <Col xs="2" lg="2" md="6">
+                        <TaggedContentCard
+                        style={{width: '20px', minWidth: '200px'}}
+                        href= '#'
+                        thumbnail={Never}
+                        title='Never'
+                        description=''description
+                        tags={[
+                            '',
+                            
+                        ]}
+                        onClick={ () => { this.setState({ modalIsOpen: true, index: 3})} }
+                        
+                    />   
+                    </Col>
+                    
+                    <Col xs="2" lg="2" md="6">
+                        <TaggedContentCard
+                        style={{width: '20px', minWidth: '200px'}}
+                        href= '#'
+                        thumbnail={Angel}
+                        title='Colors'
+                        description=''description
+                        tags={[
+                            '',
+                            
+                        ]}
+                        onClick={ () => { this.setState({ modalIsOpen: true, index: 4})} }                    
                     />   
                     </Col>
                 </Row>

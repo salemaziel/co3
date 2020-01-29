@@ -3,7 +3,7 @@ import '../css/main.css'
 import Releases from './releases'
 import Container01 from '../components/container01'
 import Container02 from '../components/container02'
-import Container03 from '../components/container03'
+import containerBio from '../components/containerBio'
 import Container04 from '../components/container04'
 import Container05 from '../components/container05'
 import ContainerInfo from '../components/containerInfo'
@@ -33,7 +33,7 @@ class Main extends React.Component {
         <Container01 />
         
         <Container02 />
-        <Container03 />
+        <containerBio />
         {/*<Container04 />*/}
         {/*<Container05 />*/}
       </section>

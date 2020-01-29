@@ -588,7 +588,7 @@ class TContentCards01 extends React.Component {
                         description=''description
                         tags={[
                             '',
-                            ''
+                            
                         ]}
                         onClick={ () => { this.setState({ modalIsOpen: true, id: 0})} }
                     />                
@@ -602,7 +602,7 @@ class TContentCards01 extends React.Component {
                         description=''description
                         tags={[
                             '',
-                            ''
+                            
                         ]}
                         onClick={ () => { this.setState({ modalIsOpen: true, id: 1})} }
                         
@@ -617,7 +617,7 @@ class TContentCards01 extends React.Component {
                         description=''description
                         tags={[
                             '',
-                            ''
+                            
                         ]}
                         onClick={ () => { this.setState({ modalIsOpen: true, id: 2})} }
                         
@@ -631,7 +631,7 @@ class TContentCards01 extends React.Component {
                         description=''description
                         tags={[
                             '',
-                            '',
+                            ,
                         ]}
                         onClick={ () => { this.setState({ modalIsOpen: true, id: 3})} }
                         
@@ -646,7 +646,7 @@ class TContentCards01 extends React.Component {
                         description=''description
                         tags={[
                             '',
-                            '',
+                            ,
                         ]}
                         onClick={ () => { this.setState({ modalIsOpen: true, id: 4})} }
                         

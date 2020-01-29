@@ -1,38 +1,49 @@
 import React from 'react'
-import container02Styles from '../css/container02.module.css'
-//import { TaggedContentCard } from 'react-ui-cards'
-import Albumcover from '../images/album-cover.jpg'
-//import TContentCards from './tcontentcardsrow1'
+import '../css/container02.module.css'
+import '../css/Rmusicjinkeindex.css'
+
+import ResponsivePlayer01 from './responsiveplayer01'
+import TContentCards01 from './tcontentcardsrow1'
+import TContentCards02 from './tcontentcardsrow2'
+import Mediaplayer01a from './mediaplayer/media01a'
+
+//import ReactWebMediaPlayer from 'react-web-media-player';
+import Chemtrails from '../images/song-art/Chemtrails.jpg'
+//import Chemtrailsmp3 from '../audio/1-Chemtrails.mp3'
+import Logowhite from '../images/logo-white.png'
+
+import Visualizer from './visualizer'
+import Spotify from 'react-spotify-player';
+//import SongLink from './mediaplayer/songlink'
 
 
-
+import { Container, Row, Col } from 'reactstrap';
 
 class Container02 extends React.Component {
     render() {
       return (
-        <div id="container02" data-scroll-id="two" data-scroll-behavior="center" className="container columns full screen">
-        <div className={container02Styles.inner}>
-          <div className={container02Styles.afterSpacer}>
-            <h2 id="text05" className={container02Styles.style1}></h2>
-           {/*} <hr id="divider02" />*/}
-            <p id="text06" className={container02Styles.style2}></p>
-            {/**<TContentCards />**/}
-            {/**<ul id="buttons04" className="style1 buttons">
-              <li>
-                <a href="#three" className="button n01">
-                  <svg>
-                    <use xlinkHref="#icon-a3b" />
-                  </svg>
-                  <span className="label">Next</span>
-                </a>
-              </li>
-            </ul>**/}
-          </div>
-          <span />
-        </div>
+        <div 
+      id="container02" className="full screen" data-scroll-id="one" data-scroll-behavior="center"  >
+        <Row>
+          <Col style={{textAlign: "center", marginTop: '1rem', marginBottom: '1rem'}}>
+            {/*<Spotify
+              uri="spotify:album:6NwNaCmHzQNvTSi0hRpALe"
+              / *size={{width: 650, height: 420}}* /
+              view="list"
+              theme="black"
+            className="SpotifyPlayer" />*/}
+          </Col>
+          <Col className="nomobile">
+            <TContentCards01/>
+          </Col>
+          <Col className="nomobile">
+            <TContentCards02/>
+          </Col>
+        </Row>
       </div>
       )
     }
 }
 
 export default Container02
+

@@ -161,11 +161,11 @@
 }
 .albumpromo {
     margin-left: 6em;
-    padding-right: 0;
+    margin-right: 6em;
     display: block;
     box-shadow: 3px 3px 10px black;
-    width: 500px;
-    height: 500px;
+    width: 800px;
+    height: 800px;
 }
 
 .albumlogo {
@@ -175,6 +175,18 @@
 @media (max-width: 1680px) {
     html {
         font-size: 13pt;
+    }
+    .albumpromo {
+        margin-left: 6em;
+        margin-right: 6em;
+        display: block;
+        box-shadow: 3px 3px 10px black;
+        width: 500px;
+        height: 500px;
+    }
+    
+    .albumlogo {
+        width: 800px;
     }
 }
 
@@ -186,21 +198,34 @@
     #containerHeader {
         background-attachment: scroll;
     }
+    .albumpromo {
+        margin-left: 6em;
+        margin-right: 6em;
+        display: block;
+        box-shadow: 3px 3px 10px black;
+        width: 500px;
+        height: 500px;
+    }
+    
+    .albumlogo {
+        width: 800px;
+    }
 }
 
 @media (max-width: 980px) {
     html {
         font-size: 11pt;
     }
-}
+
 .albumpromo {
     margin-top: 4em;
-    margin-left: 3em;
+    margin-left: 1em;
+    margin-right: 0;
     padding-right: 0;
     display: block;
     box-shadow: 3px 3px 10px black;
-    /*width: 350px;
-    height: 350px;*/
+    width: 350px;
+    height: 350px;
 }
 
 .albumlogo {
@@ -208,7 +233,7 @@
     padding-top: 8em;
     
 }
-
+}
 @media (max-width: 736px) {
         html {
             font-size: 11pt;
@@ -474,6 +499,7 @@
         }
         .albumpromo {
             margin-left: 6em;
+            margin-right: 0;
             padding-right: 0;
             display: block;
             box-shadow: 3px 3px 10px black;
@@ -728,4 +754,19 @@
             
         }
     }
-    
+    @media (max-width: 330px) {
+        /*.albumpromo {
+            margin-left: 4em;
+            margin-right: 2em;
+            padding-right: 0;
+            display: block;
+            box-shadow: 3px 3px 10px black;
+            width: 200px;
+            height: 200px;
+        }*/
+        
+        .albumlogo {
+            width: 325px;
+            justify-self: center;
+        }
+    }

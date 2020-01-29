@@ -8,7 +8,7 @@ import Containerheader from './components/containerHeader'
 import Container01 from './components/container01'
 //import Container01a from './components/container01a'
 import Container02 from './components/container02'
-import Container03 from './components/container03'
+import ContainerBio from './components/containerBio'
 import Container04 from './components/container04'
 import ContainerFooter from './components/containerFooter'
 
@@ -66,7 +66,7 @@ export default class App extends Component {
 
                       <Container02 />
 
-                      <Container03 />
+                      <ContainerBio />
                       <Container04 />
 
                     
