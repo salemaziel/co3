@@ -1,5 +1,5 @@
 import React from 'react'
-import container03Styles from '../css/container03.module.css'
+import containerBioStyles from '../css/containerBio.module.css'
 //import { TaggedContentCard } from 'react-ui-cards'
 import Albumcover from '../images/album-cover.jpg'
 //import TContentCards from './tcontentcardsrow1'
@@ -7,17 +7,17 @@ import ResponsivePlayer from './responsiveplayer01'
 
 
 
-class Container03 extends React.Component {
+class ContainerBio extends React.Component {
     render() {
       return (
-        <div id="container03" data-scroll-id="three" data-scroll-behavior="center" className="container columns full screen">
+        <div id="containerBio" data-scroll-id="three" data-scroll-behavior="center" className="container columns full screen">
         <div id="inner" >
           <span />
           <div className="afterSpacer" >
             <h2 id="text07" className="style1" /*style={{
               marginBottom: "1rem",
               color: "#7c795d",  fontSize: '45px', fontWeight: 'normal', lineHeight: '48px', margin: 0}}*/ >Artist Bio </h2>
-            <p id="text10" className="style2" /*className={container03Styles.style2}  align= "justify"
+            <p id="text10" className="style2" /*className={containerBioStyles.style2}  align= "justify"
             style={{color: 'white', fontSize: '18px', lineHeight: '32px', margin: "0 0 24px"}}*/
             >
             <br/>
@@ -38,4 +38,4 @@ class Container03 extends React.Component {
     }
 }
 
-export default Container03
+export default ContainerBio
