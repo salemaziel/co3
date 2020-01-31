@@ -165,9 +165,9 @@ class TContentCards01 extends React.Component {
                                 thumbnail: song[0].thumbnail,
                                 audio: song[0].audio
                             })} }
-                        >
-                            <img><FaPlay /></img>
-                        </TaggedContentCard>
+                        />
+                            
+                       
                     </Col>
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
