@@ -25,7 +25,7 @@ import Sorry from '../../images/song-art/closeyoureyestosee-SORRY.jpg'
 import Chains from '../../images/song-art/medicineman-CHAINS.jpg'
 //import Chainsmp3 from '../../audio/7-CHAINS.mp3'
 
-import Angel from '../../images/song-art/shaman-ANGEL.jpg'
+import Angel from '../../images/song-art/shaman-COLORS.jpg'
 //import Angelmp3 from '../../audio/8-ChaoticOrder.mp3'
 
 import Never from '../../images/song-art/The-Magician-NEVEREND.jpg'
@@ -109,7 +109,7 @@ const song = [
 	  title: 'Chaotic Order',
 	  singer: 'Chaotic Order',
 	  thumbnail:
-		'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593780/chaoticorder-feedthepeople/shaman-ANGEL_hypvjz.jpg',
+		'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593780/chaoticorder-feedthepeople/shaman-COLORS_hypvjz.jpg',
 	  audio:
 		  'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593759/chaoticorder-feedthepeople/8-ChaoticOrder_q0zas1.mp3'
 
@@ -220,9 +220,9 @@ class Mediaplayer01a extends React.Component {
 	            
             <ReactWebMediaPlayer
 	            title="Earth"
-	            thumbnail="https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593780/chaoticorder-feedthepeople/shaman-ANGEL_hypvjz.jpg"
+	            thumbnail="https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593780/chaoticorder-feedthepeople/shaman-COLORS_hypvjz.jpg"
 				audio="https://res.cloudinary.com/dexdumfqy/video/upload/v1579593759/chaoticorder-feedthepeople/8-ChaoticOrder_q0zas1.mp3"
-				vinyl={{ img: 'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593780/chaoticorder-feedthepeople/shaman-ANGEL_hypvjz.jpg', rpm: 20}}
+				vinyl={{ img: 'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593780/chaoticorder-feedthepeople/shaman-COLORS_hypvjz.jpg', rpm: 20}}
 				width={200}
 				height={200}
             />

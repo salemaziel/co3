@@ -11,6 +11,10 @@ import {
   FaTumblr,
   FaTwitter,
   FaYoutube,
+  FaPlay,
+  FaPlayCircle,
+  FaRegPlayCircle
+
 } from "react-icons/fa"
 
 let appleIcon = <FaApple focusable="false" aria-hidden="true" />
@@ -23,6 +27,9 @@ let tumblrIcon = <FaTumblr focusable="false" aria-hidden="true" />
 let twitterIcon = <FaTwitter focusable="false" aria-hidden="true" />
 let youtubeIcon = <FaYoutube focusable="false" aria-hidden="true" />
 let facebookIcon = <FaFacebookF focusable="false" aria-hidden="true" />
+let playIcon = <FaPlay focusable="false" aria-hidden="true" />
+let playcircleIcon = <FaPlayCircle focusable="false" aria-hidden="true" />
+let playregcircleIcon = <FaRegPlayCircle focusable="false" aria-hidden="true" />
 
 const Icon = props => {
   switch (props.name) {
@@ -46,6 +53,12 @@ const Icon = props => {
       return bandcampIcon
     case "tumblr":
       return tumblrIcon
+    case "playbutton":
+      return playIcon
+    case "playcircle":
+      return playcircleIcon
+    case "playregcircle":
+      return playregcircleIcon
     default:
       return globeIcon
   }

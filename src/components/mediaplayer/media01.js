@@ -24,7 +24,7 @@ import Sorry from '../../images/song-art/closeyoureyestosee-SORRY.jpg'
 import Chains from '../../images/song-art/medicineman-CHAINS.jpg'
 //import Chainsmp3 from '../../audio/7-CHAINS.mp3'
 
-import Angel from '../../images/song-art/shaman-ANGEL.jpg'
+import Angel from '../../images/song-art/shaman-COLORS.jpg'
 //import Angelmp3 from '../../audio/8-ChaoticOrder.mp3'
 
 import Never from '../../images/song-art/The-Magician-NEVEREND.jpg'
