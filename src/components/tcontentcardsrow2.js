@@ -8,6 +8,7 @@ import Earth from '../images/song-art/HighPriestess-EARTH.jpg'
 
 import {  Row, Col } from 'reactstrap';
 import Modal from 'react-awesome-modal';
+import { FaPlay } from 'react-icons/fa'
 
 import ReactWebMediaPlayer from 'react-web-media-player';
 
@@ -123,8 +124,11 @@ class TContentCards02 extends React.Component {
                                     audio={this.state.audio}
                                     vinyl={{
                                         img: this.state.thumbnail,
-                                        rpm: 20}}
-
+                                        rpm: 15}}
+                                    style={{
+                                        backgroundColor: "transparent",
+                                        background: "transparent",
+                                    }}
                                 />
 
                             </div>
@@ -141,8 +145,7 @@ class TContentCards02 extends React.Component {
                             title='Sorry'
                             description=''
                             tags={[
-                                '',
-
+                                <FaPlay focusable="false" aria-hidden="true" />
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,
@@ -152,6 +155,7 @@ class TContentCards02 extends React.Component {
                                 thumbnail: song[0].thumbnail,
                                 audio: song[0].audio
                             })} }
+
                         />
                     </Col>
                     <Col xs="2" lg="2" md="6">
@@ -162,8 +166,7 @@ class TContentCards02 extends React.Component {
                             title='Chains'
                             description=''
                             tags={[
-                                '',
-
+                                <FaPlay focusable="false" aria-hidden="true" />
                             ]}
                             onClick={ () => {
                                 this.setState({
@@ -184,7 +187,7 @@ class TContentCards02 extends React.Component {
                             title='Earth'
                             description=''
                             tags={[
-                                '',
+                                <FaPlay focusable="false" aria-hidden="true" />
 
                             ]}
                             onClick={ () => { this.setState({
@@ -206,7 +209,7 @@ class TContentCards02 extends React.Component {
                             title='Never'
                             description=''
                             tags={[
-                                '',
+                                <FaPlay focusable="false" aria-hidden="true" />
 
                             ]}
                             onClick={ () => { this.setState({
@@ -229,7 +232,7 @@ class TContentCards02 extends React.Component {
                             title='Colors'
                             description=''
                             tags={[
-                                '',
+                                <FaPlay focusable="false" aria-hidden="true" />
 
                             ]}
                             onClick={ () => { this.setState({
