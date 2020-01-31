@@ -135,6 +135,7 @@ class TContentCards01 extends React.Component {
                             backgroundPosition: 'center center',
                             } }>
                             {/*<Lyriccrawl>*/}
+
                             <div style={{ 
                                 position: 'absolute',
                                 left: '85%',
@@ -170,7 +171,7 @@ class TContentCards01 extends React.Component {
                             title='Chem Trails'
                             description=''
                             tags={[
-                                '',
+                                <FaPlay focusable="false" aria-hidden="true" />
 
                             ]}
                             onClick={ () => { this.setState({
@@ -193,7 +194,7 @@ class TContentCards01 extends React.Component {
                             title='Feed the people'
                             description=''
                             tags={[
-                                '',
+                                <FaPlay focusable="false" aria-hidden="true" />
 
                             ]}
                             onClick={ () => { this.setState({
@@ -215,7 +216,7 @@ class TContentCards01 extends React.Component {
                         title='Burn'
                         description=''
                         tags={[
-                            '',
+                            <FaPlay focusable="false" aria-hidden="true" />
 
                         ]}
                         onClick={ () => { this.setState({
@@ -236,8 +237,7 @@ class TContentCards01 extends React.Component {
                         title='Another'
                         description=''
                         tags={[
-                            '',
-                            ,
+                            <FaPlay focusable="false" aria-hidden="true" />
                         ]}
                         onClick={ () => { this.setState({
                             modalIsOpen: true,
@@ -258,8 +258,7 @@ class TContentCards01 extends React.Component {
                             title='Hate'
                             description=''
                             tags={[
-                                '',
-                                ,
+                                <FaPlay focusable="false" aria-hidden="true" />
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,

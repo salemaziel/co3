@@ -558,6 +558,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     height: auto;
 }
 
+
 @media (max-width: 1680px) {
     html {
         font-size: 13pt;
