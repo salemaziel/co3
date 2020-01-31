@@ -28,7 +28,7 @@ class Container04 extends React.Component {
                     <input type="text" name="fname" id="form02-fname" placeholder maxLength={128} required />
                   </div>
                   <div className={formStyles.field}>
-                    <label htmlFor="form02-email">Email</label>
+                    <label htmlFor="form02-email">Emails</label>
                     <input type="email" name="email" id="form02-email" placeholder maxLength={128} required />
                   </div>
                   <div className={formStyles.field}>
