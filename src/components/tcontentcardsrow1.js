@@ -15,7 +15,6 @@ import Modal from 'react-awesome-modal';
 
 import Crawl from 'react-star-wars-crawl'
 import 'react-star-wars-crawl/lib/index.css'
-import Lyrics from './lyrics'
 import '../css/tcontencardsrow1.css'
 
 const song = [
@@ -136,7 +135,7 @@ class TContentCards01 extends React.Component {
                             backgroundPosition: 'center center',
                             } }>
                             {/*<Lyriccrawl>*/}
-                            <Lyrics />
+                            
                             <div style={{ 
                                 position: 'absolute',
                                 left: '85%',
