@@ -171,6 +171,9 @@
 .albumlogo {
     width: 800px;
 }
+p.style4 {
+    color: #FCAC02 !important;
+} 
 
 @media (max-width: 1680px) {
     html {
@@ -325,6 +328,7 @@
             width: calc(100% + 0.021875rem);
             font-size: 2.25em;
             line-height: 2;
+            color: #FCAC02 !important;
         }    
         h1.style5, h2.style5, h3.style5, p.style5 {
             letter-spacing: 0.021875rem;
