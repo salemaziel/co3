@@ -8,6 +8,8 @@ import Hate from '../images/song-art/the-oracle-HATE.jpg'
 
 import ReactWebMediaPlayer from 'react-web-media-player';
 
+import { FaPlay } from 'react-icons/fa'
+
 import {  Row, Col } from 'reactstrap';
 import Modal from 'react-awesome-modal';
 
@@ -102,20 +104,27 @@ class TContentCards01 extends React.Component {
             ...other
         } = this.props;
         return (
-            <div>
+            <div style={{
+            }}>
                 <Modal
                     visible={this.state.modalIsOpen}
-                    width="600" height="400"
+                    width="1000" height="600"
                     effect="fadeInUp"
                     onClickAway={() => this.closeModal()}
-
                 >
                     <Row style={{ display: 'flex'}}>
-                        <div style={{ backgroundImage: `url(${this.state.id})` ,height: "400px", width: "600px",  backgroundSize: 'cover', backgroundPosition: 'center center'} }>
-                            <div style={{ position: 'absolute',
-                                left: '50%',
+                        <div style={{
+                            backgroundImage: `url(${this.state.id})` ,
+                            height: "600px", 
+                            width: "1000px",  
+                            backgroundSize: 'cover', 
+                            backgroundPosition: 'center center',
+                            } }>
+                            <div style={{ 
+                                position: 'absolute',
+                                left: '85%',
                                 marginLeft: '-110px',
-                            marginTop: '100px'}}>
+                                marginTop: '370px'}}>
                                 <ReactWebMediaPlayer
                                     width={200} height={200}
                                     title={this.state.title}
@@ -123,7 +132,11 @@ class TContentCards01 extends React.Component {
                                     audio={this.state.audio}
                                     vinyl={{
                                         img: this.state.thumbnail,
-                                        rpm: 20}}
+                                        rpm: 15}}
+                                    style={{
+                                            backgroundColor: "transparent",
+                                            background: "transparent",
+                                    }}
 
                                 />
                             </div>
@@ -152,7 +165,9 @@ class TContentCards01 extends React.Component {
                                 thumbnail: song[0].thumbnail,
                                 audio: song[0].audio
                             })} }
-                        />
+                        >
+                            <img><FaPlay /></img>
+                        </TaggedContentCard>
                     </Col>
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard

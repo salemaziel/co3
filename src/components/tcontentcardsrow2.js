@@ -2,7 +2,7 @@ import React from 'react'
 import { TaggedContentCard } from 'react-ui-cards'
 import Sorry from '../images/song-art/closeyoureyestosee-SORRY.jpg'
 import Chains from '../images/song-art/medicineman-CHAINS.jpg'
-import Angel from '../images/song-art/shaman-ANGEL.jpg'
+import Angel from '../images/song-art/shaman-COLORS.jpg'
 import Never from '../images/song-art/The-Magician-NEVEREND.jpg'
 import Earth from '../images/song-art/HighPriestess-EARTH.jpg'
 
@@ -36,7 +36,7 @@ const song=[
         title: 'Chaotic Order',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593780/chaoticorder-feedthepeople/shaman-ANGEL_hypvjz.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593780/chaoticorder-feedthepeople/shaman-COLORS_hypvjz.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593759/chaoticorder-feedthepeople/8-ChaoticOrder_q0zas1.mp3'
 
@@ -98,14 +98,24 @@ class TContentCards02 extends React.Component {
         return (
             <div>
                 <Modal
-                    visible={this.state.modalIsOpen} width="600" height="400" effect="fadeInUp" onClickAway={() => this.closeModal()}
+                    visible={this.state.modalIsOpen} 
+                    width="1000" 
+                    height="600" 
+                    effect="fadeInUp" 
+                    onClickAway={() => this.closeModal()}
                 >
                     <Row style={{ display: 'flex'}}>
-                        <div style={{ backgroundImage: `url(${this.state.id})` ,height: "400px", width: "600px",  backgroundSize: 'cover', backgroundPosition: 'center center'} }>
-                            <div style={{ position: 'absolute',
-                                left: '50%',
+                        <div style={{ 
+                            backgroundImage: `url(${this.state.id})` ,
+                            height: "600px", 
+                            width: "1000px",  
+                            backgroundSize: 'cover', 
+                            backgroundPosition: 'center center'} }>
+                            <div style={{ 
+                                position: 'absolute',
+                                left: '85%',
                                 marginLeft: '-110px',
-                                marginTop: '100px'}}>
+                                marginTop: '370px'}}>
                                 <ReactWebMediaPlayer
                                     width={200} height={200}
                                     title={this.state.title}
