@@ -135,7 +135,7 @@ class TContentCards01 extends React.Component {
                             backgroundPosition: 'center center',
                             } }>
                             {/*<Lyriccrawl>*/}
-                            
+
                             <div style={{ 
                                 position: 'absolute',
                                 left: '85%',
@@ -153,7 +153,6 @@ class TContentCards01 extends React.Component {
                                             backgroundColor: "transparent",
                                             background: "transparent",
                                     }}
-
                                 />
                             </div>
                             {/*</Lyriccrawl>*/}
