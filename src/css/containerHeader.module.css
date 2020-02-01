@@ -199,12 +199,12 @@
         background-attachment: scroll;
     }
     .albumpromo {
-        margin-left: 6em;
-        margin-right: 6em;
+        margin-left: 1em;
+        margin-right: 0;
         display: block;
         box-shadow: 3px 3px 10px black;
-        width: 500px;
-        height: 500px;
+        width: 450px;
+        height: 450px;
     }
     
     .albumlogo {
