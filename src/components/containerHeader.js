@@ -22,7 +22,7 @@ class Containerheader extends React.Component {
                  fontWeight: '500',
                  fontVariant: 'small-caps',
                  textAlign: 'center',
-                 color: '#FCAC02',
+                 color: '#FCAC02 !important',
                  margin: '1em 0 6em 0',
                }}
              > Feed The People - available now!</p>
