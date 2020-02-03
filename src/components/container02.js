@@ -16,11 +16,27 @@ import Visualizer from './visualizer'
 import Spotify from 'react-spotify-player';
 //import SongLink from './mediaplayer/songlink'
 
+import ReactCardCarousel from 'react-card-carousel';
 
+import TCardMobile from './tcardMobile'
 import { Container, Row, Col } from 'reactstrap';
 
+import { TaggedContentCard } from 'react-ui-cards'
+
+
 class Container02 extends React.Component {
+
+
+
+
     render() {
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        };
       return (
         <div 
       id="container02" className="full screen" data-scroll-id="one" data-scroll-behavior="center"  >
@@ -35,6 +51,9 @@ class Container02 extends React.Component {
           </Col>
           <Col className="nomobile">
             <TContentCards01/>
+          </Col>
+          <Col className="mobile-slider"  style={{display: 'none'}}>
+              <TCardMobile />
           </Col>
           <Col className="nomobile">
             <TContentCards02/>

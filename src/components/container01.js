@@ -16,19 +16,8 @@ class Container01 extends React.Component {
         <div className={container01Styles.inner}>
           <div className={container01Styles.afterSpacer}>
             <h2 id="text05" className={container01Styles.style1}></h2>
-           {/*} <hr id="divider02" />*/}
             <p id="text06" className={container01Styles.style2}></p>
-            {/**<TContentCards />**/}
-            {/**<ul id="buttons04" className="style1 buttons">
-              <li>
-                <a href="#three" className="button n01">
-                  <svg>
-                    <use xlinkHref="#icon-a3b" />
-                  </svg>
-                  <span className="label">Next</span>
-                </a>
-              </li>
-            </ul>**/}
+
           </div>
           <span />
         </div>
