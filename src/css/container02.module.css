@@ -637,6 +637,9 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     .nomobile {
         display: none !important;
     }
+    .mobile-slider{
+        display: flex !important;
+    }
     .SpotifyPlayer {
         width: 450px;
         height: 420px;

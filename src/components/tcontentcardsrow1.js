@@ -115,6 +115,9 @@ class TContentCards01 extends React.Component {
             tags,
             ...other
         } = this.props;
+        let cards;;
+        let { styelDisplay } = this.props;
+
         return (
             <div style={{
             }}>
@@ -183,8 +186,8 @@ class TContentCards01 extends React.Component {
                                 audio: song[0].audio
                             })} }
                         />
-                            
-                       
+
+
                     </Col>
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
