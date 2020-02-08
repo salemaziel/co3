@@ -58,7 +58,24 @@ class Container02 extends React.Component {
           <Col className="nomobile">
             <TContentCards02/>
           </Col>
+          <Row>
+            <Col style={{
+            textAlign: "center", 
+            marginTop: '1rem', 
+            marginBottom: '1rem'
+            }}>
+              <a href="/discography" style={{
+                            color: "white",
+                            fontSize: "2em",
+                            fontVariant: "small-caps",
+                            }}>View Artist Discography</a>
+            </Col>
+
         </Row>
+          
+        </Row>
+        
+        
       </div>
       )
     }

@@ -1,10 +1,10 @@
 import React from 'react'
 import { TaggedContentCard } from 'react-ui-cards'
-import Sorry from '../images/song-art/closeyoureyestosee-SORRY.jpg'
-import Chains from '../images/song-art/medicineman-CHAINS.jpg'
-import Angel from '../images/song-art/shaman-COLORS.jpg'
-import Never from '../images/song-art/The-Magician-NEVEREND.jpg'
-import Earth from '../images/song-art/HighPriestess-EARTH.jpg'
+import Pins from '../images/song-art/global-lighting-album/6-Pins-and-Needles.jpg'
+import Goodbye from '../images/song-art/global-lighting-album/7-Goodbye.jpg'
+import Fooling from '../images/song-art/global-lighting-album/8-Foolin-Myself.jpg'
+import Breathe from '../images/song-art/global-lighting-album/9-Breathe.jpg'
+import Still from '../images/song-art/global-lighting-album/10-I-Still-Love-you.jpg'
 
 import {  Row, Col } from 'reactstrap';
 import Modal from 'react-awesome-modal';
@@ -16,53 +16,53 @@ import ReactWebMediaPlayer from 'react-web-media-player';
 const song=[
 
     {
-        title: 'Chains',
+        title: 'Pins and Needles',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593769/chaoticorder-feedthepeople/medicineman-CHAINS_aee5zv.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118752/chaoticorder-globallightingproject/6-Pins-and-Needles_ry7kvk.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593763/chaoticorder-feedthepeople/7-CHAINS_yiqxlf.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118311/chaoticorder-globallightingproject/6-PINS_AND_NEEDLES_qzmgra.mp3'
 
     },
     {
-        title: 'Burn',
+        title: 'Goodbye',
         singer: 'Chaotic Order',
         thumbnail:
-            'C',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/7-Goodbye_emp2lc.jpg',
         audio:
-            'U'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118309/chaoticorder-globallightingproject/7-GOODBYE_ym9sl3.mp3'
 
     },
     {
-        title: 'Chaotic Order',
+        title: 'Fooling Myself',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593780/chaoticorder-feedthepeople/shaman-COLORS_hypvjz.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/8-Foolin-Myself_anc23n.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593759/chaoticorder-feedthepeople/8-ChaoticOrder_q0zas1.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118307/chaoticorder-globallightingproject/8-FOOLING_MYSELF_fhsolw.mp3'
 
     },
     {
-        title: 'Never End',
+        title: 'Breathe',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593773/chaoticorder-feedthepeople/The-Magician-NEVEREND_vimjgw.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/9-Breathe_ojuucg.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593764/chaoticorder-feedthepeople/9-NeverEnd_vlxoad.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118303/chaoticorder-globallightingproject/9-BREATHE_oodelz.mp3'
 
     },
     {
-        title: 'Colors',
+        title: 'I Still Love You',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593779/chaoticorder-feedthepeople/HighPriestess-EARTH_cr9rox.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/10-I-Still-Love-you_b8nar3.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593781/chaoticorder-feedthepeople/10-Colors_db6xqj.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118309/chaoticorder-globallightingproject/10-I_STILL_LOVE_YOU_hjwisv.mp3'
 
     }
 ]
 
-class TContentCards02 extends React.Component {
+class Tcontentdisc2row2 extends React.Component {
     constructor() {
         super();
 
@@ -141,15 +141,15 @@ class TContentCards02 extends React.Component {
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
                             href= '#'
-                            thumbnail={Sorry}
-                            title='Sorry'
+                            thumbnail={Pins}
+                            title='Pins and Needles'
                             description=''
                             tags={[
                                 <FaPlay focusable="false" aria-hidden="true" />
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,
-                                id: Sorry,
+                                id: Pins,
                                 title: song[0].title,
                                 singer: song[0].singer,
                                 thumbnail: song[0].thumbnail,
@@ -162,8 +162,8 @@ class TContentCards02 extends React.Component {
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
                             href= '#'
-                            thumbnail={Chains}
-                            title='Chains'
+                            thumbnail={Goodbye}
+                            title='Goodbye'
                             description=''
                             tags={[
                                 <FaPlay focusable="false" aria-hidden="true" />
@@ -171,7 +171,7 @@ class TContentCards02 extends React.Component {
                             onClick={ () => {
                                 this.setState({
                                     modalIsOpen: true,
-                                    id: Chains,
+                                    id: Goodbye,
                                     title: song[1].title,
                                     singer: song[1].singer,
                                     thumbnail: song[1].thumbnail,
@@ -183,8 +183,8 @@ class TContentCards02 extends React.Component {
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
                             href= '#'
-                            thumbnail={Earth}
-                            title='Earth'
+                            thumbnail={Fooling}
+                            title='Fooling Myself'
                             description=''
                             tags={[
                                 <FaPlay focusable="false" aria-hidden="true" />
@@ -192,7 +192,7 @@ class TContentCards02 extends React.Component {
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,
-                                id: Earth,
+                                id: Fooling,
                                 title: song[2].title,
                                 singer: song[2].singer,
                                 thumbnail: song[2].thumbnail,
@@ -205,8 +205,8 @@ class TContentCards02 extends React.Component {
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
                             href= '#'
-                            thumbnail={Never}
-                            title='Never'
+                            thumbnail={Breathe}
+                            title='Breathe'
                             description=''
                             tags={[
                                 <FaPlay focusable="false" aria-hidden="true" />
@@ -214,7 +214,7 @@ class TContentCards02 extends React.Component {
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,
-                                id: Never,
+                                id: Breathe,
                                 title: song[3].title,
                                 singer: song[3].singer,
                                 thumbnail: song[3].thumbnail,
@@ -228,8 +228,8 @@ class TContentCards02 extends React.Component {
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
                             href= '#'
-                            thumbnail={Angel}
-                            title='Colors'
+                            thumbnail={Still}
+                            title='I Still Love You'
                             description=''
                             tags={[
                                 <FaPlay focusable="false" aria-hidden="true" />
@@ -237,7 +237,7 @@ class TContentCards02 extends React.Component {
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,
-                                id: Angel,
+                                id: Still,
                                 title: song[4].title,
                                 singer: song[4].singer,
                                 thumbnail: song[4].thumbnail,
@@ -251,4 +251,4 @@ class TContentCards02 extends React.Component {
         );
     }
 }
-export default TContentCards02
+export default Tcontentdisc2row2

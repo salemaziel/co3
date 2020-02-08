@@ -188,7 +188,8 @@ footer div a svg.glow path, footer div a svg.glow circle {
   fill: rgba(0, 0, 0, 0);
 }
 footer div a svg path, footer div a svg circle {
-  fill: #0096a1;
+  /*fill: #0096a1;*/
+  fill: #ffffff;
   transition: 0.2s ease-in;
 }
 footer div a:hover {

@@ -2,7 +2,7 @@ import React from 'react'
 import { TaggedContentCard } from 'react-ui-cards'
 import Sorry from '../images/song-art/closeyoureyestosee-SORRY.jpg'
 import Chains from '../images/song-art/medicineman-CHAINS.jpg'
-import Angel from '../images/song-art/shaman-COLORS.jpg'
+import Colors from '../images/song-art/shaman-COLORS.jpg'
 import Never from '../images/song-art/The-Magician-NEVEREND.jpg'
 import Earth from '../images/song-art/HighPriestess-EARTH.jpg'
 
@@ -206,7 +206,7 @@ class TContentCards02 extends React.Component {
                             style={{width: '20px', minWidth: '200px'}}
                             href= '#'
                             thumbnail={Never}
-                            title='Never'
+                            title='Never End'
                             description=''
                             tags={[
                                 <FaPlay focusable="false" aria-hidden="true" />
@@ -228,7 +228,7 @@ class TContentCards02 extends React.Component {
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
                             href= '#'
-                            thumbnail={Angel}
+                            thumbnail={Colors}
                             title='Colors'
                             description=''
                             tags={[
@@ -237,7 +237,7 @@ class TContentCards02 extends React.Component {
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,
-                                id: Angel,
+                                id: Colors,
                                 title: song[4].title,
                                 singer: song[4].singer,
                                 thumbnail: song[4].thumbnail,

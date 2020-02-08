@@ -1,10 +1,10 @@
 import React from 'react'
 import { TaggedContentCard } from 'react-ui-cards'
-import Chemtrails from '../images/song-art/Chemtrails.jpg'
-import Burn from '../images/song-art/The-Tower-BURN.jpg'
-import Feedthepeople from '../images/song-art/album-cover-2500x1364-FEEDTHEPEOPLE.jpg'
-import Another from '../images/song-art/The-Wait-ANOTHERTHING.jpg'
-import Hate from '../images/song-art/the-oracle-HATE.jpg'
+import Where from '../images/song-art/global-lighting-album/1-where-were-you.jpg'
+import Wake from '../images/song-art/global-lighting-album/2-wake-up.jpg'
+import Tears from '../images/song-art/global-lighting-album/3-Tears.jpg'
+import Dirty from '../images/song-art/global-lighting-album/4-Dirty-Mine.jpg'
+import Primitive from '../images/song-art/global-lighting-album/5-Primitive-Man.jpg'
 
 import ReactWebMediaPlayer from 'react-web-media-player';
 
@@ -19,56 +19,47 @@ import '../css/tcontencardsrow1.css'
 
 const song = [
     {
-        title: "ChemTrails",
+        title: "Where Were You",
         singer: 'Chaotic Order',
-        thumbnail:"https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593761/chaoticorder-feedthepeople/Chemtrails_fw7xav.jpg",
-        audio: "https://res.cloudinary.com/dexdumfqy/video/upload/v1579593741/chaoticorder-feedthepeople/1-Chemtrails_vvfljp.mp3",
+        thumbnail:"https://res.cloudinary.com/dexdumfqy/image/upload/v1581118752/chaoticorder-globallightingproject/1-where-were-you_ufda2c.jpg",
+        audio: "https://res.cloudinary.com/dexdumfqy/video/upload/v1581118300/chaoticorder-globallightingproject/1-WHERE_WERE_YOU_wgoc56.mp3",
     },
     {
-        title: 'Feed The People',
+        title: 'Wake Up',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593761/chaoticorder-feedthepeople/album-cover-2500x1364-FEEDTHEPEOPLE_lnpgkv.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118752/chaoticorder-globallightingproject/2-wake-up_h0tc9z.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593751/chaoticorder-feedthepeople/2-FeedThePeople_r5wbxp.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118296/chaoticorder-globallightingproject/2-WAKE_UP_nnmu69.mp3'
 
     },
     {
-        title: 'Burn',
+        title: 'Tears',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593779/chaoticorder-feedthepeople/The-Tower-BURN_e3erzi.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118752/chaoticorder-globallightingproject/3-Tears_fym2g1.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593780/chaoticorder-feedthepeople/3-BURNIT_wq3s6h.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118296/chaoticorder-globallightingproject/3-TEARS_lnpihr.mp3'
 
     },
     {
-        title: 'Another Thing',
+        title: 'Dirty Mine',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593736/chaoticorder-feedthepeople/The-Wait-ANOTHERTHING_uqplhn.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/4-Dirty-Mine_g35szv.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593742/chaoticorder-feedthepeople/4-AnotherThing_qrfsn3.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118307/chaoticorder-globallightingproject/4-DIRTY_MINE_rjsmiu.mp3'
 
     },
     {
-        title: 'Hate',
+        title: 'Primitive Man',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593775/chaoticorder-feedthepeople/the-oracle-HATE_jcwpqs.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/5-Primitive-Man_gfmwue.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593746/chaoticorder-feedthepeople/5-HATEREPULSION_s8owm1.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118299/chaoticorder-globallightingproject/5-PRIMITVE_MAN_lrsghw.mp3'
 
     },
-    {
-        title: 'Sorry',
-        singer: 'Chaotic Order',
-        thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593768/chaoticorder-feedthepeople/closeyoureyestosee-SORRY_yf4soq.jpg',
-        audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593760/chaoticorder-feedthepeople/6-Sorry_s9hoyu.mp3'
-
-    }
 ]
 
 //const Lyriccrawl = () => (
@@ -79,7 +70,7 @@ const song = [
 //      "
 //    />
 //)
-class TContentCards01 extends React.Component {
+class Tcontentdisc2row1 extends React.Component {
 
 
     constructor() {
@@ -167,8 +158,8 @@ class TContentCards01 extends React.Component {
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
                             href= '#'
-                            thumbnail={Chemtrails}
-                            title='Chem Trails'
+                            thumbnail={Where}
+                            title='Where Were You'
                             description=''
                             tags={[
                                 <FaPlay focusable="false" aria-hidden="true" />
@@ -176,7 +167,7 @@ class TContentCards01 extends React.Component {
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,
-                                id: Chemtrails,
+                                id: Where,
                                 title: song[0].title,
                                 singer: song[0].singer,
                                 thumbnail: song[0].thumbnail,
@@ -190,8 +181,8 @@ class TContentCards01 extends React.Component {
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
                             href= '#'
-                            thumbnail={Feedthepeople}
-                            title='Feed the people'
+                            thumbnail={Wake}
+                            title='Wake Up'
                             description=''
                             tags={[
                                 <FaPlay focusable="false" aria-hidden="true" />
@@ -199,7 +190,7 @@ class TContentCards01 extends React.Component {
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,
-                                id: Feedthepeople,
+                                id: Wake,
                                 title: song[1].title,
                                 singer: song[1].singer,
                                 thumbnail: song[1].thumbnail,
@@ -212,8 +203,8 @@ class TContentCards01 extends React.Component {
                     <TaggedContentCard
                         href= '#'
                         style={{width: '20px', minWidth: '200px'}}
-                        thumbnail={Burn}
-                        title='Burn'
+                        thumbnail={Tears}
+                        title='Tears'
                         description=''
                         tags={[
                             <FaPlay focusable="false" aria-hidden="true" />
@@ -221,7 +212,7 @@ class TContentCards01 extends React.Component {
                         ]}
                         onClick={ () => { this.setState({
                             modalIsOpen: true,
-                            id: Burn,
+                            id: Tears,
                             title: song[2].title,
                             singer: song[2].singer,
                             thumbnail: song[2].thumbnail,
@@ -233,15 +224,15 @@ class TContentCards01 extends React.Component {
                     <TaggedContentCard
                         href= '#'
                         style={{width: '20px', minWidth: '200px'}}
-                        thumbnail={Another}
-                        title='Another'
+                        thumbnail={Dirty}
+                        title='Dirty Mine'
                         description=''
                         tags={[
                             <FaPlay focusable="false" aria-hidden="true" />
                         ]}
                         onClick={ () => { this.setState({
                             modalIsOpen: true,
-                            id: Another,
+                            id: Dirty,
                             title: song[3].title,
                             singer: song[3].singer,
                             thumbnail: song[3].thumbnail,
@@ -254,15 +245,15 @@ class TContentCards01 extends React.Component {
                         <TaggedContentCard
                             href= '#'
                             style={{width: '20px', minWidth: '200px'}}
-                            thumbnail={Hate}
-                            title='Hate'
+                            thumbnail={Primitive}
+                            title='Primitive Man'
                             description=''
                             tags={[
                                 <FaPlay focusable="false" aria-hidden="true" />
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,
-                                id: Hate,
+                                id: Primitive,
                                 title: song[4].title,
                                 singer: song[4].singer,
                                 thumbnail: song[4].thumbnail,
@@ -276,4 +267,4 @@ class TContentCards01 extends React.Component {
         );
     }
 }
-export default TContentCards01
+export default Tcontentdisc2row1
