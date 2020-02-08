@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import '../css/containerDiscography.module.css'
 import '../css/Rmusicjinkeindex.css'
 
@@ -25,7 +25,9 @@ import { TaggedContentCard } from 'react-ui-cards'
 import Helmet from 'react-helmet'
 import Albumcover from '../images/song-art/global-lighting-album/album-cover-glp.jpg'
 
-class Discography extends React.Component {
+
+export default class Discography extends Component {
+//class Discography extends React.Component {
     render() {
         const settings = {
             dots: true,
@@ -80,5 +82,5 @@ class Discography extends React.Component {
     }
 }
 
-export default Discography
+//export default Discography
 
