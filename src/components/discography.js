@@ -35,19 +35,6 @@ class Discography extends React.Component {
             slidesToScroll: 1
         };
       return (
-        <div>
-      <Helmet htmlAttributes={{ lang: 'en' }}>
-        <title>Chaotic Order Music: Global Lighting Project Album 2016</title>
-        <meta name="description" content="Discography for Chaotic Order, metal band from San Diego, CA" />
-        <meta property="og:site_name" content="Chaotic Order Music" />
-        <meta property="og:title" content="Chaotic Order Music" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content={Albumcover} />
-        <meta property="og:description" content="Global Lighting Project Album 2016 by Metal Band Chaotic Order" />
-        <meta property="og:url" content="https://chaoticordermusic.com" />
-        <meta property="twitter:card" content="summary_large_image" />
-    </Helmet>
-
         <div 
       id="containerDisc" className="full screen" data-scroll-id="one" data-scroll-behavior="center"  >
 
@@ -88,7 +75,7 @@ class Discography extends React.Component {
         
         
       </div>
-      </div>
+      
       )
     }
 }
