@@ -1,0 +1,97 @@
+import React from 'react'
+import '../css/containerDiscography.module.css'
+import '../css/Rmusicjinkeindex.css'
+
+import ResponsivePlayer01 from './responsiveplayer01'
+import Tcontentdisc2row1 from './tcontentcardsdisc2row1'
+import Tcontentdisc2row2 from './tcontentcardsdisc2row2'
+import Mediaplayer01a from './mediaplayer/media01a'
+
+//import ReactWebMediaPlayer from 'react-web-media-player';
+import Chemtrails from '../images/song-art/Chemtrails.jpg'
+//import Chemtrailsmp3 from '../audio/1-Chemtrails.mp3'
+import Logowhite from '../images/logo-white.png'
+
+import Visualizer from './visualizer'
+import Spotify from 'react-spotify-player';
+//import SongLink from './mediaplayer/songlink'
+
+import ReactCardCarousel from 'react-card-carousel';
+
+import TCardMobile from './tcardMobile'
+import { Container, Row, Col } from 'reactstrap';
+
+import { TaggedContentCard } from 'react-ui-cards'
+import Helmet from 'react-helmet'
+import Albumcover from '../images/song-art/global-lighting-album/album-cover-glp.jpg'
+
+class Discography extends React.Component {
+    render() {
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        };
+      return (
+        <div>
+      <Helmet htmlAttributes={{ lang: 'en' }}>
+        <title>Chaotic Order Music: Global Lighting Project Album 2016</title>
+        <meta name="description" content="Discography for Chaotic Order, metal band from San Diego, CA" />
+        <meta property="og:site_name" content="Chaotic Order Music" />
+        <meta property="og:title" content="Chaotic Order Music" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={Albumcover} />
+        <meta property="og:description" content="Global Lighting Project Album 2016 by Metal Band Chaotic Order" />
+        <meta property="og:url" content="https://chaoticordermusic.com" />
+        <meta property="twitter:card" content="summary_large_image" />
+    </Helmet>
+
+        <div 
+      id="containerDisc" className="full screen" data-scroll-id="one" data-scroll-behavior="center"  >
+
+        <Row>
+        <Row>
+            <Col style={{
+            textAlign: "left", 
+            marginTop: '1rem', 
+            marginBottom: '1rem'
+            }}>
+              <a href="/" style={{
+                            color: "white",
+                            fontSize: "2em"
+                            }}>Back</a>
+            </Col>
+
+        </Row>
+          <Col style={{textAlign: "center", marginTop: '1rem', marginBottom: '1rem'}}>
+            {/*<Spotify
+              uri="spotify:album:6NwNaCmHzQNvTSi0hRpALe"
+              / *size={{width: 650, height: 420}}* /
+              view="list"
+              theme="black"
+            className="SpotifyPlayer" />*/}
+          </Col>
+          <Col className="nomobile">
+            <Tcontentdisc2row1 />
+          </Col>
+          <Col className="mobile-slider"  style={{display: 'none'}}>
+              <TCardMobile />
+          </Col>
+          <Col className="nomobile">
+            <Tcontentdisc2row2 />
+          </Col>
+          
+          
+        </Row>
+        
+        
+      </div>
+      </div>
+      )
+    }
+}
+
+export default Discography
+

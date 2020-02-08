@@ -171,7 +171,7 @@ class TContentCards01 extends React.Component {
                             style={{width: '20px', minWidth: '200px'}}
                             href= '#'
                             thumbnail={Chemtrails}
-                            title='Chem Trails'
+                            title='ChemTrails'
                             description=''
                             tags={[
                                 <FaPlay focusable="false" aria-hidden="true" />
@@ -194,7 +194,7 @@ class TContentCards01 extends React.Component {
                             style={{width: '20px', minWidth: '200px'}}
                             href= '#'
                             thumbnail={Feedthepeople}
-                            title='Feed the people'
+                            title='Feed The People'
                             description=''
                             tags={[
                                 <FaPlay focusable="false" aria-hidden="true" />
