@@ -23,6 +23,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 import { TaggedContentCard } from 'react-ui-cards'
 
+import { Link } from 'react-router-dom'
 
 class Container02 extends React.Component {
 
@@ -64,11 +65,16 @@ class Container02 extends React.Component {
             marginTop: '1rem', 
             marginBottom: '1rem'
             }}>
-              <a href="/discography" style={{
+              {/*<a href="/discography" style={{
                             color: "white",
                             fontSize: "2em",
                             fontVariant: "small-caps",
-                            }}>View Artist Discography</a>
+                            }}>View Artist Discography</a>*/}
+                <Link to="/discography" style={{
+                            color: "white",
+                            fontSize: "2em",
+                            fontVariant: "small-caps",
+                            }}>View Artist Discography </Link>
             </Col>
 
         </Row>

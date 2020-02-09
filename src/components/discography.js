@@ -25,6 +25,7 @@ import { TaggedContentCard } from 'react-ui-cards'
 import Helmet from 'react-helmet'
 import Albumcover from '../images/song-art/global-lighting-album/album-cover-glp.jpg'
 
+import { Link } from 'react-router-dom'
 
 export default class Discography extends Component {
 //class Discography extends React.Component {
@@ -47,10 +48,10 @@ export default class Discography extends Component {
             marginTop: '1rem', 
             marginBottom: '1rem'
             }}>
-              <a href="/" style={{
+              <Link to="/" style={{
                             color: "white",
                             fontSize: "2em"
-                            }}>Back</a>
+                            }}>Back</Link>
             </Col>
 
         </Row>
