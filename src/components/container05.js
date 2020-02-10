@@ -1,9 +1,6 @@
 import React from 'react'
 import container05Styles from '../css/container05.module.css'
-//import { TaggedContentCard } from 'react-ui-cards'
-import Albumcover from '../images/album-cover.jpg'
-//import TContentCards from './tcontentcardsrow1'
-import ResponsivePlayer from './responsiveplayer01'
+
 
 
 

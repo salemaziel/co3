@@ -1,11 +1,6 @@
 import React from 'react'
 import container04Styles from '../css/container04.module.css'
-//import { TaggedContentCard } from 'react-ui-cards'
-import Albumcover from '../images/album-cover.jpg'
-//import TContentCards from './tcontentcardsrow1'
-import ResponsivePlayer from './responsiveplayer01'
 import formStyles from '../css/forms.module.css'
-import { Container, Row, Col } from 'reactstrap';
 
 
 const encode = (data) => {

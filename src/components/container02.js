@@ -2,26 +2,17 @@ import React from 'react'
 import '../css/container02.module.css'
 import '../css/Rmusicjinkeindex.css'
 
-import ResponsivePlayer01 from './responsiveplayer01'
 import TContentCards01 from './tcontentcardsrow1'
 import TContentCards02 from './tcontentcardsrow2'
-import Mediaplayer01a from './mediaplayer/media01a'
 
-//import ReactWebMediaPlayer from 'react-web-media-player';
-import Chemtrails from '../images/song-art/Chemtrails.jpg'
-//import Chemtrailsmp3 from '../audio/1-Chemtrails.mp3'
-import Logowhite from '../images/logo-white.png'
 
-import Visualizer from './visualizer'
-import Spotify from 'react-spotify-player';
 //import SongLink from './mediaplayer/songlink'
 
-import ReactCardCarousel from 'react-card-carousel';
+//import ReactCardCarousel from 'react-card-carousel';
 
 import TCardMobile from './tcardMobile'
-import { Container, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 
-import { TaggedContentCard } from 'react-ui-cards'
 
 import { Link } from 'react-router-dom'
 
