@@ -6,7 +6,6 @@ import './css/Rmusic.css'
 import './App.css'
 import Containerheader from './components/containerHeader'
 import Container01 from './components/container01'
-//import Container01a from './components/container01a'
 import Container02 from './components/container02'
 import ContainerBio from './components/containerBio'
 import Container04 from './components/container04'
@@ -60,7 +59,6 @@ export default class Home extends Component {
                     <div className="inner">
                     <section id="home-section">
                       <Containerheader />
-                      {/**<Container01a />**/}
 
                       <Container01 />
 

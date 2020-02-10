@@ -14,7 +14,7 @@ import ReactWebMediaPlayer from 'react-web-media-player';
 
 import { FaPlay } from 'react-icons/fa'
 
-import {  Row, Col } from 'reactstrap';
+import {  Row } from 'reactstrap';
 import Modal from 'react-awesome-modal';
 
 import ReactCardCarousel from 'react-card-carousel';

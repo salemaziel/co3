@@ -2,28 +2,17 @@ import React, { Component } from 'react'
 import '../css/containerDiscography.module.css'
 import '../css/Rmusicjinkeindex.css'
 
-import ResponsivePlayer01 from './responsiveplayer01'
 import Tcontentdisc2row1 from './tcontentcardsdisc2row1'
 import Tcontentdisc2row2 from './tcontentcardsdisc2row2'
-import Mediaplayer01a from './mediaplayer/media01a'
 
-//import ReactWebMediaPlayer from 'react-web-media-player';
-import Chemtrails from '../images/song-art/Chemtrails.jpg'
-//import Chemtrailsmp3 from '../audio/1-Chemtrails.mp3'
-import Logowhite from '../images/logo-white.png'
 
-import Visualizer from './visualizer'
-import Spotify from 'react-spotify-player';
-//import SongLink from './mediaplayer/songlink'
 
-import ReactCardCarousel from 'react-card-carousel';
+//import ReactCardCarousel from 'react-card-carousel';
 
 import TCardMobile from './tcardMobile'
-import { Container, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 
-import { TaggedContentCard } from 'react-ui-cards'
 import Helmet from 'react-helmet'
-import Albumcover from '../images/song-art/global-lighting-album/album-cover-glp.jpg'
 
 import { Link } from 'react-router-dom'
 
@@ -56,12 +45,6 @@ export default class Discography extends Component {
 
         </Row>
           <Col style={{textAlign: "center", marginTop: '1rem', marginBottom: '1rem'}}>
-            {/*<Spotify
-              uri="spotify:album:6NwNaCmHzQNvTSi0hRpALe"
-              / *size={{width: 650, height: 420}}* /
-              view="list"
-              theme="black"
-            className="SpotifyPlayer" />*/}
           </Col>
           <Col className="nomobile">
             <Tcontentdisc2row1 />
