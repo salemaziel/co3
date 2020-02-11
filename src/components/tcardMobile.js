@@ -147,7 +147,6 @@ class TCardMobile extends React.Component {
 
     render() {
         let {
-            href,
             thumbnail,
             title,
             description,
@@ -185,7 +184,7 @@ class TCardMobile extends React.Component {
                         <div >
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
-                                href= '#'
+                                
                                 thumbnail={Chemtrails}
                                 title='Chem Trails'
                                 description=''
@@ -208,7 +207,7 @@ class TCardMobile extends React.Component {
                         <div >
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
-                                href= '#'
+                                
                                 thumbnail={Feedthepeople}
                                 title='Feedthepeople'
                                 description=''
@@ -230,7 +229,7 @@ class TCardMobile extends React.Component {
                         <div >
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
-                                href= '#'
+                                
                                 thumbnail={Burn}
                                 title='Burn'
                                 description=''
@@ -252,7 +251,7 @@ class TCardMobile extends React.Component {
                         <div >
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
-                                href= '#'
+                                
                                 thumbnail={Another}
                                 title='Another'
                                 description=''
@@ -274,7 +273,7 @@ class TCardMobile extends React.Component {
                         <div >
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
-                                href= '#'
+                                
                                 thumbnail={Hate}
                                 title='Hate'
                                 description=''
@@ -296,7 +295,7 @@ class TCardMobile extends React.Component {
                         <div >
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
-                                href= '#'
+                                
                                 thumbnail={Sorry}
                                 title='Sorry'
                                 description=''
@@ -318,7 +317,7 @@ class TCardMobile extends React.Component {
                         <div >
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
-                                href= '#'
+                                
                                 thumbnail={Chains}
                                 title='Chains'
                                 description=''
@@ -340,7 +339,7 @@ class TCardMobile extends React.Component {
                         <div >
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
-                                href= '#'
+                                
                                 thumbnail={Angel}
                                 title='Angel'
                                 description=''
@@ -362,7 +361,7 @@ class TCardMobile extends React.Component {
                         <div >
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
-                                href= '#'
+                                
                                 thumbnail={Never}
                                 title='Never'
                                 description=''
@@ -384,7 +383,7 @@ class TCardMobile extends React.Component {
                         <div >
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
-                                href= '#'
+                                
                                 thumbnail={Earth}
                                 title='Earth'
                                 description=''
