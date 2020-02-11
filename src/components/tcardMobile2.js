@@ -12,6 +12,19 @@ import Never from '../images/song-art/The-Magician-NEVEREND.jpg'
 import Earth from '../images/song-art/HighPriestess-EARTH.jpg'
 import ReactWebMediaPlayer from 'react-web-media-player';
 
+import Where from '../images/song-art/global-lighting-album/1-where-were-you.jpg'
+import Wake from '../images/song-art/global-lighting-album/2-wake-up.jpg'
+import Tears from '../images/song-art/global-lighting-album/3-Tears.jpg'
+import Dirty from '../images/song-art/global-lighting-album/4-Dirty-Mine.jpg'
+import Primitive from '../images/song-art/global-lighting-album/5-Primitive-Man.jpg'
+import Pins from '../images/song-art/global-lighting-album/6-Pins-and-Needles.jpg'
+import Goodbye from '../images/song-art/global-lighting-album/7-Goodbye.jpg'
+import Fooling from '../images/song-art/global-lighting-album/8-Foolin-Myself.jpg'
+import Breathe from '../images/song-art/global-lighting-album/9-Breathe.jpg'
+import Still from '../images/song-art/global-lighting-album/10-I-Still-Love-you.jpg'
+
+
+
 import { FaPlay } from 'react-icons/fa'
 
 import {  Row } from 'reactstrap';
@@ -22,88 +35,88 @@ import ReactCardCarousel from 'react-card-carousel';
 
 const song = [
     {
-        title: "ChemTrails",
+        title: "Where Were You",
         singer: 'Chaotic Order',
-        thumbnail:"https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/Chemtrails_uvyaam.jpg",
+        thumbnail:"https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593761/chaoticorder-feedthepeople/Chemtrails_fw7xav.jpg",
         audio: "https://res.cloudinary.com/dexdumfqy/video/upload/v1579593741/chaoticorder-feedthepeople/1-Chemtrails_vvfljp.mp3",
     },
     {
-        title: 'Feed The People',
+        title: 'Wake Up',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/album-cover-2500x1364-FEEDTHEPEOPLE_p3piu5.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593761/chaoticorder-feedthepeople/album-cover-2500x1364-FEEDTHEPEOPLE_lnpgkv.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593751/chaoticorder-feedthepeople/2-FeedThePeople_r5wbxp.mp3'
 
     },
     {
-        title: 'Burn',
+        title: 'Tears',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/The-Tower-BURN_v3zngp.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593779/chaoticorder-feedthepeople/The-Tower-BURN_e3erzi.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593780/chaoticorder-feedthepeople/3-BURNIT_wq3s6h.mp3'
 
     },
     {
-        title: 'Another Thing',
+        title: 'Dirty Mine',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/The-Wait-ANOTHERTHING_wgkuet.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593736/chaoticorder-feedthepeople/The-Wait-ANOTHERTHING_uqplhn.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593742/chaoticorder-feedthepeople/4-AnotherThing_qrfsn3.mp3'
 
     },
     {
-        title: 'Hate',
+        title: 'Primitive Man',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/the-oracle-HATE_fn2hvj.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593775/chaoticorder-feedthepeople/the-oracle-HATE_jcwpqs.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593746/chaoticorder-feedthepeople/5-HATEREPULSION_s8owm1.mp3'
 
     },
     {
-        title: 'Sorry',
+        title: 'Pins and Needles',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/closeyoureyestosee-SORRY_ev76he.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593768/chaoticorder-feedthepeople/closeyoureyestosee-SORRY_yf4soq.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593760/chaoticorder-feedthepeople/6-Sorry_s9hoyu.mp3'
 
     },
     {
-        title: 'Chains',
+        title: 'Goodbye',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/medicineman-CHAINS_p19xji.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593769/chaoticorder-feedthepeople/medicineman-CHAINS_aee5zv.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593763/chaoticorder-feedthepeople/7-CHAINS_yiqxlf.mp3'
 
     },
     {
-        title: 'Earth',
+        title: 'Fooling Myself',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/HighPriestess-EARTH_bcy5r9.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593780/chaoticorder-feedthepeople/shaman-COLORS_hypvjz.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593759/chaoticorder-feedthepeople/8-ChaoticOrder_q0zas1.mp3'
 
     },
     {
-        title: 'Never End',
+        title: 'Breathe',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/The-Magician-NEVEREND_mpmzxc.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593773/chaoticorder-feedthepeople/The-Magician-NEVEREND_vimjgw.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593764/chaoticorder-feedthepeople/9-NeverEnd_vlxoad.mp3'
 
     },
     {
-        title: 'Colors',
+        title: 'I Still Love YOu',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/shaman-COLORS_a9vvpy.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593779/chaoticorder-feedthepeople/HighPriestess-EARTH_cr9rox.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593781/chaoticorder-feedthepeople/10-Colors_db6xqj.mp3'
 
@@ -152,7 +165,7 @@ class TCardMobile extends React.Component {
             }}>
                 <Modal
                     visible={this.state.modalIsOpen}
-                    width="200" height="200"
+                    width="275" height="275"
                     effect="fadeInUp"
                     onClickAway={() => this.closeModal()}
                 >
@@ -176,14 +189,14 @@ class TCardMobile extends React.Component {
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
                                 
-                                thumbnail={Chemtrails}
-                                title='Chem Trails'
+                                thumbnail={Where}
+                                title='Where Were You'
                                 description=''
                                 tags={[
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
+                                            id: Where,
                                             title: song[0].title,
                                             singer: song[0].singer,
                                             thumbnail: song[0].thumbnail,
@@ -199,14 +212,14 @@ class TCardMobile extends React.Component {
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
                                 
-                                thumbnail={Feedthepeople}
-                                title='Feedthepeople'
+                                thumbnail={Wake}
+                                title='Wake Up'
                                 description=''
                                 tags={[
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
+                                            id: Wake,
                                             title: song[1].title,
                                             singer: song[1].singer,
                                             thumbnail: song[1].thumbnail,
@@ -221,14 +234,14 @@ class TCardMobile extends React.Component {
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
                                 
-                                thumbnail={Burn}
-                                title='Burn'
+                                thumbnail={Tears}
+                                title='Tears'
                                 description=''
                                 tags={[
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
+                                            id: Tears,
                                             title: song[2].title,
                                             singer: song[2].singer,
                                             thumbnail: song[2].thumbnail,
@@ -243,14 +256,14 @@ class TCardMobile extends React.Component {
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
                                 
-                                thumbnail={Another}
-                                title='Another'
+                                thumbnail={Dirty}
+                                title='Dirty Mine'
                                 description=''
                                 tags={[
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
+                                            id: Dirty,
                                             title: song[3].title,
                                             singer: song[3].singer,
                                             thumbnail: song[3].thumbnail,
@@ -265,14 +278,14 @@ class TCardMobile extends React.Component {
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
                                 
-                                thumbnail={Hate}
-                                title='Hate'
+                                thumbnail={Primitive}
+                                title='Primitive Man'
                                 description=''
                                 tags={[
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
+                                            id: Primitive,
                                             title: song[4].title,
                                             singer: song[4].singer,
                                             thumbnail: song[4].thumbnail,
@@ -287,14 +300,14 @@ class TCardMobile extends React.Component {
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
                                 
-                                thumbnail={Sorry}
-                                title='Sorry'
+                                thumbnail={Pins}
+                                title='Pins and Needles'
                                 description=''
                                 tags={[
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
+                                            id: Pins,
                                             title: song[5].title,
                                             singer: song[5].singer,
                                             thumbnail: song[5].thumbnail,
@@ -309,14 +322,14 @@ class TCardMobile extends React.Component {
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
                                 
-                                thumbnail={Chains}
-                                title='Chains'
+                                thumbnail={Goodbye}
+                                title='Goodbye'
                                 description=''
                                 tags={[
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
+                                            id: Goodbye,
                                             title: song[6].title,
                                             singer: song[6].singer,
                                             thumbnail: song[6].thumbnail,
@@ -331,14 +344,14 @@ class TCardMobile extends React.Component {
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
                                 
-                                thumbnail={Angel}
-                                title='Angel'
+                                thumbnail={Fooling}
+                                title='Fooling Myself'
                                 description=''
                                 tags={[
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
+                                            id: Fooling,
                                             title: song[7].title,
                                             singer: song[7].singer,
                                             thumbnail: song[7].thumbnail,
@@ -353,14 +366,14 @@ class TCardMobile extends React.Component {
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
                                 
-                                thumbnail={Never}
-                                title='Never'
+                                thumbnail={Breathe}
+                                title='Breathe'
                                 description=''
                                 tags={[
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
+                                            id: Breathe,
                                             title: song[8].title,
                                             singer: song[8].singer,
                                             thumbnail: song[8].thumbnail,
@@ -375,14 +388,14 @@ class TCardMobile extends React.Component {
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
                                 
-                                thumbnail={Earth}
-                                title='Earth'
+                                thumbnail={Still}
+                                title='I Still Love YOu'
                                 description=''
                                 tags={[
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
+                                            id: Still,
                                             title: song[9].title,
                                             singer: song[9].singer,
                                             thumbnail: song[9].thumbnail,

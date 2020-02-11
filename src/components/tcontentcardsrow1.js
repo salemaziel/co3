@@ -60,15 +60,7 @@ const song = [
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593746/chaoticorder-feedthepeople/5-HATEREPULSION_s8owm1.mp3'
 
     },
-    {
-        title: 'Sorry',
-        singer: 'Chaotic Order',
-        thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593768/chaoticorder-feedthepeople/closeyoureyestosee-SORRY_yf4soq.jpg',
-        audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593760/chaoticorder-feedthepeople/6-Sorry_s9hoyu.mp3'
-
-    }
+    
 ]
 
 /*const Lyriccrawl = () => (
@@ -108,7 +100,6 @@ class TContentCards01 extends React.Component {
 
     render() {
         let {
-            href,
             thumbnail,
             title,
             description,
@@ -169,7 +160,6 @@ class TContentCards01 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
-                            href= '#'
                             thumbnail={Chemtrails}
                             title='ChemTrails'
                             description=''
@@ -192,7 +182,6 @@ class TContentCards01 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
-                            href= '#'
                             thumbnail={Feedthepeople}
                             title='Feed The People'
                             description=''
@@ -213,7 +202,6 @@ class TContentCards01 extends React.Component {
                         />
                     </Col > <Col xs="2" lg="2" md="6">
                     <TaggedContentCard
-                        href= '#'
                         style={{width: '20px', minWidth: '200px'}}
                         thumbnail={Burn}
                         title='Burn'
@@ -234,7 +222,6 @@ class TContentCards01 extends React.Component {
                     />
                 </Col> <Col xs="2" lg="2" md="6">
                     <TaggedContentCard
-                        href= '#'
                         style={{width: '20px', minWidth: '200px'}}
                         thumbnail={Another}
                         title='Another'
@@ -255,7 +242,6 @@ class TContentCards01 extends React.Component {
                 </Col>
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
-                            href= '#'
                             style={{width: '20px', minWidth: '200px'}}
                             thumbnail={Hate}
                             title='Hate'

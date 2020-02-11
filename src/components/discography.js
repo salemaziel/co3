@@ -9,7 +9,7 @@ import Tcontentdisc2row2 from './tcontentcardsdisc2row2'
 
 //import ReactCardCarousel from 'react-card-carousel';
 
-import TCardMobile from './tcardMobile'
+import TCardMobile2 from './tcardMobile2'
 import { Row, Col } from 'reactstrap';
 
 import Helmet from 'react-helmet'
@@ -50,7 +50,7 @@ export default class Discography extends Component {
             <Tcontentdisc2row1 />
           </Col>
           <Col className="mobile-slider"  style={{display: 'none'}}>
-              <TCardMobile />
+              <TCardMobile2 />
           </Col>
           <Col className="nomobile">
             <Tcontentdisc2row2 />

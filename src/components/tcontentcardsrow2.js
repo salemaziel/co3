@@ -14,7 +14,15 @@ import ReactWebMediaPlayer from 'react-web-media-player';
 
 
 const song=[
+    {
+        title: 'Sorry',
+        singer: 'Chaotic Order',
+        thumbnail:
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593768/chaoticorder-feedthepeople/closeyoureyestosee-SORRY_yf4soq.jpg',
+        audio:
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593760/chaoticorder-feedthepeople/6-Sorry_s9hoyu.mp3'
 
+    },
     {
         title: 'Chains',
         singer: 'Chaotic Order',
@@ -22,15 +30,6 @@ const song=[
             'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593769/chaoticorder-feedthepeople/medicineman-CHAINS_aee5zv.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593763/chaoticorder-feedthepeople/7-CHAINS_yiqxlf.mp3'
-
-    },
-    {
-        title: 'Burn',
-        singer: 'Chaotic Order',
-        thumbnail:
-            'C',
-        audio:
-            'U'
 
     },
     {
@@ -89,7 +88,6 @@ class TContentCards02 extends React.Component {
 
     render() {
         let {
-            href,
             thumbnail,
             title,
             description,
@@ -140,7 +138,6 @@ class TContentCards02 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
-                            href= '#'
                             thumbnail={Sorry}
                             title='Sorry'
                             description=''
@@ -161,7 +158,6 @@ class TContentCards02 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
-                            href= '#'
                             thumbnail={Chains}
                             title='Chains'
                             description=''
@@ -182,7 +178,6 @@ class TContentCards02 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
-                            href= '#'
                             thumbnail={Earth}
                             title='Earth'
                             description=''
@@ -204,7 +199,6 @@ class TContentCards02 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
-                            href= '#'
                             thumbnail={Never}
                             title='Never End'
                             description=''
@@ -227,7 +221,6 @@ class TContentCards02 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
-                            href= '#'
                             thumbnail={Colors}
                             title='Colors'
                             description=''
