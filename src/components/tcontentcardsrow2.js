@@ -33,10 +33,10 @@ const song=[
 
     },
     {
-        title: 'Chaotic Order',
+        title: 'Earth',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593780/chaoticorder-feedthepeople/shaman-COLORS_hypvjz.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/HighPriestess-EARTH_bcy5r9.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593759/chaoticorder-feedthepeople/8-ChaoticOrder_q0zas1.mp3'
 
@@ -54,7 +54,7 @@ const song=[
         title: 'Colors',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1579593779/chaoticorder-feedthepeople/HighPriestess-EARTH_cr9rox.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/shaman-COLORS_a9vvpy.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593781/chaoticorder-feedthepeople/10-Colors_db6xqj.mp3'
 
