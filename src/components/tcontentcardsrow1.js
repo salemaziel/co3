@@ -123,8 +123,8 @@ class TContentCards01 extends React.Component {
                     
                         <div style={{
                             backgroundImage: `url(${this.state.id})` ,
-                            height: "600px", 
-                            width: "1000px",  
+                            height: "600px",
+                            width: "1000px",
                             backgroundSize: 'cover', 
                             backgroundPosition: 'center center',
                             } }>

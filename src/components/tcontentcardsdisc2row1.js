@@ -110,7 +110,7 @@ class Tcontentdisc2row1 extends React.Component {
             }}>
                 <Modal
                     visible={this.state.modalIsOpen}
-                    width="1000" height="600"
+                    width="700" height="700"
                     effect="fadeInUp"
                     onClickAway={() => this.closeModal()}
                 >
@@ -119,8 +119,8 @@ class Tcontentdisc2row1 extends React.Component {
                     
                         <div style={{
                             backgroundImage: `url(${this.state.id})` ,
-                            height: "600px", 
-                            width: "1000px",  
+                            height: "700px", 
+                            width: "700px",  
                             backgroundSize: 'cover', 
                             backgroundPosition: 'center center',
                             } }>
@@ -130,7 +130,7 @@ class Tcontentdisc2row1 extends React.Component {
                                 position: 'absolute',
                                 left: '85%',
                                 marginLeft: '-110px',
-                                marginTop: '370px'}}>
+                                marginTop: '440px'}}>
                                 <ReactWebMediaPlayer
                                     width={200} height={200}
                                     title={this.state.title}

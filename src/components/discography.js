@@ -33,7 +33,7 @@ export default class Discography extends Component {
       id="containerDisc" className="container full screen" data-scroll-id="one" data-scroll-behavior="center"  >
         {/*<div className="inner">*/}
         <Row>
-        <Row>
+        <Row className="back">
             <Col style={{
             textAlign: "left", 
             marginTop: '1rem', 
@@ -41,7 +41,7 @@ export default class Discography extends Component {
             }}>
               <Link to="/" style={{
                             color: "white",
-                            fontSize: "2em"
+                            fontSize: "3em"
                             }}><FaArrowAltCircleLeft />
                             </Link>
             </Col>

@@ -560,7 +560,9 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     width: 600px;
     height: auto;
 }
-
+.back {
+    position: relative;
+}
 
 @media (max-width: 1680px) {
     html {
@@ -598,11 +600,16 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     }
     #containerDisc {
         background-attachment: scroll;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        max-height: 100vh;
     }
     .SpotifyPlayer {
         width: 600px;
         height: 420px;
     }
+    
 }
 
 @media (max-width: 980px) {
@@ -612,6 +619,15 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     .SpotifyPlayer {
         width: 550px;
         height: 420px;
+    }
+    #containerDisc {
+        height: 100vh;
+    }
+    .nomobile {
+        display: none !important;
+    }
+    .mobile-slider{
+        display: flex !important;
     }
 }
 
@@ -671,6 +687,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         width: 450px;
         height: 420px;
     }
+    
 }    
 
     @media (max-width: 480px) {
@@ -702,6 +719,12 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         .SpotifyPlayer {
             width: 350px;
             height: 420px;
+        }
+        .back {
+            position: relative;
+            top: -300px;
+            left: -150px;
+            
         }
     }
     @media (max-width: 360px) {

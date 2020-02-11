@@ -173,7 +173,7 @@ class TCardMobile extends React.Component {
                             <div style={{
                                 position: 'absolute'}}>
                                 <ReactWebMediaPlayer
-                                    width={200} height={200}
+                                    width={275} height={275}
                                     title={this.state.title}
                                     thumbnail={this.state.thumbnail}
                                     audio={this.state.audio}
