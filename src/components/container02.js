@@ -50,7 +50,10 @@ class Container02 extends React.Component {
           <Col className="nomobile">
             <TContentCards02/>
           </Col>
-          <Row>
+          
+          
+        </Row>
+        <Row>
             <Col style={{
             textAlign: "center", 
             marginTop: '1rem', 
@@ -61,17 +64,10 @@ class Container02 extends React.Component {
                             fontSize: "2em",
                             fontVariant: "small-caps",
                             }}>View Artist Discography</a>*/}
-                <Link to="/discography" style={{
-                            color: "white",
-                            fontSize: "2em",
-                            fontVariant: "small-caps",
-                            }}>View Artist Discography </Link>
+                
             </Col>
 
         </Row>
-          
-        </Row>
-        
         
       </div>
       )
