@@ -99,7 +99,6 @@ class Tcontentdisc2row1 extends React.Component {
 
     render() {
         let {
-            href,
             thumbnail,
             title,
             description,
@@ -157,7 +156,6 @@ class Tcontentdisc2row1 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
-                            href= '#'
                             thumbnail={Where}
                             title='Where Were You'
                             description=''
@@ -180,7 +178,6 @@ class Tcontentdisc2row1 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
-                            href= '#'
                             thumbnail={Wake}
                             title='Wake Up'
                             description=''
@@ -201,7 +198,6 @@ class Tcontentdisc2row1 extends React.Component {
                         />
                     </Col > <Col xs="2" lg="2" md="6">
                     <TaggedContentCard
-                        href= '#'
                         style={{width: '20px', minWidth: '200px'}}
                         thumbnail={Tears}
                         title='Tears'
@@ -222,7 +218,6 @@ class Tcontentdisc2row1 extends React.Component {
                     />
                 </Col> <Col xs="2" lg="2" md="6">
                     <TaggedContentCard
-                        href= '#'
                         style={{width: '20px', minWidth: '200px'}}
                         thumbnail={Dirty}
                         title='Dirty Mine'
@@ -243,7 +238,6 @@ class Tcontentdisc2row1 extends React.Component {
                 </Col>
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
-                            href= '#'
                             style={{width: '20px', minWidth: '200px'}}
                             thumbnail={Primitive}
                             title='Primitive Man'

@@ -5,6 +5,8 @@ import '../css/Rmusicjinkeindex.css'
 import Tcontentdisc2row1 from './tcontentcardsdisc2row1'
 import Tcontentdisc2row2 from './tcontentcardsdisc2row2'
 
+import { FaArrowAltCircleLeft } from 'react-icons/fa'
+
 
 
 //import ReactCardCarousel from 'react-card-carousel';
@@ -28,8 +30,8 @@ export default class Discography extends Component {
         };
       return (
         <div 
-      id="containerDisc" className="full screen" data-scroll-id="one" data-scroll-behavior="center"  >
-
+      id="containerDisc" className="container full screen" data-scroll-id="one" data-scroll-behavior="center"  >
+        {/*<div className="inner">*/}
         <Row>
         <Row>
             <Col style={{
@@ -40,7 +42,8 @@ export default class Discography extends Component {
               <Link to="/" style={{
                             color: "white",
                             fontSize: "2em"
-                            }}>Back</Link>
+                            }}><FaArrowAltCircleLeft />
+                            </Link>
             </Col>
 
         </Row>
@@ -59,7 +62,7 @@ export default class Discography extends Component {
           
         </Row>
         
-        
+       {/* </div>*/}
       </div>
       
       )
