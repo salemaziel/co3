@@ -184,7 +184,7 @@ class TCardMobile extends React.Component {
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
+                                            id: Chemtrails,
                                             title: song[0].title,
                                             singer: song[0].singer,
                                             thumbnail: song[0].thumbnail,
@@ -207,7 +207,7 @@ class TCardMobile extends React.Component {
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
+                                            id: Feedthepeople,
                                             title: song[1].title,
                                             singer: song[1].singer,
                                             thumbnail: song[1].thumbnail,
@@ -229,7 +229,7 @@ class TCardMobile extends React.Component {
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
+                                            id: Burn,
                                             title: song[2].title,
                                             singer: song[2].singer,
                                             thumbnail: song[2].thumbnail,
@@ -245,7 +245,7 @@ class TCardMobile extends React.Component {
                                 style={{width: '20px', minWidth: '200px'}}
                                 
                                 thumbnail={Another}
-                                title='Another'
+                                title='Another Thing'
                                 description=''
                                 tags={[
                                     <div
