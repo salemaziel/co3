@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../css/containerDiscography.module.css'
-import '../css/Rmusicjinkeindex.css'
+//import '../css/Rmusicjinkeindex.css'
 
 import Tcontentdisc2row1 from './tcontentcardsdisc2row1'
 import Tcontentdisc2row2 from './tcontentcardsdisc2row2'

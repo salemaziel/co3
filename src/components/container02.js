@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/container02.module.css'
-import '../css/Rmusicjinkeindex.css'
+//import '../css/Rmusicjinkeindex.css'
 
 import TContentCards01 from './tcontentcardsrow1'
 import TContentCards02 from './tcontentcardsrow2'

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
 import './css/main2.css'
-import './css/Rmusicjinkeindex.css'
-import './css/Rmusic.css'
+//import './css/Rmusicjinkeindex.css'
+//import './css/Rmusic.css'
 import './App.css'
 import Containerheader from './components/containerHeader'
 import Container01 from './components/container01'

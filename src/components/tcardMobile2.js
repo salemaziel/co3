@@ -1,15 +1,5 @@
 import React from 'react'
 import { TaggedContentCard } from 'react-ui-cards'
-import Chemtrails from '../images/song-art/Chemtrails.jpg'
-import Burn from '../images/song-art/The-Tower-BURN.jpg'
-import Feedthepeople from '../images/song-art/album-cover-2500x1364-FEEDTHEPEOPLE.jpg'
-import Another from '../images/song-art/The-Wait-ANOTHERTHING.jpg'
-import Hate from '../images/song-art/the-oracle-HATE.jpg'
-import Sorry from '../images/song-art/closeyoureyestosee-SORRY.jpg'
-import Chains from '../images/song-art/medicineman-CHAINS.jpg'
-import Angel from '../images/song-art/shaman-COLORS.jpg'
-import Never from '../images/song-art/The-Magician-NEVEREND.jpg'
-import Earth from '../images/song-art/HighPriestess-EARTH.jpg'
 import ReactWebMediaPlayer from 'react-web-media-player';
 
 import Where from '../images/song-art/global-lighting-album/1-where-were-you.jpg'
