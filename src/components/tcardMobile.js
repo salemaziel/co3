@@ -355,7 +355,7 @@ class TCardMobile extends React.Component {
                                 style={{width: '20px', minWidth: '200px'}}
                                 
                                 thumbnail={Never}
-                                title='Never'
+                                title='Never End'
                                 description=''
                                 tags={[
                                     <div
