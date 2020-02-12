@@ -5,7 +5,7 @@ import '../css/containerDiscography.module.css'
 import Tcontentdisc2row1 from './tcontentcardsdisc2row1'
 import Tcontentdisc2row2 from './tcontentcardsdisc2row2'
 
-import { FaArrowAltCircleLeft } from 'react-icons/fa'
+import { FaAngleLeft } from 'react-icons/fa'
 
 
 
@@ -42,7 +42,7 @@ export default class Discography extends Component {
               <Link to="/" style={{
                             color: "white",
                             fontSize: "3em"
-                            }}><FaArrowAltCircleLeft />
+                            }}><FaAngleLeft />
                             </Link>
             </Col>
 

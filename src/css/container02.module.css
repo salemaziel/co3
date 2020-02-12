@@ -563,6 +563,12 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     html {
         font-size: 13pt;
     }
+    .arrowleft {
+        display: none!important;
+    }
+    .arrowright {
+        display: none!important;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -644,6 +650,24 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         width: 450px;
         height: 420px;
     }
+    .arrowleft {
+        display: flex!important;
+        font-size: 1.5em;
+        color: white;
+        top: 200px;
+        left: 5%;
+        position: absolute;
+        z-index: 1000;                                                                          
+    }
+    .arrowright {
+        display: flex!important;
+        font-size: 1.5em;
+        color: white;
+        top: 200px;
+        left: 95%;
+        position: absolute;
+        z-index: 1000;                                                                          
+    }
 }    
 
     @media (max-width: 480px) {
@@ -675,6 +699,27 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         .SpotifyPlayer {
             width: 350px;
             height: 420px;
+        }
+        .mobile-slider{
+            display: flex !important;
+        }
+        .arrowleft {
+            display: flex!important;
+            font-size: 1.5em;
+            color: white;
+            top: 7em;
+            left: 10%;
+            position: absolute;
+            z-index: 100;                                                                          
+        }
+        .arrowright {
+            display: flex!important;
+            font-size: 1.5em;
+            color: white;
+            top: 7em;
+            left: 80%;
+            position: absolute;
+            z-index: 100;                                                                          
         }
     }
     @media (max-width: 360px) {
@@ -829,8 +874,29 @@ h1.style5, h2.style5, h3.style5, p.style5 {
             width: 300px;
             height: 420px;
         }
+        .mobile-slider{
+            display: flex !important;
+        }
+        .arrowleft {
+            display: flex!important;
+            font-size: 1.5em;
+            color: white;
+            top: 200px;
+            left: 5%;
+            position: absolute;
+            z-index: 1000;                                                                          
+        }
+        .arrowright {
+            display: flex!important;
+            font-size: 1.5em;
+            color: white;
+            top: 200px;
+            left: 95%;
+            position: absolute;
+            z-index: 1000;                                                                          
+        }
     }
-    #icons02 {
+    /*#icons02 {
         width: calc(100% + 0.9375rem);
         margin-left: -0.46875rem;
     }
@@ -874,3 +940,4 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         -ms-filter: none !important;
         filter: none !important;
     }
+*/

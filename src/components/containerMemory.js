@@ -9,6 +9,8 @@ class Containermemory extends React.Component {
       return (
         <div id="containermemory" className="container default full screen">
         <div className={containermemoryStyles.inner}>
+
+
           {/*<ul id="icons02" className={container05Styles.icons}>
             <li>
               <a className={container05Styles.n01} href="https://domain.ext/path">

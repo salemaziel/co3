@@ -687,6 +687,24 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         width: 450px;
         height: 420px;
     }
+    .arrowleft2 {
+        display: flex!important;
+        font-size: 1.5em;
+        color: white;
+        top: 15em;
+        left: 10%;
+        position: absolute;
+        z-index: 100;                                                                          
+    }
+    .arrowright2 {
+        display: flex!important;
+        font-size: 1.5em;
+        color: white;
+        top: 15em;
+        left: 80%;
+        position: absolute;
+        z-index: 100;                                                                          
+    }
     
 }    
 
@@ -725,6 +743,24 @@ h1.style5, h2.style5, h3.style5, p.style5 {
             top: -300px;
             left: -150px;
             
+        }
+        .arrowleft2 {
+            display: flex!important;
+            font-size: 1.5em;
+            color: white;
+            top: 15em;
+            left: 10%;
+            position: absolute;
+            z-index: 100;                                                                          
+        }
+        .arrowright2 {
+            display: flex!important;
+            font-size: 1.5em;
+            color: white;
+            top: 15em;
+            left: 80%;
+            position: absolute;
+            z-index: 100;                                                                          
         }
     }
     @media (max-width: 360px) {

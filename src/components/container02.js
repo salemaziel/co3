@@ -12,7 +12,7 @@ import TContentCards02 from './tcontentcardsrow2'
 
 import TCardMobile from './tcardMobile'
 import { Row, Col } from 'reactstrap';
-import LazyLoad, { lazyload } from 'react-lazyload';
+import LazyLoad from 'react-lazyload';
 
 
 class Container02 extends React.Component {
@@ -30,7 +30,7 @@ class Container02 extends React.Component {
         };
       return (
         <div 
-      id="container02" className="full screen" data-scroll-id="one" data-scroll-behavior="center"  >
+      id="container02" className="full screen" data-scroll-id="one" /*data-scroll-behavior="center"*/  >
         <Row>
           <Col style={{textAlign: "center", marginTop: '1rem', marginBottom: '1rem'}}>
             {/*<Spotify
@@ -45,12 +45,12 @@ class Container02 extends React.Component {
             <TContentCards01/>
           </Col>
           </LazyLoad>
-          <LazyLoad offset={100}>
+          <LazyLoad offset={50}>
           <Col className="mobile-slider"  style={{display: 'none'}}>
               <TCardMobile />
           </Col>
           </LazyLoad>
-          <LazyLoad offset={100}>
+          <LazyLoad offset={50}>
           <Col className="nomobile">
             <TContentCards02/>
           </Col>
