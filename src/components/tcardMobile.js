@@ -7,7 +7,7 @@ import Another from '../images/song-art/The-Wait-ANOTHERTHING.jpg'
 import Hate from '../images/song-art/the-oracle-HATE.jpg'
 import Sorry from '../images/song-art/closeyoureyestosee-SORRY.jpg'
 import Chains from '../images/song-art/medicineman-CHAINS.jpg'
-import Angel from '../images/song-art/shaman-COLORS.jpg'
+import Colors from '../images/song-art/shaman-COLORS.jpg'
 import Never from '../images/song-art/The-Magician-NEVEREND.jpg'
 import Earth from '../images/song-art/HighPriestess-EARTH.jpg'
 import ReactWebMediaPlayer from 'react-web-media-player';
@@ -178,7 +178,7 @@ class TCardMobile extends React.Component {
                                 style={{width: '20px', minWidth: '200px'}}
                                 
                                 thumbnail={Chemtrails}
-                                title='Chem Trails'
+                                title='ChemTrails'
                                 description=''
                                 tags={[
                                     <div
@@ -201,7 +201,7 @@ class TCardMobile extends React.Component {
                                 style={{width: '20px', minWidth: '200px'}}
                                 
                                 thumbnail={Feedthepeople}
-                                title='Feedthepeople'
+                                title='Feed The People'
                                 description=''
                                 tags={[
                                     <div
@@ -273,7 +273,7 @@ class TCardMobile extends React.Component {
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
+                                            id: Hate,
                                             title: song[4].title,
                                             singer: song[4].singer,
                                             thumbnail: song[4].thumbnail,
@@ -295,7 +295,7 @@ class TCardMobile extends React.Component {
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
+                                            id: Sorry,
                                             title: song[5].title,
                                             singer: song[5].singer,
                                             thumbnail: song[5].thumbnail,
@@ -317,7 +317,7 @@ class TCardMobile extends React.Component {
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
+                                            id: Chains,
                                             title: song[6].title,
                                             singer: song[6].singer,
                                             thumbnail: song[6].thumbnail,
@@ -332,14 +332,14 @@ class TCardMobile extends React.Component {
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
                                 
-                                thumbnail={Angel}
-                                title='Angel'
+                                thumbnail={Earth}
+                                title='Earth'
                                 description=''
                                 tags={[
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
+                                            id: Earth,
                                             title: song[7].title,
                                             singer: song[7].singer,
                                             thumbnail: song[7].thumbnail,
@@ -361,7 +361,7 @@ class TCardMobile extends React.Component {
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
+                                            id: Never,
                                             title: song[8].title,
                                             singer: song[8].singer,
                                             thumbnail: song[8].thumbnail,
@@ -376,14 +376,14 @@ class TCardMobile extends React.Component {
                             <TaggedContentCard
                                 style={{width: '20px', minWidth: '200px'}}
                                 
-                                thumbnail={Earth}
-                                title='Earth'
+                                thumbnail={Colors}
+                                title='Colors'
                                 description=''
                                 tags={[
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
+                                            id: Colors,
                                             title: song[9].title,
                                             singer: song[9].singer,
                                             thumbnail: song[9].thumbnail,

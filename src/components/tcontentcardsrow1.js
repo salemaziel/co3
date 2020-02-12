@@ -1,7 +1,7 @@
 import React from 'react'
 import { TaggedContentCard } from 'react-ui-cards'
 import Chemtrails from '../images/song-art/Chemtrails.jpg'
-import Burn from '../images/song-art/The-Tower-BURN.jpg'
+import Burn from '../images/song-art/The-Tower-BURN-copy.jpg'
 import Feedthepeople from '../images/song-art/album-cover-2500x1364-FEEDTHEPEOPLE.jpg'
 import Another from '../images/song-art/The-Wait-ANOTHERTHING.jpg'
 import Hate from '../images/song-art/the-oracle-HATE.jpg'
@@ -114,7 +114,7 @@ class TContentCards01 extends React.Component {
             }}>
                 <Modal
                     visible={this.state.modalIsOpen}
-                    width="1000" height="600"
+                    width="1000" height="800"
                     effect="fadeInUp"
                     onClickAway={() => this.closeModal()}
                 >
@@ -123,7 +123,7 @@ class TContentCards01 extends React.Component {
                     
                         <div style={{
                             backgroundImage: `url(${this.state.id})` ,
-                            height: "600px",
+                            height: "800px",
                             width: "1000px",
                             backgroundSize: 'cover', 
                             backgroundPosition: 'center center',
