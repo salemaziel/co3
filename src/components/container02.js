@@ -12,9 +12,8 @@ import TContentCards02 from './tcontentcardsrow2'
 
 import TCardMobile from './tcardMobile'
 import { Row, Col } from 'reactstrap';
+import LazyLoad, { lazyload } from 'react-lazyload';
 
-
-import { Link } from 'react-router-dom'
 
 class Container02 extends React.Component {
 
@@ -41,16 +40,21 @@ class Container02 extends React.Component {
               theme="black"
             className="SpotifyPlayer" />*/}
           </Col>
+          <LazyLoad offset={100}>
           <Col className="nomobile">
             <TContentCards01/>
           </Col>
+          </LazyLoad>
+          <LazyLoad offset={100}>
           <Col className="mobile-slider"  style={{display: 'none'}}>
               <TCardMobile />
           </Col>
+          </LazyLoad>
+          <LazyLoad offset={100}>
           <Col className="nomobile">
             <TContentCards02/>
           </Col>
-          
+          </LazyLoad>
           
         </Row>
         <Row>
