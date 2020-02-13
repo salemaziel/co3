@@ -7,10 +7,10 @@ import './App.css'
 import Containerheader from './components/containerHeader'
 import Container01 from './components/container01'
 import Container02 from './components/container02'
-import ContainerBio from './components/containerBio'
+//import ContainerBio from './components/containerBio'
 import Container04 from './components/container04'
 import ContainerFooter from './components/containerFooter'
-import Containermemory from './components/containerMemory'
+//import Containermemory from './components/containerMemory'
 
 import Embed from 'react-song-embed'
 
@@ -65,8 +65,8 @@ export default class Home extends Component {
 
                       <Container02 />
 
-                      <ContainerBio />
-                      <Containermemory />
+                      {/*<ContainerBio />
+                      <Containermemory />*/}
                       <Container04 />
                       
 

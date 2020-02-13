@@ -3,14 +3,14 @@
     display: flex;
     width: 100%;
     min-height: 40rem;
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
+    -moz-align-items: right;
+    -webkit-align-items: right;
+    -ms-align-items: right;
+    align-items: right;
+    -moz-justify-content: right;
+    -webkit-justify-content: right;
+    -ms-justify-content: right;
+    justify-content: right;
     background-attachment: fixed;
     border-style: solid;
     /*border-color: #FF00A8;*/

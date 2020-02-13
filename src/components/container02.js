@@ -4,6 +4,7 @@ import '../css/container02.module.css'
 
 import TContentCards01 from './tcontentcardsrow1'
 import TContentCards02 from './tcontentcardsrow2'
+import Logo from '../images/logo-white-huge.png'
 
 
 //import SongLink from './mediaplayer/songlink'
@@ -30,9 +31,36 @@ class Container02 extends React.Component {
         };
       return (
         <div 
-      id="container02" className="full screen" data-scroll-id="one" /*data-scroll-behavior="center"*/  >
+      id="container02" className="container default full screen" data-scroll-id="one" /*data-scroll-behavior="center"*/  >
+        <Row style={{
+            display: "flex",
+            justifyContent: "center",
+            textAlign: "center",
+            position: "absolute",
+            top: "1em",
+            marginBottom: "5em"
+        }}>
+          <Col>
+              <img className="songheader" src={Logo} alt='' /*mode='fit' */ style={{
+                                                                            marginTop: "0",
+              }} />
+              <p 
+               id="text04" 
+               className="style4" 
+               style={{
+                 fontWeight: '500',
+                 fontVariant: 'small-caps',
+                 textAlign: 'center',
+                 color: '#FCAC02 !important',
+                 margin: '0',
+                 fontSize: "2em"
+               }}
+             > Feed The People</p>
+          </Col>
+           
+        </Row>
         <Row>
-          <Col style={{textAlign: "center", marginTop: '1rem', marginBottom: '1rem'}}>
+          <Col style={{textAlign: "center", marginTop: '6em', marginBottom: '1rem', paddingTop: '6em'}}>
             {/*<Spotify
               uri="spotify:album:6NwNaCmHzQNvTSi0hRpALe"
               / *size={{width: 650, height: 420}}* /

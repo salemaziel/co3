@@ -557,6 +557,10 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     width: 600px;
     height: auto;
 }
+.songheader {
+    width: 800px;
+
+}
 
 
 @media (max-width: 1680px) {
@@ -702,6 +706,8 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         }
         .mobile-slider{
             display: flex !important;
+            margin: 5em 0 2em 0;
+            padding: 3em 0;
         }
         .arrowleft {
             display: flex!important;
@@ -720,6 +726,9 @@ h1.style5, h2.style5, h3.style5, p.style5 {
             left: 80%;
             position: absolute;
             z-index: 100;                                                                          
+        }
+        .songheader {
+            width: 450px;
         }
     }
     @media (max-width: 360px) {
