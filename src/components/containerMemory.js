@@ -1,50 +1,36 @@
 import React from 'react'
-import containermemoryStyles from '../css/containermemory.module.css'
+import '../css/containermemory.module.css'
 
-
+import { Row, Col, } from 'reactstrap'
+import Candles from '../images/candles-1.png'
+import Sister from '../images/sister-sm.png'
+import Dad from '../images/dad-sm.png'
 
 
 class Containermemory extends React.Component {
     render() {
       return (
-        <div id="containermemory" className="container default full screen">
-        <div className={containermemoryStyles.inner}>
+        <div id="containermemory" className="container columns full screen">
+        <div className="inner">
 
+        <Row>
+            <Col xs="4">
+              <img src={Candles} />
+                
+                <div className="memorycontainer">
+                        {/*<h2>In Loving Memory</h2>*/}
+                        <img className="lovingmem" src={Sister} />
+                        <img className="lovingmem" src={Dad} />
 
-          {/*<ul id="icons02" className={container05Styles.icons}>
-            <li>
-              <a className={container05Styles.n01} href="https://domain.ext/path">
-                <svg>
-                  <use xlinkHref="#icon-905" />
-                </svg>
-                <span className={container05Styles.label}>Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a className={container05Styles.n02} href="https://domain.ext/path">
-                <svg>
-                  <use xlinkHref="#icon-906" />
-                </svg>
-                <span className={container05Styles.label}>Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a className={container05Styles.n03} href="https://domain.ext/path">
-                <svg>
-                  <use xlinkHref="#icon-910" />
-                </svg>
-                <span className={container05Styles.label}>Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a className={container05Styles.n04} href="https://domain.ext/path">
-                <svg>
-                  <use xlinkHref="#icon-956" />
-                </svg>
-                <span className={container05Styles.label}>Product Hunt</span>
-              </a>
-            </li>
-      </ul>*/}
+                    </div>
+                </Col>
+                <Col xs="1">
+                  
+                  
+                </Col>
+               
+            </Row>
+          
 
          
         </div>

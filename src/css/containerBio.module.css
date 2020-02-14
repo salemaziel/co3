@@ -254,7 +254,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
 }
 
 div.afterSpacer {
-    background: rgba(49, 52, 68, 0.7);
+    background: rgba(49, 52, 68, 0.1);
     margin: 7rem;
     padding: 5rem;
     color: white;
@@ -499,7 +499,7 @@ div.afterSpacer {
     }
 
     div.afterSpacer {
-        background: rgba(49, 52, 68, 0.7);
+        background: rgba(49, 52, 68, 0.3);
         margin: 2rem 1rem;
         padding: 2rem;
         color: white;

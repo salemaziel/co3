@@ -1,5 +1,4 @@
 import React from 'react'
-import container01Styles from '../css/container01.module.css'
 import '../css/container01.module.css'
 
 import { Row, Col } from 'reactstrap'
@@ -13,6 +12,7 @@ class Container01 extends React.Component {
         <div id="container01" data-scroll-id="two" data-scroll-behavior="center" className="container full screen">
         <div id="main" className="inner">
           <div className="afterSpacer">
+            <h3 /*className="style1"*/>Album Artwork Provided by Murray Kruger</h3>
             {/*<h2 id="text05" className={container01Styles.style1}></h2>
             <p id="text06" className={container01Styles.style2}></p>*/}
             {/*<Row style={{

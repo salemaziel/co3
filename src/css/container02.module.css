@@ -1,8 +1,8 @@
-.container {
+/*.container {
     display: flex;
     width: 100%;
     background-size: cover, auto; 
-}
+}*/
 #container02 > .inner {
     padding: 2rem 2rem;
     width: 100%;
@@ -36,7 +36,7 @@
     margin-top: 1.75rem;
     margin-bottom: 1.75rem;
 }
-
+/*
 #container02.default > .inner > *:first-child {
     margin-top: 0 !important;
 }
@@ -44,7 +44,7 @@
 #container02.default > .inner > *:last-child {
     margin-bottom: 0 !important;
 }
-
+*/
 #container02.columns > .inner {
     -moz-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;

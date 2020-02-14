@@ -1,5 +1,6 @@
 import React from 'react'
 import containerBioStyles from '../css/containerBio.module.css'
+import Glpalbum from '../images/song-art/global-lighting-album/album-cover-glp.jpg'
 
 import { Link } from 'react-router-dom'
 
@@ -13,25 +14,35 @@ class ContainerBio extends React.Component {
           <div className="afterSpacer" >
             <h2 id="text07" className="style1" /*style={{
               marginBottom: "1rem",
-              color: "#7c795d",  fontSize: '45px', fontWeight: 'normal', lineHeight: '48px', margin: 0}}*/ >Artist Bio </h2>
+              color: "#7c795d",  fontSize: '45px', fontWeight: 'normal', lineHeight: '48px', margin: 0}}*/ >Chaotic Order </h2>
+            <h3 className="style4" style={{
+                                      fontVariant: "small-caps",
+            }}><strong>Seeking Order in Chaos</strong></h3>
             <p id="text10" className="style2" /*className={containerBioStyles.style2}  align= "justify"
             style={{color: 'white', fontSize: '18px', lineHeight: '32px', margin: "0 0 24px"}}*/
             >
             <br/>
-            <strong>Chaotic Order</strong><br/>
             <br/>
             <br/>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <br/>
+                All proceeds of Chaotic Order go to funding the Global Lighting Project, a 501(c)3 nonprofit working toward bringing sustainable, renewable light and energy sources to our brothers and sisters in communities around the world.
            <br/>
            <br/>
            <br/>
-            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+              Chaotic Order's first album, released in 2016, was named after the seedling nonprofit. 
             </p>
+            
             <Link to="/discography" style={{
                             color: "white",
                             fontSize: "2em",
                             fontVariant: "small-caps",
-                            }}>View Artist Discography </Link>
+                            justifyContent: "center",
+                            marginTop: "50px",
+                          
+                            }}><img style={{
+                              marginTop: "50px"
+
+                            }}src={Glpalbum} width="300px" mode="fit"></img> </Link>
           </div>
         </div>
       </div>

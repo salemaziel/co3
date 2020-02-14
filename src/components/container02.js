@@ -40,8 +40,8 @@ class Container02 extends React.Component {
             top: "1em",
             marginBottom: "5em"
         }}>
-          <Col>
-              <img className="songheader" src={Logo} alt='' /*mode='fit' */ style={{
+          {/*<Col>
+              <img className="songheader" src={Logo} alt='' /*mode='fit' * / style={{
                                                                             marginTop: "0",
               }} />
               <p 
@@ -56,17 +56,12 @@ class Container02 extends React.Component {
                  fontSize: "2em"
                }}
              > Feed The People</p>
-          </Col>
+              </Col>*/}
            
         </Row>
         <Row>
           <Col style={{textAlign: "center", marginTop: '6em', marginBottom: '1rem', paddingTop: '6em'}}>
-            {/*<Spotify
-              uri="spotify:album:6NwNaCmHzQNvTSi0hRpALe"
-              / *size={{width: 650, height: 420}}* /
-              view="list"
-              theme="black"
-            className="SpotifyPlayer" />*/}
+            
           </Col>
           <LazyLoad offset={100}>
           <Col className="nomobile">
