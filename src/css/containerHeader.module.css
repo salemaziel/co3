@@ -3,11 +3,15 @@
     /*padding: 6rem 6rem;*/
     width: 100%;
     /*max-width: 65rem;*/
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 #containerHeader {
     display: flex;
     width: 100%;
+    width: 100vw;
     min-height: 40rem;
     -moz-align-items: center;
     -webkit-align-items: center;
@@ -19,25 +23,13 @@
     justify-content: center;
     background-attachment: fixed;
     background-image: linear-gradient(to top, rgba(0,0,0,0.553), rgba(0,0,0,0.553)), url('../images/album-cover-bg.jpg');
-    background-position: 0% 0%, center;
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
 }
 
-#containerHeader.default > .inner > * {
-    margin-top: 0.625rem;
-    margin-bottom: 0.625rem;
-}
-
-#containerHeader.default > .inner > *:first-child {
-    margin-top: 0 !important;
-}
-
-#containerHeader.default > .inner > *:last-child {
-    margin-bottom: 0 !important;
-}
-
-#containerHeader.columns > .inner {
+#containerHeader > .inner {
     -moz-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -50,130 +42,74 @@
     align-items: flex-start;
 }
 
-#containerHeader.columns > .inner > * {
-    -moz-flex-shrink: 0;
-    -webkit-flex-shrink: 0;
-    -ms-flex-shrink: 0;
-    flex-shrink: 0;
-    -moz-flex-grow: 0;
-    -webkit-flex-grow: 0;
-    -ms-flex-grow: 0;
-    flex-grow: 0;
-    max-width: 100%;
-    padding: 0 0 0 0rem;
-}
-
-#containerHeader.columns > .inner > * > * {
-    margin-top: 0.625rem;
-    margin-bottom: 0.625rem;
-}
-
-#containerHeader.columns > .inner > * > *:first-child {
-    margin-top: 0 !important;
-}
-
-#containerHeader.columns > .inner > * > *:last-child {
-    margin-bottom: 0 !important;
-}
-
-#containerHeader.columns > .inner > *:first-child {
-    margin-left: 0rem;
-}
-
-#containerHeader.default > .inner > .full {
-    margin-left: calc(-6rem);
-    width: calc(100% + 12rem + 0.4725px);
-    max-width: none;
-}
-
-#containerHeader.default > .inner > .full:first-child {
-    margin-top: -6rem !important;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-}
-
-#containerHeader.default > .inner > .full:last-child {
-    margin-bottom: -6rem !important;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-}
-
-#containerHeader.columns > .inner > div > .full {
-    margin-left: calc(-0rem);
-    width: calc(100% + 0rem + 0.4725px);
-    max-width: none;
-}
-
-#containerHeader.columns > .inner > div:first-child > .full {
-    margin-left: calc(-6rem);
-    width: calc(100% + 6rem + 0.4725px);
-}
-
-#containerHeader.columns > .inner > div:last-child > .full {
-    width: calc(100% + 6rem + 0.4725px);
-}
-
-#containerHeader.columns > .inner > div > .full:first-child {
-    margin-top: calc(-6rem) !important;
-}
-
-#containerHeader.columns > .inner > div > .full:last-child {
-    margin-bottom: calc(-6rem) !important;
-}
-
-#containerHeader.columns > .inner > div:first-child, #containerHeader.columns > .inner > div:first-child > .full:first-child {
-    border-top-left-radius: inherit;
-}
-
-#containerHeader.columns > .inner > div:last-child, #containerHeader.columns > .inner > div:last-child > .full:first-child {
-    border-top-right-radius: inherit;
-}
-
-#containerHeader.columns > .inner > .full {
-    align-self: stretch;
-    min-height: 40rem;
-}
-
-#containerHeader.columns > .inner > .full:first-child {
-    border-top-left-radius: inherit;
-    border-bottom-left-radius: inherit;
-}
-
-#containerHeader.columns > .inner > .full:last-child {
-    border-top-right-radius: inherit;
-    border-bottom-right-radius: inherit;
-}
-
-#containerHeader.columns > .inner > .full > .full:first-child:last-child {
-    height: calc(100% + 12rem);
-    border-radius: inherit;
-}
-
-#containerHeader.columns > .inner > .full > .full:first-child:last-child img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-#containerHeader.columns > .inner > .full > .full:first-child:last-child a, #containerHeader.columns > .inner > .full > .full:first-child:last-child span, #containerHeader.columns > .inner > .full > .full:first-child:last-child img {
-    height: 100%;
-    border-radius: inherit;
-}
 .albumpromo {
     margin-left: 6em;
     margin-right: 6em;
     display: block;
     box-shadow: 3px 3px 10px black;
-    width: 800px;
-    height: 800px;
+    width: 550px;
+    height: 550px;
+    overflow: visible;
 }
 
 .albumlogo {
-    width: 800px;
+    width: 600px;
 }
-p.style4 {
-    color: #FCAC02 !important;
-} 
+ 
+@media (min-width: 2400px) {
+    #containerHeader {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    width: 100vw;
+    min-height: 60rem;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0.553)), to(rgba(0,0,0,0.553))), url(/static/media/album-cover-bg.3ba66386.jpg);
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.553), rgba(0,0,0,0.553)), url(/static/media/album-cover-bg.3ba66386.jpg);
+    background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.553), rgba(0,0,0,0.553)), url(/static/media/album-cover-bg.3ba66386.jpg);
+    background-image: linear-gradient(to top, rgba(0,0,0,0.553), rgba(0,0,0,0.553)), url(/static/media/album-cover-bg.3ba66386.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    }
+    #containerHeader > .inner {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        display: flex;
+        margin: 0 5em 0 0;
+        align-items: flex-start;
+        text-align: left;
+        /* padding: 6rem 6rem; */
+        width: 100%;
+        /* max-width: 65rem; */
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .albumpromo {
+        margin-left: 6em;
+        margin-right: 2em;
+        display: flex;
+        box-shadow: 3px 3px 10px black;
+        width: 800px;
+        height: 800px;
+        overflow: visible;
+    }
+
+    .albumlogo {
+        width: 1000px;
+    }
+    
+}
 
 @media (max-width: 1680px) {
     html {
@@ -186,6 +122,7 @@ p.style4 {
         box-shadow: 3px 3px 10px black;
         width: 500px;
         height: 500px;
+        overflow: visible;
     }
     
     .albumlogo {
@@ -200,29 +137,36 @@ p.style4 {
 
     #containerHeader {
         background-attachment: scroll;
-    }
-    .albumpromo {
-        margin-left: 1em;
-        margin-right: 0;
         display: block;
+    
+    }
+   .albumpromo {
+        margin-bottom: 3em;
+        margin-left: 24em;
+        margin-right: 0;
+        display: flex;
+        flex-wrap: wrap;
         box-shadow: 3px 3px 10px black;
-        width: 450px;
-        height: 450px;
+        width: 400px;
+        height: 400px;
     }
     
     .albumlogo {
         width: 600px;
     }
-}
+
 
 @media (max-width: 980px) {
     html {
         font-size: 11pt;
     }
+    #ContainerHeader {
+        display: inline-block;
+    }
 
 .albumpromo {
     margin-top: 4em;
-    margin-left: 1em;
+    margin-left: 12em;
     margin-right: 0;
     padding-right: 0;
     display: block;
@@ -233,275 +177,50 @@ p.style4 {
 
 .albumlogo {
     width: 450px;
-    padding-top: 8em;
-    
+    padding-top: 3em;
+    margin: 0 6rem 0 4rem;
 }
+
+#containerHeader > .inner {
+    text-align: left;
+    /*padding: 6rem 6rem;*/
+    width: 100%;
+    /*max-width: 65rem;*/
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    /*-moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;*/
+    display: flex;
+    margin: 0 auto 0 auto;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
 }
 @media (max-width: 736px) {
         html {
             font-size: 11pt;
         }
-    
-        #main > .inner {
-            padding: 0rem 2rem;
-        }
-    
-        #main > .inner > header {
-            margin-bottom: 0rem;
-        }
-    
-        #main > .inner > footer {
-            margin-top: 0rem;
-        }
-    
-        #main > .inner > * > * {
-            margin-top: 0rem;
-            margin-bottom: 0rem;
-        }
-    
-        #main > .inner > .full {
-            margin-left: calc(-2rem);
-            width: calc(100% + 4rem + 0.4725px);
-            max-width: calc(100% + 4rem + 0.4725px);
-        }
-    
-        #main > .inner > .full:first-child {
-            margin-top: 0rem !important;
-        }
-    
-        #main > .inner > .full:last-child {
-            margin-bottom: 0rem !important;
-        }
-    
-        #main > .inner > .full.screen {
-            margin-left: -50vw;
-        }
-    
-        #main > .inner > * > .full {
-            margin-left: calc(-2rem);
-            width: calc(100% + 4rem + 0.4725px);
-            max-width: calc(100% + 4rem + 0.4725px);
-        }
-    
-        #main > .inner > * > .full.screen {
-            margin-left: -50vw;
-            display: grid;
-        }
-    
-        #main > .inner > .active > .full:first-child {
-            margin-top: 0rem !important;
-        }
-    
-        #main > .inner > .active > .full:last-child {
-            margin-bottom: 0rem !important;
-        }
-    
-        h1.style1, h2.style1, h3.style1, p.style1 {
-            letter-spacing: -0.065625rem;
-            width: 100%;
-            font-size: 2em;
-            line-height: 1.5;
-        }
-    
-        h1.style2, h2.style2, h3.style2, p.style2 {
-            letter-spacing: 0.021875rem;
-            width: calc(100% + 0.021875rem);
-            font-size: 1em;
-            line-height: 2;
-        }
-    
-        h1.style3, h2.style3, h3.style3, p.style3 {
-            letter-spacing: -0.065625rem;
-            width: 100%;
-            font-size: 3.5em;
-            line-height: 1.25;
-        }
-    
-        h1.style4, h2.style4, h3.style4 /*p.style4*/ {
-            letter-spacing: 0.021875rem;
-            width: calc(100% + 0.021875rem);
-            font-size: 1.25em;
-            line-height: 2;
-        }
-        p.style4 {
-            letter-spacing: 0.021875rem;
-            width: calc(100% + 0.021875rem);
-            font-size: 2.25em;
-            line-height: 2;
-            color: #FCAC02 !important;
-        }    
-        h1.style5, h2.style5, h3.style5, p.style5 {
-            letter-spacing: 0.021875rem;
-            width: calc(100% + 0.021875rem);
-            font-size: 1em;
-            line-height: 2;
-        }
-    
-        #divider02 {
-            height: 0.5rem;
-            line-height: 0.5rem;
-        }
-    
-        #divider03 {
-            height: 0.5rem;
-            line-height: 0.5rem;
-        }
-    
-        #divider04 {
-            height: 0.5rem;
-            line-height: 0.5rem;
-        }
-    
-        #divider06 {
-            height: 2rem;
-            line-height: 2rem;
-        }
-    
-        #divider01 {
-            height: 0.5rem;
-            line-height: 0.5rem;
-        }
-    
-        #divider05 {
-            height: 0.5rem;
-            line-height: 0.5rem;
+        #ContainerHeader {
+            display: inline-block;
         }
     
         #containerHeader > .inner {
-            padding: 3.5rem 2rem;
+           /* padding: 3.5rem 2rem;*/
+           padding: 0;
             max-width: 100%;
         }
     
         #containerHeader {
-            min-height: 30rem;
+            min-height: 50rem;
         }
     
-        #containerHeader.default > .inner > * {
-            margin-top: 0.625rem;
-            margin-bottom: 0.625rem;
-        }
-    
-        #containerHeader.columns > .inner {
-            -moz-flex-direction: column !important;
-            -webkit-flex-direction: column !important;
-            -ms-flex-direction: column !important;
-            flex-direction: column !important;
-            -moz-flex-wrap: wrap !important;
-            -webkit-flex-wrap: wrap !important;
-            -ms-flex-wrap: wrap !important;
-            flex-wrap: wrap !important;
-        }
-    
-        #containerHeader.columns > .inner > span {
-            display: none;
-        }
-    
-        #containerHeader.columns > .inner > * > * {
-            margin-top: 0.625rem;
-            margin-bottom: 0.625rem;
-        }
-    
-        #containerHeader.columns > .inner > * {
-            padding: 0rem 0 !important;
-        }
-    
-        #containerHeader.columns > .inner > *:first-child {
-            margin-left: 0 !important;
-            padding-top: 0 !important;
-        }
-    
-        #containerHeader.columns > .inner > *:last-child {
-            padding-bottom: 0 !important;
-        }
-    
-        #containerHeader.columns > .inner > div.afterSpacer {
-            padding-top: 0 !important;
-        }
-    
-        #containerHeader.columns > .inner > div.before-spacer {
-            padding-bottom: 0 !important;
-        }
-    
-        #containerHeader.default > .inner > .full {
-            margin-left: calc(-2rem);
-            width: calc(100% + 4rem + 0.4725px);
-        }
-    
-        #containerHeader.default > .inner > .full:first-child {
-            margin-top: -3.5rem !important;
-        }
-    
-        #containerHeader.default > .inner > .full:last-child {
-            margin-bottom: -3.5rem !important;
-        }
-    
-        #containerHeader.columns > .inner > div > .full {
-            margin-left: calc(-2rem);
-            width: calc(100% + 4rem + 0.4725px);
-        }
-    
-        #containerHeader.columns > .inner > div:first-of-type > .full {
-            margin-left: calc(-2rem);
-            width: calc(100% + 4rem + 0.4725px);
-        }
-    
-        #containerHeader.columns > .inner > div:last-of-type > .full {
-            margin-left: calc(-2rem);
-            width: calc(100% + 4rem + 0.4725px);
-        }
-    
-        #containerHeader.columns > .inner > div > .full:first-child {
-            margin-top: -0rem !important;
-        }
-    
-        #containerHeader.columns > .inner > div > .full:last-child {
-            margin-bottom: -0rem !important;
-        }
-    
-        #containerHeader.columns > .inner > div:first-of-type > .full:first-child {
-            margin-top: calc(-3.5rem) !important;
-        }
-    
-        #containerHeader.columns > .inner > div:last-of-type > .full:last-child {
-            margin-bottom: calc(-3.5rem) !important;
-        }
-    
-        #containerHeader.columns > .inner > div:first-of-type, #containerHeader.columns > .inner > div:first-of-type > .full:first-child {
-            border-top-left-radius: inherit;
-            border-top-right-radius: inherit;
-        }
-    
-        #containerHeader.columns > .inner > div:last-of-type, #containerHeader.columns > .inner > div:last-of-type > .full:last-child {
-            border-bottom-left-radius: inherit;
-            border-bottom-right-radius: inherit;
-        }
-    
-        #containerHeader.columns > .inner > div:first-of-type, #containerHeader.columns > .inner > div:first-of-type > .full:last-child {
-            border-bottom-left-radius: 0 !important;
-        }
-    
-        #containerHeader.columns > .inner > div:last-of-type, #containerHeader.columns > .inner > div:last-of-type > .full:first-child {
-            border-top-right-radius: 0 !important;
-        }
-    
-        #containerHeader.columns > .inner > .full {
-            min-height: 30rem;
-        }
-    
-        #containerHeader.columns > .inner > .full > .full:first-child:last-child {
-            height: auto;
-        }
-    
-        #containerHeader.columns > .inner > .full > .full:first-child:last-child img {
-            position: relative;
-            width: 100%;
-            height: auto;
-        }
-    
-        #containerHeader.columns > .inner > .full > .full:first-child:last-child a, #containerHeader.columns > .inner > .full > .full:first-child:last-child span, #containerHeader.columns > .inner > .full > .full:first-child:last-child img {
-            height: auto;
-        }
-        .albumpromo {
+        /*.albumpromo {
             margin-left: 6em;
             margin-right: 0;
             padding-right: 0;
@@ -514,127 +233,41 @@ p.style4 {
         .albumlogo {
             width: 150px;
         }
-    
-        #icons02 {
-            font-size: 1em;
-            width: calc(100% + 1.25rem);
-            margin-left: -0.625rem;
-        }
-    
-        #icons02 li {
-            margin: 0.625rem;
-        }
-    
-    .albumpromo {
-        margin-top: 4em;
-        margin-left: 3em;
-        padding-right: 0;
-        display: block;
-        box-shadow: 3px 3px 10px black;
-        width: 450px;
-        height: 450px;
-    }
-    
-    .albumlogo {
-        width: 600px;
-        padding-top: 8em;
-    }
-
+    */
+}
     @media (max-width: 480px) {
-        #main > .inner > header {
-            margin-bottom: 0rem;
-        }
+       
     
-        #main > .inner > footer {
-            margin-top: 0rem;
+        #containerHeader {
+            min-height: 50rem;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
         }
-    
-        #main > .inner > * > * {
-            margin-top: 0rem;
-            margin-bottom: 0rem;
-        }
-    
-        #containerHeader.default > .inner > * {
-            margin-top: 0.546875rem;
-            margin-bottom: 0.546875rem;
-        }
-    
-        #containerHeader.columns > .inner > * > * {
-            margin-top: 0.546875rem;
-            margin-bottom: 0.546875rem;
-        }
+       
         .albumpromo {
-            margin-top: 4em;
-            margin-left: 3em;
+            margin-top: 0;
+            margin-left: 0!important;
+            margin-right: 0;
             padding-right: 0;
+            padding-top: 0!important;
             display: block;
+            -webkit-box-shadow: 3px 3px 10px black;
             box-shadow: 3px 3px 10px black;
-            width: 250px;
-            height: 250px;
+            width: 300px;
+            height: 300px;
         }
         
         .albumlogo {
-            display: flex;
-            width: 350px;
-            padding-top: 8em;
-            
+            /*display: flex;*/
+            width: 370px;
+            padding-top: 3em;
+            margin: 0;
         }
-    
+        
     }
-    
     @media (max-width: 360px) {
-        #main > .inner {
-            padding: 0rem 1.5rem;
-        }
-    
-        #main > .inner > header {
-            margin-bottom: 0rem;
-        }
-    
-        #main > .inner > footer {
-            margin-top: 0rem;
-        }
-    
-        #main > .inner > * > * {
-            margin-top: 0rem;
-            margin-bottom: 0rem;
-        }
-    
-        #main > .inner > .full {
-            margin-left: calc(-1.5rem);
-            width: calc(100% + 3rem + 0.4725px);
-            max-width: calc(100% + 3rem + 0.4725px);
-        }
-    
-        #main > .inner > .full:first-child {
-            margin-top: -0rem !important;
-        }
-    
-        #main > .inner > .full:last-child {
-            margin-bottom: -0rem !important;
-        }
-    
-        #main > .inner > .full.screen {
-            margin-left: -50vw;
-        }
-    
-        #main > .inner > * > .full {
-            margin-left: calc(-1.5rem);
-            width: calc(100% + 3rem + 0.4725px);
-            max-width: calc(100% + 3rem + 0.4725px);
-        }
-    
-        #main > .inner > * > .full.screen {
-            margin-left: -50vw;
-        }
-    
-        #main > .inner > .active > .full:first-child {
-            margin-top: -0rem !important;
-        }
-    
-        #main > .inner > .active > .full:last-child {
-            margin-bottom: -0rem !important;
-        }
+       
     
         h1.style1, h2.style1, h3.style1, p.style1 {
             font-size: 2em;
@@ -666,83 +299,12 @@ p.style4 {
             margin: 0.65625rem;
         }
     
-        #containerHeader > .inner {
-            padding: 2.625rem 1.5rem;
-        }
-    
+       /*
         #containerHeader {
             min-height: 20rem;
-        }
+        }*/
     
-        #containerHeader.default > .inner > * {
-            margin-top: 0.46875rem;
-            margin-bottom: 0.46875rem;
-        }
-    
-        #containerHeader.columns > .inner > * > * {
-            margin-top: 0.46875rem;
-            margin-bottom: 0.46875rem;
-        }
-    
-        #containerHeader.default > .inner > .full {
-            margin-left: calc(-1.5rem);
-            width: calc(100% + 3rem + 0.4725px);
-        }
-    
-        #containerHeader.default > .inner > .full:first-child {
-            margin-top: -2.625rem !important;
-        }
-    
-        #containerHeader.default > .inner > .full:last-child {
-            margin-bottom: -2.625rem !important;
-        }
-    
-        #containerHeader.columns > .inner > div > .full {
-            margin-left: calc(-1.5rem);
-            width: calc(100% + 3rem + 0.4725px);
-        }
-    
-        #containerHeader.columns > .inner > div:first-of-type > .full {
-            margin-left: calc(-1.5rem);
-            width: calc(100% + 3rem + 0.4725px);
-        }
-    
-        #containerHeader.columns > .inner > div:last-of-type > .full {
-            margin-left: calc(-1.5rem);
-            width: calc(100% + 3rem + 0.4725px);
-        }
-    
-        #containerHeader.columns > .inner > div > .full:first-child {
-            margin-top: -0rem !important;
-        }
-    
-        #containerHeader.columns > .inner > div > .full:last-child {
-            margin-bottom: -0rem !important;
-        }
-    
-        #containerHeader.columns > .inner > div:first-of-type > .full:first-child {
-            margin-top: calc(-2.625rem) !important;
-        }
-    
-        #containerHeader.columns > .inner > div:last-of-type > .full:last-child {
-            margin-bottom: calc(-2.625rem) !important;
-        }
-    
-        #containerHeader.columns > .inner > .full {
-            min-height: 20rem;
-        }
-        
-    
-        }
-        #icons02 {
-            width: calc(100% + 0.9375rem);
-            margin-left: -0.46875rem;
-        }
-    
-        #icons02 li {
-            margin: 0.46875rem;
-        }
-        .albumpromo {
+      /*  .albumpromo {
             margin-top: 4em;
             margin-left: 3em;
             padding-right: 0;
@@ -756,7 +318,7 @@ p.style4 {
             width: 350px;
             padding-top: 8em;
             
-        }
+        }*/
     }
     @media (max-width: 330px) {
         /*.albumpromo {
@@ -767,10 +329,11 @@ p.style4 {
             box-shadow: 3px 3px 10px black;
             width: 200px;
             height: 200px;
-        }*/
+        }
         
         .albumlogo {
             width: 325px;
             justify-self: center;
-        }
+        }*/
     }
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+
 import './css/main2.css'
 //import './css/Rmusicjinkeindex.css'
 //import './css/Rmusic.css'
@@ -10,13 +11,13 @@ import Container02 from './components/container02'
 import ContainerBio from './components/containerBio'
 import Containercontact from './components/containerContact'
 import Containermemory from './components/containerMemory'
-import ContainerFooter from './components/containerFooter'
+//import ContainerFooter from './components/containerFooter'
 
 import Embed from 'react-song-embed'
 
 import Helmet from 'react-helmet'
 import Albumcover from './images/album-cover2.jpg'
-
+import './css/textstyles.css'
 
 export default class Home extends Component {
 //  constructor(props) {
@@ -58,7 +59,12 @@ export default class Home extends Component {
                 }} />
                 <div id="main">
                     <div className="inner">
-                    <section id="home-section">
+                    <section id="home-section" style={{
+                                                  display: "flex",
+                                                  flexDirection: "column",
+                                                  maxWidth: "100%"
+                                                  
+                    }}>
                       <Containerheader />
 
                       <Container01 />
@@ -66,13 +72,13 @@ export default class Home extends Component {
                       <Container02 />
 
                       <ContainerBio />
-                      <Containermemory />
+                     <Containermemory />
                       <Containercontact />
                       
                       
 
                     
-                    <ContainerFooter/>
+                   {/* <ContainerFooter/>*/}
                     </section>
 
                     </div>

@@ -1,6 +1,6 @@
 import React from 'react'
-import containerContactStyles from '../css/containerContact.module.css'
-import formStyles from '../css/forms.module.css'
+import '../css/containerContact.module.css'
+import '../css/forms.module.css'
 
 
 const encode = (data) => {
@@ -42,21 +42,21 @@ class containerContact extends React.Component {
                     <br/>
                     <br/>
                     <br/>
-                    <h1 id="text11" className={containerContactStyles.style1}  style={{color: "white", fontSize: '3rem'}}>Contact Us</h1>
+                    <h1 id="text11" className="style1"  style={{color: "white", fontSize: '3rem'}}>Contact Us</h1>
                     <br/>
                     <br/>
                     <form id="form02" method="post" onSubmit={this.handleSubmit}>
-                        <div className={containerContactStyles.inner}>
-                            <div className={formStyles.field}>
+                        <div className="inner">
+                            <div className="field">
                                 <label htmlFor="form02-fname">Name</label>
                                 <input type="text" name="name" id="form02-fname" placeholder maxLength={128} required value={name} onChange={this.handleChange} />
                             </div>
-                            <div className={formStyles.field}>
+                            <div className="field">
                                 <label htmlFor="form02-email">Email</label>
                                 <input type="email" name="email" id="form02-email" placeholder maxLength={128} required value={email} onChange={this.handleChange}  />
                             </div>
                             <br/>
-                            <div className={formStyles.field}>
+                            <div className="field">
                                 <textarea name="message" value={message} required onChange={this.handleChange} placeholder="Your message" />
                             </div>
                             <br/>
