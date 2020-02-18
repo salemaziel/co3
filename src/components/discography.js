@@ -11,15 +11,15 @@ import { FaAngleLeft } from 'react-icons/fa'
 
 //import ReactCardCarousel from 'react-card-carousel';
 
-import TCardMobile2 from './tcardMobile2'
+import TCardMobile from './tcardMobile01b'
 import { Row, Col } from 'reactstrap';
 
 import Helmet from 'react-helmet'
 
 import { Link } from 'react-router-dom'
 
-export default class Discography extends Component {
-//class Discography extends React.Component {
+//export default class Discography extends Component {
+class Discography extends React.Component {
     render() {
         const settings = {
             dots: true,
@@ -30,8 +30,8 @@ export default class Discography extends Component {
         };
       return (
         <div 
-      id="containerDisc" className="container full screen" data-scroll-id="one" data-scroll-behavior="center"  >
-        {/*<div className="inner">*/}
+      id="containerDisc" className="full screen" data-scroll-id="one" data-scroll-behavior="center"  >
+        <div className="inner">
         <Row>
         <Row className="back">
             <Col style={{
@@ -51,23 +51,23 @@ export default class Discography extends Component {
           </Col>
           <Col className="nomobile">
             <Tcontentdisc2row1 />
-          </Col>
+                          </Col>
           <Col className="mobile-slider"  style={{display: 'none'}}>
-              <TCardMobile2 />
+              <TCardMobile />
           </Col>
           <Col className="nomobile">
             <Tcontentdisc2row2 />
-          </Col>
+                        </Col>
           
           
         </Row>
         
-       {/* </div>*/}
+       </div>
       </div>
       
       )
     }
 }
 
-//export default Discography
+export default Discography
 

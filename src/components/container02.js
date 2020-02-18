@@ -19,8 +19,6 @@ import LazyLoad from 'react-lazyload';
 class Container02 extends React.Component {
 
 
-
-
     render() {
         const settings = {
             dots: true,
@@ -31,17 +29,18 @@ class Container02 extends React.Component {
         };
       return (
         <div 
-      id="container02" className="container default full screen" data-scroll-id="one" /*data-scroll-behavior="center"*/  >
-        <Row style={{
+      id="container02" className="container default full screen" data-scroll-id="one" data-scroll-behavior="center">
+        
+        <Row className="songheaderRow" style={{
             display: "flex",
             justifyContent: "center",
             textAlign: "center",
-            position: "absolute",
-            top: "1em",
-            marginBottom: "5em"
+            position: 'relative',
+            /*top: "2em",*/
+            
         }}>
-          {/*<Col>
-              <img className="songheader" src={Logo} alt='' /*mode='fit' * / style={{
+          <Col>
+              <img className="songheader" src={Logo} alt='' /*mode='fit' */ style={{
                                                                             marginTop: "0",
               }} />
               <p 
@@ -56,13 +55,14 @@ class Container02 extends React.Component {
                  fontSize: "2em"
                }}
              > Feed The People</p>
-              </Col>*/}
+              </Col>
            
         </Row>
-        <Row>
-          <Col style={{textAlign: "center", marginTop: '6em', marginBottom: '1rem', paddingTop: '6em'}}>
+        <Row style={{
+          
+          }}>
+          <Col style={{textAlign: "center", marginTop: '1em', marginBottom: '1rem', paddingTop: '1em'}} />
             
-          </Col>
           <LazyLoad offset={100}>
           <Col className="nomobile">
             <TContentCards01/>
@@ -83,14 +83,10 @@ class Container02 extends React.Component {
         <Row>
             <Col style={{
             textAlign: "center", 
-            marginTop: '1rem', 
-            marginBottom: '1rem'
+            marginTop: '3rem', 
+            marginBottom: '3rem'
             }}>
-              {/*<a href="/discography" style={{
-                            color: "white",
-                            fontSize: "2em",
-                            fontVariant: "small-caps",
-                            }}>View Artist Discography</a>*/}
+              }
                 
             </Col>
 

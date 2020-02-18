@@ -1,4 +1,8 @@
-import React from 'react'
+import React, { Component } from "react";
+import Slider from "react-slick";
+import "~slick-carousel/slick/slick.css"; 
+import "~slick-carousel/slick/slick-theme.css";
+
 import { TaggedContentCard } from 'react-ui-cards'
 import Chemtrails from '../images/song-art/Chemtrails.jpg'
 import Burn from '../images/song-art/The-Tower-BURN.jpg'
@@ -14,10 +18,10 @@ import ReactWebMediaPlayer from 'react-web-media-player';
 
 import { FaPlay } from 'react-icons/fa'
 
-import {  Row } from 'reactstrap';
+import { Col, Row } from 'reactstrap';
 import Modal from 'react-awesome-modal';
 
-import ReactCardCarousel from 'react-card-carousel';
+//import ReactCardCarousel from 'react-card-carousel';
 //import { FaArrowAltCircleLeft } from 'react-icons/fa'
 //import { FaArrowAltCircleRight } from 'react-icons/fa'
 
@@ -110,9 +114,11 @@ const song = [
 
     }
 ]
-class TCardMobile extends React.Component {
 
 
+
+
+export default class TCardMobile01a extends Component {
     constructor() {
         super();
 
@@ -137,21 +143,31 @@ class TCardMobile extends React.Component {
         });
     }
 
-    render() {
-        let {
-            thumbnail,
-            title,
-            description,
-            tags,
-            ...other
-        } = this.props;
-        let cards;;
-        let { styelDisplay } = this.props;
-
-        return (
-            <div style={{
-            }}>
-                <Modal
+  render() {
+    const settings = {
+      className: "plz",
+      infinite: false,
+      centerPadding: "30px",
+      slidesToShow: 3,
+      swipeToSlide: true,
+      afterChange: function(index) {
+        console.log(
+          `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
+        );
+      }
+    };
+    let {
+        thumbnail,
+        title,
+        description,
+        tags,
+        ...other
+    } = this.props;
+    let cards;;
+    let { styleDisplay } = this.props;
+    return (
+      <div>
+          <Modal
                     visible={this.state.modalIsOpen}
                     width="275" height="275"
                     effect="fadeInUp"
@@ -170,35 +186,38 @@ class TCardMobile extends React.Component {
                                 />
                             </div>
                     </Row>
-
-                </Modal>
-                <Row style={{ display: 'flex' }}>
-                    <ReactCardCarousel  disable_keydown={false} disable_box_shadow={true}>
-                        <div >
+            
+            </Modal>
+        
+          
+                <Row /*style={{ display: 'flex' }}*/>
+                    <Slider {...settings}>
+                        
+                        
                             <TaggedContentCard
+                                className="plz"
                                 style={{width: '20px', minWidth: '200px'}}
                                 
                                 thumbnail={Chemtrails}
                                 title='ChemTrails'
                                 description=''
                                 tags={[
-                                    <div
-                                        onClick={ () => { this.setState({
+                                <   div
+                                        onClick={ () => { 
+                                        this. setState({
                                             modalIsOpen: true,
                                             id: Chemtrails,
                                             title: song[0].title,
                                             singer: song[0].singer,
                                             thumbnail: song[0].thumbnail,
                                             audio: song[0].audio
-                                        })} }
-                                    ><FaPlay focusable="false" aria-hidden="true" /></div>
-                                ]}
-
-                            />
-                        </div>
-
-                        <div >
+                                        })} }>
+                                        <FaPlay focusable="false" aria-hidden="true" /></div>
+                                    ]}/>
+                        
+                        
                             <TaggedContentCard
+                                className="plz"
                                 style={{width: '20px', minWidth: '200px'}}
                                 
                                 thumbnail={Feedthepeople}
@@ -218,194 +237,107 @@ class TCardMobile extends React.Component {
                                 ]}
 
                             />
-                        </div>
-                        <div >
+                        
+                        
                             <TaggedContentCard
+                                className="plz"
                                 style={{width: '20px', minWidth: '200px'}}
                                 
-                                thumbnail={Burn}
-                                title='Burn'
+                                thumbnail={Feedthepeople}
+                                title='Feed The People'
                                 description=''
                                 tags={[
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Burn,
-                                            title: song[2].title,
-                                            singer: song[2].singer,
-                                            thumbnail: song[2].thumbnail,
-                                            audio: song[2].audio
+                                            id: Feedthepeople,
+                                            title: song[1].title,
+                                            singer: song[1].singer,
+                                            thumbnail: song[1].thumbnail,
+                                            audio: song[1].audio
                                         })} }
                                     ><FaPlay focusable="false" aria-hidden="true" /></div>
                                 ]}
 
                             />
-                        </div>
-                        <div >
+                        
+                        
                             <TaggedContentCard
+                                className="plz"
                                 style={{width: '20px', minWidth: '200px'}}
                                 
-                                thumbnail={Another}
-                                title='Another Thing'
+                                thumbnail={Feedthepeople}
+                                title='Feed The People'
                                 description=''
                                 tags={[
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Another,
-                                            title: song[3].title,
-                                            singer: song[3].singer,
-                                            thumbnail: song[3].thumbnail,
-                                            audio: song[3].audio
+                                            id: Feedthepeople,
+                                            title: song[1].title,
+                                            singer: song[1].singer,
+                                            thumbnail: song[1].thumbnail,
+                                            audio: song[1].audio
                                         })} }
                                     ><FaPlay focusable="false" aria-hidden="true" /></div>
                                 ]}
 
                             />
-                        </div>
-                        <div >
+                        
+                        
                             <TaggedContentCard
+                                className="plz"
                                 style={{width: '20px', minWidth: '200px'}}
                                 
-                                thumbnail={Hate}
-                                title='Hate'
+                                thumbnail={Feedthepeople}
+                                title='Feed The People'
                                 description=''
                                 tags={[
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Hate,
-                                            title: song[4].title,
-                                            singer: song[4].singer,
-                                            thumbnail: song[4].thumbnail,
-                                            audio: song[4].audio
+                                            id: Feedthepeople,
+                                            title: song[1].title,
+                                            singer: song[1].singer,
+                                            thumbnail: song[1].thumbnail,
+                                            audio: song[1].audio
                                         })} }
                                     ><FaPlay focusable="false" aria-hidden="true" /></div>
                                 ]}
 
                             />
-                        </div>
-                        <div >
+                        
+                        
                             <TaggedContentCard
+                                className="plz"
                                 style={{width: '20px', minWidth: '200px'}}
                                 
-                                thumbnail={Sorry}
-                                title='Sorry'
+                                thumbnail={Feedthepeople}
+                                title='Feed The People'
                                 description=''
                                 tags={[
                                     <div
                                         onClick={ () => { this.setState({
                                             modalIsOpen: true,
-                                            id: Sorry,
-                                            title: song[5].title,
-                                            singer: song[5].singer,
-                                            thumbnail: song[5].thumbnail,
-                                            audio: song[5].audio
+                                            id: Feedthepeople,
+                                            title: song[1].title,
+                                            singer: song[1].singer,
+                                            thumbnail: song[1].thumbnail,
+                                            audio: song[1].audio
                                         })} }
                                     ><FaPlay focusable="false" aria-hidden="true" /></div>
                                 ]}
 
                             />
-                        </div>
-                        <div >
-                            <TaggedContentCard
-                                style={{width: '20px', minWidth: '200px'}}
-                                
-                                thumbnail={Chains}
-                                title='Chains'
-                                description=''
-                                tags={[
-                                    <div
-                                        onClick={ () => { this.setState({
-                                            modalIsOpen: true,
-                                            id: Chains,
-                                            title: song[6].title,
-                                            singer: song[6].singer,
-                                            thumbnail: song[6].thumbnail,
-                                            audio: song[6].audio
-                                        })} }
-                                    ><FaPlay focusable="false" aria-hidden="true" /></div>
-                                ]}
-
-                            />
-                        </div>
-                        <div >
-                            <TaggedContentCard
-                                style={{width: '20px', minWidth: '200px'}}
-                                
-                                thumbnail={Earth}
-                                title='Earth'
-                                description=''
-                                tags={[
-                                    <div
-                                        onClick={ () => { this.setState({
-                                            modalIsOpen: true,
-                                            id: Earth,
-                                            title: song[7].title,
-                                            singer: song[7].singer,
-                                            thumbnail: song[7].thumbnail,
-                                            audio: song[7].audio
-                                        })} }
-                                    ><FaPlay focusable="false" aria-hidden="true" /></div>
-                                ]}
-
-                            />
-                        </div>
-                        <div >
-                            <TaggedContentCard
-                                style={{width: '20px', minWidth: '200px'}}
-                                
-                                thumbnail={Never}
-                                title='Never End'
-                                description=''
-                                tags={[
-                                    <div
-                                        onClick={ () => { this.setState({
-                                            modalIsOpen: true,
-                                            id: Never,
-                                            title: song[8].title,
-                                            singer: song[8].singer,
-                                            thumbnail: song[8].thumbnail,
-                                            audio: song[8].audio
-                                        })} }
-                                    ><FaPlay focusable="false" aria-hidden="true" /></div>
-                                ]}
-
-                            />
-                        </div>
-                        <div >
-                            <TaggedContentCard
-                                style={{width: '20px', minWidth: '200px'}}
-                                
-                                thumbnail={Colors}
-                                title='Colors'
-                                description=''
-                                tags={[
-                                    <div
-                                        onClick={ () => { this.setState({
-                                            modalIsOpen: true,
-                                            id: Colors,
-                                            title: song[9].title,
-                                            singer: song[9].singer,
-                                            thumbnail: song[9].thumbnail,
-                                            audio: song[9].audio
-                                        })} }
-                                    ><FaPlay focusable="false" aria-hidden="true" /></div>
-                                ]}
-
-                            />
-                        </div>
-
-                    </ReactCardCarousel>
-                    {/*<FaArrowAltCircleLeft className="arrowleft" focusable="false" aria-hidden="true" />
-                    <FaArrowAltCircleRight className="arrowright" focusable="false" aria-hidden="true" />*/}
-
-
-
-                </Row>
-
-            </div>
-        );
-    }
+                        
+                        
+                        
+                </Slider>
+            </Row>
+      </div>
+    );
+  }
 }
-export default TCardMobile
+
+
+

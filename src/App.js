@@ -3,7 +3,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
  
 import Home from './Home';
 import Discography from './components/discography';
-import './App.css'
+//import Container01a from './components/container01a'
+//import './App.css'
 import './css/main2.css'
  
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
             <Switch>
              <Route path="/" component={Home} exact/>
              <Route path="/discography" component={Discography}/>
+             {/*<Route path="/container01a" component={Container01a}/>*/}
             <Route component={Error}/>
            </Switch>
         </div> 

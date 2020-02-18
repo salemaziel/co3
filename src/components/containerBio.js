@@ -1,25 +1,50 @@
 import React from 'react'
-import containerBioStyles from '../css/containerBio.module.css'
+import '../css/containerBio.module.css'
 import Glpalbum from '../images/song-art/global-lighting-album/album-cover-glp.jpg'
 
 import { Link } from 'react-router-dom'
 
+import { Row, Col } from 'reactstrap'
 
 class ContainerBio extends React.Component {
     render() {
       return (
         <div id="containerBio" data-scroll-id="three" data-scroll-behavior="center" className="container columns full screen">
         <div id="inner" >
-          <span />
+          
           <div className="afterSpacer" >
+            <Row className="firstalbumHeader"
+            style={{
+                display: 'flex',
+                justifyContent: 'space-evenly',
+            }}>
+              <Col className="firstalbumtitle">
+            <h1 className="style1"><span className="glpspan">Global Lighting Project 2016</span></h1>
             <h2 id="text07" className="style1" /*style={{
               marginBottom: "1rem",
               color: "#7c795d",  fontSize: '45px', fontWeight: 'normal', lineHeight: '48px', margin: 0}}*/ >Chaotic Order </h2>
-            <h3 className="style4" style={{
+            {/*<h3 className="style4" style={{
                                       fontVariant: "small-caps",
-            }}><strong>Seeking Order in Chaos</strong></h3>
-            <p id="text10" className="style2" /*className={containerBioStyles.style2}  align= "justify"
-            style={{color: 'white', fontSize: '18px', lineHeight: '32px', margin: "0 0 24px"}}*/
+            }}><strong>Seeking Order in Chaos</strong></h3>*/}
+            </Col>
+            <Col>
+            <Link to="/discography" style={{
+                            color: "white",
+                            fontSize: "2em",
+                            fontVariant: "small-caps",
+                            justifyContent: "center",
+                            marginTop: "50px",
+                          
+                            }}><img irst
+                                className="firstalbum"
+                                src={Glpalbum}
+                                /*mode="fit"*/></img> 
+              </Link>
+          </Col>
+          </Row>
+          <Row className="oldAlbumText" >
+            <p id="text10" className="style2" /*className={containerBioStyles.style2} */ align= "justify"
+            style={{color: 'white', fontSize: '1.3em', lineHeight: '32px', margin: "0 0 24px"}}
             >
             <br/>
             <br/>
@@ -31,18 +56,7 @@ class ContainerBio extends React.Component {
            <br/>
               Chaotic Order's first album, released in 2016, was named after the seedling nonprofit. 
             </p>
-            
-            <Link to="/discography" style={{
-                            color: "white",
-                            fontSize: "2em",
-                            fontVariant: "small-caps",
-                            justifyContent: "center",
-                            marginTop: "50px",
-                          
-                            }}><img style={{
-                              marginTop: "50px"
-
-                            }}src={Glpalbum} width="300px" mode="fit"></img> </Link>
+            </Row>
           </div>
         </div>
       </div>
