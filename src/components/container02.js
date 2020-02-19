@@ -31,16 +31,16 @@ class Container02 extends React.Component {
         <div 
       id="container02" className="container default full screen" data-scroll-id="one" data-scroll-behavior="center">
         
-        <Row className="songheaderRow" style={{
+       {/* <Row className="songheaderRow" style={{
             display: "flex",
             justifyContent: "center",
             textAlign: "center",
             position: 'relative',
-            /*top: "2em",*/
+            /*top: "2em",* /
             
-        }}>
+        }}> 
           <Col>
-              <img className="songheader" src={Logo} alt='' /*mode='fit' */ style={{
+              <img className="songheader" src={Logo} alt='' /*mode='fit' * / style={{
                                                                             marginTop: "0",
               }} />
               <p 
@@ -57,10 +57,10 @@ class Container02 extends React.Component {
              > Feed The People</p>
               </Col>
            
-        </Row>
-        <Row style={{
+              </Row>*/}
+        <Row /*style={{  display: /*'flex',* /
           
-          }}>
+          }}*/>
           <Col style={{textAlign: "center", marginTop: '1em', marginBottom: '1rem', paddingTop: '1em'}} />
             
           <LazyLoad offset={100}>

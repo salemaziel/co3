@@ -173,6 +173,10 @@
         margin-top: 1.53125rem;
         margin-bottom: 1.53125rem;
     }*/
+    p.style1 {
+        font-size: 1.5em;
+        text-align: center!important;
+    }
 
 }
 }

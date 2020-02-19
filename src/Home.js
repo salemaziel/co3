@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 
 
-import './css/main2.css'
+import './css/main2copy.css'
 //import './css/Rmusicjinkeindex.css'
 //import './css/Rmusic.css'
-import './App.css'
+//import './App.css'
 import Containerheader from './components/containerHeader'
 import Container01 from './components/container01'
 import Container02 from './components/container02'
 import ContainerBio from './components/containerBio'
-import Containercontact from './components/containerContact'
+//import Containercontact from './components/containerContact'
 import Containermemory from './components/containerMemory'
 //import ContainerFooter from './components/containerFooter'
 
@@ -62,7 +62,7 @@ export default class Home extends Component {
                     <section id="home-section" style={{
                                                   display: "flex",
                                                   flexDirection: "column",
-                                                  maxWidth: "100%"
+                                                  /*maxWidth: "100%"*/
                                                   
                     }}>
                       <Containerheader />
@@ -73,7 +73,7 @@ export default class Home extends Component {
 
                       <ContainerBio />
                      <Containermemory />
-                      <Containercontact />
+                     {/* <Containercontact />*/}
                       
                       
 
