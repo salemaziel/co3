@@ -30,15 +30,17 @@ class Discography extends React.Component {
         };
       return (
         <div 
-      id="containerDisc" className="container full screen" data-scroll-id="one" data-scroll-behavior="center"  >
+      id="containerDisc" className="container default full screen" data-scroll-id="one" data-scroll-behavior="center"  >
         <div className="inner">
-        <Row >
-        <Row className="back">
-            <Col style={{
-            textAlign: "left", 
+        {/*<Row style={{
+                display: 'flex',
+        width: 'inherit', }}>*/}
+        <Row className="backrow">
+            <Col className="backcol"/*style={{
+            textAlign: "left, 
             marginTop: '1rem', 
             marginBottom: '1rem'
-            }}>
+            }}*/>
               <Link to="/" style={{
                             color: "white",
                             fontSize: "3em"
@@ -48,21 +50,19 @@ class Discography extends React.Component {
 
         </Row>
         <Row className="glpsongs">
-          <Col /*style={{textAlign: "center", marginTop: '1rem', marginBottom: '1rem'}}*/>
-          </Col>
           <Col className="nomobile">
             <Tcontentdisc2row1 />
                           </Col>
-          <Col className="mobile-slider"  style={{display: 'none'}}>
+         {/* <Col className="mobile-slider"  style={{display: 'none'}}>
               <TCardMobile />
-          </Col>
+                          </Col>*/}
           <Col className="nomobile">
             <Tcontentdisc2row2 />
                         </Col>
           
           
         </Row>
-        </Row>
+        {/*</Row>*/}
                           </div>
       </div>
       
