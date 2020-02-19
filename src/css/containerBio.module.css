@@ -53,11 +53,11 @@
     max-width: 100%;
     padding: 0 0 0 0rem;
 }*/
-
+/*
 .glpspan {
     color: #f9b930;
 }
-
+*/
 
 div.afterSpacer {
     background: rgba(49, 52, 68, 0.1);
@@ -69,7 +69,7 @@ div.afterSpacer {
     justify-content: center;
 }
 
-.firstalbumtitle{
+div.firstalbumtitle{
     align-content: center;
     align-items: center;
     vertical-align: bottom;
@@ -80,7 +80,7 @@ div.afterSpacer {
     text-align: center;
     word-wrap: break-word;
     /*width: 350px;*/
-    max-width: 550px;
+    /*max-width: 550px;*/
 }
 
 img.firstalbum {
@@ -89,17 +89,27 @@ img.firstalbum {
     display: inline-block;
 }
 
-.oldAlbumText {
+div.oldAlbumText {
     margin-left: 1em;
     margin-right: 1em;
     padding-left: 6em;
     padding-right: 6em;
 }
-.firstalbumHeader {
+div.firstalbumHeader {
     display: flex;
     justify-content: space-evenly;
     position: relative;
 
+}
+div.proceeds {
+    /*color: #f9b930!important;*/
+    /*background-color: red;*/
+    padding: 1px;
+    margin: 1px;
+}
+p.proceeds {
+    /*font-size: 40px;
+    font-weight: 900;*/
 }
 
 @media (min-width: 2400px) {
@@ -118,6 +128,12 @@ img.firstalbum {
         margin-right: 1em;
         padding-left: 6em;
         padding-right: 6em;
+    }
+    div.proceeds {
+        /*color: #f9b930!important;*/
+        /*background-color: red;*/
+        padding: 100px;
+        margin: 20px;
     }
 }
 @media (max-width: 1680px) {
@@ -140,18 +156,18 @@ img.firstalbum {
         font-size: 11pt;
     }
     img.firstalbum {
-    margin-top: 50px;
-    width: 350px;
-    display: inline-block;
-    padding: 0 2em 0 1em;
+        margin-top: 50px;
+        width: 350px;
+        display: inline-block;
+        padding: 0 2em 0 1em;
     }
-    .firstalbumHeader {
+    div.firstalbumHeader {
         display: flex;
         justify-content: center!important;
         flex-direction: column!important;
         align-items: center!important;    
     }
-    .oldAlbumText {
+    div.oldAlbumText {
         margin-left: 0;
         margin-right: 0;
         padding-left: 0;
@@ -204,14 +220,14 @@ img.firstalbum {
         padding: 0 10em 0;
     }
 
-    .firstalbumHeader {
+    div.firstalbumHeader {
         display: flex;
         justify-content: center!important;
         flex-direction: column!important;
         position: relative;
         
         }
-        .firstalbumtitle{
+        div.firstalbumtitle{
             align-content: center;
             align-items: center;
             /*vertical-align: bottom;*/
@@ -225,18 +241,24 @@ img.firstalbum {
             max-width: 375px;
             
         }
-        .oldAlbumText {
+        div.oldAlbumText {
             width: 350px;
             margin-left: 1em;
             margin-right: 1em;
             padding-left: 6em;
             padding-right: 6em;
         }
+        div.proceeds {
+            /*color: #f9b930!important;*/
+            /*background-color: red;*/
+            padding: 10px;
+            margin: 20px;
+        }
     
 }
 @media (max-width: 360px) {
-  
-    h1.style1, /*h2.style1,*/ h3.style1, p.style1 {
+  /*
+    h1.style1, /*h2.style1,* / h3.style1, p.style1 {
         font-size: 2em;
     }
     h2.style1 {
@@ -248,10 +270,10 @@ img.firstalbum {
         margin: 0;
     }
 
-    h1.style2, h2.style2, h3.style2 /*p.style2*/ {
+    h1.style2, h2.style2, h3.style2 /*p.style2* / {
         font-size: 1em;
     }
-
+*//*
     p.style2 {
         color: white;
         font-size: 18px;
@@ -259,7 +281,8 @@ img.firstalbum {
         margin: 0 0 24px;
     }
 
-    
+*/
+/*
     .buttons.style1 {
         width: calc(100% + 1.3125rem);
         margin-left: -0.65625rem;
@@ -268,16 +291,16 @@ img.firstalbum {
     .buttons.style1 li {
         max-width: calc(100% - 1.3125rem);
         margin: 0.65625rem;
-    }
+    }*/
 /*
     #containerBio > .inner {
         padding: 2.625rem 1.5rem;
     }
-
+*/
     #containerBio {
         min-height: 20rem;
     }
-
+/*
     #containerBio.default > .inner > * {
         margin-top: 1.3125rem;
         margin-bottom: 1.3125rem;

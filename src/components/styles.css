@@ -1,6 +1,6 @@
 /* @import url('https://use.fontawesome.com/releases/v5.4.2/css/all.css'); */
 
-
+/*
 * {
   box-sizing: border-box;
 }
@@ -33,20 +33,19 @@ nav .links {
   background: #28324366;
   flex-grow: 1;
 }*/
-
+/*
 main .albums {
   padding: 0 50px;
   box-sizing: border-box;
   width: 451px;
   height: 100%;
   /*background: #28324366;
-  border-right: 1px solid #323e4f;*/
-  
+  border-right: 1px solid #323e4f;* /
 }
 
 main h2 {
   color: white;
-  /* margin: -20px; */
+  /* margin: -20px; * /
 }
 
 main .albums .grid {
@@ -138,11 +137,11 @@ main .albums .grid img {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding-left: 3px; */
+  /* padding-left: 3px; * /
   color: black;
 }
 
-
+*/
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);
 
 footer {

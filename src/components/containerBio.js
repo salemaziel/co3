@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom'
 
 import { Row, Col, Container } from 'reactstrap'
 
+//import '../css/glpspan.module.css'
+
 class ContainerBio extends React.Component {
     render() {
       return (
@@ -19,6 +21,7 @@ class ContainerBio extends React.Component {
             }}>
               <Col className="firstalbumtitle">
             <h1 className="style1"><span className="glpspan">Global Lighting Project 2016</span></h1>
+            
             <h2 id="text07" className="style1" /*style={{
               marginBottom: "1rem",
               color: "#7c795d",  fontSize: '45px', fontWeight: 'normal', lineHeight: '48px', margin: 0}}*/ >Chaotic Order </h2>
@@ -41,9 +44,10 @@ class ContainerBio extends React.Component {
               </Link>
           </Col>
           </Row>
-          <Row /*style={{display: 'flex', width: '350px', justifyContent: 'center', alignContent: 'center', alignItems: 'center'}}/*className="oldAlbumText"*/ >
-            <Col>
-            <p /*id="text10" className="style2"*/ /*className={containerBioStyles.style2} */ /*align= "justify"*/
+          <Row className="firstalbumHeader" /*style={{display: 'flex', width: '350px', justifyContent: 'center', alignContent: 'center', alignItems: 'center'}}/*className="oldAlbumText"*/ >
+            <Col className="firstalbumtitle">
+            <div className="proceeds">
+            <p className="proceeds" /*id="text10" className="style2"*/ /*className={containerBioStyles.style2} */ /*align= "justify"*/
            /* style={{color: 'white', fontSize: '1.3em', lineHeight: '32px', margin: "0 0 24px"}}*/
             >
             {/*<br/>
@@ -56,6 +60,7 @@ class ContainerBio extends React.Component {
            <br/>*/}
               Chaotic Order's first album, released in 2016, was named after the seedling nonprofit. 
             </p>
+            </div>
             </Col>
             </Row>
           </div>

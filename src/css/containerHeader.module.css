@@ -1,26 +1,28 @@
 #containerHeader > .inner {
-    text-align: left;
-    /*padding: 6rem 6rem;*/
+    text-align: center;
+    padding: 2rem 6rem;
     width: 100%;
     /*max-width: 65rem;*/
     justify-content: center;
     align-content: center;
     align-items: center;
+    display: inline-flex;
 }
 
 #containerHeader {
     display: flex;
+    flex-direction: row;
     width: 100%;
     width: 100vw;
     min-height: 40rem;
-    -moz-align-items: center;
+    /*-moz-align-items: center;
     -webkit-align-items: center;
     -ms-align-items: center;
     align-items: center;
     -moz-justify-content: center;
     -webkit-justify-content: center;
     -ms-justify-content: center;
-    justify-content: center;
+    justify-content: center;*/
     background-attachment: fixed;
     background-image: linear-gradient(to top, rgba(0,0,0,0.553), rgba(0,0,0,0.553)), url('../images/album-cover-bg.jpg');
     background-position: center;
@@ -28,7 +30,7 @@
     background-size: cover;
     z-index: 2;
 }
-
+/*
 #containerHeader > .inner {
     -moz-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
@@ -41,36 +43,49 @@
     -ms-align-items: flex-start;
     align-items: flex-start;
 }
-
-.albumpromo {
-    margin-left: 6em;
+*/
+div.mainrow {
+    display: flex;
+}
+div.albumpromo {
+    padding: 1rem;
+}
+img.albumpromo {
+    /*margin-left: 6em;
     margin-right: 6em;
-    display: block;
+    display: block;*/
     box-shadow: 3px 3px 10px black;
     width: 550px;
     height: 550px;
     overflow: visible;
+    /*padding: 2rem;*/
 }
-
-.albumlogo {
+div.albumlogo {
+    padding: 6rem 1rem ;
+    
+}
+img.albumlogo {
     width: 600px;
+    padding-top: 4rem;
+    /*padding-bottom: 10em;
+    left: 4em;*/
 }
  
 @media (min-width: 2400px) {
-    #containerHeader {
-    display: -ms-flexbox;
-    display: flex;
+#containerHeader {
+    /*display: -ms-flexbox;
+    display: flex;*/
     width: 100%;
     width: 100vw;
     min-height: 60rem;
-    -moz-align-items: center;
+    /*-moz-align-items: center;
     -ms-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     -moz-justify-content: center;
     -ms-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: center;*/
     background-attachment: fixed;
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0.553)), to(rgba(0,0,0,0.553))), url(/static/media/album-cover-bg.3ba66386.jpg);
     background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.553), rgba(0,0,0,0.553)), url(/static/media/album-cover-bg.3ba66386.jpg);
@@ -81,31 +96,18 @@
     background-size: cover;
 
     }
-    #containerHeader > .inner {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        display: flex;
-        margin: 0 5em 0 0;
-        align-items: flex-start;
-        text-align: left;
-        /* padding: 6rem 6rem; */
-        width: 100%;
-        /* max-width: 65rem; */
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-    .albumpromo {
-        margin-left: 6em;
+   
+    img.albumpromo {
+        /*margin-left: 6em;
         margin-right: 2em;
-        display: flex;
+        display: flex;*/
         box-shadow: 3px 3px 10px black;
         width: 800px;
         height: 800px;
         overflow: visible;
     }
 
-    .albumlogo {
+    img.albumlogo {
         width: 1000px;
     }
     
@@ -115,7 +117,7 @@
     html {
         font-size: 13pt;
     }
-    .albumpromo {
+    /*img.albumpromo {
         margin-left: 6em;
         margin-right: 6em;
         display: block;
@@ -125,81 +127,79 @@
         overflow: visible;
     }
     
-    .albumlogo {
+    img.albumlogo {
         width: 800px;
     }
 }
-
+*/}
 @media (max-width: 1280px) {
     html {
         font-size: 13pt;
     }
-
-    #containerHeader {
-        background-attachment: scroll;
-        display: block;
-    
+    #ContainerHeader {
+        flex-direction: column!important;
+        min-height: 60em!important;
+        height: 60em;
     }
-   .albumpromo {
+    div.mainrow {
+        flex-direction: column;
+    }
+    div.albumpromo {
+        margin: 0 2rem;
+    }
+   img.albumpromo {
         margin-bottom: 3em;
-        margin-left: 24em;
+        margin-left: 0;
         margin-right: 0;
-        display: flex;
-        flex-wrap: wrap;
-        box-shadow: 3px 3px 10px black;
-        width: 400px;
-        height: 400px;
+        padding: 0;
+        /*display: flex;
+        flex-wrap: wrap;* /
+        /*box-shadow: 3px 3px 10px black;*/
+        width: 500px;
+        height: 500px;
     }
-    
-    .albumlogo {
+    div.albumlogo {
+        padding: 2rem 1rem;
+    }
+    img.albumlogo {
         width: 600px;
     }
-
+}
 
 @media (max-width: 980px) {
     html {
         font-size: 11pt;
     }
     #ContainerHeader {
-        display: inline-block;
+        flex-direction: column!important;
+        min-height: 60em!important;
+        height: 60em;
     }
-
-.albumpromo {
-    margin-top: 4em;
-    margin-left: 12em;
-    margin-right: 0;
-    padding-right: 0;
-    display: block;
-    box-shadow: 3px 3px 10px black;
-    width: 350px;
-    height: 350px;
-}
-
-.albumlogo {
-    width: 450px;
-    padding-top: 3em;
-    margin: 0 6rem 0 4rem;
-}
-
-#containerHeader > .inner {
-    text-align: left;
-    /*padding: 6rem 6rem;*/
-    width: 100%;
-    /*max-width: 65rem;*/
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    /*-moz-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;*/
-    display: flex;
-    margin: 0 auto 0 auto;
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-}
+    div.mainrow {
+        flex-direction: column;
+    }
+    div.albumpromo {
+        margin: 2rem 0 4rem;
+        padding: 1rem;
+    }
+    img.albumpromo {
+       /* top: 4em;*/
+        /*margin-left: 12em;*/
+        margin: 2rem 0;
+        padding: 0;
+        /*display: block;*/
+        /*box-shadow: 3px 3px 10px black;*/
+        width: 400px;
+        height: 400px;
+    }
+    div.albumlogo {
+        padding: 1rem 0 4rem;
+    }
+    img.albumlogo {
+        width: 450px;
+        padding: 1rem;
+        margin: 0 2rem 0 4rem;
+    }
 
 }
 @media (max-width: 736px) {
@@ -207,18 +207,16 @@
             font-size: 11pt;
         }
         #ContainerHeader {
-            display: inline-block;
-        }
-    
+            flex-direction: column!important;
+            min-height: 50rem;
+    }
+    /*
         #containerHeader > .inner {
-           /* padding: 3.5rem 2rem;*/
+           /* padding: 3.5rem 2rem;* /
            padding: 0;
             max-width: 100%;
         }
-    
-        #containerHeader {
-            min-height: 50rem;
-        }
+    */
     
         /*.albumpromo {
             margin-left: 6em;
@@ -236,104 +234,73 @@
     */
 }
     @media (max-width: 480px) {
-       
-    
-        #containerHeader {
-            min-height: 50rem;
+       #containerHeader {
+            min-height: 40rem;
+            display: flex;
+            flex-direction: column!important;
+            max-width: 100%;
+        }
+        #containerHeader > .inner {
+            margin: 0;
+            padding: 0;
+            width: inherit;
+        }
+        div.mainrow {
             display: flex;
             flex-direction: column;
-            width: 100%;
         }
-       
-        .albumpromo {
-            margin-top: 0;
-            margin-left: 0!important;
-            margin-right: 0;
-            padding-right: 0;
-            padding-top: 0!important;
-            display: block;
+        div.albumpromo {
+            margin: 1rem 0;
+            padding: 3rem 0 1rem;
+        }
+        img.albumpromo {
+            margin: 1rem 0;
+            padding: 0;
             -webkit-box-shadow: 3px 3px 10px black;
             box-shadow: 3px 3px 10px black;
             width: 300px;
             height: 300px;
         }
-        
-        .albumlogo {
-            /*display: flex;*/
-            width: 370px;
-            padding-top: 3em;
-            margin: 0;
+        div.albumlogo {
+            margin: 1rem 0;
+            padding: 2rem 0 4rem;
         }
-        
+        img.albumlogo {
+            width: 360px;
+            padding: 1rem 0;
+            margin: 1rem 0 1rem;
+        }
     }
+        
+
     @media (max-width: 360px) {
        
-    
-        h1.style1, h2.style1, h3.style1, p.style1 {
-            font-size: 2em;
-        }
-    
-        h1.style2, h2.style2, h3.style2, p.style2 {
-            font-size: 1em;
-        }
-    
-        h1.style3, h2.style3, h3.style3, p.style3 {
-            font-size: 3.5em;
-        }
-    
-        h1.style4, h2.style4, h3.style4, p.style4 {
-            font-size: 1.25em;
-        }
-    
-        h1.style5, h2.style5, h3.style5, p.style5 {
-            font-size: 1em;
-        }
-    
-        .buttons.style1 {
-            width: calc(100% + 1.3125rem);
-            margin-left: -0.65625rem;
-        }
-    
-        .buttons.style1 li {
-            max-width: calc(100% - 1.3125rem);
-            margin: 0.65625rem;
-        }
-    
-       /*
         #containerHeader {
             min-height: 20rem;
-        }*/
-    
-      /*  .albumpromo {
-            margin-top: 4em;
-            margin-left: 3em;
-            padding-right: 0;
-            display: block;
-            box-shadow: 3px 3px 10px black;
-            width: 250px;
-            height: 250px;
+            display: flex;
+            flex-direction: column!important;
+            max-width: 100%;
+            width: 100%;
         }
-        
-        .albumlogo {
-            width: 350px;
-            padding-top: 8em;
+        div.albumpromo {
+            margin: 1rem 0;
+            padding: 1rem 0 0.5rem;
+        }
+        img.albumpromo {
+            margin: 0;
+            padding: 0;
+            box-shadow: 3px 3px 10px black;
+            width: 225px;
+            height: 225px;
+        }
+        div.albumlogo {
+            margin: 1rem 0;
+            padding: 1rem 0 4rem;
+        }
+        img.albumlogo {
+            margin: 0.5rem 0;
+            width: 300px;
+            padding: 0.5rem 0;
             
-        }*/
-    }
-    @media (max-width: 330px) {
-        /*.albumpromo {
-            margin-left: 4em;
-            margin-right: 2em;
-            padding-right: 0;
-            display: block;
-            box-shadow: 3px 3px 10px black;
-            width: 200px;
-            height: 200px;
         }
-        
-        .albumlogo {
-            width: 325px;
-            justify-self: center;
-        }*/
     }
-}

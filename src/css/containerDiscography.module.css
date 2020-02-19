@@ -14,7 +14,13 @@
 #containerDisc {
     display: flex;
     width: 100%;
-    width: 100vw;
+    min-width: 100vw;
+    /*height: 100vh;*/
+    height: 100%;
+    min-height: 100vh;
+    /*min-height: 40rem;*/
+    justify-content: center;
+    align-items: center;
     /*height: 140vh;
     min-height: 40rem;
     -moz-align-items: center;
@@ -34,6 +40,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-image-width: 0;
     /*z-index: 2;*/
     
 }
@@ -80,9 +87,6 @@
     max-width: 100%;
 }
 */
-#containerDisc {
-    min-height: 30rem;
-}
 /*
 #containerDisc.default > .inner > * {
     margin-top: 1.75rem;
@@ -110,19 +114,30 @@
     width: 600px;
     height: auto;
 }
-.back {
+div.back {
     position: relative;
 }
-
+div.glpsongs {
+    padding: 50px;
+    margin: 50px;
+}
+@media (min-width: 2400px) {
+    #containerDisc{
+        height: 100vh;
+    }
+}
 @media (max-width: 1680px) {
     html {
         font-size: 13pt;
     }
-    #containerDisc {
-        display: flex;
+    /*#containerDisc {
+        /*display: flex;
         width: 100%;
         width: 100vw;
-        min-height: 40rem;
+        height: 100vh;
+        height: 100%;
+        min-height: 100%;*/
+        /*min-height: 50rem;*/
        /* height: 100%;
         height: 100vh;
         -moz-align-items: center;
@@ -132,30 +147,30 @@
         -moz-justify-content: center;
         -webkit-justify-content: center;
         -ms-justify-content: center;
-        justify-content: center;*/
+        justify-content: center;* /
         background-attachment: fixed;
         border-style: solid;
         /*border-color: #00FFD1;* /
         /*border-color: #FFB917;
-        border-top-width: 10px;*/
-        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.46875%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), /*linear-gradient(to top, rgba(43,50,94,0.412), rgba(43,50,94,0.412)),*/ url('../images/song-art/global-lighting-album/album-cover-glp-full.jpg');
-        background-size: cover;
+        border-top-width: 10px;* /
+        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.46875%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), /*linear-gradient(to top, rgba(43,50,94,0.412), rgba(43,50,94,0.412)),* / url('../images/song-art/global-lighting-album/album-cover-glp-full.jpg');
+        background-size: cover; 
         background-position: center;
-        background-repeat: no-repeat;
-    }
+        background-repeat: no-repeat 
+    }*/
 }
 
 @media (max-width: 1280px) {
     html {
         font-size: 13pt;
     }
-    #containerDisc {
-        background-attachment: scroll;
+    /*#containerDisc {
+        /*background-attachment: fixed;
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat;* /
        /* margin: 0;
-        max-height: 100vh;*/
-    }
+        max-height: 100vh;* /
+    }*/
     .SpotifyPlayer {
         width: 600px;
         height: 420px;
@@ -174,10 +189,10 @@
     #containerDisc {
         height: 100vh;
     }
-    .nomobile {
+    div.nomobile {
         display: none !important;
     }
-    .mobile-slider{
+    div.mobile-slider{
         display: flex !important;
     }
 }
@@ -191,10 +206,10 @@
         width: 350px;
         height: auto;
     }
-    .nomobile {
+    div.nomobile {
         display: none !important;
     }
-    .mobile-slider{
+    div.mobile-slider{
         display: flex !important;
     }
     .SpotifyPlayer {
@@ -241,7 +256,7 @@
             width: 350px;
             height: 420px;
         }
-        .back {
+        div.back {
             position: relative;
             top: -300px;
             left: -150px;

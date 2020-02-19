@@ -31,7 +31,7 @@ class Discography extends React.Component {
       return (
         <div 
       id="containerDisc" className="full screen" data-scroll-id="one" data-scroll-behavior="center"  >
-        <div className="inner">
+        {/*<div className="inner">*/}
         <Row>
         <Row className="back">
             <Col style={{
@@ -47,7 +47,8 @@ class Discography extends React.Component {
             </Col>
 
         </Row>
-          <Col style={{textAlign: "center", marginTop: '1rem', marginBottom: '1rem'}}>
+        <Row className="glpsongs">
+          <Col /*style={{textAlign: "center", marginTop: '1rem', marginBottom: '1rem'}}*/>
           </Col>
           <Col className="nomobile">
             <Tcontentdisc2row1 />
@@ -61,8 +62,8 @@ class Discography extends React.Component {
           
           
         </Row>
-        
-       </div>
+        </Row>
+                          {/*</div>*/}
       </div>
       
       )

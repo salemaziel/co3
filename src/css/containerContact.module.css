@@ -24,12 +24,12 @@
     border-color: #FF7F63;
     border-top-width: 10px;
 }
-
+/*
 #containerContact.default > .inner > * {
     margin-top: 1.75rem;
     margin-bottom: 1.75rem;
-}
-
+}*/
+/*
 #containerContact.default > .inner > *:first-child {
     margin-top: 0 !important;
 }
@@ -37,7 +37,8 @@
 #containerContact.default > .inner > *:last-child {
     margin-bottom: 0 !important;
 }
-
+*/
+/*
 #containerContact.columns > .inner {
     -moz-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
@@ -68,7 +69,8 @@
     margin-top: 1.75rem;
     margin-bottom: 1.75rem;
 }
-
+*/
+/*
 #containerContact.columns > .inner > * > *:first-child {
     margin-top: 0 !important;
 }
@@ -167,7 +169,7 @@
 #containerContact > .inner > :nth-child(2) {
     width: calc(50% + 3rem);
 }
-
+*/
 
 
 @media (max-width: 1680px) {
@@ -200,12 +202,13 @@
         padding: 3.5rem 2rem;
         max-width: 100%;
     }
-
+/*
     #containerContact.default > .inner > * {
         margin-top: 1.75rem;
         margin-bottom: 1.75rem;
     }
-
+*/
+/*
     #containerContact.columns > .inner {
         -moz-flex-direction: column !important;
         -webkit-flex-direction: column !important;
@@ -216,14 +219,14 @@
         -ms-flex-wrap: nowrap !important;
         flex-wrap: nowrap !important;
     }
-
-
+*/
+/*
     #containerContact.columns > .inner > * > * {
         margin-top: 1.75rem;
         margin-bottom: 1.75rem;
     }
-
-    
+*/
+/*    
 
     #icons02 {
         font-size: 1em;
@@ -248,10 +251,11 @@
     }
 
 }
-
+*/
+}
 @media (max-width: 360px) {
     
-    .buttons.style1 {
+/*    .buttons.style1 {
         width: calc(100% + 1.3125rem);
         margin-left: -0.65625rem;
     }
@@ -283,4 +287,6 @@
     #icons02 li {
         margin: 0.46875rem;
     }
+}
+*/
 }

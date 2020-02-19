@@ -25,7 +25,7 @@
     background-repeat: no-repeat;
     z-index: 2;
 }
-
+/*
 #container01.default > .inner {
     display: block;
     margin-top: 1.75rem;
@@ -33,7 +33,7 @@
     padding: 2rem 2rem;
     max-width: 100%;
     text-align: right ;
-}
+}*/
 /*
 #container01.default > .inner > * {
     margin-top: 1.75rem;
@@ -42,7 +42,7 @@
     max-width: 80%;
 }
 */
-.afterSpacer01 {
+div.afterSpacer01 {
     margin: 4em;
     padding: 4em;
 
@@ -182,7 +182,7 @@
 }
 @media (max-width: 360px) {
    
-
+/*
     .buttons.style1 {
         width: calc(100% + 1.3125rem);
         margin-left: -0.65625rem;
@@ -193,7 +193,7 @@
         margin: 0.65625rem;
     }
 
-   
+*/   
 /*
     #container01 > .inner {
         padding: 2.625rem 1.5rem;

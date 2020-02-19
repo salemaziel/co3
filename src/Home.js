@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 
-import './css/main2copy.css'
+import './css/main2.css'
 //import './css/Rmusicjinkeindex.css'
 //import './css/Rmusic.css'
 //import './App.css'

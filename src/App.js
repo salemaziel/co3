@@ -3,9 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
  
 import Home from './Home';
 import Discography from './components/discography';
-//import Container01a from './components/container01a'
-//import './App.css'
-//import './css/main2.css'
+
  
 class App extends Component {
   render() {
