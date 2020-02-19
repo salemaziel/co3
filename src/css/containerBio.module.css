@@ -3,7 +3,7 @@
     width: 100%;
     max-width: 65rem;
 }
-
+ 
 #containerBio {
     display: flex;
     width: 100%;
@@ -64,6 +64,9 @@ div.afterSpacer {
     margin: 0 7rem;
     padding: 0 5rem;
     color: white;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .firstalbumtitle{
@@ -71,12 +74,13 @@ div.afterSpacer {
     align-items: center;
     vertical-align: bottom;
     display: flex;
+    flex-direction: column;
     /*flex-flow: wrap;*/
     justify-content: center;
     text-align: center;
     word-wrap: break-word;
-    width: 350px;
-    max-width: 375px;
+    /*width: 350px;*/
+    max-width: 550px;
 }
 
 img.firstalbum {
@@ -141,6 +145,18 @@ img.firstalbum {
     display: inline-block;
     padding: 0 2em 0 1em;
     }
+    .firstalbumHeader {
+        display: flex;
+        justify-content: center!important;
+        flex-direction: column!important;
+        align-items: center!important;    
+    }
+    .oldAlbumText {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 @media (max-width: 736px) {
     html {
@@ -195,7 +211,27 @@ img.firstalbum {
         position: relative;
         
         }
-    
+        .firstalbumtitle{
+            align-content: center;
+            align-items: center;
+            /*vertical-align: bottom;*/
+            display: flex;
+            flex-direction: column;
+            /*flex-flow: wrap;*/
+            justify-content: center;
+            text-align: center;
+            word-wrap: break-word;
+            width: 350px;
+            max-width: 375px;
+            
+        }
+        .oldAlbumText {
+            width: 350px;
+            margin-left: 1em;
+            margin-right: 1em;
+            padding-left: 6em;
+            padding-right: 6em;
+        }
     
 }
 @media (max-width: 360px) {
