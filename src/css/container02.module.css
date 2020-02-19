@@ -35,36 +35,9 @@
     /*z-index: 2;*/
 }
 /*
-#container02.default > .inner > * {
-    margin-top: 1.75rem;
-    margin-bottom: 1.75rem;
-}
+
 */
 /*
-#container02.columns > .inner {
-    -moz-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    display: inline-flex;
-    -moz-align-items: flex-start;
-    -webkit-align-items: flex-start;
-    -ms-align-items: flex-start;
-    align-items: flex-start;
-}
-
-#container02.columns > .inner > * {
-    -moz-flex-shrink: 0;
-    -webkit-flex-shrink: 0;
-    -ms-flex-shrink: 0;
-    flex-shrink: 0;
-    -moz-flex-grow: 0;
-    -webkit-flex-grow: 0;
-    -ms-flex-grow: 0;
-    flex-grow: 0;
-    max-width: 100%;
-    padding: 0 0 0 0rem;
-}
 */
 /*
 #container02 > .inner {
@@ -76,104 +49,7 @@
     min-height: 30rem;
 }
 /*
-#container02.default > .inner > * {
-    margin-top: 1.75rem;
-    margin-bottom: 1.75rem;
-}
 */
-/*
-#container02.columns > .inner {
-    -moz-flex-direction: column !important;
-    -webkit-flex-direction: column !important;
-    -ms-flex-direction: column !important;
-    flex-direction: column !important;
-    -moz-flex-wrap: nowrap !important;
-    -webkit-flex-wrap: nowrap !important;
-    -ms-flex-wrap: nowrap !important;
-    flex-wrap: nowrap !important;
-}
-*//*
-.buttons {
-    cursor: default;
-    padding: 0;
-    letter-spacing: 0;
-}
-
-.buttons li a {
-    text-decoration: none;
-    text-align: center;
-    white-space: nowrap;
-    max-width: 100%;
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
-    vertical-align: middle;
-}
-
-.buttons.style1 {
-    width: calc(100% + 1.75rem);
-    margin-left: -0.875rem;
-}
-
-.buttons.style1 li {
-    display: inline-block;
-    vertical-align: middle;
-    max-width: calc(100% - 1.75rem);
-    margin: 0.875rem;
-}
-
-.buttons.style1 li a {
-    display: flex;
-    width: auto;
-    height: 2.75rem;
-    line-height: 2.75rem;
-    vertical-align: middle;
-    padding: 0 1.375rem;
-    text-transform: uppercase;
-    font-size: 0.75em;
-    font-family: 'Source Sans Pro', sans-serif;
-    letter-spacing: 0.125rem;
-    padding-left: calc(0.125rem + 1.375rem);
-    font-weight: 300;
-    border-radius: 2rem;
-    -moz-flex-direction: row-reverse;
-    -webkit-flex-direction: row-reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
-}
-
-.buttons.style1 li a svg {
-    display: block;
-    -moz-transition: fill 0.25s ease;
-    -webkit-transition: fill 0.25s ease;
-    -ms-transition: fill 0.25s ease;
-    transition: fill 0.25s ease;
-    width: 1.25em;
-    min-width: 18px;
-    height: 100%;
-    fill: #FFFFFF;
-    margin-right: calc(-0.125em + 0.125rem);
-    margin-left: 0.5em;
-}
-
-.buttons.style1 .button {
-    color: #FFFFFF;
-    border: solid 1px #FFFFFF;
-}
-
-.buttons.style1 .button:hover {
-    color: #00FFD1 !important;
-    border-color: #00FFD1 !important;
-}
-
-.buttons.style1 .button:hover svg {
-    fill: #00FFD1 !important;
-}*/
 
 .SpotifyPlayer {
     width: 600px;
@@ -345,36 +221,12 @@ img.songheader {
         }
     }
     @media (max-width: 360px) {
-       /* #main > .inner {
-            padding: 0rem 1.5rem;
-        }
-    
-
-        .buttons.style1 {
-            width: calc(100% + 1.3125rem);
-            margin-left: -0.65625rem;
-        }
-    
-        .buttons.style1 li {
-            max-width: calc(100% - 1.3125rem);
-            margin: 0.65625rem;
-        }
-        #container02 > .inner {
-            padding: 2.625rem 1.5rem;
-        }*/
+       /* */
         #container02 {
             min-height: 20rem;
         }
     /*
-        #container02.default > .inner > * {
-            margin-top: 1.3125rem;
-            margin-bottom: 1.3125rem;
-        }
-    
-        #container02.columns > .inner > * > * {
-            margin-top: 1.3125rem;
-            margin-bottom: 1.3125rem;
-        }
+       
     */
         .SpotifyPlayer {
             width: 300px;
@@ -402,13 +254,4 @@ img.songheader {
             z-index: 1000;                                                                          
         }
 }
-/*	
-#icons02 {	
-    width: calc(100% + 0.9375rem);	
-    margin-left: -0.46875rem;	
-}	
-#icons02 li {	
-    margin: 0.46875rem;	
-}
-*/
-    
+

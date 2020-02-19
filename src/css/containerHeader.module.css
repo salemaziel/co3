@@ -70,7 +70,18 @@ img.albumlogo {
     /*padding-bottom: 10em;
     left: 4em;*/
 }
- 
+p.albumlogo {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FCAC02 !important;
+    font-weight: 500;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 3px 3px 6px black;
+    letter-spacing: 3px;
+    
+}
+
 @media (min-width: 2400px) {
 #containerHeader {
     /*display: -ms-flexbox;

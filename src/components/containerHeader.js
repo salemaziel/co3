@@ -22,13 +22,8 @@ class Containerheader extends React.Component {
               <Col xs="5" className="albumlogo" /*className={containerHeaderStyles.inner}*/> 
           
               <img className='albumlogo' src={Logo} alt='' /*mode='fit' */ />
-                <p 
-                  id="text04" 
-                  /*className="style4" */
-                  style={{
-                  color: '#FCAC02 !important',
-                  }}
-             > Feed The People - available now!</p>
+                <p className="albumlogo"
+             > Feed The People </p>
               </Col>
           </Row>
          </div>

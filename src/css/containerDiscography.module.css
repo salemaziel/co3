@@ -1,24 +1,52 @@
+html,body {
+    border-image-width: 0;
+}
 /*.container {
     display: flex;
     width: 100%;
     height: 100%;
     background-size: cover;
-}*/
-/*
+}
+*/
 #containerDisc > .inner {
-    padding: 2rem 2rem;
+    text-align: center;
+    padding: 2rem 1rem;
     width: 100%;
-    max-width: 65rem;
-}*/
+    /*max-width: 65rem;*/
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: inline-flex;
+}
 
 #containerDisc {
     display: flex;
+    flex-direction: row;
+    width: 100%;
+    width: 100vw;
+    min-height: 40rem;
+    border-image-width: 0;
+    /*-moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;*/
+    background-attachment: fixed;
+    /*background-image: linear-gradient(to top, rgba(0,0,0,0.553), rgba(0,0,0,0.553)), url('../images/album-cover-bg.jpg');*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    /*display: flex;
     width: 100%;
     min-width: 100vw;
-    /*height: 100vh;*/
+    /*height: 100vh;* /
     height: 100%;
     min-height: 100vh;
-    /*min-height: 40rem;*/
+    /*min-height: 40rem;* /
     justify-content: center;
     align-items: center;
     /*height: 140vh;
@@ -30,80 +58,20 @@
     -moz-justify-content: center;
     -webkit-justify-content: center;
     -ms-justify-content: center;
-    justify-content: center;*/
+    justify-content: center;* /
     background-attachment: fixed;
     border-style: solid;
     /*border-color: #00FFD1;*/
     /*border-color: #FFB917;
     border-top-width: 10px;*/
     background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.46875%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), /*linear-gradient(to top, rgba(43,50,94,0.412), rgba(43,50,94,0.412)),*/ url('../images/cdcover-glp.jpg');
-    background-size: cover;
+    /*background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-image-width: 0;
     /*z-index: 2;*/
     
 }
-/*
-#containerDisc.default > .inner > * {
-    margin-top: 1.75rem;
-    margin-bottom: 1.75rem;
-}*/
-/*
-#containerDisc.columns > .inner {
-    -moz-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    display: inline-flex;
-    -moz-align-items: flex-start;
-    -webkit-align-items: flex-start;
-    -ms-align-items: flex-start;
-    align-items: flex-start;
-}
-*/
-/*
-#containerDisc.columns > .inner > * {
-    -moz-flex-shrink: 0;
-    -webkit-flex-shrink: 0;
-    -ms-flex-shrink: 0;
-    flex-shrink: 0;
-    -moz-flex-grow: 0;
-    -webkit-flex-grow: 0;
-    -ms-flex-grow: 0;
-    flex-grow: 0;
-    max-width: 100%;
-    padding: 0 0 0 0rem;
-}*/
-/*
-#containerDisc.columns > .inner > * > * {
-    margin-top: 1.75rem;
-    margin-bottom: 1.75rem;
-}
-
-
-#containerDisc > .inner {
-    padding: 1.5rem 0.5rem;
-    max-width: 100%;
-}
-*/
-/*
-#containerDisc.default > .inner > * {
-    margin-top: 1.75rem;
-    margin-bottom: 1.75rem;
-}*/
-/*
-#containerDisc.columns > .inner {
-    -moz-flex-direction: column !important;
-    -webkit-flex-direction: column !important;
-    -ms-flex-direction: column !important;
-    flex-direction: column !important;
-    -moz-flex-wrap: nowrap !important;
-    -webkit-flex-wrap: nowrap !important;
-    -ms-flex-wrap: nowrap !important;
-    flex-wrap: nowrap !important;
-}
-*/
 
 .SpotifyPlayer {
     width: 600px;
@@ -122,9 +90,9 @@ div.glpsongs {
     margin: 50px;
 }
 @media (min-width: 2400px) {
-    #containerDisc{
+    /*#containerDisc{
         height: 100vh;
-    }
+    }*/
 }
 @media (max-width: 1680px) {
     html {
@@ -171,10 +139,7 @@ div.glpsongs {
        /* margin: 0;
         max-height: 100vh;* /
     }*/
-    .SpotifyPlayer {
-        width: 600px;
-        height: 420px;
-    }
+    
     
 }
 
@@ -182,13 +147,10 @@ div.glpsongs {
     html {
         font-size: 11pt;
     }
-    .SpotifyPlayer {
-        width: 550px;
-        height: 420px;
-    }
-    #containerDisc {
+    
+    /*#containerDisc {
         height: 100vh;
-    }
+    }*/
     div.nomobile {
         display: none !important;
     }
@@ -212,10 +174,7 @@ div.glpsongs {
     div.mobile-slider{
         display: flex !important;
     }
-    .SpotifyPlayer {
-        width: 450px;
-        height: 420px;
-    }
+    
     .arrowleft2 {
         display: flex!important;
         font-size: 1.5em;
@@ -238,24 +197,12 @@ div.glpsongs {
 }    
 
     @media (max-width: 480px) {
-       
-       /* #containerDisc.default > .inner > * {
-            margin-top: 1.53125rem;
-            margin-bottom: 1.53125rem;
-        }*/
-    
-       /* #containerDisc.columns > .inner > * > * {
-            margin-top: 1.53125rem;
-            margin-bottom: 1.53125rem;
-        }*/
+      
         .wmp-container {
             width: 300px;
             height: auto;
         }
-        .SpotifyPlayer {
-            width: 350px;
-            height: 420px;
-        }
+       
         div.back {
             position: relative;
             top: -300px;
@@ -282,28 +229,7 @@ div.glpsongs {
         }
     }
     @media (max-width: 360px) {
+     
         
-      /*  #containerDisc > .inner {
-            padding: 2.625rem 1.5rem;
-        }
-    
-        #containerDisc {
-            min-height: 20rem;
-        }
-    */
-      /*  #containerDisc.default > .inner > * {
-            margin-top: 1.3125rem;
-            margin-bottom: 1.3125rem;
-        }*/
-    /*
-        #containerDisc.columns > .inner > * > * {
-            margin-top: 1.3125rem;
-            margin-bottom: 1.3125rem;
-        }
-    */
-        .SpotifyPlayer {
-            width: 300px;
-            height: 420px;
-        }
     }
     

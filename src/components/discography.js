@@ -30,9 +30,9 @@ class Discography extends React.Component {
         };
       return (
         <div 
-      id="containerDisc" className="full screen" data-scroll-id="one" data-scroll-behavior="center"  >
-        {/*<div className="inner">*/}
-        <Row>
+      id="containerDisc" className="container full screen" data-scroll-id="one" data-scroll-behavior="center"  >
+        <div className="inner">
+        <Row >
         <Row className="back">
             <Col style={{
             textAlign: "left", 
@@ -63,7 +63,7 @@ class Discography extends React.Component {
           
         </Row>
         </Row>
-                          {/*</div>*/}
+                          </div>
       </div>
       
       )
