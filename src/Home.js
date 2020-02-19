@@ -3,14 +3,14 @@ import React, { Component } from 'react'
 import './css/main2.css'
 //import './css/Rmusicjinkeindex.css'
 //import './css/Rmusic.css'
-import './App.css'
+//import './App.css'
 import Containerheader from './components/containerHeader'
 import Container01 from './components/container01'
 import Container02 from './components/container02'
 import ContainerBio from './components/containerBio'
-import Containercontact from './components/containerContact'
+//import Containercontact from './components/containerContact'
 import Containermemory from './components/containerMemory'
-import ContainerFooter from './components/containerFooter'
+//import ContainerFooter from './components/containerFooter'
 
 import Embed from 'react-song-embed'
 
@@ -58,7 +58,11 @@ export default class Home extends Component {
                 }} />
                 <div id="main">
                     <div className="inner">
-                    <section id="home-section">
+                    <section id="home-section" style={{
+                                                  display: "flex",
+                                                  flexDirection: "column",
+                                                  
+                    }}>
                       <Containerheader />
 
                       <Container01 />
@@ -66,13 +70,13 @@ export default class Home extends Component {
                       <Container02 />
 
                       <ContainerBio />
-                      <Containermemory />
-                      <Containercontact />
+                     <Containermemory />
+                      {/* <Containercontact />*/}
                       
                       
 
                     
-                    <ContainerFooter/>
+                   {/* <ContainerFooter/>*/}
                     </section>
 
                     </div>

@@ -6,11 +6,12 @@
 #container02 > .inner {
     padding: 2rem 2rem;
     width: 100%;
-    max-width: 65rem;
+    /*max-width: 65rem;*/
 }
 
 #container02 {
     display: flex;
+    flex-direction: column;
     width: 100%;
     min-height: 40rem;
     -moz-align-items: center;
@@ -27,9 +28,10 @@
     border-color: #FFB917;
     border-top-width: 10px;
     background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.46875%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), linear-gradient(to top, rgba(43,50,94,0.412), rgba(43,50,94,0.412)), url('../images/container02.jpg');
-    background-size: 512px, auto, cover;
-    background-position: center, 0% 0%, center;
-    background-repeat: repeat, repeat, repeat;
+    background-size:  cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*z-index: 2;*/
 }
 
 #container02.default > .inner > * {
@@ -44,7 +46,7 @@
 #container02.default > .inner > *:last-child {
     margin-bottom: 0 !important;
 }
-*/
+*//*
 #container02.columns > .inner {
     -moz-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
@@ -86,7 +88,7 @@
 #container02.columns > .inner > *:first-child {
     margin-left: 0rem;
 }
-
+*//*
 #container02.default > .inner > .full {
     margin-left: calc(-6rem);
     width: calc(100% + 12rem + 0.4725px);
@@ -174,7 +176,7 @@
 #container02 > .inner > :nth-child(2) {
     width: 50%;
 }
-
+*/
 #container02 > .inner {
     padding: 1.5rem 0.5rem;
     max-width: 100%;
@@ -188,7 +190,7 @@
     margin-top: 1.75rem;
     margin-bottom: 1.75rem;
 }
-
+/*
 #container02.columns > .inner {
     -moz-flex-direction: column !important;
     -webkit-flex-direction: column !important;
@@ -231,7 +233,7 @@
 #container02.columns > .inner > div.before-spacer {
     padding-bottom: 0 !important;
 }
-
+*//*
 #container02.default > .inner > .full {
     margin-left: calc(-2rem);
     width: calc(100% + 4rem + 0.4725px);
@@ -311,7 +313,7 @@
 #container02.columns > .inner > .full > .full:first-child:last-child a, #container02.columns > .inner > .full > .full:first-child:last-child span, #container02.columns > .inner > .full > .full:first-child:last-child img {
     height: auto;
 }
-
+*//*
 #container02 > .inner > :nth-child(1) {
     width: 100% !important;
     min-height: 100% !important;
@@ -323,7 +325,7 @@
     min-height: 100% !important;
     text-align: inherit !important;
 }
-*/
+*//*
 h1 br + br, h2 br + br, h3 br + br, p br + br {
     display: block;
     content: ' ';
@@ -487,8 +489,8 @@ h1.style5, h2.style5, h3.style5, p.style5 {
 
 .buttons.style1 .button:hover svg {
     fill: #00FFD1 !important;
-}
-
+}*/
+/*
 #main > .inner > .full.screen {
     width: 100vw;
     max-width: 100vw;
@@ -543,11 +545,11 @@ h1.style5, h2.style5, h3.style5, p.style5 {
 
 #divider03:before {
     width: 15%;
-    /*border-top: solid 5px #FF00A8;*/
-    border-top: solid 5px #ff002b;
+    /*border-top: solid 5px #FF00A8;* /
+    border-top: solid 5px #ff002b; 
     height: 5px;
 }
-
+*/
 .SpotifyPlayer {
     width: 600px;
     height: 420px;
@@ -557,10 +559,18 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     width: 600px;
     height: auto;
 }
+
+.songheaderRow {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
 .songheader {
     width: 800px;
-
 }
+
 
 
 @media (max-width: 1680px) {
@@ -586,23 +596,47 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         width: 600px;
         height: 420px;
     }
+    .nomobile {
+        display: inline-block;
+    }
 }
 
 @media (max-width: 980px) {
     html {
         font-size: 11pt;
     }
+    #container02 {
+        min-height: 50em;
+        padding: 0 0 6em;      
+    }
     .SpotifyPlayer {
         width: 550px;
         height: 420px;
     }
+    .songheaderRow {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 5em;
+        padding-bottom: 5em;
+    }
+    .songheader {
+        width: 700px;
+    }
+    .nomobile {
+        display: none !important;
+    }
+    .mobile-slider{
+        display: flex !important;
+    }
+    
 }
 
 @media (max-width: 736px) {
     html {
         font-size: 11pt;
     }
-    h1.style1, h2.style1, h3.style1, p.style1 {
+    /*h1.style1, h2.style1, h3.style1, p.style1 {
         letter-spacing: -0.065625rem;
         width: 100%;
         font-size: 2em;
@@ -639,7 +673,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     #divider03 {
         height: 0.5rem;
         line-height: 0.5rem;
-    }
+    }*/
     .wmp-container {
         width: 350px;
         height: auto;
@@ -675,7 +709,12 @@ h1.style5, h2.style5, h3.style5, p.style5 {
 }    
 
     @media (max-width: 480px) {
-       #main > .inner > header {
+        #container02 {
+            min-height: 40em;
+            justify-content: center;
+            padding: 0 0 2em;
+        }
+     /*  #main > .inner > header {
             margin-bottom: 0rem;
         }
     
@@ -686,16 +725,16 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         #main > .inner > * > * {
             margin-top: 0rem;
             margin-bottom: 0rem;
-        }
+        }*//*
         #container02.default > .inner > * {
             margin-top: 1.53125rem;
             margin-bottom: 1.53125rem;
-        }
-    
+        }*/
+    /*
         #container02.columns > .inner > * > * {
             margin-top: 1.53125rem;
             margin-bottom: 1.53125rem;
-        }
+        }*/
         .wmp-container {
             width: 300px;
             height: auto;
@@ -727,8 +766,13 @@ h1.style5, h2.style5, h3.style5, p.style5 {
             position: absolute;
             z-index: 100;                                                                          
         }
+        .songheaderRow {
+            margin-bottom: 3em;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
         .songheader {
-            width: 450px;
+            width: 350px;
         }
     }
     @media (max-width: 360px) {
@@ -736,7 +780,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
             padding: 0rem 1.5rem;
         }
     
-        #main > .inner > header {
+       /* #main > .inner > header {
             margin-bottom: 0rem;
         }
     
@@ -747,8 +791,8 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         #main > .inner > * > * {
             margin-top: 0rem;
             margin-bottom: 0rem;
-        }
-    
+        }*/
+    /*
         #main > .inner > .full {
             margin-left: calc(-1.5rem);
             width: calc(100% + 3rem + 0.4725px);
@@ -784,7 +828,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         #main > .inner > .active > .full:last-child {
             margin-bottom: -0rem !important;
         }
-    
+    */
         h1.style1, h2.style1, h3.style1, p.style1 {
             font-size: 2em;
         }
@@ -831,7 +875,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
             margin-top: 1.3125rem;
             margin-bottom: 1.3125rem;
         }
-    
+    /*
         #container02.default > .inner > .full {
             margin-left: calc(-1.5rem);
             width: calc(100% + 3rem + 0.4725px);
@@ -878,7 +922,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     
         #container02.columns > .inner > .full {
             min-height: 20rem;
-        }
+        }*/
         .SpotifyPlayer {
             width: 300px;
             height: 420px;
@@ -905,7 +949,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
             z-index: 1000;                                                                          
         }
     }
-    /*#icons02 {
+    #icons02 {
         width: calc(100% + 0.9375rem);
         margin-left: -0.46875rem;
     }
@@ -913,7 +957,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     #icons02 li {
         margin: 0.46875rem;
     }
-
+/*
     body {
         overflow: auto !important;
     }

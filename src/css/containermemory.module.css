@@ -2,7 +2,7 @@
     padding: 1 rem 2rem;
     width: 100%;
     /*max-width: 65rem;*/
-    z-index: 100;
+    /*z-index: -1;*/
 }
 
 #containermemory {
@@ -29,12 +29,17 @@
     /*border-color: #00FFD1;*/
     border-color:#0C39FF;
     border-top-width: 10px;
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.46875%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), /*linear-gradient(to top, rgba(43,50,94,0.412), rgba(43,50,94,0.412)),*/ url('../images/cabin.jpg');
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.46875%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E') , /*linear-gradient(to top, rgba(43,50,94,0.412), rgba(43,50,94,0.412)),*/ url('../images/cabin.jpg');
     background-size: cover;
     background-position: top;
-    background-repeat: norepeat;
+    background-repeat: no-repeat;
+    z-index: 3;
 }
-#containermemory:after {
+#containermemory.columns {
+    z-index: -4;
+}
+
+#containermemory.columns:after {
     content:"";
 	position:absolute;
 	top:0px;
@@ -42,13 +47,14 @@
 	bottom:0px;
 	left:0px;
 	background:rgba(0,0,0,0.7);
-	height:100%;
+    height:100%;
+    z-index: -5;
 }
-
+/*
 #containermemory.default > .inner > * {
     margin-top: 1rem;
     margin-bottom: 1rem;
-}
+}*/
 /*
 #containermemory.default > .inner > *:first-child {
     margin-top: 0 !important;
@@ -58,6 +64,8 @@
     margin-bottom: 0 !important;
 }
 */
+
+
 #containermemory.columns > .inner {
     -moz-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
@@ -69,7 +77,20 @@
     -webkit-align-items: flex-start;
     -ms-align-items: flex-start;
     align-items: flex-start;
+    z-index: 3;
 }
+/*
+#containermemory.columns > .inner:after {
+    content:"";
+    position: absolute;
+    /*top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;* /
+    background:rgba(0,0,0,0.65);
+    height:100%;
+    z-index: -1;
+}*/
 /*
 #containermemory.columns > .inner > * {
     -moz-flex-shrink: 0;
@@ -83,12 +104,12 @@
     max-width: 100%;
     padding: 0 0 0 0rem;
 }
-*/
+*//*
 #containermemory.columns > .inner > * > * {
     margin-top: 1rem;
     margin-bottom: 1rem;
-}
-
+}*/
+/*
 #containermemory.columns > .inner > * > *:first-child {
     margin-top: 0 !important;
 }
@@ -150,6 +171,7 @@
     border-top-right-radius: inherit;
 }
 */
+/*
 #containermemory.columns > .inner > .full {
     align-self: stretch;
 }
@@ -179,12 +201,13 @@
     height: 100%;
     border-radius: inherit;
 }
-
+*/
+/*
 h1 br + br, h2 br + br, h3 br + br, p br + br {
     display: block;
     content: ' ';
 }
-
+*/
 h1 .li, h2 .li, h3 .li, p .li {
     display: list-item;
     padding-left: 0.5em;
@@ -262,12 +285,12 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     line-height: 2;
     font-weight: 300;
 }
-
+/*
 #containermemory.columns > .inner > .full > .full:first-child:last-child a, #containermemory.columns > .inner > .full > .full:first-child:last-child span, #containermemory.columns > .inner > .full > .full:first-child:last-child img {
     height: 100%;
     border-radius: inherit;
 }
-
+*/
 .icons {
     cursor: default;
     padding: 0;
@@ -278,7 +301,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     display: inline-block;
     vertical-align: middle;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .icons li a {
@@ -363,7 +386,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
 
 .memorycontainer {
 	display: inline-flex;
-	background: rgba(255,255,255,0.45);
+	background: rgba(255,255,255,0.55);
 	padding: 2.5em 4em;
 	border: 2px;
 	border-radius: 15px;
@@ -375,6 +398,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
 .lovingmem{
     padding: 0 2em;
     margin: 0 0;
+    z-index: 3;
 }
 @media (max-width: 1680px) {
     html {
@@ -399,7 +423,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         font-size: 11pt;
     }
 
-    #main > .inner {
+  /*  #main > .inner {
         padding: 0rem 2rem;
     }
 
@@ -451,7 +475,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     #main > .inner > .active > .full:last-child {
         margin-bottom: 0rem !important;
     }
-
+*/
     h1.style1, h2.style1, h3.style1, p.style1 {
         letter-spacing: -0.065625rem;
         width: 100%;
@@ -486,7 +510,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         font-size: 1em;
         line-height: 2;
     }
-
+/*
     #divider02 {
         height: 0.5rem;
         line-height: 0.5rem;
@@ -526,7 +550,8 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
-
+*/
+/*
     #containermemory.columns > .inner {
         -moz-flex-direction: column !important;
         -webkit-flex-direction: column !important;
@@ -546,7 +571,8 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
-
+*/
+/*
     #containermemory.columns > .inner > * {
         padding: 0rem 0 !important;
     }
@@ -580,7 +606,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     #containermemory.default > .inner > .full:last-child {
         margin-bottom: -3rem !important;
     }
-/*
+
     #containermemory.columns > .inner > div > .full {
         margin-left: calc(-2rem);
         width: calc(100% + 4rem + 0.4725px);
@@ -612,6 +638,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         margin-bottom: calc(-3rem) !important;
     }
 */
+/*
     #containermemory.columns > .inner > div:first-of-type, #containermemory.columns > .inner > div:first-of-type > .full:first-child {
         border-top-left-radius: inherit;
         border-top-right-radius: inherit;
@@ -643,7 +670,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     #containermemory.columns > .inner > .full > .full:first-child:last-child a, #containermemory.columns > .inner > .full > .full:first-child:last-child span, #containermemory.columns > .inner > .full > .full:first-child:last-child img {
         height: auto;
     }
-
+*/
     #icons02 {
         font-size: 1em;
         width: calc(100% + 1.25rem);
@@ -655,7 +682,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     }
 }
 @media (max-width: 480px) {
-    #main > .inner > header {
+  /*  #main > .inner > header {
         margin-bottom: 0rem;
     }
 
@@ -672,17 +699,18 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         margin-top: 0.875rem;
         margin-bottom: 0.875rem;
     }
-
+*/
+/*
     #containermemory.columns > .inner > * > * {
         margin-top: 0.875rem;
         margin-bottom: 0.875rem;
-    }
+    } 
     .memorycontainer {
         padding: 2.5em 8em;
-}
+}*/
 }
 @media (max-width: 360px) {
-    #main > .inner {
+   /* #main > .inner {
         padding: 0rem 1.5rem;
     }
 
@@ -734,7 +762,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     #main > .inner > .active > .full:last-child {
         margin-bottom: -0rem !important;
     }
-
+*/
     h1.style1, h2.style1, h3.style1, p.style1 {
         font-size: 2em;
     }
@@ -764,11 +792,12 @@ h1.style5, h2.style5, h3.style5, p.style5 {
         max-width: calc(100% - 1.3125rem);
         margin: 0.65625rem;
     }
-
+/*
     #containermemory > .inner {
         padding: 2.25rem 1.5rem;
     }
-
+*/
+/*
     #containermemory.default > .inner > * {
         margin-top: 0.75rem;
         margin-bottom: 0.75rem;
@@ -822,7 +851,7 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     #containermemory.columns > .inner > div:last-of-type > .full:last-child {
         margin-bottom: calc(-2.25rem) !important;
     }
-
+*/
     #icons02 {
         width: calc(100% + 0.9375rem);
         margin-left: -0.46875rem;

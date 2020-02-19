@@ -11,6 +11,7 @@ class Containermemory extends React.Component {
     render() {
       return (
         <div id="containermemory" className="container columns full screen">
+        <div className="darkbackground" />
         <div className="inner">
 
         <Row>

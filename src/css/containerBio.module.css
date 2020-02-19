@@ -21,11 +21,13 @@
     border-color: #FAFF00;
     border-top-width: 10px;
     background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.46875%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), linear-gradient(to top, rgba(43,50,94,0.412), rgba(43,50,94,0.412)), url('../images/container03.jpg?v40123277835751');
-    background-size: 512px, auto, cover;
-    background-position: center, 0% 0%, center;
-    background-repeat: repeat, repeat, repeat;
+    background-size: cover, auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    padding: 2em 0;
 }
-
+/*
 #containerBio.default > .inner > * {
     margin-top: 1.75rem;
     margin-bottom: 1.75rem;
@@ -38,7 +40,7 @@
 #containerBio.default > .inner > *:last-child {
     margin-bottom: 0 !important;
 }
-
+*//*
 #containerBio.columns > .inner {
     -moz-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
@@ -49,8 +51,8 @@
     -webkit-align-items: flex-start;
     -ms-align-items: flex-start;
     align-items: flex-start;
-}
-
+}*/
+/*
 #containerBio.columns > .inner > * {
     -moz-flex-shrink: 0;
     -webkit-flex-shrink: 0;
@@ -62,13 +64,13 @@
     flex-grow: 0;
     max-width: 100%;
     padding: 0 0 0 0rem;
-}
-
+}*/
+/*
 #containerBio.columns > .inner > * > * {
     margin-top: 1.75rem;
     margin-bottom: 1.75rem;
-}
-
+}*/
+/*
 #containerBio.columns > .inner > * > *:first-child {
     margin-top: 0 !important;
 }
@@ -80,7 +82,8 @@
 #containerBio.columns > .inner > *:first-child {
     margin-left: 0rem;
 }
-
+*/
+/*
 #containerBio.default > .inner > .full {
     margin-left: calc(-6rem);
     width: calc(100% + 12rem + 0.4725px);
@@ -168,7 +171,8 @@
 #containerBio > .inner > :nth-child(2) {
     width: 50%;
 }
-
+*/
+/*
 h1 br + br, h2 br + br, h3 br + br, p br + br {
     display: block;
     content: ' ';
@@ -179,7 +183,7 @@ h1 .li, h2 .li, h3 .li, p .li {
     padding-left: 0.5em;
     margin: 0.75em 0 0 1em;
 }
-
+*//*
 h1.style1, h2.style1, h3.style1, p.style1 br + br {
     margin-top: 0.9rem;
 }
@@ -194,7 +198,9 @@ h1.style1, h2.style1, h3.style1, p.style1 {
     line-height: 1.5;
     font-weight: 900;
 }
-
+.glpspan {
+    color: #f9b930;
+}
 
 h1.style2, h2.style2, h3.style2, p.style2 br + br {
     margin-top: 1.2rem;
@@ -234,7 +240,7 @@ h1.style4, h2.style4, h3.style4, p.style4 {
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 0.025rem;
     width: calc(100% + 0.025rem);
-    font-size: 1.25em;
+    font-size: 3.25em;
     line-height: 2;
     font-weight: 300;
 }
@@ -252,15 +258,70 @@ h1.style5, h2.style5, h3.style5, p.style5 {
     line-height: 2;
     font-weight: 300;
 }
-
+*/
 div.afterSpacer {
     background: rgba(49, 52, 68, 0.1);
-    margin: 7rem;
-    padding: 5rem;
+    margin: 0 7rem;
+    padding: 0 5rem;
     color: white;
 }
 
+.firstalbumtitle{
+    align-content: center;
+    align-items: center;
+    vertical-align: bottom;
+    display: flex;
+    /*flex-flow: wrap;*/
+    justify-content: center;
+    text-align: center;
+    word-wrap: break-word;
+    width: 350px;
+    max-width: 375px;
+}
 
+img.firstalbum {
+    margin-top: 50px;
+    width: 500px;
+    display: inline-block;
+}
+
+.oldAlbumText {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-left: 6em;
+    padding-right: 6em;
+}
+.firstalbumHeader {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+
+}
+
+@media (min-width: 2400px) {
+    #containerBio {
+        min-height: 50vh;
+        padding: 4em 0;
+    }
+    img.firstalbum {
+        margin-top: 50px;
+        width: 700px;
+        display: inline-block;
+    }
+    h1.style2, h2.style2, h3.style2, p.style2 {
+        color: rgba(255,255,255,0.78);
+        font-family: 'Source Sans Pro', sans-serif;
+        letter-spacing: 0.025rem;
+        width: calc(100% + 0.025rem);
+        font-size: 1.3em;
+}
+    .oldAlbumText {
+        margin-left: 1em;
+        margin-right: 1em;
+        padding-left: 6em;
+        padding-right: 6em;
+    }
+}
 @media (max-width: 1680px) {
     html {
         font-size: 13pt;
@@ -280,13 +341,19 @@ div.afterSpacer {
     html {
         font-size: 11pt;
     }
+    img.firstalbum {
+    margin-top: 50px;
+    width: 350px;
+    display: inline-block;
+    padding: 0 2em 0 1em;
+    }
 }
 @media (max-width: 736px) {
     html {
         font-size: 11pt;
     }
 
-    #divider02 {
+   /* #divider02 {
         height: 0.5rem;
         line-height: 0.5rem;
     }
@@ -315,7 +382,8 @@ div.afterSpacer {
         height: 0.5rem;
         line-height: 0.5rem;
     }
-
+*/
+/*
     #containerBio > .inner {
         padding: 3.5rem 2rem;
         max-width: 100%;
@@ -329,7 +397,8 @@ div.afterSpacer {
         margin-top: 1.75rem;
         margin-bottom: 1.75rem;
     }
-
+*/
+/*
     #containerBio.columns > .inner {
         -moz-flex-direction: column !important;
         -webkit-flex-direction: column !important;
@@ -370,7 +439,8 @@ div.afterSpacer {
     #containerBio.columns > .inner > div.before-spacer {
         padding-bottom: 0 !important;
     }
-
+*/
+/*
     #containerBio.default > .inner > .full {
         margin-left: calc(-2rem);
         width: calc(100% + 4rem + 0.4725px);
@@ -435,7 +505,7 @@ div.afterSpacer {
 
     #containerBio.columns > .inner > .full {
         min-height: 30rem;
-    }
+    } 
 
     #containerBio.columns > .inner > .full > .full:first-child:last-child {
         height: auto;
@@ -462,7 +532,7 @@ div.afterSpacer {
         min-height: 100% !important;
         text-align: inherit !important;
     }
-
+*/
     #icons02 {
         font-size: 1em;
         width: calc(100% + 1.25rem);
@@ -475,7 +545,7 @@ div.afterSpacer {
 }
 
 @media (max-width: 480px) {
-    #main > .inner > header {
+    /*#main > .inner > header {
         margin-bottom: 0rem;
     }
 
@@ -492,7 +562,8 @@ div.afterSpacer {
         margin-top: 1.53125rem;
         margin-bottom: 1.53125rem;
     }
-
+*/
+/*
     #containerBio.columns > .inner > * > * {
         margin-top: 1.53125rem;
         margin-bottom: 1.53125rem;
@@ -503,11 +574,32 @@ div.afterSpacer {
         margin: 2rem 1rem;
         padding: 2rem;
         color: white;
+    }*/
+    img.firstalbum {
+        margin-top: 50px;
+        width: 325px;
+        display: flex;
+        padding: 0 10em 0;
+    }
+
+    .firstalbumHeader {
+        display: flex;
+        justify-content: center!important;
+        flex-direction: column!important;
+        position: relative;
+        
+        }
+    
+    h1.style1, h2.style1, h3.style1, p.style1 {
+        letter-spacing: -0.065625rem;
+        width: 100%;
+        font-size: 1.5em;
+        line-height: 1.5;
+        
     }
 }
-
 @media (max-width: 360px) {
-    #main > .inner {
+   /* #main > .inner {
         padding: 0rem 1.5rem;
     }
 
@@ -559,7 +651,7 @@ div.afterSpacer {
     #main > .inner > .active > .full:last-child {
         margin-bottom: -0rem !important;
     }
-
+*/
     h1.style1, /*h2.style1,*/ h3.style1, p.style1 {
         font-size: 2em;
     }
@@ -604,7 +696,7 @@ div.afterSpacer {
         max-width: calc(100% - 1.3125rem);
         margin: 0.65625rem;
     }
-
+/*
     #containerBio > .inner {
         padding: 2.625rem 1.5rem;
     }
@@ -622,7 +714,8 @@ div.afterSpacer {
         margin-top: 1.3125rem;
         margin-bottom: 1.3125rem;
     }
-
+*/
+/*
     #containerBio.default > .inner > .full {
         margin-left: calc(-1.5rem);
         width: calc(100% + 3rem + 0.4725px);
@@ -635,7 +728,8 @@ div.afterSpacer {
     #containerBio.default > .inner > .full:last-child {
         margin-bottom: -2.625rem !important;
     }
-
+*/
+/*
     #containerBio.columns > .inner > div > .full {
         margin-left: calc(-1.5rem);
         width: calc(100% + 3rem + 0.4725px);
@@ -670,7 +764,7 @@ div.afterSpacer {
     #containerBio.columns > .inner > .full {
         min-height: 20rem;
     }
-
+*/
     #icons02 {
         width: calc(100% + 0.9375rem);
         margin-left: -0.46875rem;

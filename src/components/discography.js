@@ -11,7 +11,7 @@ import { FaAngleLeft } from 'react-icons/fa'
 
 //import ReactCardCarousel from 'react-card-carousel';
 
-import TCardMobile2 from './tcardMobile2'
+import TCardMobile01a from './tcardMobile01a'
 import { Row, Col } from 'reactstrap';
 
 import Helmet from 'react-helmet'
@@ -30,8 +30,8 @@ export default class Discography extends Component {
         };
       return (
         <div 
-      id="containerDisc" className="container full screen" data-scroll-id="one" data-scroll-behavior="center"  >
-        {/*<div className="inner">*/}
+      id="containerDisc" className="container default full screen" data-scroll-id="one" data-scroll-behavior="center"  >
+        <div className="inner">
         <Row>
         <Row className="back">
             <Col style={{
@@ -49,20 +49,20 @@ export default class Discography extends Component {
         </Row>
           <Col style={{textAlign: "center", marginTop: '1rem', marginBottom: '1rem'}}>
           </Col>
-          <Col className="nomobile">
+          {/*<Col className="nomobile">
             <Tcontentdisc2row1 />
+                          </Col>*/}
+          <Col className="mobile-slider"  /*style={{display: 'none'}}*/>
+              <TCardMobile01a />
           </Col>
-          <Col className="mobile-slider"  style={{display: 'none'}}>
-              <TCardMobile2 />
-          </Col>
-          <Col className="nomobile">
+          {/*<Col className="nomobile">
             <Tcontentdisc2row2 />
-          </Col>
+                        </Col>*/}
           
           
         </Row>
         
-       {/* </div>*/}
+       </div>
       </div>
       
       )

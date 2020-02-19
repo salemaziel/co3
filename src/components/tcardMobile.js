@@ -18,8 +18,8 @@ import {  Row } from 'reactstrap';
 import Modal from 'react-awesome-modal';
 
 import ReactCardCarousel from 'react-card-carousel';
-import { FaArrowAltCircleLeft } from 'react-icons/fa'
-import { FaArrowAltCircleRight } from 'react-icons/fa'
+//import { FaArrowAltCircleLeft } from 'react-icons/fa'
+//import { FaArrowAltCircleRight } from 'react-icons/fa'
 
 const song = [
     {
@@ -397,8 +397,8 @@ class TCardMobile extends React.Component {
                         </div>
 
                     </ReactCardCarousel>
-                    <FaArrowAltCircleLeft className="arrowleft" focusable="false" aria-hidden="true" />
-                    <FaArrowAltCircleRight className="arrowright" focusable="false" aria-hidden="true" />
+                    {/*<FaArrowAltCircleLeft className="arrowleft" focusable="false" aria-hidden="true" />
+                    <FaArrowAltCircleRight className="arrowright" focusable="false" aria-hidden="true" />*/}
 
 
 
