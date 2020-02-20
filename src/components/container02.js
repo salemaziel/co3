@@ -31,18 +31,9 @@ class Container02 extends React.Component {
         <div 
       id="container02" className="container default full screen" data-scroll-id="one" data-scroll-behavior="center">
         
-        <Row className="songheaderRow" style={{
-            display: "flex",
-            justifyContent: "center",
-            textAlign: "center",
-            position: 'relative',
-            /*top: "2em",*/
-            
-        }}> 
+        <Row className="songheaderRow" > 
           <Col>
-              <img className="songheader" src={Logo} alt='' /*mode='fit' */ style={{
-                                                                            marginTop: "0",
-              }} />
+              <img className="songheader" src={Logo} alt='' /*mode='fit' */ />
               <p 
                id="text04" 
                className="style4" 
