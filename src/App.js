@@ -13,12 +13,13 @@ class App extends Component {
         <div>
             <Switch>
              <Route path="/" component={Home} exact/>
-             <Route path="/discography" component={Discography}/>
+             <ScrollToTopRoute path="/discography" component={Discography} />
+             {/*<Route path="/discography" component={Discography}/>*/}
              {/*<Route path="/container01a" component={Container01a}/>*/}
             <Route component={Error}/>
            </Switch>
         </div> 
-        <ScrollToTopRoute path="/discography" component={Discography} />
+        {/*<ScrollToTopRoute path="/discography" component={Discography} />*/}
       </BrowserRouter>
     );
   }
