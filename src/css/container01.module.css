@@ -2,7 +2,7 @@
 #container01 {
     display: flex;
     width: 100%;
-    width: 100vw;
+    min-width: 100vw;
     min-height: 40rem;
     flex-direction: column;
     /*-moz-align-items: center;
@@ -106,6 +106,9 @@ div.afterSpacer01 {
 
 */
 @media (max-width: 480px) {
+    #container01 {
+        width: 100%;
+    }
     p.style1 {
         font-size: 1em;
         text-align: right;

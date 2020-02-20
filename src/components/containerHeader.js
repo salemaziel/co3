@@ -19,7 +19,7 @@ class Containerheader extends React.Component {
                   alt=''
                />
               </Col>
-              <Col xs="5" className="albumlogo" /*className={containerHeaderStyles.inner}*/> 
+              <Col xs="5" className="albumlogo" > 
           
               <img className='albumlogo' src={Logo} alt='' /*mode='fit' */ />
                 <p className="albumlogo"
