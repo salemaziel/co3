@@ -42,15 +42,15 @@ class Container01 extends React.Component {
                 <Col sm="4">
                     <p className="style1"
                     style={{
-                        fontSize: "1.5em", 
+                        fontSize: "1em", 
                         textAlign: "right", 
-                        padding: "0 em 0"}}
-                      >Artwork by the amazing artist <br /> 
+                        padding: "0"}}
+                      >Artwork provided by <br /> 
                         <a href="https://www.murraykruger.com" 
                             style={{
                                 textDecoration: 'underline',
                                 color: 'white',
-                       }}>Murray Kruger </a> </p></Col>
+                       }}>MURRAY KRUGER </a> </p></Col>
             </Row>
       </div>
       )

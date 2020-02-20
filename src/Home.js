@@ -72,7 +72,7 @@ export default class Home extends Component {
                       <Container02 />
 
                       <ContainerBio />
-                     <Containermemory />
+                     {/*<Containermemory />*/}
                      {/* <Containercontact />*/}
                       
                       

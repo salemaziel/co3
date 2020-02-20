@@ -107,8 +107,11 @@ div.afterSpacer01 {
 */
 @media (max-width: 480px) {
     p.style1 {
-        font-size: 1.5em;
-        text-align: center!important;
+        font-size: 1em;
+        text-align: right;
+        left: 7rem;
+        position: relative;
+        top: 9rem;
     }
 
 }

@@ -172,7 +172,7 @@ class TCardMobile extends React.Component {
                     </Row>
 
                 </Modal>
-                <Row style={{ display: 'flex' }}>
+                <Row style={{ display: 'flex', flexDirection: 'column', position: 'relative' }}>
                     <ReactCardCarousel  disable_keydown={false} disable_box_shadow={true}>
                         <div >
                             <TaggedContentCard
