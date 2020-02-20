@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
 import '../css/containerDiscography.module.css'
-//import '../css/Rmusicjinkeindex.css'
 
 import Tcontentdisc2row1 from './tcontentcardsdisc2row1'
 import Tcontentdisc2row2 from './tcontentcardsdisc2row2'
 
 import { FaAngleLeft } from 'react-icons/fa'
 
+import Glplogo from '../images/song-art/global-lighting-album/Chaoticorder.png'
 
-
-//import ReactCardCarousel from 'react-card-carousel';
 
 import TCardMobile from './tcardMobile01b'
 import { Row, Col } from 'reactstrap';
@@ -36,27 +34,32 @@ class Discography extends React.Component {
                 display: 'flex',
         width: 'inherit', }}>*/}
         <Row className="backrow">
-            <Col className="backcol"/*style={{
-            textAlign: "left, 
-            marginTop: '1rem', 
-            marginBottom: '1rem'
-            }}*/>
-              <Link to="/" style={{
+            <Col className="backcol">
+                <Link to="/" 
+                      style={{
                             color: "white",
-                            fontSize: "3em"
-                            }}><FaAngleLeft />
-                            </Link>
+                            fontSize: "3em",
+                            justifyContent: 'center',
+                            }}>
+                              <FaAngleLeft className="back01"/>
+                              <FaAngleLeft className="back02"/>
+                </Link>
             </Col>
+        </Row>
 
+        <Row className="glplogo">
+            <Col>
+              <img className="glplogo" src={Glplogo} alt='' /*mode='fit' */ />
+            </Col>
         </Row>
         <Row className="glpsongs">
-          <Col className="nomobile">
+          <Col className="nomobile2">
             <Tcontentdisc2row1 />
                           </Col>
-         {/* <Col className="mobile-slider"  style={{display: 'none'}}>
+         {/* <Col className="mobile-slider2"  style={{display: 'none'}}>
               <TCardMobile />
                           </Col>*/}
-          <Col className="nomobile">
+          <Col className="nomobile2">
             <Tcontentdisc2row2 />
                         </Col>
           
