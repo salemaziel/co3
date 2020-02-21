@@ -1,3 +1,5 @@
+
+
 /*html,body {
     border-image-width: 0;
 }*/
@@ -93,17 +95,29 @@ div.backrow {
 
 div.backcol {
     text-align: left;
-    
 }
+.back01 {
+    color: #292525;
+}
+
 svg.back01 {
-    position: relative;
-   
+    fill: #eaeaea;
+    stroke-width: 1.3rem;
+    stroke: #ffb917; 
 }
+
+.back02 {
+    color: #292525;
+}
+
 svg.back02 {
     position: relative;
     left: -1.7rem;
-    
+    fill: #eaeaea;
+    stroke-width: 1.3rem;
+    stroke: #ffb917;   
 }
+
 div.glplogo{
     display: flex;
     flex-direction: column;
