@@ -6,8 +6,8 @@ import Tcontentdisc2row2 from './tcontentcardsdisc2row2'
 
 import { FaAngleLeft } from 'react-icons/fa'
 
-import Glplogo from '../images/song-art/global-lighting-album/Chaoticorder.png'
-
+import Glplogo from '../images/song-art/global-lighting-album/co-oldlogo.png'
+import Glpalbum from '../images/song-art/global-lighting-album/album-cover-glp.jpg'
 
 import TCardMobile from './tcardMobile01b'
 import { Row, Col } from 'reactstrap';
@@ -32,22 +32,31 @@ class Discography extends React.Component {
         <div className="inner">
         {/*<Row className="songheaderRow2">*/}
         <Row className="backrow">
-            <Col className="backcol">
+            
                 <Link to="/" 
+                      style={{
+                            color: "white",
+                            fontSize: "3em",}}>
+                    <Col className="backcol">
+                {/*<Link to="/" 
                       style={{
                             color: "white",
                             fontSize: "3em",
                             justifyContent: 'center',
-                            }}>
+                            }}>*/}
                               <FaAngleLeft className="back01"/>
                               <FaAngleLeft className="back02"/>
+                {/*</Link>*/}
+                    </Col>
                 </Link>
-            </Col>
         </Row>
 
         <Row className="glplogo">
             <Col>
               <img className="glplogo" src={Glplogo} alt=''  />
+            </Col>
+            <Col>
+                <img className="glpalbum" src={Glpalbum} alt='' />
             </Col>
         </Row>
 
