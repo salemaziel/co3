@@ -1,5 +1,11 @@
 import React, { Component } from 'react'
-import '../css/containerDiscography.module.css'
+
+import { Row, Col } from 'reactstrap'
+
+import TcardMobile01b from './tcardMobile01b'
+
+
+import '../css/containerDiscography01.module.css'
 
 import Tcontentdisc2row1 from './tcontentcardsdisc2row1'
 import Tcontentdisc2row2 from './tcontentcardsdisc2row2'
@@ -9,14 +15,14 @@ import { FaAngleLeft } from 'react-icons/fa'
 import Glplogo from '../images/song-art/global-lighting-album/co-oldlogo.png'
 import Glpalbum from '../images/song-art/global-lighting-album/album-cover-glp.jpg'
 
-import TCardMobile from './tcardMobile01b'
-import { Row, Col } from 'reactstrap';
+
 
 
 import { Link } from 'react-router-dom'
 
+
 //export default class Discography extends Component {
-class ContainerDisc extends React.Component {
+class ContainerDisc01 extends React.Component {
     render() {
         const settings = {
             dots: true,
@@ -27,16 +33,16 @@ class ContainerDisc extends React.Component {
         };
       return (
         <div 
-      id="containerDisc" className="container default full screen" data-scroll-id="one" data-scroll-behavior="center"  >
+      id="containerDisc01" className="container default full screen" data-scroll-id="one" data-scroll-behavior="center"  >
         <div className="inner">
         {/*<Row className="songheaderRow2">*/}
-        <Row className="backrow">
+        <Row className="backrow01">
             
                 <Link to="/" 
                       style={{
                             color: "white",
                             fontSize: "3em",}}>
-                    <Col className="backcol">
+                    <Col className="backcol01">
                 {/*<Link to="/" 
                       style={{
                             color: "white",
@@ -44,32 +50,32 @@ class ContainerDisc extends React.Component {
                             justifyContent: 'center',
                             }}>*/}
                             
-                                <FaAngleLeft className="back01"/>
-                                <FaAngleLeft className="back02"/>
+                                <FaAngleLeft className="back0101"/>
+                                <FaAngleLeft className="back0201"/>
                 {/*</Link>*/}
                     </Col>
                 </Link>
         </Row>
 
-        <Row className="glplogo">
+        <Row className="glplogo01">
             <Col>
-              <img className="glplogo" src={Glplogo} alt=''  />
+              <img className="glplogo01" src={Glplogo} alt=''  />
             </Col>
             <Col>
-                <img className="glpalbum" src={Glpalbum} alt='' />
+                <img className="glpalbum01" src={Glpalbum} alt='' />
             </Col>
         </Row>
 
-        <Row className="glpsongs">
-            <Col className="nomobile2">
+        <Row className="glpsongs01">
+            <Col className="nomobile201">
                 <Tcontentdisc2row1 />
             </Col>
             
-            <Col className="mobile-slider2"  style={{display: 'none'}}>
-                <TCardMobile />
+            <Col className="mobile-slider201"  /*style={{display: 'none'}}*/>
+                <TcardMobile01b />
             </Col>
             
-            <Col className="nomobile2">
+            <Col className="nomobile201">
                 <Tcontentdisc2row2 />
             </Col>
           
@@ -83,5 +89,7 @@ class ContainerDisc extends React.Component {
     }
 }
 
-export default ContainerDisc
+export default ContainerDisc01
+
+
 
