@@ -12,7 +12,7 @@ import Glpalbum from '../images/song-art/global-lighting-album/album-cover-glp.j
 import TCardMobile from './tcardMobile01b'
 import { Row, Col } from 'reactstrap';
 
-import Helmet from 'react-helmet'
+import ShadowText from 'react-shadow-text';
 
 import { Link } from 'react-router-dom'
 
@@ -44,9 +44,10 @@ class Discography extends React.Component {
                             fontSize: "3em",
                             justifyContent: 'center',
                             }}>*/}
-                              <FaAngleLeft className="back01"/>
-                              <FaAngleLeft className="back02"/>
-                {/*</Link>*/}
+                            <ShadowText>
+                                <FaAngleLeft className="back01"/>
+                                <FaAngleLeft className="back02"/>
+                {/*</Link>*/}</ShadowText>
                     </Col>
                 </Link>
         </Row>
