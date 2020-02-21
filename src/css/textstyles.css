@@ -215,21 +215,6 @@ p.style4 {
         font-size: 13pt;
     }
 
-    #containerHeader {
-        background-attachment: scroll;
-    }
-
-    #container01 {
-        background-attachment: scroll;
-    }
-
-    #container02 {
-        background-attachment: scroll;
-    }
-
-    #containerBio {
-        background-attachment: scroll;
-    }
     /* containerHeader */
     p.style4 {
         color: #FCAC02 !important;

@@ -123,7 +123,7 @@ p.proceeds {
         font-size: 13pt;
     }
     #containerBio {
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 }
 

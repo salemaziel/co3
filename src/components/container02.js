@@ -34,21 +34,13 @@ class Container02 extends React.Component {
         <Row className="songheaderRow" > 
           <Col>
               <img className="songheader" src={Logo} alt='' /*mode='fit' */ />
-              <p 
-               id="text04" 
-               className="style4" 
-               style={{
-                 fontWeight: '500',
-                 fontVariant: 'small-caps',
-                 textAlign: 'center',
-                 color: '#FCAC02 !important',
-                 margin: '0',
-                 fontSize: "2em"
-               }}
-             > Feed The People</p>
-              </Col>
+              <p className="songheader" >
+                  Feed The People
+              </p>
+          </Col>
            
-              </Row>
+        </Row>
+        
         <Row /*style={{  display: /*'flex',* /
           
           }}*/>

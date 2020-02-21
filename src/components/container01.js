@@ -23,11 +23,36 @@ class Container01 extends React.Component {
               <Col sm="4"><p style={{textAlign: "right"}}>Artwork by Murray Kruger Artwork by Murray Kruger Artwork by Murray Kruger Artwork by Murray Kruger</p></Col>
           </Row>*/}
             
-
-          </div>
-          <span />
+ 
+          
+          <Row style={{
+            /*display: 'inline-block',*/
+            alignContent: 'right',
+            justifyContent: 'right',
+            padding: '0',
+              }}>
+                {/*<Col sm="4" >
+                  <div></div>
+                  </Col>
+                <Col sm="4">
+                  <div></div>
+            </Col>*/}
+                <Col sm="4">
+                    <p className="style1"
+                    style={{
+                        fontSize: "1em", 
+                        textAlign: "right", 
+                        padding: "0"}}
+                      >Artwork provided by <br /> 
+                        <a href="https://www.murraykruger.com" 
+                            style={{
+                                textDecoration: 'underline',
+                                color: 'white',
+                       }}>MURRAY KRUGER </a> </p></Col>
+                      </Row>
+                      </div>
         </div>
-        <Row style={{
+       {/* <Row style={{
             display: 'inline-block',
             alignContent: 'right',
             justifyContent: 'right',
@@ -51,7 +76,7 @@ class Container01 extends React.Component {
                                 textDecoration: 'underline',
                                 color: 'white',
                        }}>MURRAY KRUGER </a> </p></Col>
-            </Row>
+                      </Row>*/}
       </div>
       )
     }
