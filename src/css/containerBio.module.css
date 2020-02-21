@@ -7,7 +7,7 @@
 #containerBio {
     display: flex;
     width: 100%;
-    width: 100vw;
+    min-width: 100vw;
     min-height: 40rem;
     -moz-align-items: center;
     -webkit-align-items: center;
@@ -123,7 +123,7 @@ p.proceeds {
         font-size: 13pt;
     }
     #containerBio {
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 }
 

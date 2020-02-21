@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
  
 import Home from './Home';
-import Discography from './components/discography';
+import Discography from './Discography';
 
 import ScrollToTopRoute from './components/scrolltoTop'
  

@@ -46,7 +46,7 @@
 }
 */
 #container02 {
-    min-height: 30rem;
+    min-height: 35rem;
 }
 /*
 */
@@ -71,8 +71,19 @@ div.songheaderRow {
 }
 img.songheader {
     width: 800px;
-    margin-top: 0;
+    margin: 0 2rem;
 }
+
+p.songheader {
+    font-weight: 500;
+    font-variant: small-caps;
+    text-align: center;
+    margin: 0px;
+    font-size: 2em;
+    color: #FCAC02!important;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 div.nomobile{
     display: block
 }
@@ -85,6 +96,7 @@ div.mobile-slider {
 .arrowright {
     display: none!important;
 }
+
 
 @media (min-width: 2400px) {
     #container02 > .inner {
@@ -118,7 +130,7 @@ div.mobile-slider {
         /*z-index: 2;*/
     }
     #container02 {
-        min-height: 30rem;
+        min-height: 35rem;
     }
     div.songheaderRow {
         display: flex;
@@ -128,7 +140,7 @@ div.mobile-slider {
         margin-top: 2em;
     }
     img.songheader {
-        width: 800px;
+        width: 1000px;
     }
     .arrowleft {
         display: none!important;
@@ -166,7 +178,7 @@ div.mobile-slider {
         font-size: 13pt;
     }
     #container02 {
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
     .SpotifyPlayer {
         width: 600px;
@@ -177,6 +189,25 @@ div.mobile-slider {
     }
     div.mobile-slider {
         display: none;
+    }
+}
+@media (max-width: 1150px) {
+    #container02 {
+        padding: 0 0 8rem;
+    }
+    div.nomobile {
+        display: none !important;
+    }
+    div.mobile-slider{
+        display: flex !important;
+    }
+    div.songheaderRow {    
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 2rem 0 5rem;
+        padding: 2rem 0 5rem;
+        
     }
 }
 
@@ -198,6 +229,7 @@ div.mobile-slider {
         text-align: center;
         margin-bottom: 5em;
         padding-bottom: 5em;
+        top: -4rem;
     }
     img.songheader {
         width: 700px;
@@ -215,7 +247,21 @@ div.mobile-slider {
     html {
         font-size: 11pt;
     }
+
+    #container02 {
+        min-height: 40rem;
+        padding: 0 0 6em;
+    }
+
+    div.songheaderRow {
+        top: -4rem;
+        margin: 0 0 5rem;
+        padding: 0 0 5rem; 
+    }
+    img.songheader {
+        width: 450px;
     
+    }
     .wmp-container {
         width: 350px;
         height: auto;
@@ -290,10 +336,11 @@ div.mobile-slider {
             z-index: 100;                                                                          
         }
         div.songheaderRow {
-            margin-bottom: 5em;
-            padding-bottom: 2em;
-            padding-top: 0;
+            margin: 2rem 0 5em;
+            padding: 0 0 2em;
+            top: 0;
         }
+
         img.songheader {
             width: 350px;
         }
@@ -330,6 +377,14 @@ div.mobile-slider {
             left: 95%;
             position: absolute;
             z-index: 1000;                                                                          
+        }
+
+        div.songheaderRow {
+            margin: 3rem 0 3rem;
+        }
+
+        img.songheader {
+            width: 300px;
         }
 }
 

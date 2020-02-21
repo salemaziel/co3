@@ -2,7 +2,7 @@
 #container01 {
     display: flex;
     width: 100%;
-    width: 100vw;
+    min-width: 100vw;
     min-height: 40rem;
     flex-direction: column;
     /*-moz-align-items: center;
@@ -25,19 +25,20 @@
     background-repeat: no-repeat;
     z-index: 2;
 }
-/*
+
 #container01.default > .inner {
     display: block;
-    margin-top: 1.75rem;
+    width: 90%;
+   /* margin-top: 1.75rem;
     margin-bottom: 1.75rem;
     padding: 2rem 2rem;
     max-width: 100%;
-    text-align: right ;
-}*/
+    text-align: right ;*/
+}
 
 div.afterSpacer01 {
-    margin: 4em;
-    padding: 4em;
+    margin: 4rem 0 1rem;
+    padding: 20rem 0 1rem;
 
 }
 
@@ -54,7 +55,9 @@ div.afterSpacer01 {
     align-items: flex-start;
 }
 */
+@media (min-width: 2400px) {
 
+}
 @media (max-width: 1680px) {
     html {
         font-size: 13pt;
@@ -67,7 +70,12 @@ div.afterSpacer01 {
     }
 
     #container01 {
-        background-attachment: scroll;
+        background-attachment: fixed;
+    }
+
+    div.afterSpacer01 {
+        margin: 4rem 0 1rem 2rem;
+        padding: 26rem 0 1rem;
     }
 }
 
@@ -82,11 +90,14 @@ div.afterSpacer01 {
         font-size: 11pt;
     }
 
-   /* #container01 > .inner {
-        padding: 3.5rem 2rem;
-        max-width: 100%;
+   #container01 > .inner {
+        padding: 3.5rem 0;
+        /*max-width: 100%;*/
     }
-
+    div.afterSpacer01 {
+        padding: 26rem 6rem 1rem 4rem;
+    }
+/*
     #container01 {
         min-height: 30rem;
     }
@@ -106,6 +117,14 @@ div.afterSpacer01 {
 
 */
 @media (max-width: 480px) {
+    #container01 {
+        width: 100%;
+    }
+
+    div.afterSpacer01 {
+        padding: 10rem 0 1rem 5rem;
+    }
+    
     p.style1 {
         font-size: 1em;
         text-align: right;
@@ -126,4 +145,7 @@ div.afterSpacer01 {
         min-height: 20rem;
     }
 */
+    div.afterSpacer01 {
+        padding: 10rem 2rem 1rem;
+}
 }

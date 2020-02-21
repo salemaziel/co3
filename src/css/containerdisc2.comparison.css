@@ -1,29 +1,9 @@
+containerdisc css
 
 
-/*html,body {
+html,body {
     border-image-width: 0;
-}*/
-
-#wrapper {
-    -webkit-overflow-scrolling: touch;
-    display: -ms-flexbox;
-    display: block;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
-    /* justify-content: initial; */
-    min-height: 100vh;
-    position: relative;
-    z-index: 2;
-    /* overflow: hidden;*/
-}   
+}
 /*
 .container {
     /*display: flex;
@@ -49,7 +29,7 @@
     width: 100%;
     /*max-width: 100vw;*/
     /*height: 100%;*/
-    
+    height: stretch;
     border-width: 0;
     border-image-width: 0;
     border-style: none;
@@ -73,7 +53,7 @@
     
 }
 #containerDisc {
-    min-height: 40rem;
+    min-height: 30rem;
 }
 
 .SpotifyPlayer {
@@ -91,36 +71,22 @@ div.backrow {
     display: flex;
     margin: 1rem;
     text-align: left; 
+    z-index: 3;
+    
 }
 
 div.backcol {
     text-align: left;
 }
-.back01 {
-    color: #292525;
-}
-
 svg.back01 {
-    fill: #eaeaea;
-    stroke-width: 1.3rem;
-    stroke: #ffb917; 
+    position: relative;
 }
-
-.back02 {
-    color: #292525;
-}
-
 svg.back02 {
     position: relative;
     left: -1.7rem;
-    fill: #eaeaea;
-    stroke-width: 1.3rem;
-    stroke: #ffb917;   
 }
-
 div.glplogo{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     text-align: center;
     margin: 0 2rem 1rem;
@@ -132,15 +98,15 @@ img.glplogo{
     margin: 0;
     
 }
-img.glpalbum {
-    width: 500px;
-    height: 500px;
-    opacity: 0.85;
-    box-shadow: 3px 3px 7px black;
-    margin: 3rem 0;
-    padding: 0;
+/*
+div.songheaderRow2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5em;
+    padding-bottom: 5em;
 }
-
+*/
 div.glpsongs {
     margin: 1rem 2rem;
     display: flex;
@@ -164,12 +130,12 @@ div.mobile-slider2 {
 @media (min-width: 2400px) {
     #containerDisc{
         /*max-height: 140vh;*/
-        /*height: 100%;*/
+       /* height: 100%;*/
         height: stretch;
     }
     #containerDisc > .inner {
         width: 90%;
-        padding: 2rem 1.5rem;
+       /* padding: 2rem 1.5rem; */
     }
     div.backrow {
         position: relative;
@@ -222,39 +188,57 @@ div.mobile-slider2 {
     html {
         font-size: 13pt;
     }
-    /*#containerDisc {
-        /*background-attachment: fixed;
-        background-size: cover;
-        background-repeat: no-repeat;* /
-       /* margin: 0;
-        max-height: 100vh;* /
-    }*/
-    
-    #containerDisc > .inner {
-        width: 90%;
-        padding: 2rem 1.5rem;
-        display: block;
-    }
-}
-@media (max-width: 1150px) {
-    /*#container02 {
-        padding: 0 0 8rem;
-    }*/
-    div.nomobile2 {
-        display: none;
-    }
-    div.mobile-slider2 {
+    #containerDisc {
         display: flex;
+        flex-direction: column;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: stretch;
+        min-height: 40rem;
+        /*min-width: 100vw;*/
+       /* margin: 0;
+        max-height: 100vh;*/
     }
-   /* div.songheaderRow {    
+    
+   #containerDisc > .inner {
+       /*  width: 100%;*/
+        padding: 4rem 1.5rem;
+        margin: 2rem 1rem;
+        width: 90%;
+    }
+    div.glplogo{
         display: flex;
         justify-content: center;
         text-align: center;
-        margin: 2rem 0 5rem;
-        padding: 2rem 0 5rem;
-        
-    }*/
+        margin: 3rem 2rem 1rem;
+        padding: 4rem 1rem;
+        position: relative;
+        top: 3rem;
+       /* top: -3rem;*/
+    }
+    img.glplogo{
+        width: 1000px;
+        margin: 1rem 0;   
+    }
+    div.nomobile2 {
+        display: inline-block;
+    }
+
+    div.backrow {
+        position: fixed;
+        justify-content: left;
+        display: inline-block;
+        margin: 1rem;
+        text-align: left; 
+        z-index: 3;
+
+    }
+    div.backcol {
+
+    }
 }
+
 @media (max-width: 980px) {
     html {
         font-size: 11pt;
