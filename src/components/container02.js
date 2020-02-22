@@ -11,7 +11,7 @@ import Logo from '../images/logo-white-huge.png'
 
 //import ReactCardCarousel from 'react-card-carousel';
 
-import TCardMobile from './tcardMobile'
+import TCardMobile01b from './tcardMobile01b'
 import { Row, Col } from 'reactstrap';
 import LazyLoad from 'react-lazyload';
 
@@ -30,7 +30,7 @@ class Container02 extends React.Component {
       return (
         <div 
       id="container02" className="container default full screen" data-scroll-id="one" data-scroll-behavior="center">
-        
+        <div className="inner">
         <Row className="songheaderRow" > 
           <Col>
               <img className="songheader" src={Logo} alt='' /*mode='fit' */ />
@@ -41,32 +41,30 @@ class Container02 extends React.Component {
            
         </Row>
         
-        <Row /*style={{  display: /*'flex',* /
-          
-          }}*/>
-          <Col style={{textAlign: "center", marginTop: '1em', marginBottom: '1rem', paddingTop: '1em'}} />
+        <Row className="ftpsongs">
+          {/*<Col style={{textAlign: "center", marginTop: '1em', marginBottom: '1rem', paddingTop: '1em'}} />*/}
             
-          <LazyLoad offset={100}>
+          {/*<LazyLoad offset={100}>*/}
               <Col className="nomobile">
                 <TContentCards01/>
               </Col>
-          </LazyLoad>
+          {/*</LazyLoad>*/}
 
-          <LazyLoad offset={50}>
-              <Col className="mobile-slider"  style={{display: 'none'}}>
-                  <TCardMobile />
+          {/*<LazyLoad offset={50}>*/}
+              <Col className="mobile-slider"  /*style={{display: 'none'}}*/>
+                  <TCardMobile01b />
               </Col>
-          </LazyLoad>
+          {/*</LazyLoad>*/}
           
-          <LazyLoad offset={50}>
+          {/*<LazyLoad offset={50}>*/}
               <Col className="nomobile">
                   <TContentCards02/>
               </Col>
-          </LazyLoad>
+          {/*</LazyLoad>*/}
           
       </Row>
       
-      <Row>
+      {/*<Row>
             <Col style={{
             textAlign: "center", 
             marginTop: '3rem', 
@@ -76,8 +74,8 @@ class Container02 extends React.Component {
                 
             </Col>
 
-        </Row>
-        
+          </Row>*/}
+        </div>
       </div>
       )
     }

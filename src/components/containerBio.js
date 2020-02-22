@@ -30,7 +30,7 @@ class ContainerBio extends React.Component {
             }}><strong>Seeking Order in Chaos</strong></h3>*/}
             </Col>
             <Col>
-            <Link to="/discography" style={{
+            <Link to="/discography01" style={{
                             color: "white",
                             fontSize: "2em",
                             fontVariant: "small-caps",

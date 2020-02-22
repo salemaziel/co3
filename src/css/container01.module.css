@@ -97,6 +97,13 @@ div.afterSpacer01 {
     div.afterSpacer01 {
         padding: 26rem 6rem 1rem 4rem;
     }
+    p.style1 {
+        font-size: 1em;
+        text-align: right;
+        left: 7rem;
+        position: relative;
+        top: 9rem;
+    }
 /*
     #container01 {
         min-height: 30rem;
@@ -128,7 +135,7 @@ div.afterSpacer01 {
     p.style1 {
         font-size: 1em;
         text-align: right;
-        left: 7rem;
+        left: 5rem;
         position: relative;
         top: 9rem;
     }

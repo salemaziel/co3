@@ -5,7 +5,7 @@
 }*/
 #container02 > .inner {
     padding: 2rem 2rem;
-    width: 100%;
+    width: 80%;
     /*max-width: 65rem;*/
 }
 
@@ -32,7 +32,7 @@
     background-size:  cover;
     background-position: center;
     background-repeat: no-repeat;
-    /*z-index: 2;*/
+    z-index: 2;
 }
 /*
 
@@ -46,7 +46,7 @@
 }
 */
 #container02 {
-    min-height: 35rem;
+    min-height: 40rem;
 }
 /*
 */
@@ -84,8 +84,15 @@ p.songheader {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+div.ftpsongs {
+    margin: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 div.nomobile{
-    display: block
+    display: block;
 }
 div.mobile-slider {
     display: none;
@@ -96,12 +103,15 @@ div.mobile-slider {
 .arrowright {
     display: none!important;
 }
+.plzwork {
+    z-index: 10;
+}
 
 
 @media (min-width: 2400px) {
     #container02 > .inner {
-        padding: 2rem 2rem;
-        width: 100%;
+        padding: 2rem 1.5rem;
+        width: 90%;
         /*max-width: 65rem;*/
     }
     #container02 {
@@ -129,9 +139,9 @@ div.mobile-slider {
         background-repeat: no-repeat;
         /*z-index: 2;*/
     }
-    #container02 {
+    /*#container02 {
         min-height: 35rem;
-    }
+    }*/
     div.songheaderRow {
         display: flex;
         justify-content: center;
@@ -142,6 +152,7 @@ div.mobile-slider {
     img.songheader {
         width: 1000px;
     }
+
     .arrowleft {
         display: none!important;
     }
@@ -158,6 +169,10 @@ div.mobile-slider {
 @media (max-width: 1680px) {
     html {
         font-size: 13pt;
+    }
+    #container02 > .inner {
+        /*width: 100%;*/
+        padding: 2rem 1.5rem;
     }
     .arrowleft {
         display: none!important;
@@ -190,16 +205,25 @@ div.mobile-slider {
     div.mobile-slider {
         display: none;
     }
+    #container02 > .inner {
+        width: 90%;
+        padding: 2rem 1.5rem;
+        display: block;
+    }
 }
+
 @media (max-width: 1150px) {
     #container02 {
         padding: 0 0 8rem;
     }
     div.nomobile {
-        display: none !important;
+        display: none ;
     }
     div.mobile-slider{
-        display: flex !important;
+        display: flex ;
+        z-index: 10;
+        flex-direction: column;
+        max-width: 100%;
     }
     div.songheaderRow {    
         display: flex;
@@ -207,7 +231,13 @@ div.mobile-slider {
         text-align: center;
         margin: 2rem 0 5rem;
         padding: 2rem 0 5rem;
-        
+    }
+    #container02 > .inner {
+        padding: 2rem 1rem;
+        width: 90%;
+    }
+    .slick-active {
+        z-index: 13;
     }
 }
 
@@ -240,6 +270,7 @@ div.mobile-slider {
     div.mobile-slider{
         display: flex !important;
     }
+
     
 }
 
@@ -276,7 +307,7 @@ div.mobile-slider {
         width: 450px;
         height: 420px;
     }
-    .arrowleft {
+    /*.arrowleft {
         display: flex!important;
         font-size: 1.5em;
         color: white;
@@ -293,7 +324,7 @@ div.mobile-slider {
         left: 95%;
         position: absolute;
         z-index: 1000;                                                                          
-    }
+    }*/
 }    
 
     @media (max-width: 480px) {
@@ -302,8 +333,11 @@ div.mobile-slider {
             justify-content: center;
             padding: 0 0 6em;
         }
+        #container02 > .inner {
+            padding: 2rem 0.5rem;
+            width: 95%;
+        }
         
-     
         .wmp-container {
             width: 300px;
             height: auto;
@@ -312,12 +346,12 @@ div.mobile-slider {
             width: 350px;
             height: 420px;
         }
-        div.mobile-slider{
+        div.mobile-slider {
             display: flex !important;
-            margin: 5em 0 2em 0;
-            padding: 3em 0;
+            margin: 2rem 0;
+            padding: 1rem 0;
         }
-        div.arrowleft {
+        /*div.arrowleft {
             display: flex!important;
             font-size: 1.5em;
             color: white;
@@ -334,16 +368,21 @@ div.mobile-slider {
             left: 80%;
             position: absolute;
             z-index: 100;                                                                          
-        }
+        }*/
         div.songheaderRow {
-            margin: 2rem 0 5em;
-            padding: 0 0 2em;
+            margin: 2rem 0 1rem;
+            padding: 0 0 2rem;
             top: 0;
         }
 
         img.songheader {
             width: 350px;
         }
+
+        div.ftpsongs {
+            margin: 1rem 0.2rem;
+        }
+        
     }
     @media (max-width: 360px) {
        /* */

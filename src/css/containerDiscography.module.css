@@ -123,7 +123,7 @@ div.glplogo{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: 0 2rem 1rem;
+    margin: 2rem 2rem 1rem;
     position: relative;
     top: -3rem;
 }
@@ -157,7 +157,7 @@ div.nomobile2 {
 }
 
 div.mobile-slider2 {
-    display: none!important;
+    display: none;
 }
 
 
@@ -177,7 +177,13 @@ div.mobile-slider2 {
         display: flex;
         margin: 1rem;
         text-align: left; 
-        
+    }
+    div.nomobile2 {
+        display: block;
+    }
+    
+    div.mobile-slider2 {
+        display: none;
     }
 }
 @media (max-width: 1680px) {

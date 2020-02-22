@@ -113,81 +113,6 @@ const song = [
 
     }
 ]
-
-
-
-/*
-export default class TCardMobile01b extends Component {
-class TCardMobile extends React.Component {
-    constructor() {
-        super();
-
-        this.state = {
-            modalIsOpen: false,
-            id: '',
-            title: '',
-            singer: '',
-            thumbnail: '',
-            audio: ''
-        };
-    }
-
-    closeModal = () => {
-        this.setState({
-            modalIsOpen: false,
-            id: '',
-            title: '',
-            singer: '',
-            thumbnail: '',
-            audio: ''
-        });
-    }
-
-  render() {
-    const settings = {
-      className: "center",
-      infinite: false,
-      centerPadding: "30px",
-      slidesToShow: 3,
-      swipeToSlide: true,
-      afterChange: function(index) {
-        console.log(
-          `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
-        );
-      }
-    };
-    let {
-        thumbnail,
-        title,
-        description,
-        tags,
-        ...other
-    } = this.props;
-    let cards;;
-    let { styleDisplay } = this.props;
-    return (
-    <div>*/
-          {/*<Modal
-                    visible={this.state.modalIsOpen}
-                    width="275" height="275"
-                    effect="fadeInUp"
-                    onClickAway={() => this.closeModal()}
-                >
-                    <Row style={{ display: 'flex'}}>
-                            <div style={{
-                                position: 'absolute'}}>
-                                <ReactWebMediaPlayer
-                                    width={275} height={275}
-                                    title={this.state.title}
-                                    thumbnail={this.state.thumbnail}
-                                    audio={this.state.audio}
-                                    
-
-                                />
-                            </div>
-                    </Row>
-            
-            </Modal>*/}
            
 export default class TCardMobile01b extends Component {
         
@@ -221,8 +146,8 @@ export default class TCardMobile01b extends Component {
       className: "plzwork",
       initialSlide: 0,
       infinite: true,
-      centerPadding: "60px",
-      slidesToShow: 3,
+      centerPadding: "4rem",
+      slidesToShow: 2,
       swipe: true,
       swipeToSlide: true,
       centerMode: true,
@@ -230,25 +155,40 @@ export default class TCardMobile01b extends Component {
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
+            className: "plzwork",
+                initialSlide: 1,
+                infinite: true,
+                centerPadding: "3rem",
+                slidesToShow: 2,
+                swipe: true,
+                swipeToSlide: true,
+                centerMode: true,
           }
         },
         {
           breakpoint: 600,
           settings: {
+            className: "plzwork",
+            initialSlide: 1,
+            infinite: true,
+            centerPadding: "60px",
             slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2
+            swipe: true,
+            swipeToSlide: true,
+            centerMode: true,
           }
         },
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
+            className: "plzwork",
+            initialSlide: 1,
+            infinite: true,
+            centerPadding: "4rem",
+            slidesToShow: 2,
+            swipe: true,
+            swipeToSlide: true,
+            centerMode: true,
           }
         }
       ],
@@ -292,12 +232,12 @@ export default class TCardMobile01b extends Component {
     
         <Row /*style={{ display: 'flex', flexDirection: 'column', position: 'relative' }}*/>
         
-        <h2>Swipe To Slide</h2>
+        {/*<h2>Swipe To Slide</h2>*/}
         <Slider {...settings}>
             <div>
                 <TaggedContentCard
                     className="plzwork"
-                    style={{width: '20px', minWidth: '200px'}}
+                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                     thumbnail={Chemtrails}
                     title='ChemTrails'
                     description=''
@@ -320,7 +260,7 @@ export default class TCardMobile01b extends Component {
             <div>
                 <TaggedContentCard
                     className="plzwork"
-                    style={{width: '20px', minWidth: '200px'}}           
+                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}           
                     thumbnail={Feedthepeople}
                     title='Feed The People'
                     description=''
@@ -343,7 +283,7 @@ export default class TCardMobile01b extends Component {
             <div>
                 <TaggedContentCard
                     className="plzwork"
-                    style={{width: '20px', minWidth: '200px'}}
+                    style={{width: '20px', minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                     thumbnail={Burn}
                     title='Burn'
                     description=''
@@ -366,7 +306,7 @@ export default class TCardMobile01b extends Component {
             <div>
                 <TaggedContentCard
                     className="plzwork"
-                    style={{width: '20px', minWidth: '200px'}}
+                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                     thumbnail={Another}
                     title='Another Thing'
                     description=''
@@ -389,7 +329,7 @@ export default class TCardMobile01b extends Component {
             <div>
                 <TaggedContentCard
                     className="plzwork"
-                    style={{width: '20px', minWidth: '200px'}}
+                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                     thumbnail={Hate}
                     title='Hate'
                     description=''
@@ -412,7 +352,7 @@ export default class TCardMobile01b extends Component {
             <div>
                 <TaggedContentCard
                     className="plzwork"
-                    style={{width: '20px', minWidth: '200px'}}
+                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                     thumbnail={Sorry}
                     title='Sorry'
                     description=''
@@ -435,7 +375,7 @@ export default class TCardMobile01b extends Component {
             <div>
                 <TaggedContentCard
                     className="plzwork"
-                    style={{width: '20px', minWidth: '200px'}}
+                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                     thumbnail={Chains}
                     title='Chains'
                     description=''
@@ -458,7 +398,7 @@ export default class TCardMobile01b extends Component {
             <div>
                 <TaggedContentCard
                     className="plzwork"
-                    style={{width: '20px', minWidth: '200px'}}
+                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                     thumbnail={Earth}
                     title='Earth'
                     description=''
@@ -481,7 +421,7 @@ export default class TCardMobile01b extends Component {
             <div>
                 <TaggedContentCard
                     className="plzwork"
-                    style={{width: '20px', minWidth: '200px'}}
+                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                     thumbnail={Never}
                     title='Never End'
                     description=''
@@ -504,7 +444,7 @@ export default class TCardMobile01b extends Component {
             <div>
                 <TaggedContentCard
                     className="plzwork"
-                    style={{width: '20px', minWidth: '200px'}}
+                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                     thumbnail={Colors}
                     title='Colors'
                     description=''

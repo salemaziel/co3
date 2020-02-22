@@ -157,11 +157,11 @@ div.nomobile01 {
 }
 
 div.mobile-slider01 {
-    display: none!important;
+    display: none;
 }
 
 .plzwork {
-    z-index: 20;
+    /*z-index: 20;*/
 }
 
 
