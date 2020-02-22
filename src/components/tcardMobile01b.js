@@ -11,20 +11,20 @@ import Chains from '../images/song-art/medicineman-CHAINS.jpg'
 import Colors from '../images/song-art/shaman-COLORS.jpg'
 import Never from '../images/song-art/The-Magician-NEVEREND.jpg'
 import Earth from '../images/song-art/HighPriestess-EARTH.jpg'
-//import ReactWebMediaPlayer from 'react-web-media-player';
+import ReactWebMediaPlayer from 'react-web-media-player';
 
-//import { FaPlay } from 'react-icons/fa'
+import { FaPlay } from 'react-icons/fa'
 //import './tcardmobile01b.css'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { Col, Row, Card } from 'reactstrap';
-//import Modal from 'react-awesome-modal';
+import Modal from 'react-awesome-modal';
 
 //import ReactCardCarousel from 'react-card-carousel';
 //import { FaArrowAltCircleLeft } from 'react-icons/fa'
 //import { FaArrowAltCircleRight } from 'react-icons/fa'
 
-/*const song = [
+const song = [
     {
         title: "ChemTrails",
         singer: 'Chaotic Order',
@@ -113,187 +113,361 @@ import { Col, Row, Card } from 'reactstrap';
 
     }
 ]
+           
+export default class TCardMobile01b extends Component {
+        
+    
+        constructor() {
+            super();
 
-*/
+            this.state = {
+                modalIsOpen: false,
+                id: '',
+                title: '',
+                singer: '',
+                thumbnail: '',
+                audio: ''
+            };
+        }
 
-
-/*export default class TCardMobile01b extends Component {
-    constructor() {
-        super();
-
-        this.state = {
-            modalIsOpen: false,
-            id: '',
-            title: '',
-            singer: '',
-            thumbnail: '',
-            audio: ''
-        };
-    }
-
-    closeModal = () => {
-        this.setState({
-            modalIsOpen: false,
-            id: '',
-            title: '',
-            singer: '',
-            thumbnail: '',
-            audio: ''
-        });
-    }
+        closeModal = () => {
+            this.setState({
+                modalIsOpen: false,
+                id: '',
+                title: '',
+                singer: '',
+                thumbnail: '',
+                audio: ''
+            });
+        }
 
   render() {
     const settings = {
-      className: "center",
-      infinite: false,
-      centerPadding: "30px",
-      slidesToShow: 3,
+      className: "plzwork",
+      initialSlide: 0,
+      infinite: true,
+      centerPadding: "4rem",
+      slidesToShow: 2,
+      swipe: true,
       swipeToSlide: true,
+      centerMode: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            className: "plzwork",
+                initialSlide: 1,
+                infinite: true,
+                centerPadding: "3rem",
+                slidesToShow: 2,
+                swipe: true,
+                swipeToSlide: true,
+                centerMode: true,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            className: "plzwork",
+            initialSlide: 1,
+            infinite: true,
+            centerPadding: "60px",
+            slidesToShow: 2,
+            swipe: true,
+            swipeToSlide: true,
+            centerMode: true,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            className: "plzwork",
+            initialSlide: 1,
+            infinite: true,
+            centerPadding: "4rem",
+            slidesToShow: 2,
+            swipe: true,
+            swipeToSlide: true,
+            centerMode: true,
+          }
+        }
+      ],
+      focusOnSelect: true,
       afterChange: function(index) {
         console.log(
           `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
         );
       }
     };
-    let {
-        thumbnail,
-        title,
-        description,
-        tags,
-        ...other
-    } = this.props;
-    let cards;;
-    let { styleDisplay } = this.props;
+        let {
+            thumbnail,
+            title,
+            description,
+            tags,
+            ...other
+        } = this.props;
+        let cards;
+        let { styleDisplay } = this.props;
+
     return (
       <div>
-          <Modal
-                    visible={this.state.modalIsOpen}
-                    width="275" height="275"
-                    effect="fadeInUp"
-                    onClickAway={() => this.closeModal()}
-                >
-                    <Row style={{ display: 'flex'}}>
-                            <div style={{
-                                position: 'absolute'}}>
+            <Modal
+                visible={this.state.modalIsOpen}
+                width="275" height="275"
+                effect="fadeInUp"
+                onClickAway={() => this.closeModal()}
+            >
+                <Row style={{ display: 'flex'}}>
+                    <div style={{
+                            position: 'absolute'}}>
                                 <ReactWebMediaPlayer
                                     width={275} height={275}
                                     title={this.state.title}
                                     thumbnail={this.state.thumbnail}
                                     audio={this.state.audio}
-                                    
-
                                 />
-                            </div>
-                    </Row>
-            
+                    </div>
+                </Row>
             </Modal>
-            import React, { Component } from "react";
-import Slider from "react-slick";
-*/
-export default class TCardMobile01b extends Component {
-  render() {
-    const settings = {
-      className: "center",
-      infinite: true,
-      centerPadding: "60px",
-      slidesToShow: 5,
-      swipeToSlide: true,
-      afterChange: function(index) {
-        console.log(
-          `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
-        );
-      }
-    };
-    return (
-      <div>
-        <h2>Swipe To Slide</h2>
+    
+        <Row /*style={{ display: 'flex', flexDirection: 'column', position: 'relative' }}*/>
+        
+        {/*<h2>Swipe To Slide</h2>*/}
         <Slider {...settings}>
-          <div>
-          <TaggedContentCard
-                className="plzwork"
-                style={{width: '20px', minWidth: '200px'}}
-                thumbnail={Chemtrails}
-                title='ChemTrails'
-                description=''
-                tags={[
-                        
+            <div>
+                <TaggedContentCard
+                    className="plzwork"
+                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
+                    thumbnail={Chemtrails}
+                    title='ChemTrails'
+                    description=''
+                    tags={[
+                            <div
+                                onClick={ () => { this.setState({
+                                    modalIsOpen: true,
+                                    id: Chemtrails,
+                                    title: song[0].title,
+                                    singer: song[0].singer,
+                                    thumbnail: song[0].thumbnail,
+                                    audio: song[0].audio
+                                })} }>
+                                <FaPlay focusable="false" aria-hidden="true" />
+                            </div>
+                        ]} 
+                />
+            </div>
 
-                            ]} />
-          </div>
-          <div>
-          <TaggedContentCard
-                className="plzwork"
-                style={{width: '20px', minWidth: '200px'}}
-                thumbnail={Chemtrails}
-                title='ChemTrails'
-                description=''
-                tags={[
-                        
+            <div>
+                <TaggedContentCard
+                    className="plzwork"
+                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}           
+                    thumbnail={Feedthepeople}
+                    title='Feed The People'
+                    description=''
+                    tags={[
+                            <div
+                                onClick={ () => { this.setState({
+                                    modalIsOpen: true,
+                                    id: Feedthepeople,
+                                    title: song[1].title,
+                                    singer: song[1].singer,
+                                    thumbnail: song[1].thumbnail,
+                                    audio: song[1].audio
+                                })} }>
+                                <FaPlay focusable="false" aria-hidden="true" />
+                            </div>
+                        ]} 
+                />
+            </div>
 
-                            ]} />
-          </div>
-          <div>
-          <TaggedContentCard
-                className="plzwork"
-                style={{width: '20px', minWidth: '200px'}}
-                thumbnail={Chemtrails}
-                title='ChemTrails'
-                description=''
-                tags={[
-                        
+            <div>
+                <TaggedContentCard
+                    className="plzwork"
+                    style={{width: '20px', minWidth: '175px', boxShadow: '3px 2px 6px black'}}
+                    thumbnail={Burn}
+                    title='Burn'
+                    description=''
+                    tags={[
+                            <div
+                                onClick={ () => { this.setState({
+                                    modalIsOpen: true,
+                                    id: Burn,
+                                    title: song[2].title,
+                                    singer: song[2].singer,
+                                    thumbnail: song[2].thumbnail,
+                                    audio: song[2].audio
+                                })} }>
+                                <FaPlay focusable="false" aria-hidden="true" />
+                            </div>
+                        ]} 
+                />
+            </div>
 
-                            ]} />
-          </div>
-          <div>
-          <TaggedContentCard
-                className="plzwork"
-                style={{width: '20px', minWidth: '200px'}}
-                thumbnail={Chemtrails}
-                title='ChemTrails'
-                description=''
-                tags={[
-                        
+            <div>
+                <TaggedContentCard
+                    className="plzwork"
+                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
+                    thumbnail={Another}
+                    title='Another Thing'
+                    description=''
+                    tags={[
+                            <div
+                                onClick={ () => { this.setState({
+                                    modalIsOpen: true,
+                                    id: Another,
+                                    title: song[3].title,
+                                    singer: song[3].singer,
+                                    thumbnail: song[3].thumbnail,
+                                    audio: song[3].audio
+                                })} }>
+                                <FaPlay focusable="false" aria-hidden="true" />
+                            </div>
+                        ]} 
+                />
+            </div>
 
-                            ]} />
-          </div>
-          <div>
-          <TaggedContentCard
-                className="plzwork"
-                style={{width: '20px', minWidth: '200px'}}
-                thumbnail={Chemtrails}
-                title='ChemTrails'
-                description=''
-                tags={[
-                        
+            <div>
+                <TaggedContentCard
+                    className="plzwork"
+                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
+                    thumbnail={Hate}
+                    title='Hate'
+                    description=''
+                    tags={[
+                            <div
+                                onClick={ () => { this.setState({
+                                    modalIsOpen: true,
+                                    id: Hate,
+                                    title: song[4].title,
+                                    singer: song[4].singer,
+                                    thumbnail: song[4].thumbnail,
+                                    audio: song[4].audio
+                                })} }>
+                                <FaPlay focusable="false" aria-hidden="true" />
+                            </div>
+                        ]} 
+                />
+            </div>
 
-                            ]} />
-          </div>
-          <div>
-          <TaggedContentCard
-                className="plzwork"
-                style={{width: '20px', minWidth: '200px'}}
-                thumbnail={Chemtrails}
-                title='ChemTrails'
-                description=''
-                tags={[
-                        
+            <div>
+                <TaggedContentCard
+                    className="plzwork"
+                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
+                    thumbnail={Sorry}
+                    title='Sorry'
+                    description=''
+                    tags={[
+                            <div
+                                onClick={ () => { this.setState({
+                                    modalIsOpen: true,
+                                    id: Sorry,
+                                    title: song[5].title,
+                                    singer: song[5].singer,
+                                    thumbnail: song[5].thumbnail,
+                                    audio: song[5].audio
+                                })} }>
+                                <FaPlay focusable="false" aria-hidden="true" />
+                            </div>
+                        ]} 
+                />
+            </div>
 
-                            ]} />
-          </div>
-          <div>
-          <TaggedContentCard
-                className="plzwork"
-                style={{width: '20px', minWidth: '200px'}}
-                thumbnail={Chemtrails}
-                title='ChemTrails'
-                description=''
-                tags={[
-                        
+            <div>
+                <TaggedContentCard
+                    className="plzwork"
+                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
+                    thumbnail={Chains}
+                    title='Chains'
+                    description=''
+                    tags={[
+                            <div
+                                onClick={ () => { this.setState({
+                                    modalIsOpen: true,
+                                    id: Chains,
+                                    title: song[6].title,
+                                    singer: song[6].singer,
+                                    thumbnail: song[6].thumbnail,
+                                    audio: song[6].audio
+                                })} }>
+                                <FaPlay focusable="false" aria-hidden="true" />
+                            </div>
+                        ]} 
+                />
+            </div>
 
-                            ]} />
-          </div>
+            <div>
+                <TaggedContentCard
+                    className="plzwork"
+                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
+                    thumbnail={Earth}
+                    title='Earth'
+                    description=''
+                    tags={[
+                            <div
+                                onClick={ () => { this.setState({
+                                    modalIsOpen: true,
+                                    id: Earth,
+                                    title: song[7].title,
+                                    singer: song[7].singer,
+                                    thumbnail: song[7].thumbnail,
+                                    audio: song[7].audio
+                                })} }>
+                                <FaPlay focusable="false" aria-hidden="true" />
+                            </div>
+                        ]} 
+                />
+            </div>
+
+            <div>
+                <TaggedContentCard
+                    className="plzwork"
+                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
+                    thumbnail={Never}
+                    title='Never End'
+                    description=''
+                    tags={[
+                            <div
+                                onClick={ () => { this.setState({
+                                    modalIsOpen: true,
+                                    id: Never,
+                                    title: song[8].title,
+                                    singer: song[8].singer,
+                                    thumbnail: song[8].thumbnail,
+                                    audio: song[8].audio
+                                })} }>
+                                <FaPlay focusable="false" aria-hidden="true" />
+                            </div>
+                        ]} 
+                />
+            </div>
+
+            <div>
+                <TaggedContentCard
+                    className="plzwork"
+                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
+                    thumbnail={Colors}
+                    title='Colors'
+                    description=''
+                    tags={[
+                            <div
+                                onClick={ () => { this.setState({
+                                    modalIsOpen: true,
+                                    id: Colors,
+                                    title: song[9].title,
+                                    singer: song[9].singer,
+                                    thumbnail: song[9].thumbnail,
+                                    audio: song[9].audio
+                                })} }>
+                                <FaPlay focusable="false" aria-hidden="true" />
+                            </div>
+                        ]} 
+                />
+            </div>
+
         </Slider>
-      </div>
+      
+      </Row>
+    </div>
     );
   }
 }

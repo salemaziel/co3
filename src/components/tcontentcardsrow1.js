@@ -107,7 +107,7 @@ class TContentCards01 extends React.Component {
             ...other
         } = this.props;
         let cards;;
-        let { styelDisplay } = this.props;
+        let { styleDisplay } = this.props;
 
         return (
             <div style={{
@@ -127,7 +127,8 @@ class TContentCards01 extends React.Component {
                             width: "1000px",
                             backgroundSize: 'cover', 
                             backgroundPosition: 'center center',
-                            } }>
+                            }}
+                        >
                            {/* <Lyriccrawl> */}
 
                             <div style={{ 

@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
  
 import Home from './Home';
 import Discography from './Discography';
-
+import Discography01 from './Discography01'
 import ScrollToTopRoute from './components/scrolltoTop'
  
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
              <Route path="/" component={Home} exact/>
              <ScrollToTopRoute path="/discography" component={Discography} />
              {/*<Route path="/discography" component={Discography}/>*/}
-             {/*<Route path="/container01a" component={Container01a}/>*/}
+             <Route path="/Discography01" component={Discography01}/>
             <Route component={Error}/>
            </Switch>
         </div> 

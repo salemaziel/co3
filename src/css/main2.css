@@ -62,7 +62,7 @@ html {
     -moz-justify-content: center;
     -webkit-justify-content: center;
     -ms-justify-content: center;
-    /*justify-content: initial;*/
+    /*justify-content: center;*/
     min-height: 100vh;
     position: relative;
     z-index: 2;

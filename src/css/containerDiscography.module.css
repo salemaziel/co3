@@ -123,7 +123,7 @@ div.glplogo{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: 0 2rem 1rem;
+    margin: 2rem 2rem 1rem;
     position: relative;
     top: -3rem;
 }
@@ -157,7 +157,7 @@ div.nomobile2 {
 }
 
 div.mobile-slider2 {
-    display: none!important;
+    display: none;
 }
 
 
@@ -177,7 +177,13 @@ div.mobile-slider2 {
         display: flex;
         margin: 1rem;
         text-align: left; 
-        
+    }
+    div.nomobile2 {
+        display: block;
+    }
+    
+    div.mobile-slider2 {
+        display: none;
     }
 }
 @media (max-width: 1680px) {
@@ -259,7 +265,12 @@ div.mobile-slider2 {
     html {
         font-size: 11pt;
     }
-    
+    div.glpsongs {
+        /*margin: 1rem 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;*/
+    }
     /*#containerDisc {
         height: 100vh;
     }*/
@@ -280,6 +291,14 @@ div.mobile-slider2 {
         width: 350px;
         height: auto;
     }
+
+    div.glpsongs {
+        /*margin: 1rem 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;*/
+    }
+
     div.nomobile2 {
         display: none !important;
     }
@@ -320,8 +339,22 @@ div.mobile-slider2 {
             top: -300px;
             left: -150px;
             
+        }*/
+
+        div.glpsongs {
+        /*margin: 1rem 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;*/
+         }
+
+        div.glpsongs {
+            /*margin: 1rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;*/
         }
-        .arrowleft2 {
+        /*.arrowleft2 {
             display: flex!important;
             font-size: 1.5em;
             color: white;
@@ -342,5 +375,10 @@ div.mobile-slider2 {
     }
     @media (max-width: 360px) {
      
-        
+        div.glpsongs {
+            /*margin: 1rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;*/
+        }
     }

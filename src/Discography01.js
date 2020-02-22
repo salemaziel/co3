@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import ContainerDisc from './components/containerDisc'
+import ContainerDisc01 from './components/containerDisc01'
 import Embed from 'react-song-embed'
 import Helmet from 'react-helmet'
 
-export default class Discography extends Component {
+export default class Discography01 extends Component {
     render() {
         return (
           <React.Fragment>
@@ -36,7 +36,7 @@ export default class Discography extends Component {
                                                       /*maxWidth: "100%"*/
                                                       
                         }}>
-                          <ContainerDisc />
+                          <ContainerDisc01 />
     
                         </section>
     
