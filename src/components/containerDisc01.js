@@ -15,7 +15,7 @@ import { FaAngleLeft } from 'react-icons/fa'
 import Glplogo from '../images/song-art/global-lighting-album/co-oldlogo.png'
 import Glpalbum from '../images/song-art/global-lighting-album/album-cover-glp.jpg'
 
-
+import LazyLoad from 'react-lazyload';
 
 
 import { Link } from 'react-router-dom'
@@ -67,17 +67,23 @@ class ContainerDisc01 extends React.Component {
         </Row>
 
         <Row className="glpsongs01">
+        <LazyLoad offset={100}>
             <Col className="nomobile201">
                 <Tcontentdisc2row1 />
             </Col>
-            
+        </LazyLoad>
+        
+        <LazyLoad offset={50}>
             <Col className="mobile-slider201"  /*style={{display: 'none'}}*/>
                 <TcardMobile01b />
             </Col>
+        </LazyLoad>
             
+        <LazyLoad offset={100}>
             <Col className="nomobile201">
                 <Tcontentdisc2row2 />
             </Col>
+        </LazyLoad>
           
           
         </Row>

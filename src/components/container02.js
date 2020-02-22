@@ -44,23 +44,23 @@ class Container02 extends React.Component {
         <Row className="ftpsongs">
           {/*<Col style={{textAlign: "center", marginTop: '1em', marginBottom: '1rem', paddingTop: '1em'}} />*/}
             
-          {/*<LazyLoad offset={100}>*/}
+          <LazyLoad offset={100}>
               <Col className="nomobile">
                 <TContentCards01/>
               </Col>
-          {/*</LazyLoad>*/}
+          </LazyLoad>
 
-          {/*<LazyLoad offset={50}>*/}
+          <LazyLoad offset={50}>
               <Col className="mobile-slider"  /*style={{display: 'none'}}*/>
                   <TCardMobile01b />
               </Col>
-          {/*</LazyLoad>*/}
+          </LazyLoad>
           
-          {/*<LazyLoad offset={50}>*/}
+          <LazyLoad offset={50}>
               <Col className="nomobile">
                   <TContentCards02/>
               </Col>
-          {/*</LazyLoad>*/}
+          </LazyLoad>
           
       </Row>
       
