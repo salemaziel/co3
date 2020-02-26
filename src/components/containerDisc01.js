@@ -5,7 +5,7 @@ import { Row, Col } from 'reactstrap'
 import TcardMobile01b from './tcardMobile01b'
 
 
-import '../css/containerDiscography01.module.css'
+import '../css/containerDiscography01.css'
 
 import Tcontentdisc2row1 from './tcontentcardsdisc2row1'
 import Tcontentdisc2row2 from './tcontentcardsdisc2row2'

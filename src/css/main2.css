@@ -4,13 +4,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     border: 0;
     font-size: 100%;
     font: inherit;
-    /*vertical-align: baseline;*/
+    
 }
-/*
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-    display: block;
-}
-*/
+
 body {
     line-height: 1;
     width: 100%;
@@ -32,18 +28,7 @@ body {
     background-position: center;
     /*background-repeat: repeat;*/
 }
-/*
 
-strong {
-    color: inherit;
-    font-weight: bolder;
-}
-
-em {
-    font-style: italic;
-}
-
-*/
 html {
     font-size: 18pt;
 }
@@ -62,7 +47,6 @@ html {
     -moz-justify-content: center;
     -webkit-justify-content: center;
     -ms-justify-content: center;
-    /*justify-content: center;*/
     min-height: 100vh;
     position: relative;
     z-index: 2;
@@ -87,23 +71,3 @@ body.is-instant:after {
     transition: none !important;
 }*/
 
-
-/*
-@media (max-width: 1680px) {
-
-}
-
-
-@media (max-width: 1280px) {
-
-}
-
-@media (max-width: 736px) {
-   
-}
-
-@media (max-width: 480px) {
-    
-}
-@media (max-width: 360px) {
-*/

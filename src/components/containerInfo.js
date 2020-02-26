@@ -1,5 +1,5 @@
 import React from 'react'
-import containerBioStyles from '../css/containerInfo.module.css'
+import containerBioStyles from '../css/containerInfo.css'
 
 
 

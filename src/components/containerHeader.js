@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/containerHeader.module.css'
+import '../css/containerHeader.css'
 
 import Logo from '../images/logo-white-huge.png'
 import Albumcover from '../images/album-cover2.jpg'

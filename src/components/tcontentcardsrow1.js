@@ -15,7 +15,7 @@ import Modal from 'react-awesome-modal';
 
 //import Crawl from 'react-star-wars-crawl'
 //import 'react-star-wars-crawl/lib/index.css'
-import '../css/tcontencardsrow1.css'
+//import '../css/tcontencardsrow1.css'
 
 const song = [
     {

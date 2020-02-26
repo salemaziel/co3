@@ -1,12 +1,11 @@
 import React from 'react'
-import '../css/containerBio.module.css'
+import '../css/containerBio.css'
 import Glpalbum from '../images/song-art/global-lighting-album/album-cover-glp.jpg'
 
 import { Link } from 'react-router-dom'
 
-import { Row, Col, Container } from 'reactstrap'
+import { Row, Col } from 'reactstrap'
 
-//import '../css/glpspan.module.css'
 
 class ContainerBio extends React.Component {
     render() {
@@ -20,15 +19,14 @@ class ContainerBio extends React.Component {
                
             }}>
               <Col className="firstalbumtitle">
-            <h1 className="style1"><span className="glpspan">Global Lighting Project 2016</span></h1>
+                  <h1 className="style1">
+                      <span className="glpspan">Global Lighting Project 2016</span>
+                  </h1>
             
-            <h2 id="text07" className="style1" /*style={{
-              marginBottom: "1rem",
-              color: "#7c795d",  fontSize: '45px', fontWeight: 'normal', lineHeight: '48px', margin: 0}}*/ >Chaotic Order </h2>
-            {/*<h3 className="style4" style={{
-                                      fontVariant: "small-caps",
-            }}><strong>Seeking Order in Chaos</strong></h3>*/}
-            </Col>
+                  <h2 id="text07" className="style1">
+                      Chaotic Order
+                  </h2>
+                </Col>
             <Col>
             <Link to="/discography01" style={{
                             color: "white",
@@ -37,7 +35,7 @@ class ContainerBio extends React.Component {
                             justifyContent: "center",
                             marginTop: "50px",
                           
-                            }}><img irst
+                            }}><img
                                 className="firstalbum"
                                 src={Glpalbum}
                                 /*mode="fit"*/></img> 
