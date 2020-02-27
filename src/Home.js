@@ -6,6 +6,7 @@ import './css/main2.css'
 import Containerheader from './components/containerHeader'
 import Container01 from './components/container01'
 import Container02 from './components/container02'
+import ContainerGLP from './components/containerGLP'
 import ContainerBio from './components/containerBio'
 //import Containercontact from './components/containerContact'
 //import Containermemory from './components/containerMemory'
@@ -18,10 +19,11 @@ import Helmet from 'react-helmet'
 import Albumcover from './images/album-cover2.jpg'
 import './css/textstyles.css'
 
-export default class Home extends Component {
+//export default class Home extends Component {
 
-  render() {
-    return (
+//  render() {
+//    return (
+  const Home = () => (
       <React.Fragment>
         <Helmet htmlAttributes={{ lang: 'en' }}>
             <title>Chaotic Order Music: Feed The People - Available Now!</title>
@@ -43,6 +45,7 @@ export default class Home extends Component {
                   style={{
                       display: 'fixed', 
                     position: 'relative',
+                    zIndex: '20'
                 }} />
                 <div id="main">
                     <div className="inner">
@@ -55,12 +58,13 @@ export default class Home extends Component {
                       <Containerheader />
 
                       <Container01 />
-                    <LazyLoad offset={50}>
+                    
                       <Container02 />
-                      </LazyLoad>
-                      <LazyLoad offset={50}>
+
                       <ContainerBio />
-                      </LazyLoad>
+                         
+                      <ContainerGLP />
+                  
                      {/*<Containermemory />*/}
                      {/* <Containercontact />*/}
                       
@@ -78,8 +82,5 @@ export default class Home extends Component {
       </React.Fragment>
       
     )
-  }
-
-
-}
+export default Home
 

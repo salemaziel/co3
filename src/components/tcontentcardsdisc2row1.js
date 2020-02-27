@@ -106,8 +106,7 @@ class Tcontentdisc2row1 extends React.Component {
             ...other
         } = this.props;
         return (
-            <div style={{
-            }}>
+            <div className="tccd1">
                 <Modal
                     visible={this.state.modalIsOpen}
                     width="700" height="700"

@@ -1,15 +1,13 @@
 import React from 'react'
 import '../css/containerHeader.css'
 
-import Logo from '../images/logo-white-huge.png'
+import Logo from '../images/image10.png'
 import Albumcover from '../images/album-cover2.jpg'
 import { Row } from 'reactstrap'
 import { Col } from 'reactstrap'
 
 
-class Containerheader extends React.Component {
-    render() {
-      return (
+const Containerheader = () => (
         <div id="containerHeader" className="container full screen" data-scroll-id="one" data-scroll-behavior="center"  /*className={container01Styles.columns} className={container01Styles.full} className={container01Styles.full.screen}*/>
           <div className="inner">
             <Row className="mainrow">
@@ -30,7 +28,6 @@ class Containerheader extends React.Component {
         </div>
          
       )
-    }
-}
+
 
 export default Containerheader

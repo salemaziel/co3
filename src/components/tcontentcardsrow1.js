@@ -106,12 +106,9 @@ class TContentCards01 extends React.Component {
             tags,
             ...other
         } = this.props;
-        let cards;;
-        let { styleDisplay } = this.props;
 
         return (
-            <div style={{
-            }}>
+            <div className="tcc1">
                 <Modal
                     visible={this.state.modalIsOpen}
                     width="1000" height="800"

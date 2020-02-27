@@ -35,10 +35,10 @@
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    z-index: 3;
+    z-index: 2;
 }
 #containermemory.columns {
-    z-index: -4;
+    /*z-index: -4;*/
 }
 
 #containermemory.columns:after {
@@ -50,7 +50,7 @@
 	left:0px;
 	background:rgba(0,0,0,0.7);
     height:100%;
-    z-index: -5;
+    /*z-index: -5;*/
 }
 
 
@@ -95,7 +95,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    /*z-index: -1;*/
     -moz-pointer-events: none;
     -webkit-pointer-events: none;
     -ms-pointer-events: none;
@@ -145,13 +145,13 @@ div.memorycontainer {
 	border-radius: 15px;
 	color: #000000;
     margin: 1em 6em 4em;
-    z-index: 100;
+    /*z-index: 100;*/
 }
 
 img.lovingmem{
     padding: 0 2em;
     margin: 0 0;
-    z-index: 3;
+    /*z-index: 3;*/
 }
 @media (max-width: 1680px) {
     html {

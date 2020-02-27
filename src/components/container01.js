@@ -6,15 +6,12 @@ import { Row, Col } from 'reactstrap'
 
 
 
-class Container01 extends React.Component {
-    render() {
-      return (
+const Container01 = () => (
         <div id="container01" data-scroll-id="two" data-scroll-behavior="center" className="container default full screen">
         <div className="inner">
           <div className="afterSpacer01">
           
           <Row style={{
-            /*display: 'inline-block',*/
             alignContent: 'right',
             justifyContent: 'right',
             padding: '0',
@@ -37,8 +34,7 @@ class Container01 extends React.Component {
         </div>
       </div>
       )
-    }
-}
+
 
 export default Container01
 

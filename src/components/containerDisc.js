@@ -1,4 +1,10 @@
 import React, { Component } from 'react'
+
+import { Row, Col } from 'reactstrap'
+
+import TCardMobile from './tcardMobile'
+
+
 import '../css/containerDiscography.css'
 
 import Tcontentdisc2row1 from './tcontentcardsdisc2row1'
@@ -9,8 +15,7 @@ import { FaAngleLeft } from 'react-icons/fa'
 import Glplogo from '../images/song-art/global-lighting-album/co-oldlogo.png'
 import Glpalbum from '../images/song-art/global-lighting-album/album-cover-glp.jpg'
 
-import TCardMobile from './tcardMobile01b'
-import { Row, Col } from 'reactstrap';
+//import LazyLoad from 'react-lazyload';
 
 
 import { Link } from 'react-router-dom'
@@ -55,9 +60,9 @@ class ContainerDisc extends React.Component {
             <Col>
               <img className="glplogo" src={Glplogo} alt=''  />
             </Col>
-            <Col>
+            {/*<Col>
                 <img className="glpalbum" src={Glpalbum} alt='' />
-            </Col>
+            </Col>*/}
         </Row>
 
         <Row className="glpsongs">
@@ -65,7 +70,7 @@ class ContainerDisc extends React.Component {
                 <Tcontentdisc2row1 />
             </Col>
             
-            <Col className="mobile-slider2"  style={{display: 'none'}}>
+            <Col className="mobile-slider2"  /*style={{display: 'none'}}*/>
                 <TCardMobile />
             </Col>
             
