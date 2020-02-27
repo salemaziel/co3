@@ -13,7 +13,7 @@ import { FaPlay } from 'react-icons/fa'
 import ReactWebMediaPlayer from 'react-web-media-player';
 
 
-const song=[
+const song = [
     {
         title: 'Sorry',
         singer: 'Chaotic Order',
@@ -95,7 +95,7 @@ class TContentCards02 extends React.Component {
             ...other
         } = this.props;
         return (
-            <div>
+            <div className="tccd2">
                 <Modal
                     visible={this.state.modalIsOpen} 
                     width="1000" 

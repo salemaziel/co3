@@ -2,16 +2,16 @@ import React, { Component } from 'react'
 
 
 import './css/main2.css'
-//import './css/Rmusicjinkeindex.css'
-//import './css/Rmusic.css'
-//import './App.css'
+
 import Containerheader from './components/containerHeader'
 import Container01 from './components/container01'
 import Container02 from './components/container02'
+import ContainerGLP from './components/containerGLP'
 import ContainerBio from './components/containerBio'
 //import Containercontact from './components/containerContact'
-import Containermemory from './components/containerMemory'
+//import Containermemory from './components/containerMemory'
 //import ContainerFooter from './components/containerFooter'
+import LazyLoad from 'react-lazyload';
 
 import Embed from 'react-song-embed'
 
@@ -19,22 +19,11 @@ import Helmet from 'react-helmet'
 import Albumcover from './images/album-cover2.jpg'
 import './css/textstyles.css'
 
-export default class Home extends Component {
-//  constructor(props) {
-//    super(props)
-//    this.state = {
-//      playlist: null,
-//      playlistIsPlaying: false,
-//      currentSongIndex: 0,
-//      theme: 'spotify'
-//    }
-//    this.updatePlaylist = this.updatePlaylist.bind(this)
-//    this.receiveStateUpdates = this.receiveStateUpdates.bind(this)
-//    this.handleThemeChange = this.handleThemeChange.bind(this)
-//  }
+//export default class Home extends Component {
 
-  render() {
-    return (
+//  render() {
+//    return (
+  const Home = () => (
       <React.Fragment>
         <Helmet htmlAttributes={{ lang: 'en' }}>
             <title>Chaotic Order Music: Feed The People - Available Now!</title>
@@ -56,6 +45,7 @@ export default class Home extends Component {
                   style={{
                       display: 'fixed', 
                     position: 'relative',
+                    zIndex: '20'
                 }} />
                 <div id="main">
                     <div className="inner">
@@ -68,10 +58,13 @@ export default class Home extends Component {
                       <Containerheader />
 
                       <Container01 />
-
+                    
                       <Container02 />
 
                       <ContainerBio />
+                         
+                      <ContainerGLP />
+                  
                      {/*<Containermemory />*/}
                      {/* <Containercontact />*/}
                       
@@ -89,31 +82,5 @@ export default class Home extends Component {
       </React.Fragment>
       
     )
-  }
-
-//  updatePlaylist(playlist, currentSongIndex) {
-//    // New playlist received, get array containing song sources
-//    playlist = playlist.map(song => song.src)
-//    if (Number.isInteger(currentSongIndex)) {
-//      if (JSON.stringify(playlist) !== JSON.stringify(this.state.playlist))
-//        this.setState({ playlist, playlistIsPlaying: true, currentSongIndex: currentSongIndex })
-      // Not new playlist, just toggling play or pause
-//      else this.setState({ playlistIsPlaying: !this.state.playlistIsPlaying })
-      // New Song index
-//      if (currentSongIndex !== this.state.currentSongIndex) this.setState({ currentSongIndex })
-//    } else {
-//      if (JSON.stringify(playlist) !== JSON.stringify(this.state.playlist))
-//        this.setState({ playlist, playlistIsPlaying: true, currentSongIndex: 0 })
-//      else this.setState({ playlistIsPlaying: !this.state.playlistIsPlaying })
-//    }
-//  }
-
-//  handleThemeChange(event) {
-//    this.setState({theme: event.target.value})
-//  }
-
-//  receiveStateUpdates(payload) {
-//    this.setState(payload)
-//  }
-}
+export default Home
 

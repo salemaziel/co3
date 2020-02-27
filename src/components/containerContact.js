@@ -1,6 +1,6 @@
 import React from 'react'
-import '../css/containerContact.module.css'
-import '../css/forms.module.css'
+import '../css/containerContact.css'
+import '../css/form.css'
 
 
 const encode = (data) => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/containermemory.module.css'
+import '../css/containermemory.css'
 
 import { Row, Col, } from 'reactstrap'
 import Candles from '../images/candles-1.png'

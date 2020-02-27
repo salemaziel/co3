@@ -15,7 +15,7 @@ import Modal from 'react-awesome-modal';
 
 //import Crawl from 'react-star-wars-crawl'
 //import 'react-star-wars-crawl/lib/index.css'
-import '../css/tcontencardsrow1.css'
+//import '../css/tcontencardsrow1.css'
 
 const song = [
     {
@@ -106,12 +106,9 @@ class TContentCards01 extends React.Component {
             tags,
             ...other
         } = this.props;
-        let cards;;
-        let { styleDisplay } = this.props;
 
         return (
-            <div style={{
-            }}>
+            <div className="tcc1">
                 <Modal
                     visible={this.state.modalIsOpen}
                     width="1000" height="800"
