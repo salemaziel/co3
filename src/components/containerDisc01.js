@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import { Row, Col } from 'reactstrap'
 
-import TcardMobile01b from './tcardMobile01b'
+import TcardMobile from './tcardMobile'
 
 
 import '../css/containerDiscography01.css'
@@ -75,7 +75,7 @@ class ContainerDisc01 extends React.Component {
         
         <LazyLoad offset={50}>
             <Col className="mobile-slider201"  /*style={{display: 'none'}}*/>
-                <TcardMobile01b />
+                <TcardMobile />
             </Col>
         </LazyLoad>
             

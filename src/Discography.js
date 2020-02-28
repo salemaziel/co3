@@ -22,6 +22,7 @@ import Helmet from 'react-helmet'
             {/*<div className="main">*/}
                 <div id="wrapper">
                   <Embed 
+                      rel="preload"
                       url="https://album.link/VdPNv59kZRQM8" 
                       height={52} 
                       dark 

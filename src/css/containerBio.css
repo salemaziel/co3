@@ -1,14 +1,17 @@
 #containerBio > .inner {
-    padding: 6rem 6rem;
+    padding: 6rem 2rem;
     width: 100%;
-    max-width: 65rem;
+    /*max-width: 65rem;*/
+    justify-content: center;
+    align-items: center;
 }
  
 #containerBio {
     display: flex;
+    flex-direction: column;
     width: 100%;
     min-width: 100vw;
-    min-height: 40rem;
+    min-height: 50rem;
     -moz-align-items: center;
     -webkit-align-items: center;
     -ms-align-items: center;
@@ -17,12 +20,12 @@
     -webkit-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-    background-attachment: scroll;
+    background-attachment: fixed;
     border-style: solid;
     border-color: #FAFF00;
     border-top-width: 10px;
-    background-image: /*url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.46875%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'),*/ linear-gradient(to top, rgba(43,50,94,0.212), rgba(43,50,94,0.212)), url('../images/JacksCave_1600x.jpg');
-    background-size: cover, auto;
+    background-image:/* url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.46875%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'),*/ linear-gradient(to top, rgba(14, 19, 36, 0.75), rgba(26, 29, 46, 0.75)), url('../images/JacksCave-1.jpg');
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 2;
@@ -37,55 +40,18 @@
 
 div.afterSpacer {
     background: rgba(49, 52, 68, 0.1);
-    margin: 4rem;
-    padding: 3rem;
+    margin: 4rem 2rem;
+    padding: 2rem;
     color: white;
-    align-items: center;
+    /*align-items: center;
     align-content: center;
-    justify-content: center;
+    justify-content: center;*/
 }
 
-div.firstalbumtitle{
-    align-content: center;
-    align-items: center;
-    vertical-align: bottom;
-    display: flex;
-    flex-direction: column;
-    /*flex-flow: wrap;*/
-    justify-content: center;
-    text-align: center;
-    word-wrap: break-word;
-    /*width: 350px;*/
-    /*max-width: 550px;*/
-}
-
-img.firstalbum {
-    margin-top: 50px;
-    width: 500px;
-    display: inline-block;
-}
-
-div.oldAlbumText {
-    margin-left: 1em;
-    margin-right: 1em;
-    padding-left: 6em;
-    padding-right: 6em;
-}
-div.firstalbumHeader {
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-
-}
-div.proceeds {
-    /*color: #f9b930!important;*/
-    /*background-color: red;*/
-    padding: 1px;
-    margin: 1px;
-}
-p.proceeds {
-    /*font-size: 40px;
-    font-weight: 900;*/
+img.jackbio {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 @media (min-width: 2400px) {
@@ -93,23 +59,9 @@ p.proceeds {
         min-height: 50vh;
         padding: 4em 0;
     }
-    img.firstalbum {
-        margin-top: 50px;
-        width: 700px;
-        display: inline-block;
-    }
-    
-    .oldAlbumText {
-        margin-left: 1em;
-        margin-right: 1em;
-        padding-left: 6em;
-        padding-right: 6em;
-    }
-    div.proceeds {
-        /*color: #f9b930!important;*/
-        /*background-color: red;*/
-        padding: 100px;
-        margin: 20px;
+    img.jackbio {
+        width: stretch;
+        min-height: 45vh;
     }
 }
 @media (max-width: 1680px) {
