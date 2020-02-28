@@ -248,6 +248,31 @@ p.proceeds {
             padding: 10px;
             margin: 20px;
         }
+
+    .glpbutton1 {
+        background: transparent;
+        border-color: gold;
+        border-width: 2px;
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        color: white;
+        cursor: pointer;
+        width: 17rem;
+}
+
+    .glpbutton2 {
+        background: transparent;
+        border-color: red;
+        border-width: 2px;
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        width: 17rem;
+    }
     
 }
 @media (max-width: 360px) {

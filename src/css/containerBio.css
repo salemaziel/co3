@@ -54,6 +54,14 @@ img.jackbio {
     padding: 0;
 }
 
+div.jcavemobile {
+    display: none;
+}
+img.jcavemobile {
+    display: none;
+ }
+
+
 @media (min-width: 2400px) {
     #containerBio {
         min-height: 50vh;
@@ -63,11 +71,23 @@ img.jackbio {
         width: stretch;
         min-height: 45vh;
     }
+    div.jcavemobile {
+        display: none;
+    }
+    img.jcavemobile {
+        display: none;
+     }
 }
 @media (max-width: 1680px) {
     html {
         font-size: 13pt;
     }
+    div.jcavemobile {
+        display: none;
+    }
+    img.jcavemobile {
+        display: none;
+     }
 }
 
 @media (max-width: 1280px) {
@@ -77,8 +97,14 @@ img.jackbio {
     #containerBio {
         background-attachment: fixed;
     }
+    div.jcavemobile {
+        display: none;
+    }
+    img.jcavemobile {
+        display: none;
+     }
 }
-
+ 
 @media (max-width: 980px) {
     html {
         font-size: 11pt;
@@ -101,10 +127,23 @@ img.jackbio {
         padding-left: 0;
         padding-right: 0;
     }
+    div.jcavemobile {
+        display: none;
+    }
+    img.jcavemobile {
+        display: none;
+     }
 }
 @media (max-width: 736px) {
     html {
         font-size: 11pt;
+    }
+    div.jcavemobile {
+        display: none;
+    }
+    
+    img.jcavemobile {
+       display: none;
     }
 
    
@@ -124,14 +163,11 @@ img.jackbio {
 }
 
 @media (max-width: 480px) {
-    
-/*
     div.afterSpacer {
-        background: rgba(49, 52, 68, 0.3);
-        margin: 2rem 1rem;
-        padding: 2rem;
-        color: white;
-    }*/
+        margin: 2rem 0.5rem;
+        padding: 2rem 0.5rem;
+    }
+
     img.firstalbum {
         margin-top: 50px;
         width: 325px;
@@ -173,6 +209,18 @@ img.jackbio {
             padding: 10px;
             margin: 20px;
         }
+        img.jackbio {
+            display: none
+        }
+        div.jcavemobile {
+            display: block;
+            max-width: 480px;
+        }
+        img.jcavemobile {
+            display: inline;
+            max-width: 100%;
+            padding: 1rem 0;
+        }
     
 }
 @media (max-width: 360px) {
@@ -189,6 +237,18 @@ img.jackbio {
 
     #containerBio {
         min-height: 20rem;
+    }
+    img.jackbio {
+        display: none
+    }
+    div.jcavemobile {
+        display: block;
+        max-width: 360px;
+    }
+    img.jcavemobile {
+        display: inline;
+        max-width: 100%;
+        padding: 1rem 0;
     }
 
 
