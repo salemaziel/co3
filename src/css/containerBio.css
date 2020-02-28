@@ -109,23 +109,9 @@ img.jcavemobile {
     html {
         font-size: 11pt;
     }
-    img.firstalbum {
-        margin-top: 50px;
-        width: 350px;
-        display: inline-block;
-        padding: 0 2em 0 1em;
-    }
-    div.firstalbumHeader {
-        display: flex;
-        justify-content: center!important;
-        flex-direction: column!important;
-        align-items: center!important;    
-    }
-    div.oldAlbumText {
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
+
+    div.afterSpacer {
+        margin: 2rem 0.5rem;
     }
     div.jcavemobile {
         display: none;
@@ -167,48 +153,6 @@ img.jcavemobile {
         margin: 2rem 0.5rem;
         padding: 2rem 0.5rem;
     }
-
-    img.firstalbum {
-        margin-top: 50px;
-        width: 325px;
-        display: flex;
-        padding: 0 10em 0;
-    }
-
-    div.firstalbumHeader {
-        display: flex;
-        justify-content: center!important;
-        flex-direction: column!important;
-        position: relative;
-        
-        }
-        div.firstalbumtitle{
-            align-content: center;
-            align-items: center;
-            /*vertical-align: bottom;*/
-            display: flex;
-            flex-direction: column;
-            /*flex-flow: wrap;*/
-            justify-content: center;
-            text-align: center;
-            word-wrap: break-word;
-            width: 350px;
-            max-width: 375px;
-            
-        }
-        div.oldAlbumText {
-            width: 350px;
-            margin-left: 1em;
-            margin-right: 1em;
-            padding-left: 6em;
-            padding-right: 6em;
-        }
-        div.proceeds {
-            /*color: #f9b930!important;*/
-            /*background-color: red;*/
-            padding: 10px;
-            margin: 20px;
-        }
         img.jackbio {
             display: none
         }

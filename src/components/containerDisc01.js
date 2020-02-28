@@ -61,30 +61,24 @@ class ContainerDisc01 extends React.Component {
             <Col>
               <img className="glplogo01" src={Glplogo} alt=''  />
             </Col>
-            <Col>
+            {/*<Col>
                 <img className="glpalbum01" src={Glpalbum} alt='' />
-            </Col>
+            </Col>*/}
         </Row>
 
         <Row className="glpsongs01">
-        <LazyLoad offset={100}>
+        
             <Col className="nomobile201">
                 <Tcontentdisc2row1 />
             </Col>
-        </LazyLoad>
-        
-        <LazyLoad offset={50}>
-            <Col className="mobile-slider201"  /*style={{display: 'none'}}*/>
-                <TcardMobile />
-            </Col>
-        </LazyLoad>
             
-        <LazyLoad offset={100}>
             <Col className="nomobile201">
                 <Tcontentdisc2row2 />
             </Col>
-        </LazyLoad>
-          
+
+            <Col className="mobile-slider201"  /*style={{display: 'none'}}*/>
+                <TcardMobile />
+            </Col>
           
         </Row>
       {/*</Row>*/}

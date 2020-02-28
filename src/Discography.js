@@ -35,7 +35,7 @@ import Helmet from 'react-helmet'
                         <section id="home-section" style={{
                                                       display: "flex",
                                                       flexDirection: "column",
-                                                      /*maxWidth: "100%"*/
+                                                      height: '100%',
                                                       
                         }}>
                           <ContainerDisc />
