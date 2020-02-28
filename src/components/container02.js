@@ -13,7 +13,7 @@ import { Row, Col } from 'reactstrap';
 const Container02 = () => (
 
         <div 
-      id="container02" className="container default full screen" data-scroll-id="one" data-scroll-behavior="center">
+      id="container02" className="container default full screen" data-scroll-id="three" data-scroll-behavior="center">
         <div className="inner">
         <Row className="songheaderRow" > 
           <Col>
@@ -22,7 +22,7 @@ const Container02 = () => (
                   Feed The People
               </h2>
               <p className="songheader">
-                Tracks, Cover Art, and Lyrics
+                Tracks and Cover Art
               </p>
           </Col>
            

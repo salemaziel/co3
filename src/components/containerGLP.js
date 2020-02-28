@@ -9,7 +9,7 @@ import GLPbuttons from '../components/glpbuttons'
 
 
 const ContainerGLP = () => (
-        <div id="ContainerGLP" data-scroll-id="three" data-scroll-behavior="center" className="container columns full screen">
+        <div id="ContainerGLP" data-scroll-id="five" data-scroll-behavior="center" className="container columns full screen">
         <div id="inner" >
           
           <div className="afterSpacer" >
@@ -39,7 +39,7 @@ const ContainerGLP = () => (
             
                 </Col>
             <Col>
-            <Link rel="preload" to="/discography01" style={{
+            <Link rel="preload" to="/Discography01" style={{
                             color: "white",
                             fontSize: "2em",
                             fontVariant: "small-caps",

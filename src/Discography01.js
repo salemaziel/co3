@@ -3,9 +3,7 @@ import ContainerDisc01 from './components/containerDisc01'
 import Embed from 'react-song-embed'
 import Helmet from 'react-helmet'
 
-export default class Discography01 extends Component {
-    render() {
-        return (
+const Discography01 = () => (
           <React.Fragment>
             <Helmet htmlAttributes={{ lang: 'en' }}>
                 <title>Chaotic Order Music: Discography</title>
@@ -21,6 +19,7 @@ export default class Discography01 extends Component {
             {/*<div className="main">*/}
                 <div id="wrapper">
                   <Embed 
+                      rel="preload"
                       url="https://album.link/VdPNv59kZRQM8" 
                       height={52} 
                       dark 
@@ -48,5 +47,4 @@ export default class Discography01 extends Component {
           </React.Fragment>
           
         )
-      }
-}
+export default Discography01

@@ -13,7 +13,7 @@ class App extends Component {
         <div>
             <Switch>
              <Route path="/" component={Home} exact/>
-             <ScrollToTopRoute path="/discography" component={Discography}/>
+             {/*<ScrollToTopRoute path="/discography" component={Discography}/>*/}
              <ScrollToTopRoute path="/Discography01" component={Discography01}/>
             <Route component={Error}/>
            </Switch>
