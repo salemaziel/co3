@@ -8,7 +8,7 @@ import Container01 from './components/container01'
 import Container02 from './components/container02'
 import ContainerGLP from './components/containerGLP'
 import ContainerBio from './components/containerBio'
-//import Containercontact from './components/containerContact'
+import Containercontact from './components/containerContact'
 //import Containermemory from './components/containerMemory'
 //import ContainerFooter from './components/containerFooter'
 import LazyLoad from 'react-lazyload';
@@ -31,7 +31,7 @@ import './css/textstyles.css'
             <meta property="og:site_name" content="Chaotic Order Music" />
             <meta property="og:title" content="Chaotic Order Music" />
             <meta property="og:type" content="website" />
-            <meta property="og:image" content={Albumcover} />
+            <meta property="og:image" content="./images/album-cover2.jpg" />
             <meta property="og:description" content="Official Website for Metal Band Chaotic Order" />
             <meta property="og:url" content="https://chaoticordermusic.com" />
             <meta property="twitter:card" content="summary_large_image" />
@@ -39,6 +39,7 @@ import './css/textstyles.css'
         <div className="main">
             <div id="wrapper">
               <Embed 
+                  rel="preload"
                   url="https://album.link/VdPNv59kZRQM8" 
                   height={52} 
                   dark 
@@ -62,16 +63,16 @@ import './css/textstyles.css'
                       <Container02 />
 
                       <ContainerBio />
-                         
+
                       <ContainerGLP />
                   
                      {/*<Containermemory />*/}
-                     {/* <Containercontact />*/}
+                     <Containercontact />
                       
                       
 
                     
-                   {/* <ContainerFooter/>*/}
+                   {/*<ContainerFooter/>*/}
                     </section>
 
                     </div>

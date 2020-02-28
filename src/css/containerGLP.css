@@ -19,9 +19,9 @@
     justify-content: center;
     background-attachment: fixed;
     border-style: solid;
-    border-color: #FAFF00;
+    border-color: rgb(0, 109, 211);
     border-top-width: 10px;
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.46875%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), linear-gradient(to top, rgba(43,50,94,0.412), rgba(43,50,94,0.412)), url('../images/container03.jpg?v40123277835751');
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.46875%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), linear-gradient(to top, rgba(43,50,94,0.412), rgba(43,50,94,0.412)), url('../images/container03.jpg');
     background-size: cover, auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -63,6 +63,7 @@ img.firstalbum {
     margin-top: 50px;
     width: 500px;
     display: inline-block;
+    box-shadow: 3px 3px 10px black;
 }
 
 div.oldAlbumText {
@@ -86,7 +87,44 @@ div.proceeds {
 p.proceeds {
     /*font-size: 40px;
     font-weight: 900;*/
+    margin: 0.5rem;
+    padding: 1rem 4rem;
+    text-align: left;
 }
+
+.glpbutton1 {
+    background: transparent;
+    border-color: silver;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    width: 17rem;
+}
+.glpbutton1:hover{
+    background-color: silver;
+    color: black;
+}
+
+.glpbutton2 {
+    background: transparent;
+    border-color: gold;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    width: 17rem;
+}
+.glpbutton2:hover{
+    background-color: gold;
+    color: black;
+}
+
 
 @media (min-width: 2400px) {
     #ContainerGLP {
@@ -94,7 +132,7 @@ p.proceeds {
         padding: 4em 0;
     }
     img.firstalbum {
-        margin-top: 50px;
+        margin: 50px 0 0;
         width: 700px;
         display: inline-block;
     }
@@ -135,7 +173,6 @@ p.proceeds {
         margin-top: 50px;
         width: 350px;
         display: inline-block;
-        padding: 0 2em 0 1em;
     }
     div.firstalbumHeader {
         display: flex;
@@ -184,7 +221,7 @@ p.proceeds {
         margin-top: 50px;
         width: 325px;
         display: flex;
-        padding: 0 10em 0;
+        box-shadow: none;
     }
 
     div.firstalbumHeader {
@@ -221,6 +258,39 @@ p.proceeds {
             padding: 10px;
             margin: 20px;
         }
+
+    .glpbutton1 {
+        background: transparent;
+        border-color: gold;
+        border-width: 2px;
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        color: white;
+        cursor: pointer;
+        width: 17rem;
+        margin: 0.5rem;
+}
+
+    .glpbutton2 {
+        background: transparent;
+        border-color: red;
+        border-width: 2px;
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        width: 17rem;
+        margin: 0.5rem;
+
+    }
+
+    p.proceeds {
+        margin: 0.5rem;
+        padding: 1rem 2.5rem;
+    }
     
 }
 @media (max-width: 360px) {

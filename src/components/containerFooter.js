@@ -5,7 +5,8 @@ import './styles.css'
 class ContainerFooter extends React.Component {
     render() {
       return (
-        <div  id="containerContact" data-scroll-id="signup" data-scroll-behavior="center" className="container columns full screen" style={{border: 'none', marginTop: '-2px'}}  /*className={container01Styles.columns} className={container01Styles.full} className={container01Styles.full.screen}*/>
+        <React.Fragment>
+        {/*<div  id="containerContact" data-scroll-id="signup" data-scroll-behavior="center" className="container columns full screen" style={{border: 'none', marginTop: '-2px'}}  /*className={container01Styles.columns} className={container01Styles.full} className={container01Styles.full.screen}* />*/}
           
   <footer style={{position: "unset"}}>
     <div class="social-media-links" style={{margin: '3rem'}}>
@@ -57,7 +58,8 @@ class ContainerFooter extends React.Component {
       </ul>
     </div>
   </footer>
-</div>
+      {/*</div>*/}
+      </React.Fragment>
       )
     }
 }

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import { Row, Col } from 'reactstrap'
 
-import TCardMobile from './tcardMobile'
+import TCardMobile from './tcardMobile-old'
 
 
 import '../css/containerDiscography.css'
@@ -38,9 +38,11 @@ class ContainerDisc extends React.Component {
         <Row className="backrow">
             
                 <Link to="/" 
-                      style={{
+                        style={{
                             color: "white",
-                            fontSize: "3em",}}>
+                            fontSize: "3em",}}
+                        rel="preload"
+                        >
                     <Col className="backcol">
                 {/*<Link to="/" 
                       style={{

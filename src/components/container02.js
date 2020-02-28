@@ -3,11 +3,10 @@ import '../css/container02.css'
 
 import TContentCards01 from './tcontentcardsrow1'
 import TContentCards02 from './tcontentcardsrow2'
-import Logo from '../images/logo-white-huge.png'
 
  
 
-import TCardMobile01b from './tcardMobile01b'
+import TCardMobile from './tcardMobile'
 import { Row, Col } from 'reactstrap';
 
 
@@ -16,31 +15,32 @@ const Container02 = () => (
         <div 
       id="container02" className="container default full screen" data-scroll-id="one" data-scroll-behavior="center">
         <div className="inner">
-        {/*<Row className="songheaderRow" > 
+        <Row className="songheaderRow" > 
           <Col>
-              <img className="songheader" src={Logo} alt='' />
-              <p className="songheader" >
+              {/*<img className="songheader" src={Logo} alt='' />*/}
+              <h2 className="songheader" >
                   Feed The People
+              </h2>
+              <p className="songheader">
+                Tracks, Cover Art, and Lyrics
               </p>
           </Col>
            
-</Row>*/}
+</Row>
         
         <Row className="ftpsongs">
             
               <Col className="nomobile">
                 <TContentCards01/>
+                <TContentCards02/>
               </Col>
+        </Row>
 
+        <Row className="mobile-slider">
               <Col className="mobile-slider" >
-                  <TCardMobile01b />
-              </Col>
-          
-              <Col className="nomobile">
-                  <TContentCards02/>
-              </Col>
-          
-      </Row>
+                  <TCardMobile />
+              </Col>    
+        </Row>
       
         </div>
       </div>

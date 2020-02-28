@@ -33,7 +33,7 @@ export default class Discography01 extends Component {
                         <section id="home-section" style={{
                                                       display: "flex",
                                                       flexDirection: "column",
-                                                      /*maxWidth: "100%"*/
+                                                      height: '100%'
                                                       
                         }}>
                           <ContainerDisc01 />
