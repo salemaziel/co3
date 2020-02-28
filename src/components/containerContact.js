@@ -38,7 +38,7 @@ class containerContact extends React.Component {
         return (
             <div id="containerContact" data-scroll-id="signup" data-scroll-behavior="center" className="container columns full screen" >
 
-                <div style={{textAlign: "center", marginTop: '1rem', marginBottom: '1rem', width: '350px'}}>
+                <div style={{textAlign: "center", marginTop: '1rem', marginBottom: '1rem', width: '50%'}}>
                     <br/>
                     <br/>
                     <br/>

@@ -8,7 +8,7 @@ import { Col } from 'reactstrap'
 
 
 const Containerheader = () => (
-        <div id="containerHeader" className="container full screen" data-scroll-id="one" data-scroll-behavior="center"  /*className={container01Styles.columns} className={container01Styles.full} className={container01Styles.full.screen}*/>
+        <div id="containerHeader" className="container full screen" data-scroll-id="one" data-scroll-behavior="center" >
           <div className="inner">
             <Row className="mainrow">
               <Col xs="5" className='albumpromo'>

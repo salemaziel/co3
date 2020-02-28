@@ -159,11 +159,11 @@ div.glpsongs01 {
 
 }
 div.nomobile01 {
-    display: block;
+    display: block!important;
 }
 
-div.mobile-slider01 {
-    display: none;
+div.mobile-slider201 {
+    display: none!important;
 }
 /*
 .plzwork {
@@ -190,7 +190,14 @@ div.mobile-slider01 {
         text-align: left; 
         
     }
-}
+
+    div.nomobile201 {
+        display: block;
+    }
+
+    div.mobile-slider201 {
+        display: none!important;
+    }
 @media (max-width: 1680px) {
     html {
         font-size: 13pt;
@@ -252,10 +259,10 @@ div.mobile-slider01 {
         padding: 0 0 8rem;
     }*/
     div.nomobile201 {
-        display: none;
+        display: none!important;
     }
     div.mobile-slider201 {
-        display: flex;
+        display: flex!important;
         flex-direction: column;
         max-width: 100%;
     }
@@ -429,3 +436,4 @@ div.mobile-slider01 {
             
         }
     }
+}

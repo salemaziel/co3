@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import { Row, Col } from 'reactstrap'
 
-import TcardMobile from './tcardMobile'
+import TcardMobile2 from './tcardMobile2'
 
 
 import '../css/containerDiscography01.css'
@@ -50,7 +50,7 @@ class ContainerDisc01 extends React.Component {
                             justifyContent: 'center',
                             }}>*/}
                             
-                                <FaAngleLeft className="back0101"/>
+                                {/*<FaAngleLeft className="back0101"/>*/}
                                 <FaAngleLeft className="back0201"/>
                 {/*</Link>*/}
                     </Col>
@@ -76,8 +76,8 @@ class ContainerDisc01 extends React.Component {
                 <Tcontentdisc2row2 />
             </Col>
 
-            <Col className="mobile-slider201"  /*style={{display: 'none'}}*/>
-                <TcardMobile />
+            <Col className="mobile-slider201"  style={{display: 'none'}}>
+                <TcardMobile2 />
             </Col>
           
         </Row>

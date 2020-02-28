@@ -5,6 +5,9 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
     "eslint": "6.8.0",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
@@ -34,6 +37,9 @@
   },
   "peerDependencies": {
     "styled-components": "^5.0.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [

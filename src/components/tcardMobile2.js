@@ -1,7 +1,6 @@
 import React from 'react'
+import Slider from "react-slick";
 import { TaggedContentCard } from 'react-ui-cards'
-import ReactWebMediaPlayer from 'react-web-media-player';
-
 import Where from '../images/song-art/global-lighting-album/1-where-were-you.jpg'
 import Wake from '../images/song-art/global-lighting-album/2-wake-up.jpg'
 import Tears from '../images/song-art/global-lighting-album/3-Tears.jpg'
@@ -12,12 +11,13 @@ import Goodbye from '../images/song-art/global-lighting-album/7-Goodbye.jpg'
 import Fooling from '../images/song-art/global-lighting-album/8-Foolin-Myself.jpg'
 import Breathe from '../images/song-art/global-lighting-album/9-Breathe.jpg'
 import Still from '../images/song-art/global-lighting-album/10-I-Still-Love-you.jpg'
-
-
+import ReactWebMediaPlayer from 'react-web-media-player';
 
 import { FaPlay } from 'react-icons/fa'
 
-import {  Row } from 'reactstrap';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import { Row } from 'reactstrap';
 import Modal from 'react-awesome-modal';
 
 import ReactCardCarousel from 'react-card-carousel';
@@ -113,7 +113,7 @@ const song = [
 
     }
 ]
-class TCardMobile extends React.Component {
+class TCardMobile2 extends React.Component {
 
 
     constructor() {
@@ -141,6 +141,63 @@ class TCardMobile extends React.Component {
     }
 
     render() {
+        const settings = {
+            className: "plzwork",
+            initialSlide: 0,
+            infinite: true,
+            centerPadding: "4rem",
+            slidesToShow: 2,
+            swipe: true,
+            swipeToSlide: true,
+            centerMode: true,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  className: "plzwork",
+                      initialSlide: 1,
+                      infinite: true,
+                      centerPadding: "3rem",
+                      slidesToShow: 2,
+                      swipe: true,
+                      swipeToSlide: true,
+                      centerMode: true,
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  className: "plzwork",
+                  initialSlide: 1,
+                  infinite: true,
+                  centerPadding: "60px",
+                  slidesToShow: 2,
+                  swipe: true,
+                  swipeToSlide: true,
+                  centerMode: true,
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  className: "plzwork",
+                  initialSlide: 1,
+                  infinite: true,
+                  centerPadding: "4rem",
+                  slidesToShow: 2,
+                  swipe: true,
+                  swipeToSlide: true,
+                  centerMode: true,
+                }
+              }
+            ],
+            focusOnSelect: true,
+            afterChange: function(index) {
+              console.log(
+                `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
+              );
+            }
+          };
         let {
             thumbnail,
             title,
@@ -148,12 +205,11 @@ class TCardMobile extends React.Component {
             tags,
             ...other
         } = this.props;
-        let cards;;
-        let { styelDisplay } = this.props;
+        let cards;
+        let { styleDisplay } = this.props;
 
         return (
-            <div style={{
-            }}>
+            <React.Fragment>
                 <Modal
                     visible={this.state.modalIsOpen}
                     width="275" height="275"
@@ -168,18 +224,18 @@ class TCardMobile extends React.Component {
                                     title={this.state.title}
                                     thumbnail={this.state.thumbnail}
                                     audio={this.state.audio}
-
                                 />
                             </div>
                     </Row>
-
                 </Modal>
+
                 <Row /*style={{ display: 'flex' }}*/>
-                    <ReactCardCarousel  disable_keydown={false} disable_box_shadow={true}>
+                    {/*<ReactCardCarousel  disable_keydown={false} disable_box_shadow={true}>*/}
+                    <Slider {...settings}>
                         <div >
                             <TaggedContentCard
-                                style={{width: '20px', minWidth: '200px'}}
-                                
+                                className="plzwork"
+                                style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}} 
                                 thumbnail={Where}
                                 title='Where Were You'
                                 description=''
@@ -201,52 +257,52 @@ class TCardMobile extends React.Component {
 
                         <div >
                             <TaggedContentCard
-                                style={{width: '20px', minWidth: '200px'}}
-                                
+                                className="plzwork"
+                                style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                                 thumbnail={Wake}
                                 title='Wake Up'
                                 description=''
                                 tags={[
                                     <div
-                                        onClick={ () => { this.setState({
-                                            modalIsOpen: true,
-                                            id: Wake,
-                                            title: song[1].title,
-                                            singer: song[1].singer,
-                                            thumbnail: song[1].thumbnail,
-                                            audio: song[1].audio
-                                        })} }
+                                        
                                     ><FaPlay focusable="false" aria-hidden="true" /></div>
                                 ]}
-
+                                onClick={ () => { this.setState({
+                                    modalIsOpen: true,
+                                    id: Wake,
+                                    title: song[1].title,
+                                    singer: song[1].singer,
+                                    thumbnail: song[1].thumbnail,
+                                    audio: song[1].audio
+                                })} }
                             />
                         </div>
                         <div >
                             <TaggedContentCard
-                                style={{width: '20px', minWidth: '200px'}}
-                                
+                                className="plzwork"
+                                style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                                 thumbnail={Tears}
                                 title='Tears'
                                 description=''
                                 tags={[
                                     <div
-                                        onClick={ () => { this.setState({
-                                            modalIsOpen: true,
-                                            id: Tears,
-                                            title: song[2].title,
-                                            singer: song[2].singer,
-                                            thumbnail: song[2].thumbnail,
-                                            audio: song[2].audio
-                                        })} }
+                                        
                                     ><FaPlay focusable="false" aria-hidden="true" /></div>
                                 ]}
-
+                                onClick={ () => { this.setState({
+                                    modalIsOpen: true,
+                                    id: Tears,
+                                    title: song[2].title,
+                                    singer: song[2].singer,
+                                    thumbnail: song[2].thumbnail,
+                                    audio: song[2].audio
+                                })} }
                             />
                         </div>
                         <div >
                             <TaggedContentCard
-                                style={{width: '20px', minWidth: '200px'}}
-                                
+                                className="plzwork"
+                                style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                                 thumbnail={Dirty}
                                 title='Dirty Mine'
                                 description=''
@@ -267,145 +323,145 @@ class TCardMobile extends React.Component {
                         </div>
                         <div >
                             <TaggedContentCard
-                                style={{width: '20px', minWidth: '200px'}}
-                                
+                                className="plzwork"
+                                style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                                 thumbnail={Primitive}
                                 title='Primitive Man'
                                 description=''
                                 tags={[
                                     <div
-                                        onClick={ () => { this.setState({
-                                            modalIsOpen: true,
-                                            id: Primitive,
-                                            title: song[4].title,
-                                            singer: song[4].singer,
-                                            thumbnail: song[4].thumbnail,
-                                            audio: song[4].audio
-                                        })} }
+                                        
                                     ><FaPlay focusable="false" aria-hidden="true" /></div>
                                 ]}
-
+                                onClick={ () => { this.setState({
+                                    modalIsOpen: true,
+                                    id: Primitive,
+                                    title: song[4].title,
+                                    singer: song[4].singer,
+                                    thumbnail: song[4].thumbnail,
+                                    audio: song[4].audio
+                                })} }
                             />
                         </div>
                         <div >
                             <TaggedContentCard
-                                style={{width: '20px', minWidth: '200px'}}
-                                
+                                className="plzwork"
+                                style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                                 thumbnail={Pins}
                                 title='Pins and Needles'
                                 description=''
                                 tags={[
                                     <div
-                                        onClick={ () => { this.setState({
-                                            modalIsOpen: true,
-                                            id: Pins,
-                                            title: song[5].title,
-                                            singer: song[5].singer,
-                                            thumbnail: song[5].thumbnail,
-                                            audio: song[5].audio
-                                        })} }
+                                        
                                     ><FaPlay focusable="false" aria-hidden="true" /></div>
                                 ]}
-
+                                onClick={ () => { this.setState({
+                                    modalIsOpen: true,
+                                    id: Pins,
+                                    title: song[5].title,
+                                    singer: song[5].singer,
+                                    thumbnail: song[5].thumbnail,
+                                    audio: song[5].audio
+                                })} }
                             />
                         </div>
                         <div >
                             <TaggedContentCard
-                                style={{width: '20px', minWidth: '200px'}}
-                                
+                                className="plzwork"
+                                style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                                 thumbnail={Goodbye}
                                 title='Goodbye'
                                 description=''
                                 tags={[
                                     <div
-                                        onClick={ () => { this.setState({
-                                            modalIsOpen: true,
-                                            id: Goodbye,
-                                            title: song[6].title,
-                                            singer: song[6].singer,
-                                            thumbnail: song[6].thumbnail,
-                                            audio: song[6].audio
-                                        })} }
+                                        
                                     ><FaPlay focusable="false" aria-hidden="true" /></div>
                                 ]}
-
+                                onClick={ () => { this.setState({
+                                    modalIsOpen: true,
+                                    id: Goodbye,
+                                    title: song[6].title,
+                                    singer: song[6].singer,
+                                    thumbnail: song[6].thumbnail,
+                                    audio: song[6].audio
+                                })} }
                             />
                         </div>
                         <div >
                             <TaggedContentCard
-                                style={{width: '20px', minWidth: '200px'}}
-                                
+                                className="plzwork"
+                                style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                                 thumbnail={Fooling}
                                 title='Fooling Myself'
                                 description=''
                                 tags={[
                                     <div
-                                        onClick={ () => { this.setState({
-                                            modalIsOpen: true,
-                                            id: Fooling,
-                                            title: song[7].title,
-                                            singer: song[7].singer,
-                                            thumbnail: song[7].thumbnail,
-                                            audio: song[7].audio
-                                        })} }
+                                        
                                     ><FaPlay focusable="false" aria-hidden="true" /></div>
                                 ]}
-
+                                onClick={ () => { this.setState({
+                                    modalIsOpen: true,
+                                    id: Fooling,
+                                    title: song[7].title,
+                                    singer: song[7].singer,
+                                    thumbnail: song[7].thumbnail,
+                                    audio: song[7].audio
+                                })} }
                             />
                         </div>
                         <div >
                             <TaggedContentCard
-                                style={{width: '20px', minWidth: '200px'}}
-                                
+                                className="plzwork"
+                                style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                                 thumbnail={Breathe}
                                 title='Breathe'
                                 description=''
                                 tags={[
                                     <div
-                                        onClick={ () => { this.setState({
-                                            modalIsOpen: true,
-                                            id: Breathe,
-                                            title: song[8].title,
-                                            singer: song[8].singer,
-                                            thumbnail: song[8].thumbnail,
-                                            audio: song[8].audio
-                                        })} }
+                                        
                                     ><FaPlay focusable="false" aria-hidden="true" /></div>
                                 ]}
-
+                                onClick={ () => { this.setState({
+                                    modalIsOpen: true,
+                                    id: Breathe,
+                                    title: song[8].title,
+                                    singer: song[8].singer,
+                                    thumbnail: song[8].thumbnail,
+                                    audio: song[8].audio
+                                })} }
                             />
                         </div>
                         <div >
                             <TaggedContentCard
-                                style={{width: '20px', minWidth: '200px'}}
-                                
+                                className="plzwork"
+                                style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                                 thumbnail={Still}
                                 title='I Still Love YOu'
                                 description=''
                                 tags={[
                                     <div
-                                        onClick={ () => { this.setState({
-                                            modalIsOpen: true,
-                                            id: Still,
-                                            title: song[9].title,
-                                            singer: song[9].singer,
-                                            thumbnail: song[9].thumbnail,
-                                            audio: song[9].audio
-                                        })} }
+                                        
                                     ><FaPlay focusable="false" aria-hidden="true" /></div>
                                 ]}
-
+                                onClick={ () => { this.setState({
+                                    modalIsOpen: true,
+                                    id: Still,
+                                    title: song[9].title,
+                                    singer: song[9].singer,
+                                    thumbnail: song[9].thumbnail,
+                                    audio: song[9].audio
+                                })} }
                             />
                         </div>
 
-                    </ReactCardCarousel>
-                    <FaArrowAltCircleLeft className="arrowleft2" focusable="false" aria-hidden="true" />
-                    <FaArrowAltCircleRight className="arrowright2" focusable="false" aria-hidden="true" />
-                                                                             
+                    {/*</ReactCardCarousel>*/}
+                    {/*<FaArrowAltCircleLeft className="arrowleft2" focusable="false" aria-hidden="true" />
+                    <FaArrowAltCircleRight className="arrowright2" focusable="false" aria-hidden="true" />*/}
+                    </Slider>                                                         
                 </Row>
 
-            </div>
+            </React.Fragment>
         );
     }
 }
-export default TCardMobile
+export default TCardMobile2
