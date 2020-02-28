@@ -8,7 +8,7 @@ import Container01 from './components/container01'
 import Container02 from './components/container02'
 import ContainerGLP from './components/containerGLP'
 import ContainerBio from './components/containerBio'
-//import Containercontact from './components/containerContact'
+import Containercontact from './components/containerContact'
 //import Containermemory from './components/containerMemory'
 //import ContainerFooter from './components/containerFooter'
 import LazyLoad from 'react-lazyload';
@@ -67,12 +67,12 @@ import './css/textstyles.css'
                       <ContainerGLP />
                   
                      {/*<Containermemory />*/}
-                     {/* <Containercontact />*/}
+                     <Containercontact />
                       
                       
 
                     
-                   {/* <ContainerFooter/>*/}
+                   {/*<ContainerFooter/>*/}
                     </section>
 
                     </div>

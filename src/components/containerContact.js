@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/containerContact.css'
 import '../css/form.css'
-
+import ContainerFooter from './containerFooter' ;
 
 const encode = (data) => {
     return Object.keys(data)
@@ -72,6 +72,9 @@ class containerContact extends React.Component {
                     <input type="email" name="email" />
                     <input type="textarea" name="message" />
                 </form>
+                <br />
+                <hr />
+                <ContainerFooter />
             </div>
         )
     }
