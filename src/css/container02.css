@@ -285,6 +285,7 @@ div.mobile-slider {
     #container02 {
         min-height: 40rem;
         padding: 0 0 6em;
+        background-attachment: scroll;
     }
 
     div.songheaderRow {
@@ -335,6 +336,7 @@ div.mobile-slider {
             min-height: 40em;
             justify-content: center;
             padding: 0 0 6em;
+            background-attachment: scroll;
         }
         #container02 > .inner {
             padding: 2rem 0.5rem;
@@ -391,6 +393,7 @@ div.mobile-slider {
        /* */
         #container02 {
             min-height: 20rem;
+            background-attachment: scroll;
         }
     /*
        

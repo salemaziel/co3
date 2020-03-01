@@ -71,7 +71,10 @@ div.afterSpacer01 {
     html {
         font-size: 11pt;
     }
-
+    #container01 {
+        width: 100%;
+        background-attachment: scroll;
+    }
    #container01 > .inner {
         padding: 3.5rem 0;
     }
@@ -90,6 +93,7 @@ div.afterSpacer01 {
 @media (max-width: 480px) {
     #container01 {
         width: 100%;
+        background-attachment: scroll;
     }
 
     div.afterSpacer01 {
@@ -107,6 +111,10 @@ div.afterSpacer01 {
 }
 }
 @media (max-width: 360px) {
+    #container01 {
+        width: 100%;
+        background-attachment: scroll;
+    }
     
     div.afterSpacer01 {
         padding: 10rem 2rem 1rem;

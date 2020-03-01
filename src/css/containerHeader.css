@@ -220,9 +220,10 @@ p.albumlogo {
         html {
             font-size: 11pt;
         }
-        #ContainerHeader {
+        #containerHeader {
             flex-direction: column!important;
             min-height: 50rem;
+            background-attachment: scroll;
     }
     /*
         #containerHeader > .inner {
@@ -264,6 +265,7 @@ p.albumlogo {
             flex-direction: column!important;
             max-width: 100%;
             width: 100%;
+            background-attachment: scroll;
         }
         #containerHeader > .inner {
             margin: 0;
@@ -306,6 +308,7 @@ p.albumlogo {
             flex-direction: column!important;
             max-width: 100%;
             width: 100%;
+            background-attachment: scroll;
         }
         div.albumpromo {
             margin: 1rem 0 5rem;
