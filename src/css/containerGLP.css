@@ -1,10 +1,10 @@
-#ContainerGLP > .inner {
+#containerGLP > .inner {
     padding: 6rem 6rem;
     width: 100%;
     max-width: 65rem;
 }
  
-#ContainerGLP {
+#containerGLP {
     display: flex;
     width: 100%;
     min-width: 100vw;
@@ -127,7 +127,7 @@ p.proceeds {
 
 
 @media (min-width: 2400px) {
-    #ContainerGLP {
+    #containerGLP {
         min-height: 50vh;
         padding: 4em 0;
     }
@@ -160,7 +160,7 @@ p.proceeds {
     html {
         font-size: 13pt;
     }
-    #ContainerGLP {
+    #containerGLP {
         background-attachment: fixed;
     }
 }
@@ -194,12 +194,12 @@ p.proceeds {
 
    
 /*
-    #ContainerGLP > .inner {
+    #containerGLP > .inner {
         padding: 3.5rem 2rem;
         max-width: 100%;
     }
 
-    #ContainerGLP {
+    #containerGLP {
         min-height: 30rem;
     }
 
@@ -303,7 +303,7 @@ p.proceeds {
 */
 
 
-    #ContainerGLP {
+    #containerGLP {
         min-height: 20rem;
     }
 
