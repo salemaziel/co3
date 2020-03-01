@@ -186,7 +186,7 @@ p.style4 {
 
 
 @media (min-width: 2400px) {
-    /*ContainerGLP */
+    /*containerGLP */
     h1.style2, h2.style2, h3.style2, p.style2 {
         color: rgba(255,255,255,0.78);
         font-family: 'Source Sans Pro', sans-serif;

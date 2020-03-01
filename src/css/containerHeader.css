@@ -147,7 +147,7 @@ p.albumlogo {
     html {
         font-size: 13pt;
     }
-    #ContainerHeader {
+    #containerHeader {
         flex-direction: column;
         min-height: 50em;
         height: 60em;
@@ -184,7 +184,7 @@ p.albumlogo {
     html {
         font-size: 11pt;
     }
-    #ContainerHeader {
+    #containerHeader {
         flex-direction: column;
         min-height: 50rem;
         height: 50rem;
