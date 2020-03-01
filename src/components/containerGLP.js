@@ -9,7 +9,7 @@ import GLPbuttons from '../components/glpbuttons'
 
 
 const ContainerGLP = () => (
-        <div id="ContainerGLP" data-scroll-id="five" data-scroll-behavior="center" className="container columns full screen">
+        <div id="containerGLP" data-scroll-id="five" data-scroll-behavior="center" className="container columns full screen">
         <div id="inner" >
           
           <div className="afterSpacer" >
