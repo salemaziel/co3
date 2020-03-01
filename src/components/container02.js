@@ -33,7 +33,7 @@ const Container02 = () => (
               <Col className="nomobile">
                 <TContentCards01/>
                 <TContentCards02/>
-              </Col>
+</Col>
         </Row>
 
         <Row className="mobile-slider">
