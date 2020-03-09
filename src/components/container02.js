@@ -31,9 +31,9 @@ const Container02 = () => (
         <Row className="ftpsongs">
             
               <Col className="nomobile">
-                <TContentCards01/>
-                <TContentCards02/>
-</Col>
+                <TContentCards01 className="nomobile"/>
+                <TContentCards02 className="nomobile"/>
+            </Col>
         </Row>
 
         <Row className="mobile-slider">

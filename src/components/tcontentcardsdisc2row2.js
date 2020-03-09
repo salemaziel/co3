@@ -6,7 +6,7 @@ import Fooling from '../images/song-art/global-lighting-album/8-Foolin-Myself.jp
 import Breathe from '../images/song-art/global-lighting-album/9-Breathe.jpg'
 import Still from '../images/song-art/global-lighting-album/10-I-Still-Love-you.jpg'
 
-import {  Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import Modal from 'react-awesome-modal';
 import { FaPlay } from 'react-icons/fa'
 
@@ -19,7 +19,7 @@ const song=[
         title: 'Pins and Needles',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118752/chaoticorder-globallightingproject/6-Pins-and-Needles_ry7kvk.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118752/chaoticorder-globallightingproject/6-Pins-and-Needles_ry7kvk.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118311/chaoticorder-globallightingproject/6-PINS_AND_NEEDLES_qzmgra.mp3'
 
@@ -28,7 +28,7 @@ const song=[
         title: 'Goodbye',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/7-Goodbye_emp2lc.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118753/chaoticorder-globallightingproject/7-Goodbye_emp2lc.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118309/chaoticorder-globallightingproject/7-GOODBYE_ym9sl3.mp3'
 
@@ -37,7 +37,7 @@ const song=[
         title: 'Fooling Myself',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/8-Foolin-Myself_anc23n.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118753/chaoticorder-globallightingproject/8-Foolin-Myself_anc23n.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118307/chaoticorder-globallightingproject/8-FOOLING_MYSELF_fhsolw.mp3'
 
@@ -46,7 +46,7 @@ const song=[
         title: 'Breathe',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/9-Breathe_ojuucg.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118753/chaoticorder-globallightingproject/9-Breathe_ojuucg.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118303/chaoticorder-globallightingproject/9-BREATHE_oodelz.mp3'
 
@@ -55,7 +55,7 @@ const song=[
         title: 'I Still Love You',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/10-I-Still-Love-you_b8nar3.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118753/chaoticorder-globallightingproject/10-I-Still-Love-you_b8nar3.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118309/chaoticorder-globallightingproject/10-I_STILL_LOVE_YOU_hjwisv.mp3'
 
@@ -101,14 +101,14 @@ class Tcontentdisc2row2 extends React.Component {
                 <Modal
                     visible={this.state.modalIsOpen} 
                     width="1000" 
-                    height="600" 
+                    height="800" 
                     effect="fadeInUp" 
                     onClickAway={() => this.closeModal()}
                 >
                     <Row style={{ display: 'flex'}}>
                         <div style={{ 
                             backgroundImage: `url(${this.state.id})` ,
-                            height: "600px", 
+                            height: "800px", 
                             width: "1000px",  
                             backgroundSize: 'cover', 
                             backgroundPosition: 'center center'} }>
@@ -140,7 +140,6 @@ class Tcontentdisc2row2 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
-                            href= '#'
                             thumbnail={Pins}
                             title='Pins and Needles'
                             description=''
@@ -155,13 +154,13 @@ class Tcontentdisc2row2 extends React.Component {
                                 thumbnail: song[0].thumbnail,
                                 audio: song[0].audio
                             })} }
+                            
 
                         />
                     </Col>
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
-                            href= '#'
                             thumbnail={Goodbye}
                             title='Goodbye'
                             description=''
@@ -177,12 +176,12 @@ class Tcontentdisc2row2 extends React.Component {
                                     thumbnail: song[1].thumbnail,
                                     audio: song[1].audio
                                 })} }
+                                
                         />
                     </Col>
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
-                            href= '#'
                             thumbnail={Fooling}
                             title='Fooling Myself'
                             description=''
@@ -198,13 +197,13 @@ class Tcontentdisc2row2 extends React.Component {
                                 thumbnail: song[2].thumbnail,
                                 audio: song[2].audio
                             })} }
+                            
                         />
                     </Col>
 
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
-                            href= '#'
                             thumbnail={Breathe}
                             title='Breathe'
                             description=''
@@ -220,6 +219,7 @@ class Tcontentdisc2row2 extends React.Component {
                                 thumbnail: song[3].thumbnail,
                                 audio: song[3].audio
                             })} }
+                            
 
                         />
                     </Col>
@@ -227,7 +227,6 @@ class Tcontentdisc2row2 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
-                            href= '#'
                             thumbnail={Still}
                             title='I Still Love You'
                             description=''
@@ -243,6 +242,7 @@ class Tcontentdisc2row2 extends React.Component {
                                 thumbnail: song[4].thumbnail,
                                 audio: song[4].audio
                             })} }
+                            
                         />
                     </Col>
                 </Row>

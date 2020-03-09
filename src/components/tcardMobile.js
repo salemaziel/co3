@@ -14,15 +14,12 @@ import Earth from '../images/song-art/HighPriestess-EARTH.jpg'
 import ReactWebMediaPlayer from 'react-web-media-player';
 
 import { FaPlay } from 'react-icons/fa'
-//import './tcardmobile01b.css'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import { Col, Row, Card } from 'reactstrap';
+import { Row } from 'reactstrap';
 import Modal from 'react-awesome-modal';
 
-//import ReactCardCarousel from 'react-card-carousel';
-//import { FaArrowAltCircleLeft } from 'react-icons/fa'
-//import { FaArrowAltCircleRight } from 'react-icons/fa'
+
 
 const song = [
     {
@@ -114,7 +111,7 @@ const song = [
     }
 ]
            
-class TCardMobile extends Component {
+class TCardMobile extends React.Component {
         
     
         constructor() {
@@ -146,33 +143,33 @@ class TCardMobile extends Component {
       className: "plzwork",
       initialSlide: 0,
       infinite: true,
-      centerPadding: "4rem",
-      slidesToShow: 2,
+      centerPadding: "2rem",
+      slidesToShow: 5,
       swipe: true,
       swipeToSlide: true,
       centerMode: true,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 980,
           settings: {
             className: "plzwork",
-                initialSlide: 1,
+                initialSlide: 0,
                 infinite: true,
-                centerPadding: "3rem",
-                slidesToShow: 2,
+                centerPadding: "1rem",
+                slidesToShow: 4,
                 swipe: true,
                 swipeToSlide: true,
                 centerMode: true,
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 736,
           settings: {
             className: "plzwork",
-            initialSlide: 1,
+            initialSlide: 0,
             infinite: true,
-            centerPadding: "60px",
-            slidesToShow: 2,
+            centerPadding: "1rem",
+            slidesToShow: 3,
             swipe: true,
             swipeToSlide: true,
             centerMode: true,
@@ -182,9 +179,9 @@ class TCardMobile extends Component {
           breakpoint: 480,
           settings: {
             className: "plzwork",
-            initialSlide: 1,
+            initialSlide: 0,
             infinite: true,
-            centerPadding: "4rem",
+            centerPadding: "1rem",
             slidesToShow: 2,
             swipe: true,
             swipeToSlide: true,
@@ -243,17 +240,18 @@ class TCardMobile extends Component {
                     description=''
                     tags={[
                             <div
-                                onClick={ () => { this.setState({
-                                    modalIsOpen: true,
-                                    id: Chemtrails,
-                                    title: song[0].title,
-                                    singer: song[0].singer,
-                                    thumbnail: song[0].thumbnail,
-                                    audio: song[0].audio
-                                })} }>
+                                >
                                 <FaPlay focusable="false" aria-hidden="true" />
                             </div>
                         ]} 
+                        onClick={ () => { this.setState({
+                            modalIsOpen: true,
+                            id: Chemtrails,
+                            title: song[0].title,
+                            singer: song[0].singer,
+                            thumbnail: song[0].thumbnail,
+                            audio: song[0].audio
+                        })} }
                 />
             </div>
 
@@ -266,17 +264,18 @@ class TCardMobile extends Component {
                     description=''
                     tags={[
                             <div
-                                onClick={ () => { this.setState({
-                                    modalIsOpen: true,
-                                    id: Feedthepeople,
-                                    title: song[1].title,
-                                    singer: song[1].singer,
-                                    thumbnail: song[1].thumbnail,
-                                    audio: song[1].audio
-                                })} }>
+                                >
                                 <FaPlay focusable="false" aria-hidden="true" />
                             </div>
                         ]} 
+                        onClick={ () => { this.setState({
+                            modalIsOpen: true,
+                            id: Feedthepeople,
+                            title: song[1].title,
+                            singer: song[1].singer,
+                            thumbnail: song[1].thumbnail,
+                            audio: song[1].audio
+                        })} }
                 />
             </div>
 
@@ -289,17 +288,18 @@ class TCardMobile extends Component {
                     description=''
                     tags={[
                             <div
-                                onClick={ () => { this.setState({
-                                    modalIsOpen: true,
-                                    id: Burn,
-                                    title: song[2].title,
-                                    singer: song[2].singer,
-                                    thumbnail: song[2].thumbnail,
-                                    audio: song[2].audio
-                                })} }>
+                                >
                                 <FaPlay focusable="false" aria-hidden="true" />
                             </div>
                         ]} 
+                        onClick={ () => { this.setState({
+                            modalIsOpen: true,
+                            id: Burn,
+                            title: song[2].title,
+                            singer: song[2].singer,
+                            thumbnail: song[2].thumbnail,
+                            audio: song[2].audio
+                        })} }
                 />
             </div>
 
@@ -312,17 +312,18 @@ class TCardMobile extends Component {
                     description=''
                     tags={[
                             <div
-                                onClick={ () => { this.setState({
-                                    modalIsOpen: true,
-                                    id: Another,
-                                    title: song[3].title,
-                                    singer: song[3].singer,
-                                    thumbnail: song[3].thumbnail,
-                                    audio: song[3].audio
-                                })} }>
+                                >
                                 <FaPlay focusable="false" aria-hidden="true" />
                             </div>
                         ]} 
+                        onClick={ () => { this.setState({
+                            modalIsOpen: true,
+                            id: Another,
+                            title: song[3].title,
+                            singer: song[3].singer,
+                            thumbnail: song[3].thumbnail,
+                            audio: song[3].audio
+                        })} }
                 />
             </div>
 
@@ -335,17 +336,18 @@ class TCardMobile extends Component {
                     description=''
                     tags={[
                             <div
-                                onClick={ () => { this.setState({
-                                    modalIsOpen: true,
-                                    id: Hate,
-                                    title: song[4].title,
-                                    singer: song[4].singer,
-                                    thumbnail: song[4].thumbnail,
-                                    audio: song[4].audio
-                                })} }>
+                                >
                                 <FaPlay focusable="false" aria-hidden="true" />
                             </div>
                         ]} 
+                    onClick={ () => { this.setState({
+                            modalIsOpen: true,
+                            id: Hate,
+                            title: song[4].title,
+                            singer: song[4].singer,
+                            thumbnail: song[4].thumbnail,
+                            audio: song[4].audio
+                        })} }
                 />
             </div>
 
@@ -358,17 +360,18 @@ class TCardMobile extends Component {
                     description=''
                     tags={[
                             <div
-                                onClick={ () => { this.setState({
-                                    modalIsOpen: true,
-                                    id: Sorry,
-                                    title: song[5].title,
-                                    singer: song[5].singer,
-                                    thumbnail: song[5].thumbnail,
-                                    audio: song[5].audio
-                                })} }>
+                                >
                                 <FaPlay focusable="false" aria-hidden="true" />
                             </div>
                         ]} 
+                        onClick={ () => { this.setState({
+                            modalIsOpen: true,
+                            id: Sorry,
+                            title: song[5].title,
+                            singer: song[5].singer,
+                            thumbnail: song[5].thumbnail,
+                            audio: song[5].audio
+                        })} }
                 />
             </div>
 
@@ -381,17 +384,18 @@ class TCardMobile extends Component {
                     description=''
                     tags={[
                             <div
-                                onClick={ () => { this.setState({
-                                    modalIsOpen: true,
-                                    id: Chains,
-                                    title: song[6].title,
-                                    singer: song[6].singer,
-                                    thumbnail: song[6].thumbnail,
-                                    audio: song[6].audio
-                                })} }>
+                                >
                                 <FaPlay focusable="false" aria-hidden="true" />
                             </div>
                         ]} 
+                        onClick={ () => { this.setState({
+                            modalIsOpen: true,
+                            id: Chains,
+                            title: song[6].title,
+                            singer: song[6].singer,
+                            thumbnail: song[6].thumbnail,
+                            audio: song[6].audio
+                        })} }
                 />
             </div>
 
@@ -404,17 +408,18 @@ class TCardMobile extends Component {
                     description=''
                     tags={[
                             <div
-                                onClick={ () => { this.setState({
-                                    modalIsOpen: true,
-                                    id: Earth,
-                                    title: song[7].title,
-                                    singer: song[7].singer,
-                                    thumbnail: song[7].thumbnail,
-                                    audio: song[7].audio
-                                })} }>
+                                >
                                 <FaPlay focusable="false" aria-hidden="true" />
                             </div>
                         ]} 
+                        onClick={ () => { this.setState({
+                            modalIsOpen: true,
+                            id: Earth,
+                            title: song[7].title,
+                            singer: song[7].singer,
+                            thumbnail: song[7].thumbnail,
+                            audio: song[7].audio
+                        })} }
                 />
             </div>
 
@@ -427,17 +432,18 @@ class TCardMobile extends Component {
                     description=''
                     tags={[
                             <div
-                                onClick={ () => { this.setState({
-                                    modalIsOpen: true,
-                                    id: Never,
-                                    title: song[8].title,
-                                    singer: song[8].singer,
-                                    thumbnail: song[8].thumbnail,
-                                    audio: song[8].audio
-                                })} }>
+                                >
                                 <FaPlay focusable="false" aria-hidden="true" />
                             </div>
                         ]} 
+                        onClick={ () => { this.setState({
+                            modalIsOpen: true,
+                            id: Never,
+                            title: song[8].title,
+                            singer: song[8].singer,
+                            thumbnail: song[8].thumbnail,
+                            audio: song[8].audio
+                        })} }
                 />
             </div>
 
@@ -450,17 +456,18 @@ class TCardMobile extends Component {
                     description=''
                     tags={[
                             <div
-                                onClick={ () => { this.setState({
-                                    modalIsOpen: true,
-                                    id: Colors,
-                                    title: song[9].title,
-                                    singer: song[9].singer,
-                                    thumbnail: song[9].thumbnail,
-                                    audio: song[9].audio
-                                })} }>
+                                >
                                 <FaPlay focusable="false" aria-hidden="true" />
                             </div>
                         ]} 
+                        onClick={ () => { this.setState({
+                            modalIsOpen: true,
+                            id: Colors,
+                            title: song[9].title,
+                            singer: song[9].singer,
+                            thumbnail: song[9].thumbnail,
+                            audio: song[9].audio
+                        })} }
                 />
             </div>
 

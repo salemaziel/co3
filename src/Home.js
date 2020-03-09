@@ -39,7 +39,7 @@ import './css/textstyles.css'
         <div className="main">
             <div id="wrapper">
               <Embed 
-                  rel="preload"
+                  /*rel="preload"*/
                   url="https://album.link/VdPNv59kZRQM8" 
                   height={52} 
                   dark 

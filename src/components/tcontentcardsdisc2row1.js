@@ -10,25 +10,25 @@ import ReactWebMediaPlayer from 'react-web-media-player';
 
 import { FaPlay } from 'react-icons/fa'
 
-import {  Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import Modal from 'react-awesome-modal';
 
 //import Crawl from 'react-star-wars-crawl'
 //import 'react-star-wars-crawl/lib/index.css'
-import '../css/tcontencardsrow1.css'
+//import '../css/tcontencardsrow1.css'
 
 const song = [
     {
         title: "Where Were You",
         singer: 'Chaotic Order',
-        thumbnail:"https://res.cloudinary.com/dexdumfqy/image/upload/v1581118752/chaoticorder-globallightingproject/1-where-were-you_ufda2c.jpg",
+        thumbnail:"https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118752/chaoticorder-globallightingproject/1-where-were-you_ufda2c.jpg",
         audio: "https://res.cloudinary.com/dexdumfqy/video/upload/v1581118300/chaoticorder-globallightingproject/1-WHERE_WERE_YOU_wgoc56.mp3",
     },
     {
         title: 'Wake Up',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118752/chaoticorder-globallightingproject/2-wake-up_h0tc9z.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118752/chaoticorder-globallightingproject/2-wake-up_h0tc9z.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118296/chaoticorder-globallightingproject/2-WAKE_UP_nnmu69.mp3'
 
@@ -37,7 +37,7 @@ const song = [
         title: 'Tears',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118752/chaoticorder-globallightingproject/3-Tears_fym2g1.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118752/chaoticorder-globallightingproject/3-Tears_fym2g1.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118296/chaoticorder-globallightingproject/3-TEARS_lnpihr.mp3'
 
@@ -46,7 +46,7 @@ const song = [
         title: 'Dirty Mine',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/4-Dirty-Mine_g35szv.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118753/chaoticorder-globallightingproject/4-Dirty-Mine_g35szv.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118307/chaoticorder-globallightingproject/4-DIRTY_MINE_rjsmiu.mp3'
 
@@ -55,7 +55,7 @@ const song = [
         title: 'Primitive Man',
         singer: 'Chaotic Order',
         thumbnail:
-            'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/5-Primitive-Man_gfmwue.jpg',
+            'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118753/chaoticorder-globallightingproject/5-Primitive-Man_gfmwue.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118299/chaoticorder-globallightingproject/5-PRIMITVE_MAN_lrsghw.mp3'
 
@@ -106,10 +106,10 @@ class Tcontentdisc2row1 extends React.Component {
             ...other
         } = this.props;
         return (
-            <div className="tccd1">
+            <div>
                 <Modal
                     visible={this.state.modalIsOpen}
-                    width="700" height="700"
+                    width="1000" height="800"
                     effect="fadeInUp"
                     onClickAway={() => this.closeModal()}
                 >
@@ -118,12 +118,11 @@ class Tcontentdisc2row1 extends React.Component {
                     
                         <div style={{
                             backgroundImage: `url(${this.state.id})` ,
-                            height: "700px", 
-                            width: "700px",  
+                            height: "800px", 
+                            width: "1000px",  
                             backgroundSize: 'cover', 
                             backgroundPosition: 'center center',
                             } }>
-                            {/*<Lyriccrawl>*/}
 
                             <div style={{ 
                                 position: 'absolute',
@@ -144,7 +143,6 @@ class Tcontentdisc2row1 extends React.Component {
                                     }}
                                 />
                             </div>
-                            {/*</Lyriccrawl>*/}
                         </div>
                         
                     </Row>
@@ -170,6 +168,7 @@ class Tcontentdisc2row1 extends React.Component {
                                 thumbnail: song[0].thumbnail,
                                 audio: song[0].audio
                             })} }
+                            
                         />
                             
                        
@@ -192,6 +191,7 @@ class Tcontentdisc2row1 extends React.Component {
                                 thumbnail: song[1].thumbnail,
                                 audio: song[1].audio
                             })} }
+                            
 
 
                         />
@@ -213,6 +213,7 @@ class Tcontentdisc2row1 extends React.Component {
                             thumbnail: song[2].thumbnail,
                             audio: song[2].audio
                         })} }
+                        
 
                     />
                 </Col> <Col xs="2" lg="2" md="6">
@@ -232,6 +233,7 @@ class Tcontentdisc2row1 extends React.Component {
                             thumbnail: song[3].thumbnail,
                             audio: song[3].audio
                         })} }
+                        
 
                     />
                 </Col>
@@ -252,6 +254,7 @@ class Tcontentdisc2row1 extends React.Component {
                                 thumbnail: song[4].thumbnail,
                                 audio: song[4].audio
                             })} }
+                            
 
                         />
                     </Col>

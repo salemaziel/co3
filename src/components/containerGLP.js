@@ -39,7 +39,7 @@ const ContainerGLP = () => (
             
                 </Col>
             <Col>
-            <Link rel="preload" to="/Discography01" style={{
+            <Link rel="preload" to="/discography" style={{
                             color: "white",
                             fontSize: "2em",
                             fontVariant: "small-caps",

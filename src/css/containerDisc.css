@@ -301,9 +301,15 @@ div.mobile-slider2 {
     img.glplogo {
         max-width: 980px;
         margin: 0;
-        
     }
-}
+        div.nomobile2 {
+            display: none!important;
+        }
+        div.mobile-slider2 {
+            display: flex!important;
+        }
+    }
+
 
 @media (max-width: 736px) {
     html {
@@ -389,6 +395,25 @@ div.mobile-slider2 {
         
          }
 
+      
+        /*.arrowleft2 {
+            display: flex!important;
+            font-size: 1.5em;
+            color: white;
+            top: 15em;
+            left: 10%;
+            position: absolute;
+            z-index: 100;                                                                          
+        }
+        .arrowright2 {
+            display: flex!important;
+            font-size: 1.5em;
+            color: white;
+            top: 15em;
+            left: 80%;
+            position: absolute;
+            z-index: 100;                                                                          
+        }*/
         div.glplogo {
             width: 100%;
             margin: 0;

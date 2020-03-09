@@ -49,11 +49,11 @@ class containerContact extends React.Component {
                         <div className="inner">
                             <div className="field">
                                 <label htmlFor="form02-fname">Name</label>
-                                <input type="text" name="name" id="form02-fname" placeholder maxLength={128} required value={name} onChange={this.handleChange} />
+                                <input type="text" name="name" id="form02-fname" placeholder="" maxLength={128} required value={name} onChange={this.handleChange} />
                             </div>
                             <div className="field">
                                 <label htmlFor="form02-email">Email</label>
-                                <input type="email" name="email" id="form02-email" placeholder maxLength={128} required value={email} onChange={this.handleChange}  />
+                                <input type="email" name="email" id="form02-email" placeholder="" maxLength={128} required value={email} onChange={this.handleChange}  />
                             </div>
                             <br/>
                             <div className="field">
@@ -67,7 +67,7 @@ class containerContact extends React.Component {
                         <input type="hidden" name="id" defaultValue="form02" />
                     </form>
                 </div>
-                <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+                <form name="contact" netlify="true" netlify-honeypot="bot-field" hidden>
                     <input type="text" name="name" />
                     <input type="email" name="email" />
                     <input type="textarea" name="message" />

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const GLPbuttons = (props) => {
   return (
     <div>
-        <Link rel="preload" to="/discography01" >
+        <Link rel="preload" to="/discography" >
         <Button className="glpbutton1" >
             
                 Listen To Album

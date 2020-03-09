@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import ContainerDisc from './components/containerDisc'
+import ContainerContact from './components/containerContact'
 import Embed from 'react-song-embed'
 import Helmet from 'react-helmet'
 
-//export default class Discography extends Component {
-//    render() {
-//        return (
-  const Discography = () => (
+import './css/main2.css'
+
+const Discography = () => (
           <React.Fragment>
             <Helmet htmlAttributes={{ lang: 'en' }}>
                 <title>Chaotic Order Music: Discography</title>
@@ -22,7 +22,7 @@ import Helmet from 'react-helmet'
             {/*<div className="main">*/}
                 <div id="wrapper">
                   <Embed 
-                      rel="preload"
+                      /*rel="preload"*/
                       url="https://album.link/VdPNv59kZRQM8" 
                       height={52} 
                       dark 
@@ -31,14 +31,15 @@ import Helmet from 'react-helmet'
                         position: 'relative',
                     }} />
                     <div id="main">
-                        <div className="inner">
+                        <div className="inner" style={{height: 'stretch'}}>
                         <section id="home-section" style={{
                                                       display: "flex",
                                                       flexDirection: "column",
-                                                      height: '100%',
+                                                      height: '100%'
                                                       
                         }}>
                           <ContainerDisc />
+                          <ContainerContact id="containerContact" style={{border: 'none!important'}} />
     
                         </section>
     

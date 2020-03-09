@@ -99,14 +99,14 @@ class TContentCards02 extends React.Component {
                 <Modal
                     visible={this.state.modalIsOpen} 
                     width="1000" 
-                    height="600" 
+                    height="800" 
                     effect="fadeInUp" 
                     onClickAway={() => this.closeModal()}
                 >
                     <Row style={{ display: 'flex'}}>
                         <div style={{ 
                             backgroundImage: `url(${this.state.id})` ,
-                            height: "600px", 
+                            height: "800px", 
                             width: "1000px",  
                             backgroundSize: 'cover', 
                             backgroundPosition: 'center center'} }>
@@ -137,6 +137,7 @@ class TContentCards02 extends React.Component {
                 <Row style={{display: 'flex'}}>
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
+                            className="plzwork"
                             style={{width: '20px', minWidth: '200px'}}
                             thumbnail={Sorry}
                             title='Sorry'
@@ -157,6 +158,7 @@ class TContentCards02 extends React.Component {
                     </Col>
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
+                            className="plzwork"
                             style={{width: '20px', minWidth: '200px'}}
                             thumbnail={Chains}
                             title='Chains'
@@ -177,6 +179,7 @@ class TContentCards02 extends React.Component {
                     </Col>
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
+                            className="plzwork"
                             style={{width: '20px', minWidth: '200px'}}
                             thumbnail={Earth}
                             title='Earth'
@@ -198,6 +201,7 @@ class TContentCards02 extends React.Component {
 
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
+                            className="plzwork"
                             style={{width: '20px', minWidth: '200px'}}
                             thumbnail={Never}
                             title='Never End'
@@ -220,6 +224,7 @@ class TContentCards02 extends React.Component {
 
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
+                            className="plzwork"
                             style={{width: '20px', minWidth: '200px'}}
                             thumbnail={Colors}
                             title='Colors'
