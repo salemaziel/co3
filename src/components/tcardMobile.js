@@ -182,10 +182,10 @@ class TCardMobile extends React.Component {
             initialSlide: 0,
             infinite: true,
             centerPadding: "1rem",
-            slidesToShow: 2,
+            slidesToShow: 1.5,
             swipe: true,
             swipeToSlide: true,
-            centerMode: true,
+            centerMode: false,
           }
         }
       ],
@@ -234,7 +234,7 @@ class TCardMobile extends React.Component {
             <div>
                 <TaggedContentCard
                     className="plzwork"
-                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
+                    style={{/*width: '20px',*/minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                     thumbnail={Chemtrails}
                     title='ChemTrails'
                     description=''
@@ -258,7 +258,7 @@ class TCardMobile extends React.Component {
             <div>
                 <TaggedContentCard
                     className="plzwork"
-                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}           
+                    style={{/*width: '20px',*/ minWidth: '175px', boxShadow: '3px 2px 6px black'}}           
                     thumbnail={Feedthepeople}
                     title='Feed The People'
                     description=''
@@ -306,7 +306,7 @@ class TCardMobile extends React.Component {
             <div>
                 <TaggedContentCard
                     className="plzwork"
-                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
+                    style={{/*width: '20px',*/minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                     thumbnail={Another}
                     title='Another Thing'
                     description=''
@@ -330,7 +330,7 @@ class TCardMobile extends React.Component {
             <div>
                 <TaggedContentCard
                     className="plzwork"
-                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
+                    style={{/*width: '20px',*/minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                     thumbnail={Hate}
                     title='Hate'
                     description=''
@@ -354,7 +354,7 @@ class TCardMobile extends React.Component {
             <div>
                 <TaggedContentCard
                     className="plzwork"
-                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
+                    style={{/*width: '20px',*/minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                     thumbnail={Sorry}
                     title='Sorry'
                     description=''
@@ -378,7 +378,7 @@ class TCardMobile extends React.Component {
             <div>
                 <TaggedContentCard
                     className="plzwork"
-                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
+                    style={{/*width: '20px',*/minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                     thumbnail={Chains}
                     title='Chains'
                     description=''
@@ -402,7 +402,7 @@ class TCardMobile extends React.Component {
             <div>
                 <TaggedContentCard
                     className="plzwork"
-                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
+                    style={{/*width: '20px',*/minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                     thumbnail={Earth}
                     title='Earth'
                     description=''
@@ -426,7 +426,7 @@ class TCardMobile extends React.Component {
             <div>
                 <TaggedContentCard
                     className="plzwork"
-                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
+                    style={{/*width: '20px',*/minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                     thumbnail={Never}
                     title='Never End'
                     description=''
@@ -450,7 +450,7 @@ class TCardMobile extends React.Component {
             <div>
                 <TaggedContentCard
                     className="plzwork"
-                    style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
+                    style={{/*width: '20px',*/minWidth: '175px', boxShadow: '3px 2px 6px black'}}
                     thumbnail={Colors}
                     title='Colors'
                     description=''

@@ -108,7 +108,8 @@ class TContentCards01 extends React.Component {
         } = this.props;
 
         return (
-            <React.Fragment>
+            <div>
+            {/*<React.Fragment>*/}
                 <Modal
                     visible={this.state.modalIsOpen}
                     width="1000" height="800"
@@ -262,7 +263,8 @@ class TContentCards01 extends React.Component {
                         />
                     </Col>
                 </Row>
-                </React.Fragment>
+                {/*</React.Fragment>*/}
+                </div>
         );
     }
 }
