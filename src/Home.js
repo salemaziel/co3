@@ -40,6 +40,7 @@ import './css/textstyles.css'
             <div id="wrapper">
               <Embed 
                   /*rel="preload"*/
+                  SameSite="none"
                   url="https://album.link/VdPNv59kZRQM8" 
                   height={52} 
                   dark 

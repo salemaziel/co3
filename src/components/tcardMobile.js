@@ -143,7 +143,7 @@ class TCardMobile extends React.Component {
       className: "plzwork",
       initialSlide: 0,
       infinite: true,
-      centerPadding: "2rem",
+      centerPadding: "50px",
       slidesToShow: 5,
       swipe: true,
       swipeToSlide: true,
@@ -155,7 +155,7 @@ class TCardMobile extends React.Component {
             className: "plzwork",
                 initialSlide: 0,
                 infinite: true,
-                centerPadding: "1rem",
+                centerPadding: "50px",
                 slidesToShow: 4,
                 swipe: true,
                 swipeToSlide: true,
@@ -168,7 +168,7 @@ class TCardMobile extends React.Component {
             className: "plzwork",
             initialSlide: 0,
             infinite: true,
-            centerPadding: "1rem",
+            centerPadding: "50px",
             slidesToShow: 3,
             swipe: true,
             swipeToSlide: true,
@@ -181,13 +181,26 @@ class TCardMobile extends React.Component {
             className: "plzwork",
             initialSlide: 0,
             infinite: true,
-            centerPadding: "1rem",
-            slidesToShow: 1.5,
+            centerPadding: "50px",
+            slidesToShow: 2,
             swipe: true,
             swipeToSlide: true,
             centerMode: false,
           }
-        }
+        },
+        {
+            breakpoint: 360,
+            settings: {
+              className: "plzwork",
+              initialSlide: 0,
+              infinite: true,
+              centerPadding: "50px",
+              slidesToShow: 1.5,
+              swipe: true,
+              swipeToSlide: true,
+              centerMode: false,
+            }
+          }
       ],
       focusOnSelect: true,
       afterChange: function(index) {
@@ -256,7 +269,7 @@ class TCardMobile extends React.Component {
             </div>
 
             <div>
-                <TaggedContentCard
+            <TaggedContentCard
                     className="plzwork"
                     style={{/*width: '20px',*/ minWidth: '175px', boxShadow: '3px 2px 6px black'}}           
                     thumbnail={Feedthepeople}

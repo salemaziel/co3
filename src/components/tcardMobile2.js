@@ -141,53 +141,66 @@ class TCardMobile2 extends React.Component {
     render() {
         const settings = {
             className: "plzwork",
-      initialSlide: 0,
-      infinite: true,
-      centerPadding: "2rem",
-      slidesToShow: 5,
-      swipe: true,
-      swipeToSlide: true,
-      centerMode: true,
-      responsive: [
-        {
-          breakpoint: 980,
-          settings: {
-            className: "plzwork",
-                initialSlide: 0,
-                infinite: true,
-                centerPadding: "1rem",
-                slidesToShow: 4,
-                swipe: true,
-                swipeToSlide: true,
-                centerMode: true,
-          }
-        },
-        {
-          breakpoint: 736,
-          settings: {
-            className: "plzwork",
             initialSlide: 0,
             infinite: true,
-            centerPadding: "1rem",
-            slidesToShow: 3,
+            centerPadding: "50px",
+            slidesToShow: 5,
             swipe: true,
             swipeToSlide: true,
             centerMode: true,
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            className: "plzwork",
-            initialSlide: 0,
-            infinite: true,
-            centerPadding: "1rem",
-            slidesToShow: 2,
-            swipe: true,
-            swipeToSlide: true,
-            centerMode: true,
+            responsive: [
+              {
+                breakpoint: 980,
+                settings: {
+                  className: "plzwork",
+                      initialSlide: 0,
+                      infinite: true,
+                      centerPadding: "50px",
+                      slidesToShow: 4,
+                      swipe: true,
+                      swipeToSlide: true,
+                      centerMode: true,
                 }
-              }
+              },
+              {
+                breakpoint: 736,
+                settings: {
+                  className: "plzwork",
+                  initialSlide: 0,
+                  infinite: true,
+                  centerPadding: "50px",
+                  slidesToShow: 3,
+                  swipe: true,
+                  swipeToSlide: true,
+                  centerMode: true,
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  className: "plzwork",
+                  initialSlide: 0,
+                  infinite: true,
+                  centerPadding: "50px",
+                  slidesToShow: 2,
+                  swipe: true,
+                  swipeToSlide: true,
+                  centerMode: false,
+                }
+              },
+              {
+                  breakpoint: 360,
+                  settings: {
+                    className: "plzwork",
+                    initialSlide: 0,
+                    infinite: true,
+                    centerPadding: "50px",
+                    slidesToShow: 1.5,
+                    swipe: true,
+                    swipeToSlide: true,
+                    centerMode: false,
+                  }
+                }
             ],
             focusOnSelect: true,
             afterChange: function(index) {
