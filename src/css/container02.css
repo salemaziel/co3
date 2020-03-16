@@ -106,10 +106,10 @@ div.nomobile{
 div.mobile-slider {
     display: none;
 }
-/*
+
 .plzwork {
-    z-index: 10;
-}*/
+    cursor: pointer;
+}
 
 
 @media (min-width: 2400px) {
