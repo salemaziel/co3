@@ -56,6 +56,7 @@ const song = [
         picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/The-Wait-ANOTHERTHING_wgkuet.jpg',
         lyric: 'Hay hay That’s a big old plane White lines in the sky, Making me wonder Hay hay Take the planes away They dirty the sky Making it Hotter Big O cans flying through the sky Sure know why it’s on my mind We talk about a better way All the lines all through the sky When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails Protecting us from bad sun rays Others say it’s such a haze Carbon dioxide from the planes Soot particulates are to blame When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails chem trails chem trails'
 
+
     },
     {
         title: 'Hate',
@@ -98,13 +99,9 @@ class TContentCards01 extends React.Component {
             audio: '',
             picture: '',
             lyric: '',
-            lyricToggle: false,
-            classname: 'lyricCrawl'
+            render: ''
         };
     }
-
-    
-    
     
 
  
@@ -120,32 +117,11 @@ class TContentCards01 extends React.Component {
             audio: '',
             picture:'',
             lyric: '',
-            lyricToggle: false,
-            className: 'lyricCrawl'
-
+            render: ''
 
         });
     }
 
-    handleMenuClick() {
-        this.setState((prevState) => {
-          return { lyricToggle: !prevState.lyricToggle }
-        })
-    ​
-        if (this.state.classname === 'lyricCrawl') {
-          this.setState({ classname: 'lyricCrawl is-open' })
-        } else {
-          this.setState({ classname: 'lyricCrawl' })
-        }
-    ​
-        $(this.refs['toggle-div']).slideToggle()
-      }
-    ​
-      //TODO ?
-      handleLinkClick() {
-        this.setState({ lyricToggle: true })
-      }
-    
        
 
  
@@ -162,6 +138,7 @@ class TContentCards01 extends React.Component {
 
         return (
             <div>
+            {/*<React.Fragment>*/}
                 <Modal
                     visible={this.state.modalIsOpen}
                     width="1000" height="800"
@@ -181,26 +158,22 @@ class TContentCards01 extends React.Component {
                             flexDirection: 'column'
                             }}
                         >
+{/*<Collapse
+        isOpen={collapse}
+        onEntering={onEntering}
+        onEntered={onEntered}
+        onExiting={onExiting}
+        onExited={onExited}
+>*/}
 
-    <Crawl className="lyricCrawl">
-        <div style={{
-               display: "flex",
-               position: "absolute",
-               justifyContent: "center",
-               alignContent: "center",
-               alignItems: "center",
-               textAlign: "center"
-    }}>
-                <h1>{this.state.title}</h1>
-                <h2>{this.state.singer}</h2>
-                <p>{this.state.lyric}</p>
-        </div>
-    </Crawl>
-    
+            
+{/*</Collapse>*/}
+
+    )
                             <div style={{ 
                                 position: 'absolute',
-                                left: '85%',
-                                top: '40%',
+                                left: '70%',
+                                top: '50%',
                                 /*marginLeft: '-110px',
                             marginTop: '370px'*/}}>
                                 <ReactWebMediaPlayer
@@ -216,13 +189,7 @@ class TContentCards01 extends React.Component {
                                             background: "transparent",
                                     }}
                                 />
-                                <button 
-                                    style={{zIndex: 2}} 
-                                    open={this.state.menuToggle} 
-                                    onClick={() => this.handleMenuClick()} >
-                                         See Lyrics 
-                                </button>
-
+                                <button style={{zIndex: 2}}> See Lyrics </button>
                             </div>
                         </div>
                         <div>
