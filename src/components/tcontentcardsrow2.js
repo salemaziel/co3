@@ -1,10 +1,6 @@
 import React from 'react'
 import { TaggedContentCard } from 'react-ui-cards'
-import Sorry from '../images/song-art/closeyoureyestosee-SORRY.jpg'
-import Chains from '../images/song-art/medicineman-CHAINS.jpg'
-import Colors from '../images/song-art/shaman-COLORS.jpg'
-import Never from '../images/song-art/The-Magician-NEVEREND.jpg'
-import Earth from '../images/song-art/HighPriestess-EARTH.jpg'
+
 
 import {  Row, Col } from 'reactstrap';
 import Modal from 'react-awesome-modal';
@@ -20,7 +16,8 @@ const song = [
         thumbnail:
             'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581452697/chaoticorder-feedthepeople/full-images/closeyoureyestosee-SORRY_ev76he.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593760/chaoticorder-feedthepeople/6-Sorry_s9hoyu.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593760/chaoticorder-feedthepeople/6-Sorry_s9hoyu.mp3',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/closeyoureyestosee-SORRY_ev76he.jpg'
 
     },
     {
@@ -29,7 +26,9 @@ const song = [
         thumbnail:
             'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581452697/chaoticorder-feedthepeople/full-images/medicineman-CHAINS_p19xji.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593763/chaoticorder-feedthepeople/7-CHAINS_yiqxlf.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593763/chaoticorder-feedthepeople/7-CHAINS_yiqxlf.mp3',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/medicineman-CHAINS_p19xji.jpg',
+        lyric: '',
 
     },
     {
@@ -38,7 +37,9 @@ const song = [
         thumbnail:
             'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581452697/chaoticorder-feedthepeople/full-images/HighPriestess-EARTH_bcy5r9.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593759/chaoticorder-feedthepeople/8-ChaoticOrder_q0zas1.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593759/chaoticorder-feedthepeople/8-ChaoticOrder_q0zas1.mp3',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/HighPriestess-EARTH_bcy5r9.jpg',
+        lyric: '',
 
     },
     {
@@ -47,7 +48,9 @@ const song = [
         thumbnail:
             'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581452698/chaoticorder-feedthepeople/full-images/The-Magician-NEVEREND_mpmzxc.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593764/chaoticorder-feedthepeople/9-NeverEnd_vlxoad.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593764/chaoticorder-feedthepeople/9-NeverEnd_vlxoad.mp3',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/The-Magician-NEVEREND_mpmzxc.jpg',
+        lyric: ''
 
     },
     {
@@ -56,7 +59,9 @@ const song = [
         thumbnail:
             'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581452697/chaoticorder-feedthepeople/full-images/shaman-COLORS_a9vvpy.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593781/chaoticorder-feedthepeople/10-Colors_db6xqj.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593781/chaoticorder-feedthepeople/10-Colors_db6xqj.mp3',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/shaman-COLORS_a9vvpy.jpg',
+        lyric: ''
 
     }
 ]
@@ -67,22 +72,22 @@ class TContentCards02 extends React.Component {
 
         this.state = {
             modalIsOpen: false,
-            id: '',
             title: '',
             singer: '',
             thumbnail: '',
-            audio: ''
+            audio: '',
+            picture: ''
         };
     }
 
     closeModal = () => {
         this.setState({
             modalIsOpen: false,
-            id: '',
             title: '',
             singer: '',
             thumbnail: '',
-            audio: ''
+            audio: '',
+            picture: ''
         });
     }
 
@@ -105,7 +110,7 @@ class TContentCards02 extends React.Component {
                 >
                     <Row style={{ display: 'flex'}}>
                         <div style={{ 
-                            backgroundImage: `url(${this.state.id})` ,
+                            backgroundImage: `url(${this.state.picture})` ,
                             height: "800px", 
                             width: "1000px",  
                             backgroundSize: 'cover', 
@@ -139,7 +144,7 @@ class TContentCards02 extends React.Component {
                         <TaggedContentCard
                             className="plzwork"
                             style={{width: '20px', minWidth: '200px'}}
-                            thumbnail={Sorry}
+                            thumbnail={song[0].picture}
                             title='Sorry'
                             description=''
                             tags={[
@@ -147,11 +152,11 @@ class TContentCards02 extends React.Component {
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,
-                                id: Sorry,
                                 title: song[0].title,
                                 singer: song[0].singer,
                                 thumbnail: song[0].thumbnail,
-                                audio: song[0].audio
+                                audio: song[0].audio,
+                                picture: song[0].picture
                             })} }
 
                         />
@@ -160,7 +165,7 @@ class TContentCards02 extends React.Component {
                         <TaggedContentCard
                             className="plzwork"
                             style={{width: '20px', minWidth: '200px'}}
-                            thumbnail={Chains}
+                            thumbnail={song[1].picture}
                             title='Chains'
                             description=''
                             tags={[
@@ -169,11 +174,11 @@ class TContentCards02 extends React.Component {
                             onClick={ () => {
                                 this.setState({
                                     modalIsOpen: true,
-                                    id: Chains,
                                     title: song[1].title,
                                     singer: song[1].singer,
                                     thumbnail: song[1].thumbnail,
-                                    audio: song[1].audio
+                                    audio: song[1].audio,
+                                    picture: song[1].picture
                                 })} }
                         />
                     </Col>
@@ -181,7 +186,7 @@ class TContentCards02 extends React.Component {
                         <TaggedContentCard
                             className="plzwork"
                             style={{width: '20px', minWidth: '200px'}}
-                            thumbnail={Earth}
+                            thumbnail={song[2].picture}
                             title='Earth'
                             description=''
                             tags={[
@@ -190,11 +195,11 @@ class TContentCards02 extends React.Component {
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,
-                                id: Earth,
                                 title: song[2].title,
                                 singer: song[2].singer,
                                 thumbnail: song[2].thumbnail,
-                                audio: song[2].audio
+                                audio: song[2].audio,
+                                picture: song[2].picture
                             })} }
                         />
                     </Col>
@@ -203,7 +208,7 @@ class TContentCards02 extends React.Component {
                         <TaggedContentCard
                             className="plzwork"
                             style={{width: '20px', minWidth: '200px'}}
-                            thumbnail={Never}
+                            thumbnail={song[3].picture}
                             title='Never End'
                             description=''
                             tags={[
@@ -212,11 +217,11 @@ class TContentCards02 extends React.Component {
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,
-                                id: Never,
                                 title: song[3].title,
                                 singer: song[3].singer,
                                 thumbnail: song[3].thumbnail,
-                                audio: song[3].audio
+                                audio: song[3].audio,
+                                picture: song[3].picture,
                             })} }
 
                         />
@@ -226,7 +231,7 @@ class TContentCards02 extends React.Component {
                         <TaggedContentCard
                             className="plzwork"
                             style={{width: '20px', minWidth: '200px'}}
-                            thumbnail={Colors}
+                            thumbnail={song[4].picture}
                             title='Colors'
                             description=''
                             tags={[
@@ -235,11 +240,11 @@ class TContentCards02 extends React.Component {
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,
-                                id: Colors,
                                 title: song[4].title,
                                 singer: song[4].singer,
                                 thumbnail: song[4].thumbnail,
-                                audio: song[4].audio
+                                audio: song[4].audio,
+                                picture: song[4].picture
                             })} }
                         />
                     </Col>

@@ -1,16 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import { TaggedContentCard } from 'react-ui-cards'
-import Chemtrails from '../images/song-art/Chemtrails.jpg'
-import Burn from '../images/song-art/The-Tower-BURN.jpg'
-import Feedthepeople from '../images/song-art/album-cover-2500x1364-FEEDTHEPEOPLE.jpg'
-import Another from '../images/song-art/The-Wait-ANOTHERTHING.jpg'
-import Hate from '../images/song-art/the-oracle-HATE.jpg'
-import Sorry from '../images/song-art/closeyoureyestosee-SORRY.jpg'
-import Chains from '../images/song-art/medicineman-CHAINS.jpg'
-import Colors from '../images/song-art/shaman-COLORS.jpg'
-import Never from '../images/song-art/The-Magician-NEVEREND.jpg'
-import Earth from '../images/song-art/HighPriestess-EARTH.jpg'
+
 import ReactWebMediaPlayer from 'react-web-media-player';
 
 import { FaPlay } from 'react-icons/fa'
@@ -34,8 +25,8 @@ const song = [
         thumbnail:
             'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/album-cover-2500x1364-FEEDTHEPEOPLE_p3piu5.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593751/chaoticorder-feedthepeople/2-FeedThePeople_r5wbxp.mp3'
-
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593751/chaoticorder-feedthepeople/2-FeedThePeople_r5wbxp.mp3',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/album-cover-2500x1364-FEEDTHEPEOPLE_p3piu5.jpg'
     },
     {
         title: 'Burn',
@@ -43,7 +34,8 @@ const song = [
         thumbnail:
             'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/The-Tower-BURN_v3zngp.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593780/chaoticorder-feedthepeople/3-BURNIT_wq3s6h.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593780/chaoticorder-feedthepeople/3-BURNIT_wq3s6h.mp3',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/The-Tower-BURN_v3zngp.jpg'
 
     },
     {
@@ -52,8 +44,8 @@ const song = [
         thumbnail:
             'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/The-Wait-ANOTHERTHING_wgkuet.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593742/chaoticorder-feedthepeople/4-AnotherThing_qrfsn3.mp3'
-
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593742/chaoticorder-feedthepeople/4-AnotherThing_qrfsn3.mp3',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/The-Wait-ANOTHERTHING_wgkuet.jpg'
     },
     {
         title: 'Hate',
@@ -61,7 +53,8 @@ const song = [
         thumbnail:
             'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/the-oracle-HATE_fn2hvj.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593746/chaoticorder-feedthepeople/5-HATEREPULSION_s8owm1.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593746/chaoticorder-feedthepeople/5-HATEREPULSION_s8owm1.mp3',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/the-oracle-HATE_fn2hvj.jpg'
 
     },
     {
@@ -70,7 +63,8 @@ const song = [
         thumbnail:
             'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/closeyoureyestosee-SORRY_ev76he.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593760/chaoticorder-feedthepeople/6-Sorry_s9hoyu.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593760/chaoticorder-feedthepeople/6-Sorry_s9hoyu.mp3',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/closeyoureyestosee-SORRY_ev76he.jpg'
 
     },
     {
@@ -79,8 +73,8 @@ const song = [
         thumbnail:
             'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/medicineman-CHAINS_p19xji.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593763/chaoticorder-feedthepeople/7-CHAINS_yiqxlf.mp3'
-
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593763/chaoticorder-feedthepeople/7-CHAINS_yiqxlf.mp3',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/medicineman-CHAINS_p19xji.jpg'
     },
     {
         title: 'Earth',
@@ -88,7 +82,8 @@ const song = [
         thumbnail:
             'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/HighPriestess-EARTH_bcy5r9.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593759/chaoticorder-feedthepeople/8-ChaoticOrder_q0zas1.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593759/chaoticorder-feedthepeople/8-ChaoticOrder_q0zas1.mp3',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/HighPriestess-EARTH_bcy5r9.jpg'
 
     },
     {
@@ -97,7 +92,8 @@ const song = [
         thumbnail:
             'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/The-Magician-NEVEREND_mpmzxc.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593764/chaoticorder-feedthepeople/9-NeverEnd_vlxoad.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593764/chaoticorder-feedthepeople/9-NeverEnd_vlxoad.mp3',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/The-Magician-NEVEREND_mpmzxc.jpg'
 
     },
     {
@@ -106,7 +102,8 @@ const song = [
         thumbnail:
             'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/shaman-COLORS_a9vvpy.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593781/chaoticorder-feedthepeople/10-Colors_db6xqj.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593781/chaoticorder-feedthepeople/10-Colors_db6xqj.mp3',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/shaman-COLORS_a9vvpy.jpg'
 
     }
 ]
@@ -119,22 +116,22 @@ class TCardMobile extends React.Component {
 
             this.state = {
                 modalIsOpen: false,
-                id: '',
                 title: '',
                 singer: '',
                 thumbnail: '',
-                audio: ''
+                audio: '',
+                picture: ''
             };
         }
 
         closeModal = () => {
             this.setState({
                 modalIsOpen: false,
-                id: '',
                 title: '',
                 singer: '',
                 thumbnail: '',
-                audio: ''
+                audio: '',
+                picture: ''
             });
         }
 
@@ -248,7 +245,7 @@ class TCardMobile extends React.Component {
                 <TaggedContentCard
                     className="plzwork"
                     style={{/*width: '20px',*/minWidth: '175px', boxShadow: '3px 2px 6px black'}}
-                    thumbnail={Chemtrails}
+                    thumbnail={song[0].thumbnail}
                     title='ChemTrails'
                     description=''
                     tags={[
@@ -259,11 +256,11 @@ class TCardMobile extends React.Component {
                         ]} 
                         onClick={ () => { this.setState({
                             modalIsOpen: true,
-                            id: Chemtrails,
                             title: song[0].title,
                             singer: song[0].singer,
                             thumbnail: song[0].thumbnail,
-                            audio: song[0].audio
+                            audio: song[0].audio,
+                            picture: song[0].picture
                         })} }
                 />
             </div>
@@ -272,7 +269,7 @@ class TCardMobile extends React.Component {
             <TaggedContentCard
                     className="plzwork"
                     style={{/*width: '20px',*/ minWidth: '175px', boxShadow: '3px 2px 6px black'}}           
-                    thumbnail={Feedthepeople}
+                    thumbnail={song[1].thumbnail}
                     title='Feed The People'
                     description=''
                     tags={[
@@ -283,11 +280,11 @@ class TCardMobile extends React.Component {
                         ]} 
                         onClick={ () => { this.setState({
                             modalIsOpen: true,
-                            id: Feedthepeople,
                             title: song[1].title,
                             singer: song[1].singer,
                             thumbnail: song[1].thumbnail,
-                            audio: song[1].audio
+                            audio: song[1].audio,
+                            picture: song[1].picture
                         })} }
                 />
             </div>
@@ -296,7 +293,7 @@ class TCardMobile extends React.Component {
                 <TaggedContentCard
                     className="plzwork"
                     style={{width: '20px', minWidth: '175px', boxShadow: '3px 2px 6px black'}}
-                    thumbnail={Burn}
+                    thumbnail={song[2].thumbnail}
                     title='Burn'
                     description=''
                     tags={[
@@ -307,11 +304,11 @@ class TCardMobile extends React.Component {
                         ]} 
                         onClick={ () => { this.setState({
                             modalIsOpen: true,
-                            id: Burn,
                             title: song[2].title,
                             singer: song[2].singer,
                             thumbnail: song[2].thumbnail,
-                            audio: song[2].audio
+                            audio: song[2].audio,
+                            picture: song[2].picture
                         })} }
                 />
             </div>
@@ -320,7 +317,7 @@ class TCardMobile extends React.Component {
                 <TaggedContentCard
                     className="plzwork"
                     style={{/*width: '20px',*/minWidth: '175px', boxShadow: '3px 2px 6px black'}}
-                    thumbnail={Another}
+                    thumbnail={song[3].thumbnail}
                     title='Another Thing'
                     description=''
                     tags={[
@@ -331,11 +328,11 @@ class TCardMobile extends React.Component {
                         ]} 
                         onClick={ () => { this.setState({
                             modalIsOpen: true,
-                            id: Another,
                             title: song[3].title,
                             singer: song[3].singer,
                             thumbnail: song[3].thumbnail,
-                            audio: song[3].audio
+                            audio: song[3].audio,
+                            picture: song[3].picture,
                         })} }
                 />
             </div>
@@ -344,7 +341,7 @@ class TCardMobile extends React.Component {
                 <TaggedContentCard
                     className="plzwork"
                     style={{/*width: '20px',*/minWidth: '175px', boxShadow: '3px 2px 6px black'}}
-                    thumbnail={Hate}
+                    thumbnail={song[4].thumbnail}
                     title='Hate'
                     description=''
                     tags={[
@@ -355,11 +352,11 @@ class TCardMobile extends React.Component {
                         ]} 
                     onClick={ () => { this.setState({
                             modalIsOpen: true,
-                            id: Hate,
                             title: song[4].title,
                             singer: song[4].singer,
                             thumbnail: song[4].thumbnail,
-                            audio: song[4].audio
+                            audio: song[4].audio,
+                            picture: song[4].picture
                         })} }
                 />
             </div>
@@ -368,7 +365,7 @@ class TCardMobile extends React.Component {
                 <TaggedContentCard
                     className="plzwork"
                     style={{/*width: '20px',*/minWidth: '175px', boxShadow: '3px 2px 6px black'}}
-                    thumbnail={Sorry}
+                    thumbnail={song[5].thumbnail}
                     title='Sorry'
                     description=''
                     tags={[
@@ -379,11 +376,11 @@ class TCardMobile extends React.Component {
                         ]} 
                         onClick={ () => { this.setState({
                             modalIsOpen: true,
-                            id: Sorry,
                             title: song[5].title,
                             singer: song[5].singer,
                             thumbnail: song[5].thumbnail,
-                            audio: song[5].audio
+                            audio: song[5].audio,
+                            picture: song[5].picture
                         })} }
                 />
             </div>
@@ -392,7 +389,7 @@ class TCardMobile extends React.Component {
                 <TaggedContentCard
                     className="plzwork"
                     style={{/*width: '20px',*/minWidth: '175px', boxShadow: '3px 2px 6px black'}}
-                    thumbnail={Chains}
+                    thumbnail={song[6].thumbnail}
                     title='Chains'
                     description=''
                     tags={[
@@ -403,11 +400,11 @@ class TCardMobile extends React.Component {
                         ]} 
                         onClick={ () => { this.setState({
                             modalIsOpen: true,
-                            id: Chains,
                             title: song[6].title,
                             singer: song[6].singer,
                             thumbnail: song[6].thumbnail,
-                            audio: song[6].audio
+                            audio: song[6].audio,
+                            picture: song[6].picture
                         })} }
                 />
             </div>
@@ -416,7 +413,7 @@ class TCardMobile extends React.Component {
                 <TaggedContentCard
                     className="plzwork"
                     style={{/*width: '20px',*/minWidth: '175px', boxShadow: '3px 2px 6px black'}}
-                    thumbnail={Earth}
+                    thumbnail={song[7].thumbnail}
                     title='Earth'
                     description=''
                     tags={[
@@ -427,11 +424,11 @@ class TCardMobile extends React.Component {
                         ]} 
                         onClick={ () => { this.setState({
                             modalIsOpen: true,
-                            id: Earth,
                             title: song[7].title,
                             singer: song[7].singer,
                             thumbnail: song[7].thumbnail,
-                            audio: song[7].audio
+                            audio: song[7].audio,
+                            picture: song[7].picture
                         })} }
                 />
             </div>
@@ -440,7 +437,7 @@ class TCardMobile extends React.Component {
                 <TaggedContentCard
                     className="plzwork"
                     style={{/*width: '20px',*/minWidth: '175px', boxShadow: '3px 2px 6px black'}}
-                    thumbnail={Never}
+                    thumbnail={song[8].thumbnail}
                     title='Never End'
                     description=''
                     tags={[
@@ -451,11 +448,11 @@ class TCardMobile extends React.Component {
                         ]} 
                         onClick={ () => { this.setState({
                             modalIsOpen: true,
-                            id: Never,
                             title: song[8].title,
                             singer: song[8].singer,
                             thumbnail: song[8].thumbnail,
-                            audio: song[8].audio
+                            audio: song[8].audio,
+                            picture: song[8].picture
                         })} }
                 />
             </div>
@@ -464,7 +461,7 @@ class TCardMobile extends React.Component {
                 <TaggedContentCard
                     className="plzwork"
                     style={{/*width: '20px',*/minWidth: '175px', boxShadow: '3px 2px 6px black'}}
-                    thumbnail={Colors}
+                    thumbnail={song[9].thumbnail}
                     title='Colors'
                     description=''
                     tags={[
@@ -475,11 +472,11 @@ class TCardMobile extends React.Component {
                         ]} 
                         onClick={ () => { this.setState({
                             modalIsOpen: true,
-                            id: Colors,
                             title: song[9].title,
                             singer: song[9].singer,
                             thumbnail: song[9].thumbnail,
-                            audio: song[9].audio
+                            audio: song[9].audio,
+                            picture: song[9].picture
                         })} }
                 />
             </div>

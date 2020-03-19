@@ -1,0 +1,15 @@
+.crawler {
+  background: transparent!important;
+}
+
+.crawler > * {
+  background-image: none!important;
+}
+
+.notdisplaying {
+  display: none!important;
+}
+
+.isdisplaying {
+  display: block;
+}

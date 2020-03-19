@@ -1,16 +1,7 @@
 import React from 'react'
 import Slider from "react-slick"
 import { TaggedContentCard } from 'react-ui-cards'
-import Where from '../images/song-art/global-lighting-album/1-where-were-you.jpg'
-import Wake from '../images/song-art/global-lighting-album/2-wake-up.jpg'
-import Tears from '../images/song-art/global-lighting-album/3-Tears.jpg'
-import Dirty from '../images/song-art/global-lighting-album/4-Dirty-Mine.jpg'
-import Primitive from '../images/song-art/global-lighting-album/5-Primitive-Man.jpg'
-import Pins from '../images/song-art/global-lighting-album/6-Pins-and-Needles.jpg'
-import Goodbye from '../images/song-art/global-lighting-album/7-Goodbye.jpg'
-import Fooling from '../images/song-art/global-lighting-album/8-Foolin-Myself.jpg'
-import Breathe from '../images/song-art/global-lighting-album/9-Breathe.jpg'
-import Still from '../images/song-art/global-lighting-album/10-I-Still-Love-you.jpg'
+
 import ReactWebMediaPlayer from 'react-web-media-player'
 
 import { FaPlay } from 'react-icons/fa'
@@ -28,6 +19,7 @@ const song = [
         singer: 'Chaotic Order',
         thumbnail:"https://res.cloudinary.com/dexdumfqy/image/upload/v1581118752/chaoticorder-globallightingproject/1-where-were-you_ufda2c.jpg",
         audio: "https://res.cloudinary.com/dexdumfqy/video/upload/v1581118300/chaoticorder-globallightingproject/1-WHERE_WERE_YOU_wgoc56.mp3",
+        picture: ''
     },
     {
         title: 'Wake Up',
@@ -119,7 +111,6 @@ class TCardMobile2 extends React.Component {
 
         this.state = {
             modalIsOpen: false,
-            id: '',
             title: '',
             singer: '',
             thumbnail: '',
@@ -130,7 +121,6 @@ class TCardMobile2 extends React.Component {
     closeModal = () => {
         this.setState({
             modalIsOpen: false,
-            id: '',
             title: '',
             singer: '',
             thumbnail: '',
@@ -247,7 +237,7 @@ class TCardMobile2 extends React.Component {
                             <TaggedContentCard
                                 className="plzwork"
                                 style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}} 
-                                thumbnail={Where}
+                                thumbnail={song[0].thumbnail}
                                 title='Where Were You'
                                 description=''
                                 tags={[
@@ -257,7 +247,6 @@ class TCardMobile2 extends React.Component {
                                 ]}
                                 onClick={ () => { this.setState({
                                     modalIsOpen: true,
-                                    id: Where,
                                     title: song[0].title,
                                     singer: song[0].singer,
                                     thumbnail: song[0].thumbnail,
@@ -271,7 +260,7 @@ class TCardMobile2 extends React.Component {
                             <TaggedContentCard
                                 className="plzwork"
                                 style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
-                                thumbnail={Wake}
+                                thumbnail={song[1].thumbnail}
                                 title='Wake Up'
                                 description=''
                                 tags={[
@@ -281,7 +270,6 @@ class TCardMobile2 extends React.Component {
                                 ]}
                                 onClick={ () => { this.setState({
                                     modalIsOpen: true,
-                                    id: Wake,
                                     title: song[1].title,
                                     singer: song[1].singer,
                                     thumbnail: song[1].thumbnail,
@@ -293,7 +281,7 @@ class TCardMobile2 extends React.Component {
                             <TaggedContentCard
                                 className="plzwork"
                                 style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
-                                thumbnail={Tears}
+                                thumbnail={song[2].thumbnail}
                                 title='Tears'
                                 description=''
                                 tags={[
@@ -303,7 +291,6 @@ class TCardMobile2 extends React.Component {
                                 ]}
                                 onClick={ () => { this.setState({
                                     modalIsOpen: true,
-                                    id: Tears,
                                     title: song[2].title,
                                     singer: song[2].singer,
                                     thumbnail: song[2].thumbnail,
@@ -315,7 +302,7 @@ class TCardMobile2 extends React.Component {
                             <TaggedContentCard
                                 className="plzwork"
                                 style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
-                                thumbnail={Dirty}
+                                thumbnail={song[3].thumbnail}
                                 title='Dirty Mine'
                                 description=''
                                 tags={[
@@ -325,7 +312,6 @@ class TCardMobile2 extends React.Component {
                                 ]}
                                 onClick={ () => { this.setState({
                                     modalIsOpen: true,
-                                    id: Dirty,
                                     title: song[3].title,
                                     singer: song[3].singer,
                                     thumbnail: song[3].thumbnail,
@@ -337,7 +323,7 @@ class TCardMobile2 extends React.Component {
                             <TaggedContentCard
                                 className="plzwork"
                                 style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
-                                thumbnail={Primitive}
+                                thumbnail={song[4].thumbnail}
                                 title='Primitive Man'
                                 description=''
                                 tags={[
@@ -347,7 +333,6 @@ class TCardMobile2 extends React.Component {
                                 ]}
                                 onClick={ () => { this.setState({
                                     modalIsOpen: true,
-                                    id: Primitive,
                                     title: song[4].title,
                                     singer: song[4].singer,
                                     thumbnail: song[4].thumbnail,
@@ -359,7 +344,7 @@ class TCardMobile2 extends React.Component {
                             <TaggedContentCard
                                 className="plzwork"
                                 style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
-                                thumbnail={Pins}
+                                thumbnail={song[5].thumbnail}
                                 title='Pins and Needles'
                                 description=''
                                 tags={[
@@ -369,7 +354,6 @@ class TCardMobile2 extends React.Component {
                                 ]}
                                 onClick={ () => { this.setState({
                                     modalIsOpen: true,
-                                    id: Pins,
                                     title: song[5].title,
                                     singer: song[5].singer,
                                     thumbnail: song[5].thumbnail,
@@ -381,7 +365,7 @@ class TCardMobile2 extends React.Component {
                             <TaggedContentCard
                                 className="plzwork"
                                 style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
-                                thumbnail={Goodbye}
+                                thumbnail={song[6].thumbnail}
                                 title='Goodbye'
                                 description=''
                                 tags={[
@@ -391,7 +375,6 @@ class TCardMobile2 extends React.Component {
                                 ]}
                                 onClick={ () => { this.setState({
                                     modalIsOpen: true,
-                                    id: Goodbye,
                                     title: song[6].title,
                                     singer: song[6].singer,
                                     thumbnail: song[6].thumbnail,
@@ -403,7 +386,7 @@ class TCardMobile2 extends React.Component {
                             <TaggedContentCard
                                 className="plzwork"
                                 style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
-                                thumbnail={Fooling}
+                                thumbnail={song[7].thumbnail}
                                 title='Fooling Myself'
                                 description=''
                                 tags={[
@@ -413,7 +396,6 @@ class TCardMobile2 extends React.Component {
                                 ]}
                                 onClick={ () => { this.setState({
                                     modalIsOpen: true,
-                                    id: Fooling,
                                     title: song[7].title,
                                     singer: song[7].singer,
                                     thumbnail: song[7].thumbnail,
@@ -425,7 +407,7 @@ class TCardMobile2 extends React.Component {
                             <TaggedContentCard
                                 className="plzwork"
                                 style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
-                                thumbnail={Breathe}
+                                thumbnail={song[8].thumbnail}
                                 title='Breathe'
                                 description=''
                                 tags={[
@@ -435,7 +417,6 @@ class TCardMobile2 extends React.Component {
                                 ]}
                                 onClick={ () => { this.setState({
                                     modalIsOpen: true,
-                                    id: Breathe,
                                     title: song[8].title,
                                     singer: song[8].singer,
                                     thumbnail: song[8].thumbnail,
@@ -447,7 +428,7 @@ class TCardMobile2 extends React.Component {
                             <TaggedContentCard
                                 className="plzwork"
                                 style={{width: '20px',minWidth: '175px', boxShadow: '3px 2px 6px black'}}
-                                thumbnail={Still}
+                                thumbnail={song[9].thumbnail}
                                 title='I Still Love YOu'
                                 description=''
                                 tags={[
@@ -457,7 +438,6 @@ class TCardMobile2 extends React.Component {
                                 ]}
                                 onClick={ () => { this.setState({
                                     modalIsOpen: true,
-                                    id: Still,
                                     title: song[9].title,
                                     singer: song[9].singer,
                                     thumbnail: song[9].thumbnail,
