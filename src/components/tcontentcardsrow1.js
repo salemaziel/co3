@@ -32,7 +32,7 @@ const song = [
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593751/chaoticorder-feedthepeople/2-FeedThePeople_r5wbxp.mp3',
         picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/album-cover-2500x1364-FEEDTHEPEOPLE_p3piu5.jpg',
-        lyric: 'Hay hay That’s a big old plane White lines in the sky, Making me wonder Hay hay Take the planes away They dirty the sky Making it Hotter Big O cans flying through the sky Sure know why it’s on my mind We talk about a better way All the lines all through the sky When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails Protecting us from bad sun rays Others say it’s such a haze Carbon dioxide from the planes Soot particulates are to blame When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails chem trails chem trails'
+        lyric: ' Hayeeeeee Feed the people inside your life Feed the people just get in line Feed the people another lie Feed the people open wide Uuuu uou Every time we try to get ahead Feed the People Feed the people Uuuu uou We give you take it’s all that we can stand Feed the People Feed the People Uuuu uou Feed the people almighty dollar Feed the people ain’t worth a dime Feed the people whole pack of lies Feed the people just one more time Uuuu uou Every time we try to get ahead Feed the People Feed the people Uuuu uou We give you take it’s more than we can stand Feed the People Feed the People Uuuuuou Feed the people insecticides Feed the people the pesticides Feed the people your dirty water Feed the people there hungry Uuuu uou Every time we try to get ahead Feed the People Feed the people Uuuu uou We give you take it’s all that we can stand Feed the People Feed the People Feed the people insecticides Feed the people the pesticides Feed the people your dirty water Feed the people we’re hungry'
 
     },
     {
@@ -43,7 +43,7 @@ const song = [
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593780/chaoticorder-feedthepeople/3-BURNIT_wq3s6h.mp3',
         picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/The-Tower-BURN_v3zngp.jpg',
-        lyric: 'Hay hay That’s a big old plane White lines in the sky, Making me wonder Hay hay Take the planes away They dirty the sky Making it Hotter Big O cans flying through the sky Sure know why it’s on my mind We talk about a better way All the lines all through the sky When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails Protecting us from bad sun rays Others say it’s such a haze Carbon dioxide from the planes Soot particulates are to blame When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails chem trails chem trails'
+        lyric: 'Hey Hey Hey Burn it Burn it Burn it to the ground Ashes blowing in the wind Smoke burns through your eye’s Dust all through the air Darkness fall’s through the sky Burn it   Look around Burn it   It’s falling down Burn it.   To the ground Burn it   We will all be Falling down Axes   Will lose controls Heat   Will over load Molten   Rocks do explode, Then rumble beneath yourfeet Burn it    Plumes of smoke Burn it     Until we choke Burn it    There Nothing left Burn it.   We will burn it to the ground LEAD We will burn it to the ground We will burn it to the ground '
 
     },
     {
@@ -54,7 +54,7 @@ const song = [
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593742/chaoticorder-feedthepeople/4-AnotherThing_qrfsn3.mp3',
         picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/The-Wait-ANOTHERTHING_wgkuet.jpg',
-        lyric: 'Hay hay That’s a big old plane White lines in the sky, Making me wonder Hay hay Take the planes away They dirty the sky Making it Hotter Big O cans flying through the sky Sure know why it’s on my mind We talk about a better way All the lines all through the sky When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails Protecting us from bad sun rays Others say it’s such a haze Carbon dioxide from the planes Soot particulates are to blame When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails chem trails chem trails'
+        lyric: 'You get a piece of me ya taste so fine Yes I like to hold you down As you move I turn Right on time O so fine Shhhhhh Don’t say a word Harder never deep enough Shiver with delight Rocking it through the night Don’t say a word Harder never deep enough Shiver with delight Rocking it through the night It’s not what we know It’s who we know We thought it was good So here’s what I got to say Oooooo Try to confuse me In this state of mine Try to abuse me So easy you defy Try to change my world I blink you lie Yes same o rumor in town As you move on out Right on time O not again Shhhhhh Don’t say a word Hammer beating in my Shiver to the bone Were always good in bed Another thing I must confess You’re still a taker who never gives This won’t happen Ever again Always a lie You always deny Try to confuse me In this state of mine Try to abuse me So easily defy You’re a taker who never gives back Difficult and exhausting I’m over it..'
 
     },
     {
@@ -65,7 +65,7 @@ const song = [
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593746/chaoticorder-feedthepeople/5-HATEREPULSION_s8owm1.mp3',
         picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/the-oracle-HATE_fn2hvj.jpg',
-        lyric: 'Hay hay That’s a big old plane White lines in the sky, Making me wonder Hay hay Take the planes away They dirty the sky Making it Hotter Big O cans flying through the sky Sure know why it’s on my mind We talk about a better way All the lines all through the sky When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails Protecting us from bad sun rays Others say it’s such a haze Carbon dioxide from the planes Soot particulates are to blame When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails chem trails chem trails'
+        lyric: 'Hayyyyyyyyyy Hate is my best friend Hate is what I feel for you Fear is what you see in me Pain I have in store for you Leave me alone Let me be Let me go Is this what you want me to see Is this what you wanted me to be Look at what you’ve done to me What are you doing to me I want you to leave me alone Get back..... Haaaaa Hate is my best friend Hate is my best friend who’s lonely I hate to be the only one Don’t you know that I’m living in hell Is this what you wanted to see Is this what you want me to be I don’t understand Why don’t you let me out Ask your mother while you’re freaking me out I’ll find a way out to cure this disease I’ve never seen the man on the moon ha ha ha ha I hate you Leave me alone I hate that you hate What we want to be Is this what you wanted to see Is this what you want me to be LEAVE ME ALONE You’re alone in the dark, ha ha ha ha ha'
 
     },
     
@@ -99,7 +99,7 @@ class TContentCards01 extends React.Component {
             picture: '',
             lyric: '',
             lyricToggle: false,
-            classname: 'lyricCrawl'
+            classname: ''
         };
     }
 
@@ -121,7 +121,7 @@ class TContentCards01 extends React.Component {
             picture:'',
             lyric: '',
             lyricToggle: false,
-            className: 'lyricCrawl'
+            className: ''
 
 
         });
@@ -131,17 +131,12 @@ class TContentCards01 extends React.Component {
         this.setState((prevState) => {
           return { lyricToggle: !prevState.lyricToggle }
         })
-    ​
         if (this.state.classname === 'lyricCrawl') {
           this.setState({ classname: 'lyricCrawl is-open' })
         } else {
           this.setState({ classname: 'lyricCrawl' })
         }
-    ​
-        $(this.refs['toggle-div']).slideToggle()
       }
-    ​
-      //TODO ?
       handleLinkClick() {
         this.setState({ lyricToggle: true })
       }
@@ -181,8 +176,8 @@ class TContentCards01 extends React.Component {
                             flexDirection: 'column'
                             }}
                         >
-
-    <Crawl className="lyricCrawl">
+<div className="lyricCrawl">
+    <Crawl >
         <div style={{
                display: "flex",
                position: "absolute",
@@ -196,7 +191,7 @@ class TContentCards01 extends React.Component {
                 <p>{this.state.lyric}</p>
         </div>
     </Crawl>
-    
+    </div>
                             <div style={{ 
                                 position: 'absolute',
                                 left: '85%',
@@ -218,8 +213,8 @@ class TContentCards01 extends React.Component {
                                 />
                                 <button 
                                     style={{zIndex: 2}} 
-                                    open={this.state.menuToggle} 
-                                    onClick={() => this.handleMenuClick()} >
+                                    open={this.state.lyricToggle} 
+                                    onClick={() => this.handleLinkClick()} >
                                          See Lyrics 
                                 </button>
 
