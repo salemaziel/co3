@@ -172,8 +172,8 @@ class TContentCards01 extends React.Component {
     )
                             <div style={{ 
                                 position: 'absolute',
-                                left: '85%',
-                                top: '40%',
+                                left: '70%',
+                                top: '50%',
                                 /*marginLeft: '-110px',
                             marginTop: '370px'*/}}>
                                 <ReactWebMediaPlayer
