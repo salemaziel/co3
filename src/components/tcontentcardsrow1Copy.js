@@ -1,19 +1,21 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { TaggedContentCard } from 'react-ui-cards'
-
+import Chemtrails from '../images/song-art/Chemtrails.jpg'
+import Burn from '../images/song-art/The-Tower-BURN-copy.jpg'
+import Feedthepeople from '../images/song-art/album-cover-2500x1364-FEEDTHEPEOPLE.jpg'
+import Another from '../images/song-art/The-Wait-ANOTHERTHING.jpg'
+import Hate from '../images/song-art/the-oracle-HATE.jpg'
 
 import ReactWebMediaPlayer from 'react-web-media-player';
 
 import { FaPlay } from 'react-icons/fa'
 
-import { Collapse, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import Modal from 'react-awesome-modal';
 
 import Crawl from 'react-star-wars-crawl'
 import '../css/lyricCrawl.css'
-import 'react-star-wars-crawl/lib/index.css'
 //import '../css/tcontencardsrow1.css'
-
 
 const song = [
     {
@@ -21,8 +23,7 @@ const song = [
         singer: 'Chaotic Order',
         thumbnail:"https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581452697/chaoticorder-feedthepeople/full-images/Chemtrails_uvyaam.jpg",
         audio: "https://res.cloudinary.com/dexdumfqy/video/upload/v1579593741/chaoticorder-feedthepeople/1-Chemtrails_vvfljp.mp3",
-        picture: "https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/Chemtrails_uvyaam.jpg",
-        lyric: "Hay hay That’s a big old plane White lines in the sky, Making me wonder Hay hay Take the planes away They dirty the sky Making it Hotter Big O cans flying through the sky Sure know why it’s on my mind We talk about a better way All the lines all through the sky When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails Protecting us from bad sun rays Others say it’s such a haze Carbon dioxide from the planes Soot particulates are to blame When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails chem trails chem trails"
+        lyric: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
         title: 'Feed The People',
@@ -31,9 +32,8 @@ const song = [
             'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581452697/chaoticorder-feedthepeople/full-images/album-cover-2500x1364-FEEDTHEPEOPLE_p3piu5.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593751/chaoticorder-feedthepeople/2-FeedThePeople_r5wbxp.mp3',
-        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452697/chaoticorder-feedthepeople/full-images/album-cover-2500x1364-FEEDTHEPEOPLE_p3piu5.jpg',
-        lyric: 'Hay hay That’s a big old plane White lines in the sky, Making me wonder Hay hay Take the planes away They dirty the sky Making it Hotter Big O cans flying through the sky Sure know why it’s on my mind We talk about a better way All the lines all through the sky When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails Protecting us from bad sun rays Others say it’s such a haze Carbon dioxide from the planes Soot particulates are to blame When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails chem trails chem trails'
-
+        lyric: "hello"
+        
     },
     {
         title: 'Burn',
@@ -42,9 +42,7 @@ const song = [
             'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581452698/chaoticorder-feedthepeople/full-images/The-Tower-BURN_v3zngp.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593780/chaoticorder-feedthepeople/3-BURNIT_wq3s6h.mp3',
-        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/The-Tower-BURN_v3zngp.jpg',
-        lyric: 'Hay hay That’s a big old plane White lines in the sky, Making me wonder Hay hay Take the planes away They dirty the sky Making it Hotter Big O cans flying through the sky Sure know why it’s on my mind We talk about a better way All the lines all through the sky When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails Protecting us from bad sun rays Others say it’s such a haze Carbon dioxide from the planes Soot particulates are to blame When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails chem trails chem trails'
-
+        lyric: "hello"
     },
     {
         title: 'Another Thing',
@@ -53,10 +51,7 @@ const song = [
             'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581452698/chaoticorder-feedthepeople/full-images/The-Wait-ANOTHERTHING_wgkuet.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593742/chaoticorder-feedthepeople/4-AnotherThing_qrfsn3.mp3',
-        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/The-Wait-ANOTHERTHING_wgkuet.jpg',
-        lyric: 'Hay hay That’s a big old plane White lines in the sky, Making me wonder Hay hay Take the planes away They dirty the sky Making it Hotter Big O cans flying through the sky Sure know why it’s on my mind We talk about a better way All the lines all through the sky When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails Protecting us from bad sun rays Others say it’s such a haze Carbon dioxide from the planes Soot particulates are to blame When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails chem trails chem trails'
-
-
+        lyric: "hello"
     },
     {
         title: 'Hate',
@@ -65,12 +60,19 @@ const song = [
             'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581452698/chaoticorder-feedthepeople/full-images/the-oracle-HATE_fn2hvj.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1579593746/chaoticorder-feedthepeople/5-HATEREPULSION_s8owm1.mp3',
-        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581452698/chaoticorder-feedthepeople/full-images/the-oracle-HATE_fn2hvj.jpg',
-        lyric: 'Hay hay That’s a big old plane White lines in the sky, Making me wonder Hay hay Take the planes away They dirty the sky Making it Hotter Big O cans flying through the sky Sure know why it’s on my mind We talk about a better way All the lines all through the sky When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails Protecting us from bad sun rays Others say it’s such a haze Carbon dioxide from the planes Soot particulates are to blame When it all comes down to fait There’s nothing there that’s good for you They say the lines goanna make it rain It’s only a matter of time no lie chem trails chem trails chem trails'
-
+        lyric: 'hello'
     },
     
 ]
+
+const LyricsCrawl = (song) => (
+    <Crawl
+    title=''
+    subtitle=''
+    text=''
+    conta
+    />
+)
 
 
 /*const Lyriccrawl = () => (
@@ -81,12 +83,7 @@ const song = [
       "
     />
 )*/
-
-
-
 class TContentCards01 extends React.Component {
-
-
     constructor() {
         super();
 
@@ -97,15 +94,13 @@ class TContentCards01 extends React.Component {
             singer: '',
             thumbnail: '',
             audio: '',
-            picture: '',
             lyric: '',
-            render: ''
+            lyricShown: false
         };
+
+        this.showLyrics = this.showLyrics.bind(this);
     }
     
-
- 
-
 
     closeModal = () => {
         this.setState({
@@ -115,18 +110,26 @@ class TContentCards01 extends React.Component {
             singer: '',
             thumbnail: '',
             audio: '',
-            picture:'',
             lyric: '',
-            render: ''
-
+            lyricShown: false
         });
     }
 
-       
+/*    toggle = () => {
+        this.setState({
+            lyricShown: true,
 
- 
+        });
+    }
+*/
+showLyrics() {
+    alert('Hello!');
+  }
+
 
     render() {
+
+
         let {
             thumbnail,
             title,
@@ -135,7 +138,7 @@ class TContentCards01 extends React.Component {
             ...other
         } = this.props;
 
-
+     
         return (
             <div>
             {/*<React.Fragment>*/}
@@ -149,33 +152,19 @@ class TContentCards01 extends React.Component {
                     <Row style={{ display: 'flex'}}>
                     
                         <div style={{
-                            backgroundImage: `url(${this.state.picture})` ,
+                            backgroundImage: `url(${this.state.id})` ,
                             height: "800px",
                             width: "1000px",
                             backgroundSize: 'cover', 
                             backgroundPosition: 'center center',
-                            display: 'flex',
-                            flexDirection: 'column'
                             }}
                         >
-{/*<Collapse
-        isOpen={collapse}
-        onEntering={onEntering}
-        onEntered={onEntered}
-        onExiting={onExiting}
-        onExited={onExited}
->*/}
-
-            
-{/*</Collapse>*/}
-
-    )
                             <div style={{ 
                                 position: 'absolute',
                                 left: '85%',
-                                top: '40%',
-                                /*marginLeft: '-110px',
-                            marginTop: '370px'*/}}>
+                                marginLeft: '-110px',
+                                marginTop: '370px'
+                                }}>
                                 <ReactWebMediaPlayer
                                     width={200} height={200}
                                     title={this.state.title}
@@ -188,12 +177,15 @@ class TContentCards01 extends React.Component {
                                             backgroundColor: "transparent",
                                             background: "transparent",
                                     }}
+                               
+
+                                    
                                 />
-                                <button style={{zIndex: 2}}> See Lyrics </button>
+                                <button onClick={() => this.showLyrics({
+                                    
+                                })}>Show Lyrics</button>*/}
+                                
                             </div>
-                        </div>
-                        <div>
-                        
                         </div>
                     </Row>
                     
@@ -204,7 +196,7 @@ class TContentCards01 extends React.Component {
                         <TaggedContentCard
                             className="plzwork"
                             style={{width: '20px', minWidth: '200px'}}
-                            thumbnail={song[0].picture}
+                            thumbnail={Chemtrails}
                             title='ChemTrails'
                             description=''
                             tags={[
@@ -213,13 +205,14 @@ class TContentCards01 extends React.Component {
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,
+                                id: Chemtrails,
                                 title: song[0].title,
                                 singer: song[0].singer,
                                 thumbnail: song[0].thumbnail,
                                 audio: song[0].audio,
-                                picture: song[0].picture,
                                 lyric: song[0].lyric
                             })} }
+                            
                         />
 
 
@@ -228,7 +221,7 @@ class TContentCards01 extends React.Component {
                         <TaggedContentCard
                             className="plzwork"
                             style={{width: '20px', minWidth: '200px'}}
-                            thumbnail={song[1].picture}
+                            thumbnail={Feedthepeople}
                             title='Feed The People'
                             description=''
                             tags={[
@@ -237,11 +230,11 @@ class TContentCards01 extends React.Component {
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,
+                                id: Feedthepeople,
                                 title: song[1].title,
                                 singer: song[1].singer,
                                 thumbnail: song[1].thumbnail,
                                 audio: song[1].audio,
-                                picture: song[1].picture,
                                 lyric: song[1].lyric
                             })} }
 
@@ -251,7 +244,7 @@ class TContentCards01 extends React.Component {
                     <TaggedContentCard
                         className="plzwork"
                         style={{width: '20px', minWidth: '200px'}}
-                        thumbnail={song[2].picture}
+                        thumbnail={Burn}
                         title='Burn'
                         description=''
                         tags={[
@@ -260,11 +253,11 @@ class TContentCards01 extends React.Component {
                         ]}
                         onClick={ () => { this.setState({
                             modalIsOpen: true,
+                            id: Burn,
                             title: song[2].title,
                             singer: song[2].singer,
                             thumbnail: song[2].thumbnail,
                             audio: song[2].audio,
-                            picture: song[2].picture,
                             lyric: song[2].lyric
                         })} }
 
@@ -273,7 +266,7 @@ class TContentCards01 extends React.Component {
                     <TaggedContentCard
                         className="plzwork"
                         style={{width: '20px', minWidth: '200px'}}
-                        thumbnail={song[3].picture}
+                        thumbnail={Another}
                         title='Another'
                         description=''
                         tags={[
@@ -281,11 +274,11 @@ class TContentCards01 extends React.Component {
                         ]}
                         onClick={ () => { this.setState({
                             modalIsOpen: true,
+                            id: Another,
                             title: song[3].title,
                             singer: song[3].singer,
                             thumbnail: song[3].thumbnail,
                             audio: song[3].audio,
-                            picture: song[3].picture,
                             lyric: song[3].lyric
                         })} }
 
@@ -295,7 +288,7 @@ class TContentCards01 extends React.Component {
                         <TaggedContentCard
                             className="plzwork"
                             style={{width: '20px', minWidth: '200px'}}
-                            thumbnail={song[4].picture}
+                            thumbnail={Hate}
                             title='Hate'
                             description=''
                             tags={[
@@ -303,11 +296,11 @@ class TContentCards01 extends React.Component {
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,
+                                id: Hate,
                                 title: song[4].title,
                                 singer: song[4].singer,
                                 thumbnail: song[4].thumbnail,
                                 audio: song[4].audio,
-                                picture: song[4].picture,
                                 lyric: song[4].lyric
                             })} }
 
@@ -317,6 +310,6 @@ class TContentCards01 extends React.Component {
                 {/*</React.Fragment>*/}
                 </div>
         );
-    }
-}
+    };
+};
 export default TContentCards01

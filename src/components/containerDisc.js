@@ -23,13 +23,13 @@ import { Link } from 'react-router-dom'
 //export default class ContainerDisc extends Component {
 class ContainerDisc extends React.Component {
     render() {
-        const settings = {
+        /*const settings = {
             dots: true,
             infinite: true,
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1
-        };
+        };*/
       return (
         <div 
       id="containerDisc" className="container default full screen" data-scroll-id="discography" data-scroll-behavior="center"  >
