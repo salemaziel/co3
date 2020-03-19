@@ -121,7 +121,7 @@ class TContentCards01 extends React.Component {
             picture:'',
             lyric: '',
             lyricToggle: false,
-            className: ''
+            classname: ''
 
 
         });
@@ -176,7 +176,7 @@ class TContentCards01 extends React.Component {
                             flexDirection: 'column'
                             }}
                         >
-<div className="lyricCrawl">
+<div className={this.state.classname} >
     <Crawl >
         <div style={{
                display: "flex",
@@ -194,8 +194,8 @@ class TContentCards01 extends React.Component {
     </div>
                             <div style={{ 
                                 position: 'absolute',
-                                left: '85%',
-                                top: '40%',
+                                left: '70%',
+                                top: '50%',
                                 /*marginLeft: '-110px',
                             marginTop: '370px'*/}}>
                                 <ReactWebMediaPlayer
