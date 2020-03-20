@@ -2,7 +2,7 @@ import React from 'react'
 import '../css/containerHeader.css'
 
 import Logo from '../images/image10.png'
-import LogoMobile from '../images/logo-tan-column.png'
+import LogoMobile from '../images/logo-tan-column-sm.png'
 import Albumcover from '../images/album-cover2.jpg'
 import { Row } from 'reactstrap'
 import { Col } from 'reactstrap'

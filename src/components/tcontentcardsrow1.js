@@ -128,6 +128,7 @@ class TContentCards01 extends React.Component {
     }
 
     handleMenuClick() {
+        console.log('got here')
         this.setState((prevState) => {
           return { lyricToggle: !prevState.lyricToggle }
         })
@@ -138,8 +139,12 @@ class TContentCards01 extends React.Component {
         }
       }
       handleLinkClick() {
-        this.setState({ lyricToggle: true })
+        this.setState({ 
+            lyricToggle: true,
+            lyric: this.state.lyric
       }
+        )
+    }
     
        
 
@@ -214,7 +219,7 @@ class TContentCards01 extends React.Component {
                                 <button 
                                     style={{zIndex: 2}} 
                                     open={this.state.lyricToggle} 
-                                    onClick={() => this.handleLinkClick()} >
+                                    onClick={() => this.handleMenuClick()} >
                                          See Lyrics 
                                 </button>
 
