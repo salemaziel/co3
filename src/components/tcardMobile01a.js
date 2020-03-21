@@ -163,8 +163,7 @@ export default class TCardMobile01a extends Component {
         tags,
         ...other
     } = this.props;
-    let cards;;
-    let { styleDisplay } = this.props;
+  
     return (
       <div>
           <Modal

@@ -69,7 +69,6 @@ class Tcontentdisc2row2 extends React.Component {
 
         this.state = {
             modalIsOpen: false,
-            id: '',
             title: '',
             singer: '',
             thumbnail: '',
@@ -82,7 +81,6 @@ class Tcontentdisc2row2 extends React.Component {
     closeModal = () => {
         this.setState({
             modalIsOpen: false,
-            id: '',
             title: '',
             singer: '',
             thumbnail: '',
@@ -145,6 +143,7 @@ class Tcontentdisc2row2 extends React.Component {
                 <Row style={{display: 'flex'}}>
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
+                            className="plzwork"
                             style={{width: '20px', minWidth: '200px'}}
                             thumbnail={song[0].picture}
                             title='Pins and Needles'
@@ -167,7 +166,8 @@ class Tcontentdisc2row2 extends React.Component {
                     </Col>
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
-                            style={{width: '20px', minWidth: '200px'}}
+                            className="plzwork"
+                            style={{width: '200px', minWidth: '200px'}}
                             thumbnail={song[1].picture}
                             title='Goodbye'
                             description=''
@@ -189,7 +189,8 @@ class Tcontentdisc2row2 extends React.Component {
                     </Col>
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
-                            style={{width: '20px', minWidth: '200px'}}
+                            className="plzwork"
+                            style={{width: '200px', minWidth: '200px'}}
                             thumbnail={song[2].picture}
                             title='Fooling Myself'
                             description=''
@@ -212,7 +213,8 @@ class Tcontentdisc2row2 extends React.Component {
 
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
-                            style={{width: '20px', minWidth: '200px'}}
+                            className="plzwork"
+                            style={{width: '200px', minWidth: '200px'}}
                             thumbnail={song[3].picture}
                             title='Breathe'
                             description=''
@@ -236,7 +238,8 @@ class Tcontentdisc2row2 extends React.Component {
 
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
-                            style={{width: '20px', minWidth: '200px'}}
+                            className="plzwork"
+                            style={{width: '200px', minWidth: '200px'}}
                             thumbnail={song[4].picture}
                             title='I Still Love You'
                             description=''

@@ -119,7 +119,7 @@ class Tcontentdisc2row1 extends React.Component {
                     <Row style={{ display: 'flex'}}>
                     
                         <div style={{
-                            backgroundImage: `url(${this.state.id})` ,
+                            backgroundImage: `url(${this.state.picture})` ,
                             height: "800px", 
                             width: "1000px",  
                             backgroundSize: 'cover', 
@@ -128,9 +128,11 @@ class Tcontentdisc2row1 extends React.Component {
 
                             <div style={{ 
                                 position: 'absolute',
-                                left: '85%',
+                                left: '70%',
+                                top: '50%',
+                                /*left: '85%',
                                 marginLeft: '-110px',
-                                marginTop: '440px'}}>
+                            marginTop: '440px'*/}}>
                                 <ReactWebMediaPlayer
                                     width={200} height={200}
                                     title={this.state.title}
@@ -154,7 +156,8 @@ class Tcontentdisc2row1 extends React.Component {
                 <Row style={{display: 'flex'}}>
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
-                            style={{width: '20px', minWidth: '200px'}}
+                            className="plzwork"
+                            style={{width: '200px', minWidth: '200px'}}
                             thumbnail={song[0].picture}
                             title='Where Were You'
                             description=''
@@ -177,7 +180,8 @@ class Tcontentdisc2row1 extends React.Component {
                     </Col>
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
-                            style={{width: '20px', minWidth: '200px'}}
+                            className="plzwork"
+                            style={{width: '200px', minWidth: '200px'}}
                             thumbnail={song[1].picture}
                             title='Wake Up'
                             description=''
@@ -199,7 +203,8 @@ class Tcontentdisc2row1 extends React.Component {
                         />
                     </Col > <Col xs="2" lg="2" md="6">
                     <TaggedContentCard
-                        style={{width: '20px', minWidth: '200px'}}
+                        className="plzwork"
+                        style={{width: '200px', minWidth: '200px'}}
                         thumbnail={song[2].picture}
                         title='Tears'
                         description=''
@@ -220,7 +225,8 @@ class Tcontentdisc2row1 extends React.Component {
                     />
                 </Col> <Col xs="2" lg="2" md="6">
                     <TaggedContentCard
-                        style={{width: '20px', minWidth: '200px'}}
+                    className="plzwork"
+                        style={{width: '200px', minWidth: '200px'}}
                         thumbnail={song[3].picture}
                         title='Dirty Mine'
                         description=''
@@ -241,6 +247,7 @@ class Tcontentdisc2row1 extends React.Component {
                 </Col>
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
+                            className="plzwork"
                             style={{width: '20px', minWidth: '200px'}}
                             thumbnail={song[4].picture}
                             title='Primitive Man'
