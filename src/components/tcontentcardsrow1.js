@@ -416,6 +416,7 @@ const song = [
 
             </div>)]
 
+
     },
     {
         title: 'Hate',
@@ -566,6 +567,7 @@ class TContentCards01 extends React.Component {
 
 
 
+
     closeModal = () => {
         this.setState({
             modalIsOpen: false,
@@ -583,7 +585,6 @@ class TContentCards01 extends React.Component {
 
 
 
-
     render() {
         let {
             thumbnail,
@@ -598,6 +599,7 @@ class TContentCards01 extends React.Component {
 
         return (
             <React.Fragment>
+
                 <Modal
                     visible={this.state.modalIsOpen}
                     width="1000" height="600"
@@ -638,6 +640,7 @@ class TContentCards01 extends React.Component {
                             <div style={{
                                 position: 'absolute',
                                 left: '77%',
+
                                 top: '50%',
                                 /*marginLeft: '-110px',
                             marginTop: '370px'*/}}>
@@ -655,9 +658,6 @@ class TContentCards01 extends React.Component {
                                         background: "transparent",
                                     }}
                                 />
-
-
-
 
                             </div>
                         </div>
