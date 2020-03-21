@@ -1,7 +1,6 @@
 import React from 'react'
 import '../css/containerBio.css'
 import Jackbio from '../images/JacksCave_1600x.jpg'
-import Lazyload from 'react-lazyload'
 import Jcavemobile from './jcavemobile'
 
 
@@ -10,9 +9,8 @@ const ContainerBio = () => (
             <div id="inner" >
                 <div className="afterSpacer">
                   
-                    <img className="jcavefull" src={Jackbio} 
-                          alt="Primary artist of Chaotic Order Jack Dubord"
-                          className="jackbio">
+                    <img className="jcavefull jackbio" src={Jackbio} 
+                          alt="Primary artist of Chaotic Order Jack Dubord">
                     </img>
                     <Jcavemobile className="jcavemobile" />
                   

@@ -1,10 +1,5 @@
 import React from 'react'
 import { TaggedContentCard } from 'react-ui-cards'
-import Where from '../images/song-art/global-lighting-album/1-where-were-you.jpg'
-import Wake from '../images/song-art/global-lighting-album/2-wake-up.jpg'
-import Tears from '../images/song-art/global-lighting-album/3-Tears.jpg'
-import Dirty from '../images/song-art/global-lighting-album/4-Dirty-Mine.jpg'
-import Primitive from '../images/song-art/global-lighting-album/5-Primitive-Man.jpg'
 
 import ReactWebMediaPlayer from 'react-web-media-player';
 
@@ -23,6 +18,7 @@ const song = [
         singer: 'Chaotic Order',
         thumbnail:"https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118752/chaoticorder-globallightingproject/1-where-were-you_ufda2c.jpg",
         audio: "https://res.cloudinary.com/dexdumfqy/video/upload/v1581118300/chaoticorder-globallightingproject/1-WHERE_WERE_YOU_wgoc56.mp3",
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118752/chaoticorder-globallightingproject/1-where-were-you_ufda2c.jpg'
     },
     {
         title: 'Wake Up',
@@ -30,7 +26,8 @@ const song = [
         thumbnail:
             'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118752/chaoticorder-globallightingproject/2-wake-up_h0tc9z.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118296/chaoticorder-globallightingproject/2-WAKE_UP_nnmu69.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118296/chaoticorder-globallightingproject/2-WAKE_UP_nnmu69.mp3',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/chaoticorder-globallightingproject/2-wake-up_h0tc9z.jpg'
 
     },
     {
@@ -39,8 +36,8 @@ const song = [
         thumbnail:
             'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118752/chaoticorder-globallightingproject/3-Tears_fym2g1.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118296/chaoticorder-globallightingproject/3-TEARS_lnpihr.mp3'
-
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118296/chaoticorder-globallightingproject/3-TEARS_lnpihr.mp3',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118752/chaoticorder-globallightingproject/3-Tears_fym2g1.jpg'
     },
     {
         title: 'Dirty Mine',
@@ -48,7 +45,8 @@ const song = [
         thumbnail:
             'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118753/chaoticorder-globallightingproject/4-Dirty-Mine_g35szv.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118307/chaoticorder-globallightingproject/4-DIRTY_MINE_rjsmiu.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118307/chaoticorder-globallightingproject/4-DIRTY_MINE_rjsmiu.mp3',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/4-Dirty-Mine_g35szv.jpg'
 
     },
     {
@@ -57,7 +55,8 @@ const song = [
         thumbnail:
             'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118753/chaoticorder-globallightingproject/5-Primitive-Man_gfmwue.jpg',
         audio:
-            'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118299/chaoticorder-globallightingproject/5-PRIMITVE_MAN_lrsghw.mp3'
+            'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118299/chaoticorder-globallightingproject/5-PRIMITVE_MAN_lrsghw.mp3',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/5-Primitive-Man_gfmwue.jpg'
 
     },
 ]
@@ -78,22 +77,25 @@ class Tcontentdisc2row1 extends React.Component {
 
         this.state = {
             modalIsOpen: false,
-            id: '',
             title: '',
             singer: '',
             thumbnail: '',
-            audio: ''
+            audio: '',
+            picture: '',
+            lyric: '',
+
         };
     }
 
     closeModal = () => {
         this.setState({
             modalIsOpen: false,
-            id: '',
             title: '',
             singer: '',
             thumbnail: '',
-            audio: ''
+            audio: '',
+            picture: '',
+            lyric: '',
         });
     }
 
@@ -153,7 +155,7 @@ class Tcontentdisc2row1 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
-                            thumbnail={Where}
+                            thumbnail={song[0].picture}
                             title='Where Were You'
                             description=''
                             tags={[
@@ -162,11 +164,11 @@ class Tcontentdisc2row1 extends React.Component {
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,
-                                id: Where,
                                 title: song[0].title,
                                 singer: song[0].singer,
                                 thumbnail: song[0].thumbnail,
-                                audio: song[0].audio
+                                audio: song[0].audio,
+                                picture: song[0].picture
                             })} }
                             
                         />
@@ -176,7 +178,7 @@ class Tcontentdisc2row1 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
-                            thumbnail={Wake}
+                            thumbnail={song[1].picture}
                             title='Wake Up'
                             description=''
                             tags={[
@@ -185,11 +187,11 @@ class Tcontentdisc2row1 extends React.Component {
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,
-                                id: Wake,
                                 title: song[1].title,
                                 singer: song[1].singer,
                                 thumbnail: song[1].thumbnail,
-                                audio: song[1].audio
+                                audio: song[1].audio,
+                                picture: song[1].picture
                             })} }
                             
 
@@ -198,7 +200,7 @@ class Tcontentdisc2row1 extends React.Component {
                     </Col > <Col xs="2" lg="2" md="6">
                     <TaggedContentCard
                         style={{width: '20px', minWidth: '200px'}}
-                        thumbnail={Tears}
+                        thumbnail={song[2].picture}
                         title='Tears'
                         description=''
                         tags={[
@@ -207,11 +209,11 @@ class Tcontentdisc2row1 extends React.Component {
                         ]}
                         onClick={ () => { this.setState({
                             modalIsOpen: true,
-                            id: Tears,
                             title: song[2].title,
                             singer: song[2].singer,
                             thumbnail: song[2].thumbnail,
-                            audio: song[2].audio
+                            audio: song[2].audio,
+                            picture: song[2].picture
                         })} }
                         
 
@@ -219,7 +221,7 @@ class Tcontentdisc2row1 extends React.Component {
                 </Col> <Col xs="2" lg="2" md="6">
                     <TaggedContentCard
                         style={{width: '20px', minWidth: '200px'}}
-                        thumbnail={Dirty}
+                        thumbnail={song[3].picture}
                         title='Dirty Mine'
                         description=''
                         tags={[
@@ -227,11 +229,11 @@ class Tcontentdisc2row1 extends React.Component {
                         ]}
                         onClick={ () => { this.setState({
                             modalIsOpen: true,
-                            id: Dirty,
                             title: song[3].title,
                             singer: song[3].singer,
                             thumbnail: song[3].thumbnail,
-                            audio: song[3].audio
+                            audio: song[3].audio,
+                            picture: song[3].picture
                         })} }
                         
 
@@ -240,7 +242,7 @@ class Tcontentdisc2row1 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             style={{width: '20px', minWidth: '200px'}}
-                            thumbnail={Primitive}
+                            thumbnail={song[4].picture}
                             title='Primitive Man'
                             description=''
                             tags={[
@@ -248,11 +250,11 @@ class Tcontentdisc2row1 extends React.Component {
                             ]}
                             onClick={ () => { this.setState({
                                 modalIsOpen: true,
-                                id: Primitive,
                                 title: song[4].title,
                                 singer: song[4].singer,
                                 thumbnail: song[4].thumbnail,
-                                audio: song[4].audio
+                                audio: song[4].audio,
+                                picture: song[4].picture
                             })} }
                             
 

@@ -49,6 +49,7 @@ const ContainerGLP = () => (
                             }}><img
                                 className="firstalbum"
                                 src={Glpalbum}
+                                alt=''
                                 /*mode="fit"*/></img> 
               </Link>
           </Col>

@@ -206,8 +206,7 @@ class TCardMobile2 extends React.Component {
             tags,
             ...other
         } = this.props;
-        let cards;
-        let { styleDisplay } = this.props;
+
 
         return (
             <React.Fragment>

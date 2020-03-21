@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ContainerDisc from './components/containerDisc'
 import ContainerContact from './components/containerContact'
 import Embed from 'react-song-embed'
