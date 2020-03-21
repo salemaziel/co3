@@ -13,3 +13,69 @@
 .isdisplaying {
   display: block;
 }
+
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  /*overflow-y: auto;*/
+  flex-direction: column;
+  height: 700px;
+  align-content: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+  .thelyrics {
+    /*flex: 0 0 auto;*/
+  }
+
+
+  /*lineHeight: '2rem',
+  letterSpacing: '1px',
+  wordSpacing: '2px',
+  fontWeight: '500',
+  fontVariant: 'small-caps',
+  fontSize: '1.3rem',
+  textShadow: '3px 3px 5px black',
+  textOverflow: 'hidden',
+  overflowY: 'scroll',
+  maxHeight: '600px',
+  height: '600px;',
+  margin: '1rem 4rem 1rem 0',*/
+
+.lyricsCards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: left;
+  max-width: 90%;
+  padding: 1rem 2rem;
+  color: white;
+  line-height: 2rem;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-weight: 500;
+  font-variant: small-caps;
+  font-size: 1.3rem;
+  text-shadow: 3px 3px 4px black;
+  overflow-y: scroll;
+  max-height: 600px;
+  height: 500px;
+  margin: 1rem 6rem 1rem 1rem;      
+  overflow: -moz-scrollbars-none;
+  -ms-text-overflow: clip;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 5px;
+  
+}
+.lyricsCards::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+svg.angledoubledown {
+  font-size: 3rem;
+  fill: #ffffff;
+  stroke-width: 0.3rem;
+  stroke: #030303;
+  margin: 0rem 4rem 0 0;
+}
+

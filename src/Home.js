@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 
 import './css/main2.css'
@@ -11,12 +11,10 @@ import ContainerBio from './components/containerBio'
 import Containercontact from './components/containerContact'
 //import Containermemory from './components/containerMemory'
 //import ContainerFooter from './components/containerFooter'
-import LazyLoad from 'react-lazyload';
 
 import Embed from 'react-song-embed'
 
 import Helmet from 'react-helmet'
-import Albumcover from './images/album-cover2.jpg'
 import './css/textstyles.css'
 
 //export default class Home extends Component {

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import { TaggedContentCard } from 'react-ui-cards'
 
@@ -213,8 +213,6 @@ class TCardMobile extends React.Component {
             tags,
             ...other
         } = this.props;
-        let cards;
-        let { styleDisplay } = this.props;
 
     return (
       <React.Fragment>
