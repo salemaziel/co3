@@ -18,7 +18,7 @@ const song = [
         singer: 'Chaotic Order',
         thumbnail:"https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118752/chaoticorder-globallightingproject/1-where-were-you_ufda2c.jpg",
         audio: "https://res.cloudinary.com/dexdumfqy/video/upload/v1581118300/chaoticorder-globallightingproject/1-WHERE_WERE_YOU_wgoc56.mp3",
-        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118752/chaoticorder-globallightingproject/1-where-were-you_ufda2c.jpg'
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1587026965/chaoticorder-feedthepeople/glp-first-album/1_WHERE_WERE_YOU_-Lyrics_t6xfzu.jpg'
     },
     {
         title: 'Wake Up',
@@ -27,7 +27,7 @@ const song = [
             'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118752/chaoticorder-globallightingproject/2-wake-up_h0tc9z.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118296/chaoticorder-globallightingproject/2-WAKE_UP_nnmu69.mp3',
-        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/chaoticorder-globallightingproject/2-wake-up_h0tc9z.jpg'
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1587026966/chaoticorder-feedthepeople/glp-first-album/2_WAKE_UP_-Lyrics_wvg3eu.jpg'
 
     },
     {
@@ -37,7 +37,7 @@ const song = [
             'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118752/chaoticorder-globallightingproject/3-Tears_fym2g1.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118296/chaoticorder-globallightingproject/3-TEARS_lnpihr.mp3',
-        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118752/chaoticorder-globallightingproject/3-Tears_fym2g1.jpg'
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1587026965/chaoticorder-feedthepeople/glp-first-album/3_TEARS_-Lyrics_wtebwq.jpg',
     },
     {
         title: 'Dirty Mine',
@@ -46,7 +46,7 @@ const song = [
             'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118753/chaoticorder-globallightingproject/4-Dirty-Mine_g35szv.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118307/chaoticorder-globallightingproject/4-DIRTY_MINE_rjsmiu.mp3',
-        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/4-Dirty-Mine_g35szv.jpg'
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1587026965/chaoticorder-feedthepeople/glp-first-album/4_DIRTY_MINE_-Lyrics_xrw7qb.jpg'
 
     },
     {
@@ -56,19 +56,12 @@ const song = [
             'https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118753/chaoticorder-globallightingproject/5-Primitive-Man_gfmwue.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118299/chaoticorder-globallightingproject/5-PRIMITVE_MAN_lrsghw.mp3',
-        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/5-Primitive-Man_gfmwue.jpg'
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1587026967/chaoticorder-feedthepeople/glp-first-album/5_PRIMITIVE_MAN_-Lyrics_yww0ot.jpg',
 
     },
 ]
 
-//const Lyriccrawl = () => (
-//    <Crawl
-//     title=''
-//      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-//      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
-//      "
-//    />
-//)
+
 class Tcontentdisc2row1 extends React.Component {
 
 
@@ -119,18 +112,19 @@ class Tcontentdisc2row1 extends React.Component {
                     <Row style={{ display: 'flex'}}>
                     
                         <div style={{
-                            backgroundImage: `url(${this.state.id})` ,
-                            height: "800px", 
-                            width: "1000px",  
+                            backgroundImage: `url(${this.state.picture})` ,
+                            height: "1000px", 
+                            width: "1000px",
+                            maxHeight: '100vh',  
                             backgroundSize: 'cover', 
-                            backgroundPosition: 'center center',
+                            backgroundPosition: 'top center',
                             } }>
 
                             <div style={{ 
                                 position: 'absolute',
-                                left: '85%',
-                                marginLeft: '-110px',
-                                marginTop: '440px'}}>
+                                left: '8%',
+                                top: '73%',
+                            }}>
                                 <ReactWebMediaPlayer
                                     width={200} height={200}
                                     title={this.state.title}
