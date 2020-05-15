@@ -14,7 +14,7 @@ import Containercontact from './components/containerContact'
 
 import Embed from 'react-song-embed'
 
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import './css/textstyles.css'
 
 //export default class Home extends Component {

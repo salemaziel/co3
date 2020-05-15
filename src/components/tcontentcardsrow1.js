@@ -669,7 +669,7 @@ class TContentCards01 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             className="plzwork"
-                            style={{ width: '200px', minWidth: '200px' }}
+                            style={{ width: '200px', minWidth: '220px' }}
                             thumbnail={song[0].picture}
                             title='ChemTrails'
                             description=''
@@ -695,7 +695,7 @@ class TContentCards01 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             className="plzwork"
-                            style={{ width: '20px', minWidth: '200px' }}
+                            style={{ width: '20px', minWidth: '220px' }}
                             thumbnail={song[1].picture}
                             title='Feed The People'
                             description=''
@@ -720,7 +720,7 @@ class TContentCards01 extends React.Component {
                     </Col > <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             className="plzwork"
-                            style={{ width: '20px', minWidth: '200px' }}
+                            style={{ width: '20px', minWidth: '220px' }}
                             thumbnail={song[2].picture}
                             title='Burn'
                             description=''
@@ -744,7 +744,7 @@ class TContentCards01 extends React.Component {
                     </Col> <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             className="plzwork"
-                            style={{ width: '20px', minWidth: '200px' }}
+                            style={{ width: '20px', minWidth: '220px' }}
                             thumbnail={song[3].picture}
                             title='Another'
                             description=''
@@ -768,7 +768,7 @@ class TContentCards01 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             className="plzwork"
-                            style={{ width: '20px', minWidth: '200px' }}
+                            style={{ width: '20px', minWidth: '220px' }}
                             thumbnail={song[4].picture}
                             title='Hate'
                             description=''

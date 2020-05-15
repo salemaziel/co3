@@ -11,6 +11,7 @@ import "slick-carousel/slick/slick-theme.css"
 import { Row } from 'reactstrap'
 import Modal from 'react-awesome-modal'
 
+import tcardStyle from './tcards.module.css'
 
 
 const song = [
@@ -19,7 +20,7 @@ const song = [
         singer: 'Chaotic Order',
         thumbnail:"https://res.cloudinary.com/dexdumfqy/image/upload/v1581118752/chaoticorder-globallightingproject/1-where-were-you_ufda2c.jpg",
         audio: "https://res.cloudinary.com/dexdumfqy/video/upload/v1581118300/chaoticorder-globallightingproject/1-WHERE_WERE_YOU_wgoc56.mp3",
-        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1587026965/chaoticorder-feedthepeople/glp-first-album/1_WHERE_WERE_YOU_-Lyrics_t6xfzu.jpg'
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1589413985/chaoticorder-globallightingproject/images-noLyrics/1-wherewereyou_eu9iho.jpg'
     },
     {
         title: 'Wake Up',
@@ -28,7 +29,7 @@ const song = [
             'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118752/chaoticorder-globallightingproject/2-wake-up_h0tc9z.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118296/chaoticorder-globallightingproject/2-WAKE_UP_nnmu69.mp3',
-        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1587026966/chaoticorder-feedthepeople/glp-first-album/2_WAKE_UP_-Lyrics_wvg3eu.jpg'
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1589413979/chaoticorder-globallightingproject/images-noLyrics/2-wakeup_owuj0d.jpg'
 
     },
     {
@@ -38,7 +39,7 @@ const song = [
             'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118752/chaoticorder-globallightingproject/3-Tears_fym2g1.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118296/chaoticorder-globallightingproject/3-TEARS_lnpihr.mp3',
-        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1587026965/chaoticorder-feedthepeople/glp-first-album/3_TEARS_-Lyrics_wtebwq.jpg',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1589413991/chaoticorder-globallightingproject/images-noLyrics/3-tears_w3nfbk.jpg',
     },
     {
         title: 'Dirty Mine',
@@ -47,7 +48,7 @@ const song = [
             'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/4-Dirty-Mine_g35szv.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118307/chaoticorder-globallightingproject/4-DIRTY_MINE_rjsmiu.mp3',
-        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1587026965/chaoticorder-feedthepeople/glp-first-album/4_DIRTY_MINE_-Lyrics_xrw7qb.jpg'
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1589413986/chaoticorder-globallightingproject/images-noLyrics/4-dirtymine_k9deu0.jpg'
     },
     {
         title: 'Primitive Man',
@@ -56,7 +57,7 @@ const song = [
             'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/5-Primitive-Man_gfmwue.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118299/chaoticorder-globallightingproject/5-PRIMITVE_MAN_lrsghw.mp3',
-        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1587026967/chaoticorder-feedthepeople/glp-first-album/5_PRIMITIVE_MAN_-Lyrics_yww0ot.jpg',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1589413997/chaoticorder-globallightingproject/images-noLyrics/5-primitiveman_fe7nt7.jpg',
     },
     {
         title: 'Pins and Needles',
@@ -65,7 +66,7 @@ const song = [
             'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118752/chaoticorder-globallightingproject/6-Pins-and-Needles_ry7kvk.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118311/chaoticorder-globallightingproject/6-PINS_AND_NEEDLES_qzmgra.mp3',
-        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1587026968/chaoticorder-feedthepeople/glp-first-album/6_PINS_NEEDLES_-Lyrics_zqpuek.jpg',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1589413987/chaoticorder-globallightingproject/images-noLyrics/6-pinsandneedles_lknttd.jpg',
     },
     {
         title: 'Goodbye',
@@ -74,7 +75,7 @@ const song = [
             'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/7-Goodbye_emp2lc.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118309/chaoticorder-globallightingproject/7-GOODBYE_ym9sl3.mp3',
-        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1587026968/chaoticorder-feedthepeople/glp-first-album/7_GOODBUY_-Lyrics_ja5o5s.jpg',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1589413992/chaoticorder-globallightingproject/images-noLyrics/7-goodbye_kfoxvy.jpg',
     },
     {
         title: 'Fooling Myself',
@@ -83,7 +84,7 @@ const song = [
             'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/8-Foolin-Myself_anc23n.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118307/chaoticorder-globallightingproject/8-FOOLING_MYSELF_fhsolw.mp3',
-        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1587026967/chaoticorder-feedthepeople/glp-first-album/8_FOOLIN_MYSELF_-Lyrics_zelpvp.jpg',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1589413997/chaoticorder-globallightingproject/images-noLyrics/8-foolinmyself_dm00pi.jpg',
     },
     {
         title: 'Breathe',
@@ -92,7 +93,7 @@ const song = [
             'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/9-Breathe_ojuucg.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118303/chaoticorder-globallightingproject/9-BREATHE_oodelz.mp3',
-        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1587026968/chaoticorder-feedthepeople/glp-first-album/9_BREATHE_-Lyrics_ztpq6c.jpg',
+        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1589413996/chaoticorder-globallightingproject/images-noLyrics/9-breathe_p1zkoj.jpg',
     },
     {
         title: 'I Still Love YOu',
@@ -101,7 +102,7 @@ const song = [
             'https://res.cloudinary.com/dexdumfqy/image/upload/v1581118753/chaoticorder-globallightingproject/10-I-Still-Love-you_b8nar3.jpg',
         audio:
             'https://res.cloudinary.com/dexdumfqy/video/upload/v1581118309/chaoticorder-globallightingproject/10-I_STILL_LOVE_YOU_hjwisv.mp3',
-        picture: 'https://res.cloudinary.com/dexdumfqy/image/upload/v1587026967/chaoticorder-feedthepeople/glp-first-album/10_I_STILL_LOVE_YOU_-Lyrics_vcr24p.jpg',
+        picture: 'hhttps://res.cloudinary.com/dexdumfqy/image/upload/v1589413992/chaoticorder-globallightingproject/images-noLyrics/10-istillloveyou_fjpigw.jpg',
     }
 ]
 class TCardMobile2 extends React.Component {
