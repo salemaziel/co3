@@ -14,7 +14,7 @@ import { FaAngleLeft } from 'react-icons/fa'
 
 import Glplogo from '../images/song-art/global-lighting-album/co-oldlogo.png'
 //import Glpalbum from '../images/song-art/global-lighting-album/album-cover-glp.jpg'
-
+import '../css/lyricCrawl.css'
 
 
 import { Link } from 'react-router-dom'

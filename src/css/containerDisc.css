@@ -135,7 +135,7 @@ div.glplogo {
 }
 img.glplogo {
     width: 1000px;
-    margin: 0;
+    margin: auto;
     
 }
 img.glpalbum {
@@ -299,8 +299,9 @@ div.mobile-slider2 {
         width: 100% ;
     }
     img.glplogo {
-        max-width: 980px;
-        margin: 0;
+        max-width: 100%;
+        margin: auto;
+        width: auto;
     }
         div.nomobile2 {
             display: none!important;
@@ -357,9 +358,9 @@ div.mobile-slider2 {
         width: 100% ;
     }
     img.glplogo {
-        max-width: 736px;
-        margin: 0;
-        width: 50%;
+        max-width: 100%;
+        margin: auto;
+        width: auto;
         
     }
     
@@ -419,9 +420,9 @@ div.mobile-slider2 {
             margin: 0;
         }
         img.glplogo {
-            max-width: 480px;
-            width: 100%;
-            margin: 0;
+            max-width: 100%;
+            width: auto;
+            margin: auto;
             
         }
         div.nomobile2 {
@@ -444,8 +445,9 @@ div.mobile-slider2 {
             width: 100% ;
         }
         img.glplogo {
-            max-width: 360px;
-            margin: 0;
+            max-width: 100%;
+            margin: auto;
+            width: auto;
             
         }
         div.nomobile2 {

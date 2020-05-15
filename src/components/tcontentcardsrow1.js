@@ -4,7 +4,7 @@ import { TaggedContentCard } from 'react-ui-cards'
 
 import ReactWebMediaPlayer from 'react-web-media-player';
 
-import { FaPlay, FaAngleDoubleDown } from 'react-icons/fa'
+import { FaPlay, FaAngleDown } from 'react-icons/fa'
 
 import { Card, CardBody, Row, Col } from 'reactstrap';
 import Modal from 'react-awesome-modal';
@@ -632,7 +632,7 @@ class TContentCards01 extends React.Component {
                                         {this.state.lyric}
 
                                     </CardBody>
-                                    <FaAngleDoubleDown className="angledoubledown" focusable="false" aria-hidden="true" />
+                                    <FaAngleDown className="angledown" focusable="false" aria-hidden="true" />
                                 </Card>
                             </div>
 

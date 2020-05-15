@@ -2,7 +2,7 @@ import React from 'react'
 import { TaggedContentCard } from 'react-ui-cards'
 
 
-import { FaPlay, FaAngleDoubleDown } from 'react-icons/fa'
+import { FaPlay, FaAngleDown } from 'react-icons/fa'
 
 import { Card, CardBody, Row, Col } from 'reactstrap';
 import Modal from 'react-awesome-modal';
@@ -656,7 +656,7 @@ class TContentCards02 extends React.Component {
                                         {this.state.lyric}
 
                                     </CardBody>
-                                    <FaAngleDoubleDown className="angledoubledown" focusable="false" aria-hidden="true" />
+                                    <FaAngleDown className="angledown" focusable="false" aria-hidden="true" />
                                 </Card>
                             </div>
 
@@ -691,7 +691,7 @@ class TContentCards02 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             className="plzwork"
-                            style={{ width: '20px', minWidth: '200px' }}
+                            style={{ width: '20px', minWidth: '220px' }}
                             thumbnail={song[0].picture}
                             title='Sorry'
                             description=''
@@ -715,7 +715,7 @@ class TContentCards02 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             className="plzwork"
-                            style={{ width: '20px', minWidth: '200px' }}
+                            style={{ width: '20px', minWidth: '220px' }}
                             thumbnail={song[1].picture}
                             title='Chains'
                             description=''
@@ -738,7 +738,7 @@ class TContentCards02 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             className="plzwork"
-                            style={{ width: '20px', minWidth: '200px' }}
+                            style={{ width: '20px', minWidth: '220px' }}
                             thumbnail={song[2].picture}
                             title='Earth'
                             description=''
@@ -763,7 +763,7 @@ class TContentCards02 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             className="plzwork"
-                            style={{ width: '20px', minWidth: '200px' }}
+                            style={{ width: '20px', minWidth: '220px' }}
                             thumbnail={song[3].picture}
                             title='Never End'
                             description=''
@@ -789,7 +789,7 @@ class TContentCards02 extends React.Component {
                     <Col xs="2" lg="2" md="6">
                         <TaggedContentCard
                             className="plzwork"
-                            style={{ width: '20px', minWidth: '200px' }}
+                            style={{ width: '20px', minWidth: '220px' }}
                             thumbnail={song[4].picture}
                             title='Colors'
                             description=''

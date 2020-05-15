@@ -35,8 +35,13 @@ const song = [
           <br />
           I thought I needed you
           <br />
-          Every time I think of you I'd like to be alone
-          <br />I see Now I'm sure I'm gonna make you cry you when you walk on
+          Every time I think of you
+          
+          <br />
+           I'd like to be alone
+          <br />I see Now 
+          <br />
+          I'm sure I'm gonna make you cry you when you walk on
           by
         </p>
         <p>
@@ -44,7 +49,9 @@ const song = [
           <br />
           fight for your life
           <br />
-          Fight for the cause you know is right The time has come,
+          Fight for the cause 
+          <br />
+          you know is right The time has come,
           <br />
           Time to move on
           <br />
@@ -601,20 +608,27 @@ class Tcontentdisc2row1 extends React.Component {
                     {this.state.lyric}
                   </CardBody>
                   <FaAngleDown
-                    className="angledoubledown"
+                    className="angledown"
                     focusable="false"
                     aria-hidden="true"
                   />
                 </Card>
               </div>
 
-              <div
+            {/*  <div
                 style={{
                   position: "absolute",
                   left: "8%",
                   top: "73%",
                 }}
-              >
+              >*/}
+                                          <div style={{
+                                position: 'absolute',
+                                left: '77%',
+
+                                top: '50%',
+                                /*marginLeft: '-110px',
+                            marginTop: '370px'*/}}>
                 <ReactWebMediaPlayer
                   width={200}
                   height={200}

@@ -18,16 +18,6 @@ const song = [
     picture:
       "https://res.cloudinary.com/dexdumfqy/image/upload/v1589413987/chaoticorder-globallightingproject/images-noLyrics/6-pinsandneedles_lknttd.jpg",
     lyric: [
-        <div>
-        <Card
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <CardBody className="lyricsCards">
       <div>
         <p>
           It's a long and lonely road
@@ -115,16 +105,7 @@ const song = [
           <br />
           Tearing me apart{" "}
         </p>
-      </div>
-                        </CardBody>
-                        <FaAngleDown
-                          className="angledown"
-                          focusable="false"
-                          aria-hidden="true"
-                        />
-                      </Card>
-                    </div>
-      ,
+      </div>,
     ],
   },
   {
@@ -137,16 +118,6 @@ const song = [
     picture:
       "https://res.cloudinary.com/dexdumfqy/image/upload/v1589413992/chaoticorder-globallightingproject/images-noLyrics/7-goodbye_kfoxvy.jpg",
     lyric: [
-        <div>
-        <Card
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <CardBody className="lyricsCards">
       <div>
         <p>
           An uncontrollable time in life
@@ -212,16 +183,7 @@ const song = [
           And now it's time to say
         </p>
         <p>Goodbye </p>
-      </div>
-      </CardBody>
-                        <FaAngleDown
-                          className="angledown"
-                          focusable="false"
-                          aria-hidden="true"
-                        />
-                      </Card>
-                    </div>
-      ,
+      </div>,
     ],
   },
   {
@@ -234,16 +196,6 @@ const song = [
     picture:
       "https://res.cloudinary.com/dexdumfqy/image/upload/v1589413997/chaoticorder-globallightingproject/images-noLyrics/8-foolinmyself_dm00pi.jpg",
     lyric: [
-        <div>
-        <Card
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <CardBody className="lyricsCards">
       <div>
         <p>
           Looking down this trail of life,
@@ -292,16 +244,7 @@ const song = [
           <br />
           For thinking I can?{" "}
         </p>
-      </div>
-      </CardBody>
-                        <FaAngleDown
-                          className="angledown"
-                          focusable="false"
-                          aria-hidden="true"
-                        />
-                      </Card>
-                    </div>
-      ,
+      </div>,
     ],
   },
   {
@@ -314,24 +257,9 @@ const song = [
     picture:
       "https://res.cloudinary.com/dexdumfqy/image/upload/v1589413996/chaoticorder-globallightingproject/images-noLyrics/9-breathe_p1zkoj.jpg",
     lyric: [
-        <div>
-        <Card
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <CardBody className="nolyrics">
       <div>
         <p>[ Instrumentals ]</p>
-      </div>
-      
-      </CardBody>
-                      </Card>
-                    </div>
-      ,
+      </div>,
     ],
   },
   {
@@ -344,16 +272,6 @@ const song = [
     picture:
       "https://res.cloudinary.com/dexdumfqy/image/upload/v1589413992/chaoticorder-globallightingproject/images-noLyrics/10-istillloveyou_fjpigw.jpg",
     lyric: [
-        <div>
-        <Card
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <CardBody className="lyricsCards">
       <div>
         <p>
           Flying from San Diego Bay, Maui Island a kiss away
@@ -391,17 +309,7 @@ const song = [
         </p>
         <p>I Still love you And I need you love you And I miss you</p>
         <p>Oooo, oooo, oooo, oooo Oooo, oooo, oooo, oooo </p>
-      </div>
-      </CardBody>
-                        <FaAngleDown
-                          className="angledown"
-                          focusable="false"
-                          aria-hidden="true"
-                        />
-                      </Card>
-                    </div>
-      
-      ,
+      </div>,
     ],
   },
 ];
@@ -464,8 +372,7 @@ class Tcontentdisc2row2 extends React.Component {
                   verticalAlign: "middle",
                 }}
               >
-                  {this.state.lyric}
-              {/*  <Card
+                <Card
                   style={{
                     display: "flex",
                     flexDirection: "column",
@@ -481,7 +388,7 @@ class Tcontentdisc2row2 extends React.Component {
                     focusable="false"
                     aria-hidden="true"
                   />
-                </Card>*/}
+                </Card>
               </div>
 
              {/*} <div
