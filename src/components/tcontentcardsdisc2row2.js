@@ -12,7 +12,7 @@ const song = [
     title: "Pins and Needles",
     singer: "Chaotic Order",
     thumbnail:
-      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118752/chaoticorder-globallightingproject/6-Pins-and-Needles_ry7kvk.jpg",
+      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1589413987/chaoticorder-globallightingproject/images-noLyrics/6-pinsandneedles_lknttd.jpg",
     audio:
       "https://res.cloudinary.com/dexdumfqy/video/upload/v1581118311/chaoticorder-globallightingproject/6-PINS_AND_NEEDLES_qzmgra.mp3",
     picture:
@@ -131,7 +131,7 @@ const song = [
     title: "Goodbye",
     singer: "Chaotic Order",
     thumbnail:
-      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118753/chaoticorder-globallightingproject/7-Goodbye_emp2lc.jpg",
+      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1589413992/chaoticorder-globallightingproject/images-noLyrics/7-goodbye_kfoxvy.jpg",
     audio:
       "https://res.cloudinary.com/dexdumfqy/video/upload/v1581118309/chaoticorder-globallightingproject/7-GOODBYE_ym9sl3.mp3",
     picture:
@@ -228,7 +228,7 @@ const song = [
     title: "Fooling Myself",
     singer: "Chaotic Order",
     thumbnail:
-      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118753/chaoticorder-globallightingproject/8-Foolin-Myself_anc23n.jpg",
+      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1589413997/chaoticorder-globallightingproject/images-noLyrics/8-foolinmyself_dm00pi.jpg",
     audio:
       "https://res.cloudinary.com/dexdumfqy/video/upload/v1581118307/chaoticorder-globallightingproject/8-FOOLING_MYSELF_fhsolw.mp3",
     picture:
@@ -308,7 +308,7 @@ const song = [
     title: "Breathe",
     singer: "Chaotic Order",
     thumbnail:
-      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118753/chaoticorder-globallightingproject/9-Breathe_ojuucg.jpg",
+      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1589413996/chaoticorder-globallightingproject/images-noLyrics/9-breathe_p1zkoj.jpg",
     audio:
       "https://res.cloudinary.com/dexdumfqy/video/upload/v1581118303/chaoticorder-globallightingproject/9-BREATHE_oodelz.mp3",
     picture:
@@ -338,7 +338,7 @@ const song = [
     title: "I Still Love You",
     singer: "Chaotic Order",
     thumbnail:
-      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118753/chaoticorder-globallightingproject/10-I-Still-Love-you_b8nar3.jpg",
+      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1589413992/chaoticorder-globallightingproject/images-noLyrics/10-istillloveyou_fjpigw.jpg",
     audio:
       "https://res.cloudinary.com/dexdumfqy/video/upload/v1581118309/chaoticorder-globallightingproject/10-I_STILL_LOVE_YOU_hjwisv.mp3",
     picture:

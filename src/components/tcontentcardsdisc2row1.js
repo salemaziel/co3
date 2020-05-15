@@ -23,7 +23,7 @@ const song = [
     title: "Where Were You",
     singer: "Chaotic Order",
     thumbnail:
-      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118752/chaoticorder-globallightingproject/1-where-were-you_ufda2c.jpg",
+      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1589413985/chaoticorder-globallightingproject/images-noLyrics/1-wherewereyou_eu9iho.jpg",
     audio:
       "https://res.cloudinary.com/dexdumfqy/video/upload/v1581118300/chaoticorder-globallightingproject/1-WHERE_WERE_YOU_wgoc56.mp3",
     picture:
@@ -124,7 +124,7 @@ const song = [
     title: "Wake Up",
     singer: "Chaotic Order",
     thumbnail:
-      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118752/chaoticorder-globallightingproject/2-wake-up_h0tc9z.jpg",
+      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1589413979/chaoticorder-globallightingproject/images-noLyrics/2-wakeup_owuj0d.jpg",
     audio:
       "https://res.cloudinary.com/dexdumfqy/video/upload/v1581118296/chaoticorder-globallightingproject/2-WAKE_UP_nnmu69.mp3",
     picture:
@@ -213,7 +213,7 @@ const song = [
     title: "Tears",
     singer: "Chaotic Order",
     thumbnail:
-      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118752/chaoticorder-globallightingproject/3-Tears_fym2g1.jpg",
+      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1589413991/chaoticorder-globallightingproject/images-noLyrics/3-tears_w3nfbk.jpg",
     audio:
       "https://res.cloudinary.com/dexdumfqy/video/upload/v1581118296/chaoticorder-globallightingproject/3-TEARS_lnpihr.mp3",
     picture:
@@ -331,7 +331,7 @@ const song = [
     title: "Dirty Mine",
     singer: "Chaotic Order",
     thumbnail:
-      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118753/chaoticorder-globallightingproject/4-Dirty-Mine_g35szv.jpg",
+      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1589413986/chaoticorder-globallightingproject/images-noLyrics/4-dirtymine_k9deu0.jpg",
     audio:
       "https://res.cloudinary.com/dexdumfqy/video/upload/v1581118307/chaoticorder-globallightingproject/4-DIRTY_MINE_rjsmiu.mp3",
     picture:
@@ -450,7 +450,7 @@ const song = [
     title: "Primitive Man",
     singer: "Chaotic Order",
     thumbnail:
-      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1581118753/chaoticorder-globallightingproject/5-Primitive-Man_gfmwue.jpg",
+      "https://res.cloudinary.com/dexdumfqy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1589413997/chaoticorder-globallightingproject/images-noLyrics/5-primitiveman_fe7nt7.jpg",
     audio:
       "https://res.cloudinary.com/dexdumfqy/video/upload/v1581118299/chaoticorder-globallightingproject/5-PRIMITVE_MAN_lrsghw.mp3",
     picture:
