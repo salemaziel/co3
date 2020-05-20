@@ -61,7 +61,7 @@ class containerContact extends React.Component {
                             </div>
                             <br/>
                             <div >
-                                <button type="submit" style={{width: '100%', padding: '0px', margin: '0px'}}>Submit</button>
+                                <button type="submit" style={{width: '100%', padding: '0px', margin: '0px'}} onClick={this.handleSubmit}>Submit</button>
                             </div>
                         </div>
                         <input type="hidden" name="id" defaultValue="form02" />
