@@ -25,7 +25,7 @@ const Discography = () => (
     <div id="wrapper">
       <Embed
         /*rel="preload"*/
-        url="https://album.link/VdPNv59kZRQM8"
+        url="https://album.link/TcbH56kKBT7ww"
         height={52}
         dark
         style={{
