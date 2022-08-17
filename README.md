@@ -7,7 +7,7 @@
 </div>
 
 
-### [![Website Screenshot](chaoticordermusic.com-screenshot.jpg)](https://chaoticordermusic.com/)
+### [![Website Screenshot](chaoticordermusic.com-homepage-screenshot.jpg)](https://chaoticordermusic.com/)
 
 <img src="src/images/logo-tan-large-10.png" alt="Chaotic Order Logo" height="45px" align="right">
 
