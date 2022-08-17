@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/containerHeader.css'
 
-import Logo from '../images/image10.png'
+import Logo from '../images/logo-tan-large-10.png'
 import LogoMobile from '../images/logo-tan-column-sm.png'
 import Albumcover from '../images/album-cover2.jpg'
 import { Row } from 'reactstrap'

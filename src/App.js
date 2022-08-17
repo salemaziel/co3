@@ -15,7 +15,7 @@ const App = () => (
       <ScrollToTop>
             <Switch>
              <Route path="/" component={Home} exact/>
-             <ScrollToTopRoute path="/discography" component={Discography}/>*/}
+             <ScrollToTopRoute path="/discography" component={Discography}/>
              {/*<Route path="/discography" component={Discography} />*/}
             <Route component={Error}/>
            </Switch>

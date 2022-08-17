@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css"
 import { Row } from 'reactstrap'
 import Modal from 'react-awesome-modal'
 
-import tcardStyle from './tcards.module.css'
+//import tcardStyle from './tcards.module.css'
 
 
 const song = [

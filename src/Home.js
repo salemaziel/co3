@@ -9,7 +9,6 @@ import Container02 from './components/container02'
 import ContainerGLP from './components/containerGLP'
 import ContainerBio from './components/containerBio'
 import Containercontact from './components/containerContact'
-//import Containermemory from './components/containerMemory'
 //import ContainerFooter from './components/containerFooter'
 
 import Embed from 'react-song-embed'
@@ -65,7 +64,6 @@ import './css/textstyles.css'
 
                       <ContainerGLP />
                   
-                     {/*<Containermemory />*/}
                      <Containercontact />
                       
                       

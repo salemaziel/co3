@@ -5,18 +5,13 @@ import ReactWebMediaPlayer from "react-web-media-player";
 
 import { FaPlay, FaAngleDown } from "react-icons/fa";
 
-//import { Row, Col } from "reactstrap";
 import Modal from "react-awesome-modal";
-//import { FaPlay, FaAngleDoubleDown } from 'react-icons/fa'
 
 import { Card, CardBody, Row, Col } from "reactstrap";
 
-import TContentCards01 from "./tcontentcardsrow1";
+//import TContentCards01 from "./tcontentcardsrow1";
+//import tcardStyle from "./tcards.module.css";
 
-import tcardStyle from "./tcards.module.css";
-//import Crawl from 'react-star-wars-crawl'
-//import 'react-star-wars-crawl/lib/index.css'
-//import '../css/tcontencardsrow1.css'
 
 const song = [
   {

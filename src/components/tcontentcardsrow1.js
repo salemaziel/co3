@@ -9,10 +9,8 @@ import { FaPlay, FaAngleDown } from 'react-icons/fa'
 import { Card, CardBody, Row, Col } from 'reactstrap';
 import Modal from 'react-awesome-modal';
 
-//import Crawl from 'react-star-wars-crawl'
 import '../css/lyricCrawl.css'
-//import 'react-star-wars-crawl/lib/index.css'
-//import '../css/tcontencardsrow1.css'
+
 
 
 const song = [
