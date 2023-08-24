@@ -148,8 +148,8 @@ class ContainerFooter extends React.Component {
                 onClick={this.handleModalOpen}
               >
                 Copyright{" "}
-              </Button>{" "}
-              © 2020 Jacques Dubord, Chaotic Order
+              {" "}
+              {new Date().getFullYear()} © Jacques Dubord, Chaotic Order </Button>
               <br />
               All Chaotic Order proceeds fund the Global Lighting Project
             </p>
